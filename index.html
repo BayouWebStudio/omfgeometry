@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMF Geometry — The World's Geometric Tattoo Directory</title>
+  <meta name="description" content="Discover the world's best geometric tattoo artists. Sacred geometry, dotwork, mandala, blackwork — find your next artist.">
+  <meta property="og:title" content="OMF Geometry — The World's Geometric Tattoo Directory">
+  <meta property="og:description" content="Discover the world's best geometric tattoo artists.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">OMF<span>GEOMETRY</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="submit.html">Submit Artist</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <svg class="hero-bg" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="geo-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+        <polygon points="60,10 110,35 110,85 60,110 10,85 10,35" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+        <circle cx="60" cy="60" r="30" fill="none" stroke="#C9A84C" stroke-width="0.3"/>
+        <line x1="60" y1="10" x2="60" y2="110" stroke="#C9A84C" stroke-width="0.2"/>
+        <line x1="10" y1="35" x2="110" y2="85" stroke="#C9A84C" stroke-width="0.2"/>
+        <line x1="10" y1="85" x2="110" y2="35" stroke="#C9A84C" stroke-width="0.2"/>
+        <circle cx="60" cy="60" r="50" fill="none" stroke="#C9A84C" stroke-width="0.2"/>
+        <polygon points="60,30 85,47.5 85,82.5 60,100 35,82.5 35,47.5" fill="none" stroke="#C9A84C" stroke-width="0.3"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#geo-pattern)"/>
+  </svg>
+  <div class="hero-content">
+    <div class="hero-badge">@omfgeometry</div>
+    <h1>The World's <span class="gold">Geometric</span> Tattoo Directory</h1>
+    <p>Discover sacred geometry, dotwork, mandala, and blackwork artists worldwide. Curated by the geometric tattoo community.</p>
+    <div class="hero-buttons">
+      <a href="directory.html" class="btn btn-primary">Browse Artists</a>
+      <a href="submit.html" class="btn btn-outline">Submit an Artist</a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Artists -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Artists</h2>
+      <p>Hand-picked geometric tattoo masters from around the world</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="artists-grid" id="featured-artists">
+      <!-- Inline featured artists (no JS dependency for homepage) -->
+      <a href="artists/weschetattoo.html" class="artist-card">
+        <img src="https://picsum.photos/seed/weschetattoo/400/400" alt="Raul Wesche" class="artist-card-image" loading="lazy">
+        <div class="artist-card-body">
+          <div class="artist-card-name">Raul Wesche</div>
+          <div class="artist-card-handle">@weschetattoo</div>
+          <div class="artist-card-location">📍 Houston, TX</div>
+          <div class="artist-card-tags">
+            <span class="tag">sacred geometry</span>
+            <span class="tag">large scale</span>
+          </div>
+        </div>
+      </a>
+      <a href="artists/chaim-machlev.html" class="artist-card">
+        <img src="https://picsum.photos/seed/chaimmachlev/400/400" alt="Chaim Machlev" class="artist-card-image" loading="lazy">
+        <div class="artist-card-body">
+          <div class="artist-card-name">Chaim Machlev</div>
+          <div class="artist-card-handle">@dotstolines</div>
+          <div class="artist-card-location">📍 Berlin, Germany</div>
+          <div class="artist-card-tags">
+            <span class="tag">fine line</span>
+            <span class="tag">geometric</span>
+          </div>
+        </div>
+      </a>
+      <a href="artists/okan-uckun.html" class="artist-card">
+        <img src="https://picsum.photos/seed/okanuckun/400/400" alt="Okan Uçkun" class="artist-card-image" loading="lazy">
+        <div class="artist-card-body">
+          <div class="artist-card-name">Okan Uçkun</div>
+          <div class="artist-card-handle">@oaborundaoiley</div>
+          <div class="artist-card-location">📍 Istanbul, Turkey</div>
+          <div class="artist-card-tags">
+            <span class="tag">blackwork</span>
+            <span class="tag">geometric</span>
+          </div>
+        </div>
+      </a>
+      <a href="artists/nikkisneedle.html" class="artist-card">
+        <img src="https://picsum.photos/seed/nikkisneedle/400/400" alt="Nikki Sneedle" class="artist-card-image" loading="lazy">
+        <div class="artist-card-body">
+          <div class="artist-card-name">Nikki Sneedle</div>
+          <div class="artist-card-handle">@nikkisneedle</div>
+          <div class="artist-card-location">📍 New York, NY</div>
+          <div class="artist-card-tags">
+            <span class="tag">mandala</span>
+            <span class="tag">dotwork</span>
+          </div>
+        </div>
+      </a>
+      <a href="artists/pokemeon.html" class="artist-card">
+        <img src="https://picsum.photos/seed/pokemeon/400/400" alt="Pokemeon" class="artist-card-image" loading="lazy">
+        <div class="artist-card-body">
+          <div class="artist-card-name">Pokemeon</div>
+          <div class="artist-card-handle">@pokemeon</div>
+          <div class="artist-card-location">📍 Seoul, South Korea</div>
+          <div class="artist-card-tags">
+            <span class="tag">geometric</span>
+            <span class="tag">blackwork</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="geo-line"></div></div>
+
+<!-- Blog Preview -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>From the Blog</h2>
+      <p>Stories, guides, and artist spotlights from the geometric tattoo world</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="blog-grid">
+      <a href="blog/what-is-sacred-geometry.html" class="blog-card">
+        <img src="https://picsum.photos/seed/sacredgeo/800/450" alt="Sacred Geometry" class="blog-card-image" loading="lazy">
+        <div class="blog-card-body">
+          <div class="blog-card-date">March 5, 2026</div>
+          <div class="blog-card-title">What is Sacred Geometry in Tattoo Art?</div>
+          <div class="blog-card-excerpt">Explore the ancient mathematical patterns that have inspired tattoo artists worldwide — from the Flower of Life to Metatron's Cube.</div>
+        </div>
+      </a>
+      <a href="blog/top-10-geometric-tattoo-artists-2026.html" class="blog-card">
+        <img src="https://picsum.photos/seed/top10geo/800/450" alt="Top Artists" class="blog-card-image" loading="lazy">
+        <div class="blog-card-body">
+          <div class="blog-card-date">March 1, 2026</div>
+          <div class="blog-card-title">Top 10 Geometric Tattoo Artists to Follow in 2026</div>
+          <div class="blog-card-excerpt">Our curated list of the most innovative geometric tattoo artists pushing boundaries this year.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="geo-line"></div></div>
+
+<!-- Newsletter -->
+<section class="section">
+  <div class="container">
+    <div class="newsletter">
+      <h3>Stay in the Loop</h3>
+      <p>Get new artist features, blog posts, and geometric inspiration delivered to your inbox.</p>
+      <form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/omfgeometry" method="post" target="_blank">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo">OMF GEOMETRY</div>
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="submit.html">Submit</a></li>
+    </ul>
+    <a href="https://instagram.com/omfgeometry" target="_blank" class="footer-ig">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      @omfgeometry
+    </a>
+    <div class="footer-copy">© 2026 OMF Geometry. Built with 🌿 by <a href="https://getminted.ai">GetMinted</a>.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

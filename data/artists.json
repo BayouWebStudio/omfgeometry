@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Raul Wesche",
+    "slug": "weschetattoo",
+    "instagram": "weschetattoo",
+    "location": "Houston, TX",
+    "country": "United States",
+    "bio": "Owner of Tattoo Temple Houston with over 12 years of experience specializing in large-scale sacred geometry and geometric tattoos. Known for intricate, mathematically precise designs that transform the body into living architecture. One of the most recognized geometric tattoo artists in the world with nearly 300K followers.",
+    "styles": ["sacred geometry", "large scale", "geometric", "blackwork"],
+    "featured": true,
+    "image": "https://picsum.photos/seed/weschetattoo/400/400",
+    "gallery": [
+      "https://picsum.photos/seed/wesche1/600/600",
+      "https://picsum.photos/seed/wesche2/600/600",
+      "https://picsum.photos/seed/wesche3/600/600",
+      "https://picsum.photos/seed/wesche4/600/600",
+      "https://picsum.photos/seed/wesche5/600/600",
+      "https://picsum.photos/seed/wesche6/600/600"
+    ]
+  },
+  {
+    "name": "Chaim Machlev",
+    "slug": "chaim-machlev",
+    "instagram": "dotstolines",
+    "location": "Berlin, Germany",
+    "country": "Germany",
+    "bio": "Berlin-based tattoo artist renowned for his minimalist fine-line geometric work. Chaim's signature style bridges the gap between mathematical precision and organic flow, creating tattoos that appear to emerge naturally from the skin. His studio in Berlin attracts clients from around the globe.",
+    "styles": ["fine line", "geometric", "minimalist", "dotwork"],
+    "featured": true,
+    "image": "https://picsum.photos/seed/chaimmachlev/400/400",
+    "gallery": [
+      "https://picsum.photos/seed/chaim1/600/600",
+      "https://picsum.photos/seed/chaim2/600/600",
+      "https://picsum.photos/seed/chaim3/600/600",
+      "https://picsum.photos/seed/chaim4/600/600",
+      "https://picsum.photos/seed/chaim5/600/600",
+      "https://picsum.photos/seed/chaim6/600/600"
+    ]
+  },
+  {
+    "name": "Okan Uçkun",
+    "slug": "okan-uckun",
+    "instagram": "oaborundaoiley",
+    "location": "Istanbul, Turkey",
+    "country": "Turkey",
+    "bio": "Istanbul-based blackwork geometric artist pushing the boundaries of pattern and form. Okan's work draws from Ottoman geometric traditions and sacred geometry, creating bold, striking pieces that command attention. His unique fusion of cultural heritage and modern tattoo technique has earned him international recognition.",
+    "styles": ["blackwork", "geometric", "ornamental", "patterns"],
+    "featured": true,
+    "image": "https://picsum.photos/seed/okanuckun/400/400",
+    "gallery": [
+      "https://picsum.photos/seed/okan1/600/600",
+      "https://picsum.photos/seed/okan2/600/600",
+      "https://picsum.photos/seed/okan3/600/600",
+      "https://picsum.photos/seed/okan4/600/600",
+      "https://picsum.photos/seed/okan5/600/600",
+      "https://picsum.photos/seed/okan6/600/600"
+    ]
+  },
+  {
+    "name": "Nikki Sneedle",
+    "slug": "nikkisneedle",
+    "instagram": "nikkisneedle",
+    "location": "New York, NY",
+    "country": "United States",
+    "bio": "NYC-based mandala and dotwork specialist creating mesmerizing symmetrical designs. Nikki's meticulous approach to dotwork produces tattoos with incredible depth and dimension. Each piece is a meditation in patience and precision, resulting in wearable mandalas that seem to pulse with energy.",
+    "styles": ["mandala", "dotwork", "sacred geometry", "ornamental"],
+    "featured": true,
+    "image": "https://picsum.photos/seed/nikkisneedle/400/400",
+    "gallery": [
+      "https://picsum.photos/seed/nikki1/600/600",
+      "https://picsum.photos/seed/nikki2/600/600",
+      "https://picsum.photos/seed/nikki3/600/600",
+      "https://picsum.photos/seed/nikki4/600/600",
+      "https://picsum.photos/seed/nikki5/600/600",
+      "https://picsum.photos/seed/nikki6/600/600"
+    ]
+  },
+  {
+    "name": "Pokemeon",
+    "slug": "pokemeon",
+    "instagram": "pokemeon",
+    "location": "Seoul, South Korea",
+    "country": "South Korea",
+    "bio": "Seoul-based geometric blackwork artist known for bold, architectural compositions. Pokemeon's work features striking contrasts and impossibly clean lines, creating geometric tattoos that look like they were rendered by machine. A master of negative space and symmetry.",
+    "styles": ["geometric", "blackwork", "abstract", "minimalist"],
+    "featured": true,
+    "image": "https://picsum.photos/seed/pokemeon/400/400",
+    "gallery": [
+      "https://picsum.photos/seed/poke1/600/600",
+      "https://picsum.photos/seed/poke2/600/600",
+      "https://picsum.photos/seed/poke3/600/600",
+      "https://picsum.photos/seed/poke4/600/600",
+      "https://picsum.photos/seed/poke5/600/600",
+      "https://picsum.photos/seed/poke6/600/600"
+    ]
+  }
+]
