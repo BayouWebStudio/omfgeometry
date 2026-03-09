@@ -1,13 +1,13 @@
-<!-- v=20260308143351 -->
+<!-- v=20260309144700 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OMF Geometry — The World's Geometric Tattoo Directory</title>
-  <meta name="description" content="Discover the world's best geometric tattoo artists. Sacred geometry, dotwork, mandala, blackwork — find your next artist.">
+  <meta name="description" content="Discover the world's best geometric tattoo artists. Sacred geometry, dotwork, mandala, blackwork — find your next artist. Curated by @omfgeometry.">
   <meta property="og:title" content="OMF Geometry — The World's Geometric Tattoo Directory">
-  <meta property="og:description" content="Discover the world's best geometric tattoo artists.">
+  <meta property="og:description" content="Discover the world's best geometric tattoo artists. Curated by @omfgeometry — 118K+ followers.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,116 +29,217 @@
 
 <!-- Hero -->
 <section class="hero">
-  <svg class="hero-bg" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <svg class="hero-bg hero-bg-pulse" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <pattern id="geo-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-        <polygon points="60,10 110,35 110,85 60,110 10,85 10,35" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
-        <circle cx="60" cy="60" r="30" fill="none" stroke="#C9A84C" stroke-width="0.3"/>
-        <line x1="60" y1="10" x2="60" y2="110" stroke="#C9A84C" stroke-width="0.2"/>
-        <line x1="10" y1="35" x2="110" y2="85" stroke="#C9A84C" stroke-width="0.2"/>
-        <line x1="10" y1="85" x2="110" y2="35" stroke="#C9A84C" stroke-width="0.2"/>
-        <circle cx="60" cy="60" r="50" fill="none" stroke="#C9A84C" stroke-width="0.2"/>
-        <polygon points="60,30 85,47.5 85,82.5 60,100 35,82.5 35,47.5" fill="none" stroke="#C9A84C" stroke-width="0.3"/>
+      <pattern id="geo-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+        <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="#C9A84C" stroke-width="0.4"/>
+        <circle cx="50" cy="50" r="25" fill="none" stroke="#C9A84C" stroke-width="0.25"/>
+        <circle cx="50" cy="50" r="42" fill="none" stroke="#C9A84C" stroke-width="0.15"/>
+        <line x1="50" y1="5" x2="50" y2="95" stroke="#C9A84C" stroke-width="0.15"/>
+        <line x1="5" y1="30" x2="95" y2="70" stroke="#C9A84C" stroke-width="0.15"/>
+        <line x1="5" y1="70" x2="95" y2="30" stroke="#C9A84C" stroke-width="0.15"/>
+        <polygon points="50,20 75,35 75,65 50,80 25,65 25,35" fill="none" stroke="#C9A84C" stroke-width="0.2"/>
+        <circle cx="50" cy="50" r="8" fill="none" stroke="#C9A84C" stroke-width="0.3"/>
       </pattern>
     </defs>
     <rect width="100%" height="100%" fill="url(#geo-pattern)"/>
   </svg>
   <div class="hero-content">
-    <div class="hero-badge">@omfgeometry</div>
-    <h1>The World's <span class="gold">Geometric</span> Tattoo Directory</h1>
-    <p>Discover sacred geometry, dotwork, mandala, and blackwork artists worldwide. Curated by the geometric tattoo community.</p>
-    <div class="hero-buttons">
-      <a href="directory.html" class="btn btn-primary">Browse Artists</a>
-      <a href="submit.html" class="btn btn-outline">Submit an Artist</a>
+    <div class="hero-badge reveal">
+      <span class="badge-dot"></span>
+      @omfgeometry · 118K+ followers
+    </div>
+    <h1 class="reveal reveal-delay-1">The World's<br><span class="gold">Geometric</span> Tattoo Directory</h1>
+    <p class="reveal reveal-delay-2">Sacred geometry, dotwork, mandala &amp; blackwork artists — curated by the geometric tattoo community.</p>
+    <div class="hero-buttons reveal reveal-delay-3">
+      <a href="directory.html" class="btn btn-primary btn-lg">Browse Artists</a>
+      <a href="submit.html" class="btn btn-outline btn-lg">Submit an Artist</a>
     </div>
   </div>
 </section>
 
-<!-- Featured Artists — 31 total artists, showing top 6 -->
+<!-- Stats Bar -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="stat-number">31</div>
+      <div class="stat-label">Featured Artists</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-number">118K+</div>
+      <div class="stat-label">Followers</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Countries</div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Artists -->
 <section class="section">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Curated Selection</span>
       <h2>Featured Artists</h2>
       <p>Hand-picked geometric tattoo masters from around the world</p>
       <div class="section-divider"></div>
     </div>
     <div class="artists-grid" id="featured-artists">
-      <a href="artists/monsieur-berdah.html" class="artist-card">
-        <img src="images/monsieur-berdah.jpg" alt="@monsieur_berdah" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">@monsieur_berdah</div>
-          <div class="artist-card-handle">Featured on @omfgeometry</div>
-          <div class="artist-card-tags">
-            <span class="tag">geometric</span>
-          </div>
-        </div>
-      </a>
-      <a href="artists/rayetattoo.html" class="artist-card">
-        <img src="images/rayetattoo.jpg" alt="@rayetattoo" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">@rayetattoo</div>
-          <div class="artist-card-handle">Featured on @omfgeometry</div>
-          <div class="artist-card-tags">
-            <span class="tag">geometric</span>
-          </div>
-        </div>
-      </a>
-      <a href="artists/weschetattoo.html" class="artist-card">
+      <a href="artists/weschetattoo.html" class="artist-card reveal">
         <img src="images/weschetattoo.jpg" alt="@weschetattoo" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">@weschetattoo</div>
-          <div class="artist-card-handle">Featured on @omfgeometry</div>
-          <div class="artist-card-tags">
-            <span class="tag">geometric</span>
-          </div>
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Raul Wesche</div>
+          <div class="artist-card-handle">@weschetattoo</div>
+          <div class="artist-card-location">Houston, TX</div>
         </div>
       </a>
-      <a href="artists/lenaburlai-ink.html" class="artist-card">
+      <a href="artists/monsieur-berdah.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/monsieur-berdah.jpg" alt="@monsieur_berdah" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Clément Berdah</div>
+          <div class="artist-card-handle">@monsieur_berdah</div>
+          <div class="artist-card-location">France</div>
+        </div>
+      </a>
+      <a href="artists/setharcane.html" class="artist-card reveal reveal-delay-2">
+        <img src="images/setharcane.jpg" alt="@setharcane" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Seth Arcane</div>
+          <div class="artist-card-handle">@setharcane</div>
+          <div class="artist-card-location">London, UK</div>
+        </div>
+      </a>
+      <a href="artists/rayetattoo.html" class="artist-card reveal reveal-delay-3">
+        <img src="images/rayetattoo.jpg" alt="@rayetattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Raye Tattoo</div>
+          <div class="artist-card-handle">@rayetattoo</div>
+          <div class="artist-card-location">Barcelona, Spain</div>
+        </div>
+      </a>
+      <a href="artists/lenaburlai-ink.html" class="artist-card reveal reveal-delay-4">
         <img src="images/lenaburlai-ink.jpg" alt="@lenaburlai.ink" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">@lenaburlai.ink</div>
-          <div class="artist-card-handle">Featured on @omfgeometry</div>
-          <div class="artist-card-tags">
-            <span class="tag">geometric</span>
-          </div>
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Lena Burlai</div>
+          <div class="artist-card-handle">@lenaburlai.ink</div>
+          <div class="artist-card-location">Dortmund, Germany</div>
         </div>
       </a>
-      <a href="artists/poonos-ink.html" class="artist-card">
-        <img src="images/poonos-ink.jpg" alt="@poonos.ink" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">@poonos.ink</div>
-          <div class="artist-card-handle">Featured on @omfgeometry</div>
-          <div class="artist-card-tags">
-            <span class="tag">geometric</span>
-          </div>
+      <a href="artists/francesco-capro.html" class="artist-card reveal reveal-delay-5">
+        <img src="images/francesco-capro.jpg" alt="@francesco.capro" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Francesco Capro</div>
+          <div class="artist-card-handle">@francesco.capro</div>
+          <div class="artist-card-location">London, UK</div>
         </div>
       </a>
-      <a href="artists/tom-ten.html" class="artist-card">
-        <img src="images/tom-ten.jpg" alt="@tom__ten" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">@tom__ten</div>
-          <div class="artist-card-handle">Featured on @omfgeometry</div>
-          <div class="artist-card-tags">
-            <span class="tag">geometric</span>
-          </div>
-        </div>
-      </a>
+    </div>
+    <div style="text-align:center; margin-top:48px;" class="reveal">
+      <a href="directory.html" class="btn btn-outline">View All 31 Artists</a>
     </div>
   </div>
 </section>
 
-<div class="container"><div class="geo-line"></div></div>
+<!-- Geometric Divider -->
+<div class="container">
+  <div class="geo-divider">
+    <div class="geo-divider-icon"></div>
+  </div>
+</div>
+
+<!-- Latest Features -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Fresh From Instagram</span>
+      <h2>Latest Features</h2>
+      <p>Recently featured work from our community</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="features-grid" id="latest-features-grid">
+      <div class="feature-card reveal" data-src="slot-1">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-1" data-src="slot-2">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-2" data-src="slot-3">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-3" data-src="slot-4">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-4" data-src="slot-5">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-5" data-src="slot-6">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Geometric Divider -->
+<div class="container">
+  <div class="geo-divider">
+    <div class="geo-divider-icon"></div>
+  </div>
+</div>
 
 <!-- Blog Preview -->
 <section class="section">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Journal</span>
       <h2>From the Blog</h2>
-      <p>Stories, guides, and artist spotlights from the geometric tattoo world</p>
+      <p>Stories, guides, and artist spotlights</p>
       <div class="section-divider"></div>
     </div>
     <div class="blog-grid">
-      <a href="blog/what-is-sacred-geometry.html" class="blog-card">
+      <a href="blog/what-is-sacred-geometry.html" class="blog-card reveal">
         <img src="https://picsum.photos/seed/sacredgeo/800/450" alt="Sacred Geometry" class="blog-card-image" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-card-date">March 5, 2026</div>
@@ -146,7 +247,7 @@
           <div class="blog-card-excerpt">Explore the ancient mathematical patterns that have inspired tattoo artists worldwide — from the Flower of Life to Metatron's Cube.</div>
         </div>
       </a>
-      <a href="blog/top-10-geometric-tattoo-artists-2026.html" class="blog-card">
+      <a href="blog/top-10-geometric-tattoo-artists-2026.html" class="blog-card reveal reveal-delay-1">
         <img src="https://picsum.photos/seed/top10geo/800/450" alt="Top Artists" class="blog-card-image" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-card-date">March 1, 2026</div>
@@ -158,14 +259,22 @@
   </div>
 </section>
 
-<div class="container"><div class="geo-line"></div></div>
+<!-- Instagram Follow CTA -->
+<section class="ig-cta">
+  <div class="ig-cta-handle reveal">@omfgeometry</div>
+  <p class="ig-cta-sub reveal reveal-delay-1">Follow for daily geometric tattoo inspiration</p>
+  <a href="https://instagram.com/omfgeometry" target="_blank" rel="noopener" class="btn btn-primary btn-lg reveal reveal-delay-2">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    Follow on Instagram
+  </a>
+</section>
 
 <!-- Newsletter -->
 <section class="section">
   <div class="container">
-    <div class="newsletter">
+    <div class="newsletter reveal">
       <h3>Stay in the Loop</h3>
-      <p>Get new artist features, blog posts, and geometric inspiration delivered to your inbox.</p>
+      <p>New artist features, blog posts, and geometric inspiration — delivered to your inbox.</p>
       <form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/omfgeometry" method="post" target="_blank">
         <input type="email" name="email" placeholder="your@email.com" required>
         <button type="submit" class="btn btn-primary">Subscribe</button>
@@ -177,7 +286,7 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-logo">OMF GEOMETRY</div>
+    <div class="footer-logo">OMF Geometry</div>
     <ul class="footer-links">
       <li><a href="/">Home</a></li>
       <li><a href="directory.html">Directory</a></li>
@@ -185,19 +294,64 @@
       <li><a href="submit.html">Submit</a></li>
     </ul>
     <a href="https://instagram.com/omfgeometry" target="_blank" class="footer-ig">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
       @omfgeometry
     </a>
-    <div class="footer-copy">© 2026 OMF Geometry. Built with 🌿 by <a href="https://getminted.ai">GetMinted</a>.</div>
+    <div class="footer-copy">© 2026 OMF Geometry</div>
   </div>
 </footer>
 
 <script>
 // Mobile nav
-document.querySelector(".nav-toggle")?.addEventListener("click",function(){var l=document.querySelector(".nav-links");l.classList.toggle("open");this.textContent=l.classList.contains("open")?"✕":"☰"});
-// Scroll animations
-var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.style.opacity="1";x.target.style.transform="translateY(0)"}});},{threshold:.1,rootMargin:"0px 0px -50px 0px"});
-document.querySelectorAll(".artist-card,.blog-card,.newsletter").forEach(function(el){el.style.opacity="0";el.style.transform="translateY(20px)";el.style.transition="opacity .6s ease,transform .6s ease";io.observe(el)});
+document.querySelector(".nav-toggle")?.addEventListener("click", function() {
+  var l = document.querySelector(".nav-links");
+  l.classList.toggle("open");
+  this.textContent = l.classList.contains("open") ? "✕" : "☰";
+});
+
+// Scroll reveal with IntersectionObserver
+var revealObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("revealed");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+
+document.querySelectorAll(".reveal").forEach(function(el) {
+  revealObserver.observe(el);
+});
+
+// Load latest features from JSON
+(function() {
+  fetch("data/latest_features.json")
+    .then(function(r) { return r.json(); })
+    .then(function(features) {
+      if (!features || !features.length) return;
+      var grid = document.getElementById("latest-features-grid");
+      if (!grid) return;
+      var cards = grid.querySelectorAll(".feature-card");
+      features.slice(0, 6).forEach(function(f, i) {
+        if (!cards[i]) return;
+        var card = cards[i];
+        var imgEl = card.querySelector(".feature-card-image");
+        if (imgEl && f.image) {
+          var img = document.createElement("img");
+          img.src = f.image;
+          img.alt = f.handle || "";
+          img.className = "feature-card-image";
+          img.loading = "lazy";
+          imgEl.replaceWith(img);
+        }
+        var handleEl = card.querySelector(".feature-card-handle");
+        if (handleEl && f.handle) handleEl.textContent = f.handle;
+        var capEl = card.querySelector(".feature-card-caption");
+        if (capEl && f.caption) capEl.textContent = f.caption;
+      });
+    })
+    .catch(function() { /* silent — placeholders stay */ });
+})();
 </script>
 </body>
 </html>
