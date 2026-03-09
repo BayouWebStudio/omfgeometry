@@ -426,6 +426,10 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 20px;
 }
 
+.artists-grid--featured {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .artist-card {
   position: relative;
   overflow: hidden;
@@ -1163,6 +1167,9 @@ img { max-width: 100%; height: auto; display: block; }
   .artists-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .artists-grid--featured {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1212,6 +1219,9 @@ img { max-width: 100%; height: auto; display: block; }
   .artists-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+  .artists-grid--featured {
+    grid-template-columns: repeat(2, 1fr);
   }
   .artist-card {
     aspect-ratio: 4/5;
