@@ -1254,6 +1254,20 @@ img { max-width: 100%; height: auto; display: block; }
   .artists-grid {
     grid-template-columns: 1fr;
   }
+  .artists-grid--featured {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .artists-grid--featured .artist-card-info {
+    padding: 14px 12px;
+  }
+  .artists-grid--featured .artist-card-name {
+    font-size: 0.95rem;
+  }
+  .artists-grid--featured .artist-card-handle,
+  .artists-grid--featured .artist-card-location {
+    font-size: 0.65rem;
+  }
   .artist-card-name {
     font-size: 1.2rem;
   }
