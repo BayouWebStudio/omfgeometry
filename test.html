@@ -8,151 +8,160 @@
   <style>
     body { background: #04080f; margin: 0; padding: 0; font-family: 'Helvetica Neue', sans-serif; color: #fff; }
 
-    .map-hero {
-      text-align: center;
-      padding: 80px 20px 20px;
-    }
+    .map-hero { text-align: center; padding: 80px 20px 16px; }
     .map-hero h1 { font-size: 2.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 8px; }
-    .map-hero p { color: rgba(255,255,255,0.5); font-size: 0.95rem; margin: 0; }
+    .map-hero p { color: rgba(255,255,255,0.45); font-size: 0.9rem; margin: 0; }
 
-    #map-container {
+    #map-wrapper {
       position: relative;
       width: 100%;
       max-width: 1200px;
-      margin: 30px auto 0;
+      margin: 20px auto 0;
       padding: 0 20px;
       box-sizing: border-box;
     }
 
-    #world-map {
+    #map-svg {
       width: 100%;
-      height: auto;
+      height: 560px;
       display: block;
+      border: 1px solid rgba(0,191,255,0.12);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #060d1a;
+      cursor: grab;
+    }
+    #map-svg:active { cursor: grabbing; }
+
+    /* Map controls */
+    .map-controls {
+      position: absolute;
+      top: 12px;
+      right: 32px;
+      display: flex;
+      gap: 6px;
+    }
+    .map-btn {
+      background: rgba(4,8,15,0.85);
+      border: 1px solid rgba(0,191,255,0.3);
+      color: #0bf;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      padding: 5px 12px;
+      border-radius: 3px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .map-btn:hover { background: rgba(0,191,255,0.1); border-color: #0bf; }
+    .map-btn.active { background: rgba(0,191,255,0.15); border-color: #0bf; }
+
+    .map-hint {
+      text-align: center;
+      color: rgba(255,255,255,0.25);
+      font-size: 0.75rem;
+      margin: 8px 0 0;
+      letter-spacing: 0.05em;
     }
 
     /* Countries */
     .country {
-      fill: #0a1628;
-      stroke: #0bf;
-      stroke-width: 0.3;
-      transition: fill 0.2s;
+      fill: #080f1e;
+      stroke: rgba(0,191,255,0.25);
+      stroke-width: 0.4;
     }
-    .country.has-artist { fill: #0a1e2e; cursor: pointer; }
-    .country.has-artist:hover { fill: #0d2a40; }
-    .country.active { fill: #0d2a40; stroke: #0bf; stroke-width: 0.8; }
+    .country.has-artist { fill: #0a1a2e; cursor: pointer; }
 
     /* Artist dots */
-    .artist-dot {
-      cursor: pointer;
-    }
-    .artist-dot circle.glow {
+    .artist-dot { cursor: pointer; }
+    .artist-dot .dot-glow { fill: #0bf; opacity: 0.15; }
+    .artist-dot .dot-core {
       fill: #0bf;
-      opacity: 0;
-      filter: blur(8px);
-    }
-    .artist-dot circle.core {
-      fill: #0bf;
-      stroke: #fff;
+      stroke: rgba(255,255,255,0.8);
       stroke-width: 0.8;
-      transition: r 0.2s;
+      transition: fill 0.2s;
     }
-    .artist-dot:hover circle.core { r: 7; }
-    .artist-dot.multi circle.core { fill: #fff; stroke: #0bf; }
+    .artist-dot:hover .dot-core { fill: #fff; }
+    .artist-dot.multi .dot-core { fill: #fff; stroke: #0bf; stroke-width: 1.2; }
 
-    /* Pulse animation */
-    @keyframes pulse {
-      0%   { r: 5; opacity: 0.6; }
-      100% { r: 14; opacity: 0; }
+    @keyframes dotpulse {
+      0%   { r: 6; opacity: 0.5; }
+      100% { r: 18; opacity: 0; }
     }
-    .artist-dot circle.pulse {
+    .artist-dot .dot-pulse {
       fill: none;
       stroke: #0bf;
-      stroke-width: 1;
-      animation: pulse 2s ease-out infinite;
+      stroke-width: 0.8;
+      animation: dotpulse 2.4s ease-out infinite;
     }
 
     /* Panel */
     #artist-panel {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 24px 20px 60px;
-      min-height: 200px;
+      padding: 20px 20px 60px;
+      min-height: 120px;
     }
-
     .panel-header {
       display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 20px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(0,191,255,0.2);
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0,191,255,0.18);
     }
     .panel-title { font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: #0bf; }
-    .panel-count { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
-
+    .panel-count { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
     .panel-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 14px;
     }
-
     .panel-card {
       background: #0a1628;
-      border: 1px solid rgba(0,191,255,0.15);
+      border: 1px solid rgba(0,191,255,0.12);
       border-radius: 6px;
       overflow: hidden;
       text-decoration: none;
       color: inherit;
-      transition: border-color 0.2s, transform 0.2s;
       display: block;
+      transition: border-color 0.2s, transform 0.15s;
     }
-    .panel-card:hover {
-      border-color: rgba(0,191,255,0.5);
-      transform: translateY(-2px);
-    }
-    .panel-card img {
-      width: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
-      display: block;
-    }
-    .panel-card-info {
-      padding: 10px 12px;
-    }
-    .panel-card-name { font-size: 0.85rem; font-weight: 600; margin-bottom: 2px; }
-    .panel-card-handle { font-size: 0.75rem; color: #0bf; margin-bottom: 2px; }
-    .panel-card-loc { font-size: 0.7rem; color: rgba(255,255,255,0.4); }
-
-    .panel-empty {
-      color: rgba(255,255,255,0.3);
-      font-size: 0.9rem;
-      padding: 40px 0;
-      text-align: center;
-    }
+    .panel-card:hover { border-color: rgba(0,191,255,0.45); transform: translateY(-2px); }
+    .panel-card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+    .panel-card-info { padding: 9px 11px; }
+    .panel-card-name { font-size: 0.82rem; font-weight: 600; margin-bottom: 2px; }
+    .panel-card-handle { font-size: 0.73rem; color: #0bf; margin-bottom: 2px; }
+    .panel-card-loc { font-size: 0.68rem; color: rgba(255,255,255,0.35); }
+    .panel-empty { color: rgba(255,255,255,0.25); font-size: 0.85rem; padding: 36px 0; text-align: center; }
 
     /* Tooltip */
-    #map-tooltip {
+    #tt {
       position: fixed;
       background: rgba(4,8,15,0.92);
-      border: 1px solid rgba(0,191,255,0.4);
+      border: 1px solid rgba(0,191,255,0.35);
       border-radius: 4px;
-      padding: 6px 12px;
-      font-size: 0.8rem;
-      color: #fff;
+      padding: 7px 13px;
+      font-size: 0.78rem;
       pointer-events: none;
       display: none;
-      z-index: 999;
+      z-index: 9999;
       white-space: nowrap;
+      line-height: 1.7;
     }
-    #map-tooltip .tt-handle { color: #0bf; font-size: 0.75rem; }
+    #tt .tt-loc { font-weight: 600; color: #fff; margin-bottom: 2px; }
+    #tt .tt-handle { color: #0bf; }
 
-    /* Nav */
-    nav.nav { position: relative; background: transparent; }
-
-    @media (max-width: 600px) {
-      .map-hero h1 { font-size: 1.5rem; }
-      .panel-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    /* Stats bar */
+    .map-stats {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      padding: 12px 0 0;
     }
+    .map-stat { text-align: center; }
+    .map-stat-num { font-size: 1.4rem; font-weight: 700; color: #0bf; }
+    .map-stat-label { font-size: 0.7rem; color: rgba(255,255,255,0.35); letter-spacing: 0.08em; text-transform: uppercase; }
   </style>
 </head>
 <body>
@@ -173,200 +182,235 @@
 
 <div class="map-hero">
   <h1>Artists Around the World</h1>
-  <p>Click a dot to explore geometric tattoo artists by location</p>
+  <p>Scroll to zoom · drag to pan · click a dot to explore</p>
 </div>
 
-<div id="map-container">
-  <svg id="world-map" viewBox="0 0 960 500"></svg>
+<div id="map-wrapper">
+  <svg id="map-svg"></svg>
+  <div class="map-controls">
+    <button class="map-btn active" id="btn-europe" onclick="zoomEurope()">Europe</button>
+    <button class="map-btn" id="btn-world" onclick="zoomWorld()">World</button>
+    <button class="map-btn" id="btn-americas" onclick="zoomAmericas()">Americas</button>
+  </div>
 </div>
+<div class="map-hint">Scroll to zoom &nbsp;·&nbsp; Drag to pan &nbsp;·&nbsp; Click a dot to see artists</div>
+
+<div class="map-stats" id="map-stats"></div>
 
 <div id="artist-panel">
-  <div class="panel-empty">Click a location on the map to see artists</div>
+  <div class="panel-empty">Click a glowing dot to explore artists by location</div>
 </div>
 
-<div id="map-tooltip"></div>
+<div id="tt"></div>
 
-<!-- D3 + TopoJSON -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
-
 <script>
-// Artist coordinates (lat, lng)
-const ARTIST_COORDS = {
-  "monsieur_berdah":    { lat: 48.8566, lng: 2.3522,   label: "Paris, France" },
-  "rayetattoo":         { lat: 37.1773, lng: -3.5986,  label: "Granada, Spain" },
-  "weschetattoo":       { lat: 29.7604, lng: -95.3698, label: "Houston, TX" },
-  "lenaburlai.ink":     { lat: 50.0755, lng: 14.4378,  label: "Central Europe" },
-  "poonos.ink":         { lat: 51.4545, lng: -2.5879,  label: "Bristol, UK" },
-  "tom__ten":           { lat: 53.4808, lng: -2.2426,  label: "Manchester, UK" },
-  "suezosubnoize":      { lat: 51.5074, lng: -0.1278,  label: "London, UK" },
-  "fabbio.tattoo":      { lat: 43.6158, lng: 13.5189,  label: "Ancona, Italy" },
-  "pastorelli_tattoo":  { lat: 45.4654, lng: 9.1866,   label: "Milan, Italy" },
-  "ina3tats":           { lat: 41.3851, lng: 2.1734,   label: "Barcelona, Spain" },
-  "eddie.rise":         { lat: 48.1351, lng: 11.5820,  label: "Germany" },
-  "jakabtattoo":        { lat: 47.7026, lng: 18.9039,  label: "Pilisvörösvár, Hungary" },
-  "pietro.buccinna.tattoo": { lat: 41.9028, lng: 12.4964, label: "Rome, Italy" },
-  "flo4ink":            { lat: 46.2044, lng: 6.1432,   label: "Switzerland" },
-  "_xojanix":           { lat: 19.4326, lng: -99.1332, label: "Mexico City" },
-  "lesacrelinee":       { lat: 45.7640, lng: 4.8357,   label: "Lyon, France" },
-  "psydala":            { lat: 51.5074, lng: -0.1278,  label: "London, UK" },
-  "mat_aequilibrium":   { lat: 48.2082, lng: 16.3738,  label: "Vienna, Austria" },
-  "nadoz_tattoo":       { lat: 51.2217, lng: 6.7762,   label: "Dortmund, Germany" },
-  "tattoosbypaketh":    { lat: -38.4161, lng: -63.6167, label: "Argentina" },
-  "orekkatattoo":       { lat: 51.5074, lng: -0.1278,  label: "London, UK" },
-  "laurahochmondtattoo":{ lat: 47.9990, lng: 7.8421,   label: "Germany" },
-  "setharcane":         { lat: 51.5074, lng: -0.1278,  label: "London, UK" },
-  "benvr_tattoo":       { lat: 51.2217, lng: 6.7762,   label: "Dortmund, Germany" },
-  "tommbirchtattoo":    { lat: 51.4545, lng: -2.5879,  label: "Bristol, UK" },
-  "jordthetattooer":    { lat: 35.0853, lng: -106.6056, label: "New Mexico, USA" },
-  "n.e.e.n.o":          { lat: 42.8864, lng: -78.8784, label: "Buffalo, NY" },
-  "zottl_tattoo":       { lat: 52.5200, lng: 13.4050,  label: "Berlin, Germany" },
-  "junkjane":           { lat: 49.4521, lng: 11.0767,  label: "Nürnberg, Germany" },
-  "fred__ttt":          { lat: 22.9068, lng: -43.1729, label: "Brazil" },
-  "exo.morph":          { lat: -33.4489, lng: -70.6693, label: "Chile" },
-  "giadablk":           { lat: 45.4654, lng: 9.1866,   label: "Milan, Italy" },
-  "ibrahim_barboza":    { lat: 25.7617, lng: -80.1918, label: "South Florida, USA" },
-  "francisco.capro":    { lat: -22.1194, lng: -51.4053, label: "Brazil" },
+const COORDS = {
+  "monsieur_berdah":         { lat:48.8566,  lng:2.3522,   label:"Paris, France" },
+  "rayetattoo":              { lat:37.1773,  lng:-3.5986,  label:"Granada, Spain" },
+  "weschetattoo":            { lat:29.7604,  lng:-95.3698, label:"Houston, TX" },
+  "lenaburlai.ink":          { lat:47.3769,  lng:8.5417,   label:"Switzerland" },
+  "poonos.ink":              { lat:51.4545,  lng:-2.5879,  label:"Bristol, UK" },
+  "tom__ten":                { lat:53.4808,  lng:-2.2426,  label:"Manchester, UK" },
+  "suezosubnoize":           { lat:51.5200,  lng:-0.0900,  label:"London, UK" },
+  "fabbio.tattoo":           { lat:43.6158,  lng:13.5189,  label:"Ancona, Italy" },
+  "pastorelli_tattoo":       { lat:45.4654,  lng:9.1866,   label:"Milan, Italy" },
+  "ina3tats":                { lat:41.3851,  lng:2.1734,   label:"Barcelona, Spain" },
+  "eddie.rise":              { lat:51.5139,  lng:7.4653,   label:"Dortmund, Germany" },
+  "jakabtattoo":             { lat:47.7026,  lng:18.9039,  label:"Pilisvörösvár, Hungary" },
+  "pietro.buccinna.tattoo":  { lat:41.9028,  lng:12.4964,  label:"Rome, Italy" },
+  "flo4ink":                 { lat:46.2044,  lng:6.1432,   label:"Geneva, Switzerland" },
+  "_xojanix":                { lat:19.4326,  lng:-99.1332, label:"Mexico City, Mexico" },
+  "lesacrelinee":            { lat:45.7640,  lng:4.8357,   label:"Lyon, France" },
+  "psydala":                 { lat:51.5074,  lng:-0.1278,  label:"London, UK" },
+  "mat_aequilibrium":        { lat:48.2082,  lng:16.3738,  label:"Vienna, Austria" },
+  "nadoz_tattoo":            { lat:51.5139,  lng:7.4653,   label:"Dortmund, Germany" },
+  "tattoosbypaketh":         { lat:-34.6037, lng:-58.3816, label:"Argentina" },
+  "orekkatattoo":            { lat:51.5074,  lng:-0.1278,  label:"London, UK" },
+  "laurahochmondtattoo":     { lat:48.0759,  lng:7.8360,   label:"Freiburg, Germany" },
+  "setharcane":              { lat:51.5074,  lng:-0.1278,  label:"London, UK" },
+  "benvr_tattoo":            { lat:51.5139,  lng:7.4653,   label:"Dortmund, Germany" },
+  "tommbirchtattoo":         { lat:51.4545,  lng:-2.5879,  label:"Bristol, UK" },
+  "jordthetattooer":         { lat:35.0853,  lng:-106.6056,label:"New Mexico, USA" },
+  "n.e.e.n.o":               { lat:42.8864,  lng:-78.8784, label:"Buffalo, NY" },
+  "zottl_tattoo":            { lat:52.5200,  lng:13.4050,  label:"Berlin, Germany" },
+  "junkjane":                { lat:49.4521,  lng:11.0767,  label:"Nürnberg, Germany" },
+  "fred__ttt":               { lat:-22.9068, lng:-43.1729, label:"Rio de Janeiro, Brazil" },
+  "exo.morph":               { lat:-33.4489, lng:-70.6693, label:"Santiago, Chile" },
+  "giadablk":                { lat:45.4654,  lng:9.1866,   label:"Milan, Italy" },
+  "ibrahim_barboza":         { lat:25.7617,  lng:-80.1918, label:"Miami, USA" },
+  "francisco.capro":         { lat:-22.1194, lng:-51.4053, label:"Presidente Prudente, Brazil" },
 };
+
+const W = 960, H = 560;
+let projection, pathFn, zoomBehavior, svgEl, gMap, gDots;
+let currentZoom = d3.zoomIdentity;
+
+const svg = d3.select('#map-svg')
+  .attr('viewBox', `0 0 ${W} ${H}`)
+  .attr('preserveAspectRatio', 'xMidYMid meet');
+
+projection = d3.geoNaturalEarth1().scale(153).translate([W/2, H/2]);
+pathFn = d3.geoPath().projection(projection);
+
+zoomBehavior = d3.zoom()
+  .scaleExtent([0.8, 12])
+  .on('zoom', (event) => {
+    currentZoom = event.transform;
+    gMap.attr('transform', event.transform);
+    gDots.attr('transform', event.transform);
+    // Scale dots inversely so they stay readable
+    const k = event.transform.k;
+    gDots.selectAll('.dot-core').attr('r', 5 / Math.sqrt(k));
+    gDots.selectAll('.dot-glow').attr('r', 14 / Math.sqrt(k));
+    gDots.selectAll('.dot-pulse').each(function() {
+      this.style.animation = 'none';
+      this.getBoundingClientRect();
+      this.style.animation = '';
+    });
+  });
+
+svg.call(zoomBehavior);
+
+gMap = svg.append('g');
+gDots = svg.append('g');
+
+// Graticule
+const graticule = d3.geoGraticule()();
+gMap.append('path')
+  .datum(graticule)
+  .attr('fill', 'none')
+  .attr('stroke', 'rgba(0,191,255,0.05)')
+  .attr('stroke-width', 0.4)
+  .attr('d', pathFn);
+
+const tt = document.getElementById('tt');
 
 fetch('data/artists_v2.json')
   .then(r => r.json())
   .then(artists => {
-    initMap(artists);
-  });
-
-function initMap(artists) {
-  const svg = d3.select('#world-map');
-  const width = 960, height = 500;
-
-  const projection = d3.geoNaturalEarth1()
-    .scale(153)
-    .translate([width / 2, height / 2]);
-
-  const path = d3.geoPath().projection(projection);
-
-  // Map artists by handle
-  const artistMap = {};
-  artists.forEach(a => {
-    artistMap[a.instagram] = a;
-  });
-
-  // Group artists by close coordinates (cluster)
-  const locationGroups = {};
-  artists.forEach(a => {
-    const coords = ARTIST_COORDS[a.instagram];
-    if (!coords) return;
-    const key = `${Math.round(coords.lat)},${Math.round(coords.lng)}`;
-    if (!locationGroups[key]) locationGroups[key] = { coords, label: coords.label, artists: [] };
-    locationGroups[key].artists.push(a);
-  });
-
-  // Load world map
-  fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
-    .then(r => r.json())
-    .then(world => {
-      const countries = topojson.feature(world, world.objects.countries);
-
-      // Draw countries
-      svg.append('g')
-        .selectAll('path')
-        .data(countries.features)
-        .join('path')
-        .attr('class', 'country')
-        .attr('d', path);
-
-      // Draw graticule
-      const graticule = d3.geoGraticule()();
-      svg.append('path')
-        .datum(graticule)
-        .attr('fill', 'none')
-        .attr('stroke', 'rgba(0,191,255,0.06)')
-        .attr('stroke-width', 0.4)
-        .attr('d', path);
-
-      // Draw artist dots
-      const tooltip = document.getElementById('map-tooltip');
-
-      Object.values(locationGroups).forEach(group => {
-        const [x, y] = projection([group.coords.lng, group.coords.lat]);
-        if (!x || !y || x < 0 || y < 0 || x > width || y > height) return;
-
-        const g = svg.append('g')
-          .attr('class', `artist-dot${group.artists.length > 1 ? ' multi' : ''}`)
-          .attr('transform', `translate(${x},${y})`);
-
-        // Pulse ring
-        g.append('circle')
-          .attr('class', 'pulse')
-          .attr('r', 5)
-          .style('animation-delay', `${Math.random() * 2}s`);
-
-        // Glow
-        g.append('circle')
-          .attr('class', 'glow')
-          .attr('r', 12);
-
-        // Core dot
-        g.append('circle')
-          .attr('class', 'core')
-          .attr('r', group.artists.length > 1 ? 5 : 4);
-
-        // Count badge for multi-artist locations
-        if (group.artists.length > 1) {
-          g.append('text')
-            .attr('text-anchor', 'middle')
-            .attr('dy', '0.35em')
-            .attr('font-size', '6px')
-            .attr('fill', '#04080f')
-            .attr('font-weight', 'bold')
-            .attr('pointer-events', 'none')
-            .text(group.artists.length);
-        }
-
-        // Interactions
-        g.on('mouseenter', (event) => {
-          tooltip.style.display = 'block';
-          const names = group.artists.map(a => `<div class="tt-handle">@${a.instagram}</div>`).join('');
-          tooltip.innerHTML = `<div style="font-weight:600;margin-bottom:4px">${group.label}</div>${names}`;
-        })
-        .on('mousemove', (event) => {
-          tooltip.style.left = (event.clientX + 12) + 'px';
-          tooltip.style.top = (event.clientY - 10) + 'px';
-        })
-        .on('mouseleave', () => {
-          tooltip.style.display = 'none';
-        })
-        .on('click', () => {
-          tooltip.style.display = 'none';
-          showPanel(group);
-        });
-      });
+    // Build location groups
+    const groups = {};
+    artists.forEach(a => {
+      const c = COORDS[a.instagram];
+      if (!c) return;
+      const key = `${Math.round(c.lat * 2)},${Math.round(c.lng * 2)}`;
+      if (!groups[key]) groups[key] = { coords: c, label: c.label, artists: [] };
+      groups[key].artists.push(a);
     });
+
+    const mapped = Object.values(groups).reduce((s,g) => s + g.artists.length, 0);
+    const countries = [...new Set(Object.values(groups).map(g => g.label.split(',').pop().trim()))].length;
+
+    document.getElementById('map-stats').innerHTML = `
+      <div class="map-stat"><div class="map-stat-num">${artists.length}</div><div class="map-stat-label">Artists</div></div>
+      <div class="map-stat"><div class="map-stat-num">${Object.values(groups).length}</div><div class="map-stat-label">Cities</div></div>
+      <div class="map-stat"><div class="map-stat-num">${countries}</div><div class="map-stat-label">Countries</div></div>
+    `;
+
+    // Load world topojson
+    fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
+      .then(r => r.json())
+      .then(world => {
+        gMap.append('g')
+          .selectAll('path')
+          .data(topojson.feature(world, world.objects.countries).features)
+          .join('path')
+          .attr('class', 'country')
+          .attr('d', pathFn);
+
+        // Draw dots
+        Object.values(groups).forEach(group => {
+          const [x, y] = projection([group.coords.lng, group.coords.lat]);
+          if (!x || !y) return;
+
+          const g = gDots.append('g')
+            .attr('class', `artist-dot${group.artists.length > 1 ? ' multi' : ''}`)
+            .attr('transform', `translate(${x},${y})`);
+
+          g.append('circle').attr('class', 'dot-pulse').attr('r', 6)
+            .style('animation-delay', `${Math.random()*2}s`);
+          g.append('circle').attr('class', 'dot-glow').attr('r', 14);
+          g.append('circle').attr('class', 'dot-core').attr('r', 5);
+
+          if (group.artists.length > 1) {
+            g.append('text')
+              .attr('text-anchor', 'middle').attr('dy', '0.35em')
+              .attr('font-size', '6px').attr('fill', '#04080f')
+              .attr('font-weight', 'bold').attr('pointer-events', 'none')
+              .text(group.artists.length);
+          }
+
+          g.on('mouseenter', (e) => {
+            tt.style.display = 'block';
+            tt.innerHTML = `<div class="tt-loc">${group.label}</div>` +
+              group.artists.map(a => `<div class="tt-handle">@${a.instagram}</div>`).join('');
+          })
+          .on('mousemove', (e) => {
+            tt.style.left = (e.clientX + 14) + 'px';
+            tt.style.top  = (e.clientY - 10) + 'px';
+          })
+          .on('mouseleave', () => { tt.style.display = 'none'; })
+          .on('click', (e) => { e.stopPropagation(); tt.style.display = 'none'; showPanel(group); });
+        });
+
+        // Default: zoom to Europe
+        setTimeout(() => zoomEurope(false), 300);
+      });
+  });
+
+function smoothZoom(transform) {
+  svg.transition().duration(700).ease(d3.easeCubicInOut)
+    .call(zoomBehavior.transform, transform);
+}
+
+function zoomEurope(animate = true) {
+  setActive('btn-europe');
+  // Europe: center ~15°E, 52°N, scale ~3.5
+  const [cx, cy] = projection([15, 52]);
+  const k = 3.8;
+  const t = d3.zoomIdentity.translate(W/2 - k*cx, H/2 - k*cy).scale(k);
+  animate ? smoothZoom(t) : svg.call(zoomBehavior.transform, t);
+}
+
+function zoomWorld() {
+  setActive('btn-world');
+  smoothZoom(d3.zoomIdentity.translate(0,0).scale(1));
+}
+
+function zoomAmericas() {
+  setActive('btn-americas');
+  const [cx, cy] = projection([-80, 10]);
+  const k = 2.8;
+  const t = d3.zoomIdentity.translate(W/2 - k*cx, H/2 - k*cy).scale(k);
+  smoothZoom(t);
+}
+
+function setActive(id) {
+  document.querySelectorAll('.map-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id)?.classList.add('active');
 }
 
 function showPanel(group) {
   const panel = document.getElementById('artist-panel');
-  const plural = group.artists.length > 1 ? 'artists' : 'artist';
-
   panel.innerHTML = `
     <div class="panel-header">
       <div class="panel-title">${group.label}</div>
-      <div class="panel-count">${group.artists.length} ${plural}</div>
+      <div class="panel-count">${group.artists.length} artist${group.artists.length > 1 ? 's' : ''}</div>
     </div>
     <div class="panel-grid">
       ${group.artists.map(a => `
         <a href="artists/${a.slug}.html" class="panel-card">
           <img src="${a.image}" alt="@${a.instagram}" loading="lazy">
           <div class="panel-card-info">
-            <div class="panel-card-name">${a.name || a.instagram}</div>
+            <div class="panel-card-name">${(a.name||'').replace(/[\u{1F300}-\u{1FFFF}]/gu,'').trim()||a.instagram}</div>
             <div class="panel-card-handle">@${a.instagram}</div>
-            <div class="panel-card-loc">${a.location || ''}</div>
+            <div class="panel-card-loc">${a.location||''}</div>
           </div>
         </a>
       `).join('')}
-    </div>
-  `;
-
+    </div>`;
   panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 </script>
@@ -374,9 +418,10 @@ function showPanel(group) {
 <footer class="footer">
   <div class="container">
     <div class="footer-logo">OMF GEOMETRY</div>
-    <div class="footer-copy" style="margin-top:12px;color:rgba(255,255,255,0.3);font-size:0.8rem;">⚠️ This is a test page — not linked publicly</div>
+    <div class="footer-copy" style="margin-top:10px;color:rgba(255,255,255,0.25);font-size:0.75rem;">⚠️ Test page — not linked publicly</div>
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
