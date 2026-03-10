@@ -260,6 +260,14 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: 300;
 }
 
+.hero-tag-cta {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.5);
+  margin: 4px 0 0;
+  letter-spacing: 0.02em;
+}
+.hero-tag-cta strong { color: var(--cyan); font-weight: 600; }
+
 .hero-buttons {
   display: flex;
   gap: 20px;
