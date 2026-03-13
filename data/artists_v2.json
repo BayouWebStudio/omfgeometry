@@ -616,5 +616,73 @@
       "images/junkjane_2.jpg",
       "images/junkjane_3.jpg"
     ]
+  },
+  {
+    "name": "Dana Sha",
+    "slug": "danasha-tattoo",
+    "instagram": "danasha.tattoo",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @danasha.tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/danasha-tattoo.jpg",
+    "gallery": [
+      "images/danasha-tattoo_1.jpg",
+      "images/danasha-tattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "Javi Navarro",
+    "slug": "koala-art3",
+    "instagram": "koala.art3",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @koala.art3 on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/koala-art3.jpg",
+    "gallery": [
+      "images/koala-art3_1.jpg",
+      "images/koala-art3_2.jpg"
+    ]
+  },
+  {
+    "name": "Ben vr",
+    "slug": "benvr-tattoo",
+    "instagram": "benvr_tattoo",
+    "location": "Zürich, Switzerland",
+    "country": "Switzerland",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @benvr_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/benvr-tattoo.jpg",
+    "gallery": [
+      "images/benvr-tattoo_1.jpg",
+      "images/benvr-tattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "ibrahim_barboza",
+    "slug": "ibrahim-barboza",
+    "instagram": "ibrahim_barboza",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @ibrahim_barboza on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/ibrahim-barboza.jpg",
+    "gallery": [
+      "images/ibrahim-barboza_1.jpg",
+      "images/ibrahim-barboza_2.jpg"
+    ]
   }
 ]
