@@ -588,7 +588,10 @@ fbq('track', 'PageView');
     <div class="newsletter reveal">
       <h3>Stay in the Loop</h3>
       <p>New artist features, blog posts, and geometric inspiration — delivered to your inbox.</p>
-      <form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/omfgeometry" method="post" target="_blank">
+      <form class="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b51bffb8-a561-4874-ade0-05be56419a1d">
+        <input type="hidden" name="subject" value="New OMF Geometry Subscriber">
+        <input type="hidden" name="redirect" value="false">
         <input type="email" name="email" placeholder="your@email.com" required>
         <button type="submit" class="btn btn-primary">Subscribe</button>
       </form>
