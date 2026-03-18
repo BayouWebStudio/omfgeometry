@@ -320,6 +320,17 @@ img { max-width: 100%; height: auto; display: block; }
   box-shadow: 0 0 40px rgba(0, 191, 255, 0.3);
 }
 
+.btn-secondary {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 191, 255, 0.08);
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.2);
+}
+
 .btn-outline {
   background: transparent;
   color: var(--gold);
