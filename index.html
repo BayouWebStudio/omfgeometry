@@ -2,22 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MCEBMHL3GT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-MCEBMHL3GT');
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17990052802"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-17990052802');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OMF Geometry — The World's Geometric Tattoo Directory</title>
@@ -124,7 +108,7 @@ fbq('track', 'PageView');
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item reveal">
-      <div class="stat-number">50</div>
+      <div class="stat-number">46</div>
       <div class="stat-label">Featured Artists</div>
     </div>
     <div class="stat-item reveal reveal-delay-2">
@@ -612,25 +596,18 @@ document.querySelector(".nav-toggle")?.addEventListener("click", function() {
 });
 
 // Scroll reveal with IntersectionObserver
-// On mobile, reveal all immediately to avoid invisible content
-if (window.innerWidth <= 768) {
-  document.querySelectorAll(".reveal").forEach(function(el) {
-    el.classList.add("revealed");
+var revealObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("revealed");
+      revealObserver.unobserve(entry.target);
+    }
   });
-} else {
-  var revealObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("revealed");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.05, rootMargin: "0px 0px 60px 0px" });
+}, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
 
-  document.querySelectorAll(".reveal").forEach(function(el) {
-    revealObserver.observe(el);
-  });
-}
+document.querySelectorAll(".reveal").forEach(function(el) {
+  revealObserver.observe(el);
+});
 
 // Load latest features from JSON
 (function() {
