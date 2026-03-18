@@ -1,21 +1,68 @@
+<!-- v=20260309144700 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OMF Geometry — The World's Geometric Tattoo Directory</title>
-  <meta name="description" content="Discover the world's best geometric tattoo artists. Sacred geometry, dotwork, mandala, blackwork — find your next artist.">
-  <meta property="og:title" content="OMF Geometry — The World's Geometric Tattoo Directory">
-  <meta property="og:description" content="Discover the world's best geometric tattoo artists.">
+  <meta name="description" content="Discover the world's best geometric tattoo artists. Sacred geometry, dotwork, mandala, blackwork — find your next artist. Curated by @omfgeometry.">
+  <link rel="canonical" href="https://omfgeometry.com/">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:title" content="OMF Geometry — The World's Geometric Tattoo Directory">
+  <meta property="og:description" content="Discover the world's best geometric tattoo artists. Sacred geometry, dotwork, mandala, blackwork — curated by @omfgeometry.">
+  <meta property="og:url" content="https://omfgeometry.com/">
+  <meta property="og:image" content="https://omfgeometry.com/images/weschetattoo.jpg">
+  <meta property="og:site_name" content="OMF Geometry">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@omfgeometry">
+  <meta name="twitter:title" content="OMF Geometry — The World's Geometric Tattoo Directory">
+  <meta name="twitter:description" content="Discover the world's best geometric tattoo artists. Sacred geometry, dotwork, mandala, blackwork — curated by @omfgeometry.">
+  <meta name="twitter:image" content="https://omfgeometry.com/images/weschetattoo.jpg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "OMF Geometry",
+    "url": "https://omfgeometry.com",
+    "description": "The world's geometric tattoo directory — sacred geometry, dotwork, mandala, blackwork artists curated by @omfgeometry.",
+    "sameAs": ["https://instagram.com/omfgeometry"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://omfgeometry.com/directory.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
   <link rel="stylesheet" href="css/style.css">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1446410187106776');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1446410187106776&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
+<canvas id="constellation-bg"></canvas>
 
 <!-- Navigation -->
 <nav class="nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">OMF<span>GEOMETRY</span></a>
+    <a href="/" class="nav-logo">OMF<span style="color:#00BFFF">GEOMETRY</span></a>
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <ul class="nav-links">
       <li><a href="/" class="active">Home</a></li>
@@ -28,144 +75,491 @@
 
 <!-- Hero -->
 <section class="hero">
-  <svg class="hero-bg" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <svg class="hero-bg hero-bg-pulse" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <pattern id="geo-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-        <polygon points="60,10 110,35 110,85 60,110 10,85 10,35" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
-        <circle cx="60" cy="60" r="30" fill="none" stroke="#C9A84C" stroke-width="0.3"/>
-        <line x1="60" y1="10" x2="60" y2="110" stroke="#C9A84C" stroke-width="0.2"/>
-        <line x1="10" y1="35" x2="110" y2="85" stroke="#C9A84C" stroke-width="0.2"/>
-        <line x1="10" y1="85" x2="110" y2="35" stroke="#C9A84C" stroke-width="0.2"/>
-        <circle cx="60" cy="60" r="50" fill="none" stroke="#C9A84C" stroke-width="0.2"/>
-        <polygon points="60,30 85,47.5 85,82.5 60,100 35,82.5 35,47.5" fill="none" stroke="#C9A84C" stroke-width="0.3"/>
+      <pattern id="geo-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+        <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="#00BFFF" stroke-width="0.4"/>
+        <circle cx="50" cy="50" r="25" fill="none" stroke="#00BFFF" stroke-width="0.25"/>
+        <circle cx="50" cy="50" r="42" fill="none" stroke="#00BFFF" stroke-width="0.15"/>
+        <line x1="50" y1="5" x2="50" y2="95" stroke="#00BFFF" stroke-width="0.15"/>
+        <line x1="5" y1="30" x2="95" y2="70" stroke="#00BFFF" stroke-width="0.15"/>
+        <line x1="5" y1="70" x2="95" y2="30" stroke="#00BFFF" stroke-width="0.15"/>
+        <polygon points="50,20 75,35 75,65 50,80 25,65 25,35" fill="none" stroke="#00BFFF" stroke-width="0.2"/>
+        <circle cx="50" cy="50" r="8" fill="none" stroke="#00BFFF" stroke-width="0.3"/>
       </pattern>
     </defs>
     <rect width="100%" height="100%" fill="url(#geo-pattern)"/>
   </svg>
   <div class="hero-content">
-    <div class="hero-badge">@omfgeometry</div>
-    <h1>The World's <span class="gold">Geometric</span> Tattoo Directory</h1>
-    <p>Discover sacred geometry, dotwork, mandala, and blackwork artists worldwide. Curated by the geometric tattoo community.</p>
-    <div class="hero-buttons">
-      <a href="directory.html" class="btn btn-primary">Browse Artists</a>
-      <a href="submit.html" class="btn btn-outline">Submit an Artist</a>
+    <div class="hero-logo-wrap">
+      <img src="images/omf-logo.png" alt="OMF Geometry" class="hero-logo-img">
+    </div>
+    <h1 class="reveal reveal-delay-1">The World's<br><span class="gold">Geometric</span> Tattoo Directory</h1>
+    <p class="reveal reveal-delay-2">Sacred geometry, dotwork, mandala &amp; blackwork artists — curated by the geometric tattoo community.</p>
+    <div class="hero-buttons reveal reveal-delay-3">
+      <a href="directory.html" class="btn btn-primary btn-lg">Browse Artists</a>
+      <p class="hero-tag-cta">Tag <strong>@omfgeometry</strong> on Instagram for a chance to be featured!</p>
     </div>
   </div>
 </section>
+
+<!-- Stats Bar -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <div class="stat-number">46</div>
+      <div class="stat-label">Featured Artists</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Countries</div>
+    </div>
+  </div>
+</div>
 
 <!-- Featured Artists -->
 <section class="section">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Curated Selection</span>
       <h2>Featured Artists</h2>
       <p>Hand-picked geometric tattoo masters from around the world</p>
       <div class="section-divider"></div>
     </div>
-    <div class="artists-grid" id="featured-artists">
-      <!-- Inline featured artists (no JS dependency for homepage) -->
-      <a href="artists/weschetattoo.html" class="artist-card">
-        <img src="https://picsum.photos/seed/weschetattoo/400/400" alt="Raul Wesche" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
+    <div class="artists-grid artists-grid--featured" id="featured-artists">
+      <a href="artists/monsieur-berdah.html" class="artist-card reveal">
+        <img src="images/monsieur-berdah.jpg" alt="@monsieur_berdah" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Clément Berdah</div>
+          <div class="artist-card-handle">@monsieur_berdah</div>
+          <div class="artist-card-location">France</div>
+        </div>
+      </a>
+      <a href="artists/rayetattoo.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/rayetattoo.jpg" alt="@rayetattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Raye Tattoo</div>
+          <div class="artist-card-handle">@rayetattoo</div>
+          <div class="artist-card-location">Granada, Spain</div>
+        </div>
+      </a>
+      <a href="artists/weschetattoo.html" class="artist-card reveal reveal-delay-2">
+        <img src="images/weschetattoo.jpg" alt="@weschetattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
           <div class="artist-card-name">Raul Wesche</div>
           <div class="artist-card-handle">@weschetattoo</div>
-          <div class="artist-card-location">📍 Houston, TX</div>
-          <div class="artist-card-tags">
-            <span class="tag">sacred geometry</span>
-            <span class="tag">large scale</span>
-          </div>
+          <div class="artist-card-location">Houston, TX, United States</div>
         </div>
       </a>
-      <a href="artists/chaim-machlev.html" class="artist-card">
-        <img src="https://picsum.photos/seed/chaimmachlev/400/400" alt="Chaim Machlev" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">Chaim Machlev</div>
-          <div class="artist-card-handle">@dotstolines</div>
-          <div class="artist-card-location">📍 Berlin, Germany</div>
-          <div class="artist-card-tags">
-            <span class="tag">fine line</span>
-            <span class="tag">geometric</span>
-          </div>
+      <a href="artists/lenaburlai-ink.html" class="artist-card reveal reveal-delay-3">
+        <img src="images/lenaburlai-ink.jpg" alt="@lenaburlai.ink" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Lena Burlai</div>
+          <div class="artist-card-handle">@lenaburlai.ink</div>
+          <div class="artist-card-location">Dortmund, Germany</div>
         </div>
       </a>
-      <a href="artists/okan-uckun.html" class="artist-card">
-        <img src="https://picsum.photos/seed/okanuckun/400/400" alt="Okan Uçkun" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">Okan Uçkun</div>
-          <div class="artist-card-handle">@oaborundaoiley</div>
-          <div class="artist-card-location">📍 Istanbul, Turkey</div>
-          <div class="artist-card-tags">
-            <span class="tag">blackwork</span>
-            <span class="tag">geometric</span>
-          </div>
+      <a href="artists/poonos-ink.html" class="artist-card reveal">
+        <img src="images/poonos-ink.jpg" alt="@poonos.ink" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">• P O O N O S. I N K •</div>
+          <div class="artist-card-handle">@poonos.ink</div>
+          <div class="artist-card-location">Bristol, United Kingdom</div>
         </div>
       </a>
-      <a href="artists/nikkisneedle.html" class="artist-card">
-        <img src="https://picsum.photos/seed/nikkisneedle/400/400" alt="Nikki Sneedle" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">Nikki Sneedle</div>
-          <div class="artist-card-handle">@nikkisneedle</div>
-          <div class="artist-card-location">📍 New York, NY</div>
-          <div class="artist-card-tags">
-            <span class="tag">mandala</span>
-            <span class="tag">dotwork</span>
-          </div>
+      <a href="artists/tom-ten.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/tom-ten.jpg" alt="@tom__ten" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Tom Rousseau</div>
+          <div class="artist-card-handle">@tom__ten</div>
+          <div class="artist-card-location">Lyon, France</div>
         </div>
       </a>
-      <a href="artists/pokemeon.html" class="artist-card">
-        <img src="https://picsum.photos/seed/pokemeon/400/400" alt="Pokemeon" class="artist-card-image" loading="lazy">
-        <div class="artist-card-body">
-          <div class="artist-card-name">Pokemeon</div>
-          <div class="artist-card-handle">@pokemeon</div>
-          <div class="artist-card-location">📍 Seoul, South Korea</div>
-          <div class="artist-card-tags">
-            <span class="tag">geometric</span>
-            <span class="tag">blackwork</span>
-          </div>
+      <a href="artists/suezosubnoize.html" class="artist-card reveal reveal-delay-2">
+        <img src="images/suezosubnoize.jpg" alt="@suezosubnoize" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Suezo</div>
+          <div class="artist-card-handle">@suezosubnoize</div>
+          <div class="artist-card-location">Presidente Prudente, Brazil</div>
         </div>
       </a>
+      <a href="artists/fabbio-tattoo.html" class="artist-card reveal reveal-delay-3">
+        <img src="images/fabbio-tattoo.jpg" alt="@fabbio.tattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Cerenys fabien</div>
+          <div class="artist-card-handle">@fabbio.tattoo</div>
+          <div class="artist-card-location">France</div>
+        </div>
+      </a>
+      <a href="artists/pastorelli-tattoo.html" class="artist-card reveal">
+        <img src="images/pastorelli-tattoo.jpg" alt="@pastorelli_tattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">•MāNđâląMäKēR•</div>
+          <div class="artist-card-handle">@pastorelli_tattoo</div>
+          <div class="artist-card-location">South Florida, United States</div>
+        </div>
+      </a>
+      <a href="artists/ina3tats.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/ina3tats.jpg" alt="@ina3tats" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Ina</div>
+          <div class="artist-card-handle">@ina3tats</div>
+          <div class="artist-card-location">Barcelona, Spain</div>
+        </div>
+      </a>
+      <a href="artists/eddie-rise.html" class="artist-card reveal reveal-delay-2">
+        <img src="images/eddie-rise.jpg" alt="@eddie.rise" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Eddie Rise</div>
+          <div class="artist-card-handle">@eddie.rise</div>
+          <div class="artist-card-location">New Mexico, United States</div>
+        </div>
+      </a>
+      <a href="artists/jakabtattoo.html" class="artist-card reveal reveal-delay-3">
+        <img src="images/jakabtattoo.jpg" alt="@jakabtattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Jakabtattoo</div>
+          <div class="artist-card-handle">@jakabtattoo</div>
+          <div class="artist-card-location">Pilisvörösvár, Hungary</div>
+        </div>
+      </a>
+      <a href="artists/pietro-buccinna-tattoo.html" class="artist-card reveal">
+        <img src="images/pietro-buccinna-tattoo.jpg" alt="@pietro.buccinna.tattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">BLACKOUT/NEW TRIBAL & SOLID TRADITIONAL</div>
+          <div class="artist-card-handle">@pietro.buccinna.tattoo</div>
+          <div class="artist-card-location">Milan, Italy</div>
+        </div>
+      </a>
+      <a href="artists/flo4ink.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/flo4ink.jpg" alt="@flo4ink" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Flo 4 Ink</div>
+          <div class="artist-card-handle">@flo4ink</div>
+          <div class="artist-card-location">Germany</div>
+        </div>
+      </a>
+      <a href="artists/xojanix.html" class="artist-card reveal reveal-delay-2">
+        <img src="images/xojanix.jpg" alt="@_xojanix" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">xo.Jani.xo</div>
+          <div class="artist-card-handle">@_xojanix</div>
+          <div class="artist-card-location">Unknown</div>
+        </div>
+      </a>
+      <a href="artists/lesacrelinee.html" class="artist-card reveal reveal-delay-3">
+        <img src="images/lesacrelinee.jpg" alt="@lesacrelinee" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Marco Marini</div>
+          <div class="artist-card-handle">@lesacrelinee</div>
+          <div class="artist-card-location">Milan, Italy</div>
+        </div>
+      </a>
+      <a href="artists/psydala.html" class="artist-card reveal">
+        <img src="images/psydala.jpg" alt="@psydala" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">ૐ Da Ne ૐ</div>
+          <div class="artist-card-handle">@psydala</div>
+          <div class="artist-card-location">Germany</div>
+        </div>
+      </a>
+      <a href="artists/mat-aequilibrium.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/mat-aequilibrium.jpg" alt="@mat_aequilibrium" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Mat Aequilibrium</div>
+          <div class="artist-card-handle">@mat_aequilibrium</div>
+          <div class="artist-card-location">Switzerland</div>
+        </div>
+      </a>
+      <a href="artists/nadoz-tattoo.html" class="artist-card reveal reveal-delay-2">
+        <img src="images/nadoz-tattoo.jpg" alt="@nadoz_tattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Nadoz - Geometric, Ornamental</div>
+          <div class="artist-card-handle">@nadoz_tattoo</div>
+          <div class="artist-card-location">France</div>
+        </div>
+      </a>
+      <a href="artists/tattoosbypaketh.html" class="artist-card reveal reveal-delay-3">
+        <img src="images/tattoosbypaketh.jpg" alt="@tattoosbypaketh" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Israel Paketh</div>
+          <div class="artist-card-handle">@tattoosbypaketh</div>
+          <div class="artist-card-location">Argentina</div>
+        </div>
+      </a>
+      <a href="artists/raimundo-ramirez.html" class="artist-card reveal">
+        <img src="images/raimundo-ramirez.jpg" alt="@raimundo_ramirez" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Raimundo Ramírez</div>
+          <div class="artist-card-handle">@raimundo_ramirez</div>
+          <div class="artist-card-location">Blanes, Spain</div>
+        </div>
+      </a>
+      <a href="artists/francesco-capro.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/francesco-capro.jpg" alt="@francesco.capro" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Francesco Capro</div>
+          <div class="artist-card-handle">@francesco.capro</div>
+          <div class="artist-card-location">London, United Kingdom</div>
+        </div>
+      </a>
+      <a href="artists/stefan-halbwachs.html" class="artist-card reveal reveal-delay-2">
+        <img src="images/stefan-halbwachs.jpg" alt="@stefan.halbwachs" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Stefan Halbwachs</div>
+          <div class="artist-card-handle">@stefan.halbwachs</div>
+          <div class="artist-card-location">Vienna, Austria</div>
+        </div>
+      </a>
+      <a href="artists/alex-santucci-tattooer.html" class="artist-card reveal reveal-delay-3">
+        <img src="images/alex-santucci-tattooer.jpg" alt="@alex_santucci_tattooer" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">ALEX SANTUCCI</div>
+          <div class="artist-card-handle">@alex_santucci_tattooer</div>
+          <div class="artist-card-location">Ancona, Italy</div>
+        </div>
+      </a>
+      <a href="artists/tommbirchtattoo.html" class="artist-card reveal">
+        <img src="images/tommbirchtattoo.jpg" alt="@tommbirchtattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Tom Birch</div>
+          <div class="artist-card-handle">@tommbirchtattoo</div>
+          <div class="artist-card-location">Manchester, United Kingdom</div>
+        </div>
+      </a>
+      <a href="artists/patrick-bressan-tattoo.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/patrick-bressan-tattoo.jpg" alt="@patrick.bressan.tattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">DEVOTION TATTOO FAMILY</div>
+          <div class="artist-card-handle">@patrick.bressan.tattoo</div>
+          <div class="artist-card-location">Italy</div>
+        </div>
+      </a>
+      <a href="artists/f-henx.html" class="artist-card reveal reveal-delay-2">
+        <img src="images/f-henx.jpg" alt="@f.henx" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">FH</div>
+          <div class="artist-card-handle">@f.henx</div>
+          <div class="artist-card-location">Chile</div>
+        </div>
+      </a>
+      <a href="artists/setharcane.html" class="artist-card reveal reveal-delay-3">
+        <img src="images/setharcane.jpg" alt="@setharcane" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Seth Arcane • Dotwork Tattoo Artist</div>
+          <div class="artist-card-handle">@setharcane</div>
+          <div class="artist-card-location">London, United Kingdom</div>
+        </div>
+      </a>
+      <a href="artists/marcogaldotattoo.html" class="artist-card reveal">
+        <img src="images/marcogaldotattoo.jpg" alt="@marcogaldotattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">MARCO GALDO</div>
+          <div class="artist-card-handle">@marcogaldotattoo</div>
+          <div class="artist-card-location">Italy</div>
+        </div>
+      </a>
+      <a href="artists/laurahochmondtattoo.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/laurahochmondtattoo.jpg" alt="@laurahochmondtattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Laura</div>
+          <div class="artist-card-handle">@laurahochmondtattoo</div>
+          <div class="artist-card-location">Vienna, Austria</div>
+        </div>
+      </a>
+      <a href="artists/jordthetattooer.html" class="artist-card reveal reveal-delay-2">
+        <img src="images/jordthetattooer.jpg" alt="@jordthetattooer" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">GEOMETRIC DOTWORK AND BLACKWORK TATTOOER - MANCHESTER UK</div>
+          <div class="artist-card-handle">@jordthetattooer</div>
+          <div class="artist-card-location">United Kingdom</div>
+        </div>
+      </a>
+      <a href="artists/n-e-e-n-o.html" class="artist-card reveal reveal-delay-3">
+        <img src="images/n-e-e-n-o.jpg" alt="@n.e.e.n.o" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Bartolomeo Fasano</div>
+          <div class="artist-card-handle">@n.e.e.n.o</div>
+          <div class="artist-card-location">Buffalo, New York, United States</div>
+        </div>
+      </a>
+      <a href="artists/zottl-tattoo.html" class="artist-card reveal">
+        <img src="images/zottl-tattoo.jpg" alt="@zottl_tattoo" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Zottl</div>
+          <div class="artist-card-handle">@zottl_tattoo</div>
+          <div class="artist-card-location">Berlin, Germany</div>
+        </div>
+      </a>
+      <a href="artists/junkjane.html" class="artist-card reveal reveal-delay-1">
+        <img src="images/junkjane.jpg" alt="@junkjane" class="artist-card-image" loading="lazy">
+        <div class="artist-card-overlay"></div>
+        <div class="artist-card-info">
+          <div class="artist-card-name">Alisa Sahar</div>
+          <div class="artist-card-handle">@junkjane</div>
+          <div class="artist-card-location">Nürnberg, Germany</div>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:48px;" class="reveal">
+      <a href="directory.html" class="btn btn-outline">View All 31 Artists</a>
     </div>
   </div>
 </section>
 
-<div class="container"><div class="geo-line"></div></div>
+<!-- Geometric Divider -->
+<div class="container">
+  <div class="geo-divider">
+    <div class="geo-divider-icon"></div>
+  </div>
+</div>
+
+<!-- Latest Features -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Fresh From Instagram</span>
+      <h2>Latest Features</h2>
+      <p>Recently featured work from our community</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="features-grid" id="latest-features-grid">
+      <div class="feature-card reveal" data-src="slot-1">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-1" data-src="slot-2">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-2" data-src="slot-3">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-3" data-src="slot-4">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-4" data-src="slot-5">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-5" data-src="slot-6">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Geometric Divider -->
+<div class="container">
+  <div class="geo-divider">
+    <div class="geo-divider-icon"></div>
+  </div>
+</div>
 
 <!-- Blog Preview -->
 <section class="section">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Journal</span>
       <h2>From the Blog</h2>
-      <p>Stories, guides, and artist spotlights from the geometric tattoo world</p>
+      <p>Stories, guides, and artist spotlights</p>
       <div class="section-divider"></div>
     </div>
     <div class="blog-grid">
-      <a href="blog/what-is-sacred-geometry.html" class="blog-card">
-        <img src="https://picsum.photos/seed/sacredgeo/800/450" alt="Sacred Geometry" class="blog-card-image" loading="lazy">
+      <a href="blog/why-geometric-tattoos-are-different.html" class="blog-card reveal">
+        <img src="images/weschetattoo.jpg" alt="Large-scale geometric tattoo" class="blog-card-image" loading="lazy">
         <div class="blog-card-body">
-          <div class="blog-card-date">March 5, 2026</div>
-          <div class="blog-card-title">What is Sacred Geometry in Tattoo Art?</div>
-          <div class="blog-card-excerpt">Explore the ancient mathematical patterns that have inspired tattoo artists worldwide — from the Flower of Life to Metatron's Cube.</div>
-        </div>
-      </a>
-      <a href="blog/top-10-geometric-tattoo-artists-2026.html" class="blog-card">
-        <img src="https://picsum.photos/seed/top10geo/800/450" alt="Top Artists" class="blog-card-image" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">March 1, 2026</div>
-          <div class="blog-card-title">Top 10 Geometric Tattoo Artists to Follow in 2026</div>
-          <div class="blog-card-excerpt">Our curated list of the most innovative geometric tattoo artists pushing boundaries this year.</div>
+          <div class="blog-card-date">March 9, 2026</div>
+          <div class="blog-card-title">Why Geometric Tattoos Are Different</div>
+          <div class="blog-card-excerpt">Geometric tattooing demands a different kind of artist. No hiding, no faking — just lines that either work or they don't.</div>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<div class="container"><div class="geo-line"></div></div>
+<!-- Instagram Follow CTA -->
+<section class="ig-cta">
+  <div class="ig-cta-handle reveal">@omfgeometry</div>
+  <p class="ig-cta-sub reveal reveal-delay-1">Follow for daily geometric tattoo inspiration</p>
+  <a href="https://instagram.com/omfgeometry" target="_blank" rel="noopener" class="btn btn-primary btn-lg reveal reveal-delay-2">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    Follow on Instagram
+  </a>
+</section>
 
 <!-- Newsletter -->
 <section class="section">
   <div class="container">
-    <div class="newsletter">
+    <div class="newsletter reveal">
       <h3>Stay in the Loop</h3>
-      <p>Get new artist features, blog posts, and geometric inspiration delivered to your inbox.</p>
+      <p>New artist features, blog posts, and geometric inspiration — delivered to your inbox.</p>
       <form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/omfgeometry" method="post" target="_blank">
         <input type="email" name="email" placeholder="your@email.com" required>
         <button type="submit" class="btn btn-primary">Subscribe</button>
@@ -177,7 +571,7 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-logo">OMF GEOMETRY</div>
+    <div class="footer-logo">OMF Geometry</div>
     <ul class="footer-links">
       <li><a href="/">Home</a></li>
       <li><a href="directory.html">Directory</a></li>
@@ -185,13 +579,136 @@
       <li><a href="submit.html">Submit</a></li>
     </ul>
     <a href="https://instagram.com/omfgeometry" target="_blank" class="footer-ig">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
       @omfgeometry
     </a>
-    <div class="footer-copy">© 2026 OMF Geometry. Built with 🌿 by <a href="https://getminted.ai">GetMinted</a>.</div>
+    <div class="footer-copy">© 2026 OMF Geometry</div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script>
+// Mobile nav
+document.querySelector(".nav-toggle")?.addEventListener("click", function() {
+  var l = document.querySelector(".nav-links");
+  l.classList.toggle("open");
+  this.textContent = l.classList.contains("open") ? "✕" : "☰";
+});
+
+// Scroll reveal with IntersectionObserver
+var revealObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("revealed");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+
+document.querySelectorAll(".reveal").forEach(function(el) {
+  revealObserver.observe(el);
+});
+
+// Load latest features from JSON
+(function() {
+  fetch("data/latest_features.json")
+    .then(function(r) { return r.json(); })
+    .then(function(features) {
+      if (!features || !features.length) return;
+      var grid = document.getElementById("latest-features-grid");
+      if (!grid) return;
+      var cards = grid.querySelectorAll(".feature-card");
+      features.slice(0, 6).forEach(function(f, i) {
+        if (!cards[i]) return;
+        var card = cards[i];
+        var imgEl = card.querySelector(".feature-card-image");
+        if (imgEl && f.image) {
+          var img = document.createElement("img");
+          img.src = f.image;
+          img.alt = f.handle || "";
+          img.className = "feature-card-image";
+          img.loading = "lazy";
+          imgEl.replaceWith(img);
+        }
+        var handleEl = card.querySelector(".feature-card-handle");
+        if (handleEl && f.handle) handleEl.textContent = f.handle;
+        var capEl = card.querySelector(".feature-card-caption");
+        if (capEl && f.caption) capEl.textContent = f.caption;
+      });
+    })
+    .catch(function() { /* silent — placeholders stay */ });
+})();
+</script>
+<script>
+(function(){
+  const canvas = document.getElementById('constellation-bg');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H, angle = 0;
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+
+  function drawHexGrid() {
+    ctx.clearRect(0, 0, W, H);
+
+    const size = 48;           // hex radius
+    const cols = Math.ceil(W / (size * 1.5)) + 3;
+    const rows = Math.ceil(H / (size * Math.sqrt(3))) + 3;
+    const offsetX = -size * 1.5;
+    const offsetY = -size * Math.sqrt(3);
+
+    ctx.lineWidth = 0.6;
+
+    for (let col = 0; col < cols; col++) {
+      for (let row = 0; row < rows; row++) {
+        const cx = offsetX + col * size * 1.5;
+        const cy = offsetY + row * size * Math.sqrt(3) + (col % 2 === 0 ? 0 : size * Math.sqrt(3) / 2);
+
+        // Distance from center for radial fade
+        const dx = cx - W / 2;
+        const dy = cy - H / 2;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const maxDist = Math.sqrt(W * W + H * H) / 2;
+        const fade = Math.max(0, 1 - dist / maxDist);
+
+        const alpha = 0.12 + fade * 0.28;
+        ctx.strokeStyle = `rgba(0, 191, 255, ${alpha})`;
+
+        // Draw hexagon
+        ctx.beginPath();
+        for (let i = 0; i < 6; i++) {
+          const a = (Math.PI / 180) * (60 * i - 30);
+          const px = cx + size * Math.cos(a);
+          const py = cy + size * Math.sin(a);
+          i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+        }
+        ctx.closePath();
+        ctx.stroke();
+
+        // Draw dot at each hex center
+        if (fade > 0.2) {
+          ctx.beginPath();
+          ctx.arc(cx, cy, 1.8, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(0, 191, 255, ${alpha * 2})`;
+          ctx.fill();
+        }
+      }
+    }
+
+    // Radial vignette overlay — darkens the edges
+    const vignette = ctx.createRadialGradient(W/2, H/2, H*0.2, W/2, H/2, H*0.9);
+    vignette.addColorStop(0, 'rgba(4,8,15,0)');
+    vignette.addColorStop(1, 'rgba(4,8,15,0.6)');
+    ctx.fillStyle = vignette;
+    ctx.fillRect(0, 0, W, H);
+  }
+
+  resize();
+  drawHexGrid();
+  window.addEventListener('resize', () => { resize(); drawHexGrid(); });
+})();
+</script>
 </body>
 </html>

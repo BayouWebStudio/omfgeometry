@@ -1,0 +1,824 @@
+[
+  {
+    "name": "Clément Berdah 🐢⭐️",
+    "slug": "monsieur-berdah",
+    "instagram": "monsieur_berdah",
+    "location": "France",
+    "country": "France",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @monsieur_berdah on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/monsieur-berdah.jpg",
+    "gallery": [
+      "images/monsieur-berdah_1.jpg",
+      "images/monsieur-berdah_2.jpg",
+      "images/monsieur-berdah_3.jpg"
+    ]
+  },
+  {
+    "name": "Raye Tattoo",
+    "slug": "rayetattoo",
+    "instagram": "rayetattoo",
+    "location": "Granada, Spain",
+    "country": "Spain",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @rayetattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/rayetattoo.jpg",
+    "gallery": [
+      "images/rayetattoo_1.jpg",
+      "images/rayetattoo_2.jpg",
+      "images/rayetattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "Raul Wesche",
+    "slug": "weschetattoo",
+    "instagram": "weschetattoo",
+    "location": "Houston, TX, United States",
+    "country": "United States",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @weschetattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/weschetattoo.jpg",
+    "gallery": [
+      "images/weschetattoo_1.jpg",
+      "images/weschetattoo_2.jpg",
+      "images/weschetattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "Lena Burlai",
+    "slug": "lenaburlai-ink",
+    "instagram": "lenaburlai.ink",
+    "location": "Dortmund, Germany",
+    "country": "Germany",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @lenaburlai.ink on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/lenaburlai-ink.jpg",
+    "gallery": [
+      "images/lenaburlai-ink_1.jpg",
+      "images/lenaburlai-ink_2.jpg",
+      "images/lenaburlai-ink_3.jpg"
+    ]
+  },
+  {
+    "name": "• P O O N O S. I N K •",
+    "slug": "poonos-ink",
+    "instagram": "poonos.ink",
+    "location": "Bristol, United Kingdom",
+    "country": "United Kingdom",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @poonos.ink on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/poonos-ink.jpg",
+    "gallery": [
+      "images/poonos-ink_1.jpg",
+      "images/poonos-ink_2.jpg",
+      "images/poonos-ink_3.jpg"
+    ]
+  },
+  {
+    "name": "Tom Rousseau",
+    "slug": "tom-ten",
+    "instagram": "tom__ten",
+    "location": "Lyon, France",
+    "country": "France",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @tom__ten on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/tom-ten.jpg",
+    "gallery": [
+      "images/tom-ten_1.jpg",
+      "images/tom-ten_2.jpg",
+      "images/tom-ten_3.jpg"
+    ]
+  },
+  {
+    "name": "Suezo",
+    "slug": "suezosubnoize",
+    "instagram": "suezosubnoize",
+    "location": "Presidente Prudente, Brazil",
+    "country": "Brazil",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @suezosubnoize on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/suezosubnoize.jpg",
+    "gallery": [
+      "images/suezosubnoize_1.jpg",
+      "images/suezosubnoize_2.jpg",
+      "images/suezosubnoize_3.jpg"
+    ]
+  },
+  {
+    "name": "Cerenys fabien",
+    "slug": "fabbio-tattoo",
+    "instagram": "fabbio.tattoo",
+    "location": "France",
+    "country": "France",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @fabbio.tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/fabbio-tattoo.jpg",
+    "gallery": [
+      "images/fabbio-tattoo_1.jpg",
+      "images/fabbio-tattoo_2.jpg",
+      "images/fabbio-tattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "•MāNđâląMäKēR•",
+    "slug": "pastorelli-tattoo",
+    "instagram": "pastorelli_tattoo",
+    "location": "South Florida, United States",
+    "country": "United States",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @pastorelli_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/pastorelli-tattoo.jpg",
+    "gallery": [
+      "images/pastorelli-tattoo_1.jpg",
+      "images/pastorelli-tattoo_2.jpg",
+      "images/pastorelli-tattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "Ina",
+    "slug": "ina3tats",
+    "instagram": "ina3tats",
+    "location": "Barcelona, Spain",
+    "country": "Spain",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @ina3tats on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/ina3tats.jpg",
+    "gallery": [
+      "images/ina3tats_1.jpg",
+      "images/ina3tats_2.jpg",
+      "images/ina3tats_3.jpg"
+    ]
+  },
+  {
+    "name": "Eddie Rise",
+    "slug": "eddie-rise",
+    "instagram": "eddie.rise",
+    "location": "New Mexico, United States",
+    "country": "United States",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @eddie.rise on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/eddie-rise.jpg",
+    "gallery": [
+      "images/eddie-rise_1.jpg",
+      "images/eddie-rise_2.jpg",
+      "images/eddie-rise_3.jpg"
+    ]
+  },
+  {
+    "name": "Jakabtattoo",
+    "slug": "jakabtattoo",
+    "instagram": "jakabtattoo",
+    "location": "Pilisvörösvár, Hungary",
+    "country": "Hungary",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @jakabtattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/jakabtattoo.jpg",
+    "gallery": [
+      "images/jakabtattoo_1.jpg",
+      "images/jakabtattoo_2.jpg",
+      "images/jakabtattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "BLACKOUT/NEW TRIBAL & SOLID TRADITIONAL",
+    "slug": "pietro-buccinna-tattoo",
+    "instagram": "pietro.buccinna.tattoo",
+    "location": "Milan, Italy",
+    "country": "Italy",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @pietro.buccinna.tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/pietro-buccinna-tattoo.jpg",
+    "gallery": [
+      "images/pietro-buccinna-tattoo_1.jpg",
+      "images/pietro-buccinna-tattoo_2.jpg",
+      "images/pietro-buccinna-tattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "Flo 4 Ink",
+    "slug": "flo4ink",
+    "instagram": "flo4ink",
+    "location": "Germany",
+    "country": "Germany",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @flo4ink on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/flo4ink.jpg",
+    "gallery": [
+      "images/flo4ink_1.jpg",
+      "images/flo4ink_2.jpg",
+      "images/flo4ink_3.jpg"
+    ]
+  },
+  {
+    "name": "xo.Jani.xo",
+    "slug": "xojanix",
+    "instagram": "_xojanix",
+    "location": "Unknown",
+    "country": "Unknown",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @_xojanix on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/xojanix.jpg",
+    "gallery": [
+      "images/xojanix_1.jpg",
+      "images/xojanix_2.jpg",
+      "images/xojanix_3.jpg"
+    ]
+  },
+  {
+    "name": "Marco Marini",
+    "slug": "lesacrelinee",
+    "instagram": "lesacrelinee",
+    "location": "Milan, Italy",
+    "country": "Italy",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @lesacrelinee on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/lesacrelinee.jpg",
+    "gallery": [
+      "images/lesacrelinee_1.jpg",
+      "images/lesacrelinee_2.jpg",
+      "images/lesacrelinee_3.jpg"
+    ]
+  },
+  {
+    "name": "ૐ Da Ne ૐ",
+    "slug": "psydala",
+    "instagram": "psydala",
+    "location": "Germany",
+    "country": "Germany",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @psydala on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/psydala.jpg",
+    "gallery": [
+      "images/psydala_1.jpg",
+      "images/psydala_2.jpg",
+      "images/psydala_3.jpg"
+    ]
+  },
+  {
+    "name": "Mat Aequilibrium",
+    "slug": "mat-aequilibrium",
+    "instagram": "mat_aequilibrium",
+    "location": "Switzerland",
+    "country": "Switzerland",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @mat_aequilibrium on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/mat-aequilibrium.jpg",
+    "gallery": [
+      "images/mat-aequilibrium_1.jpg",
+      "images/mat-aequilibrium_2.jpg",
+      "images/mat-aequilibrium_3.jpg"
+    ]
+  },
+  {
+    "name": "Nadoz - Geometric, Ornamental",
+    "slug": "nadoz-tattoo",
+    "instagram": "nadoz_tattoo",
+    "location": "France",
+    "country": "France",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @nadoz_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/nadoz-tattoo.jpg",
+    "gallery": [
+      "images/nadoz-tattoo_1.jpg",
+      "images/nadoz-tattoo_2.jpg",
+      "images/nadoz-tattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "Israel Paketh",
+    "slug": "tattoosbypaketh",
+    "instagram": "tattoosbypaketh",
+    "location": "Argentina",
+    "country": "Argentina",
+    "bio": "Ornamental tattoo artist featured on @omfgeometry. Follow @tattoosbypaketh on Instagram for more work.",
+    "styles": [
+      "ornamental",
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/tattoosbypaketh.jpg",
+    "gallery": [
+      "images/tattoosbypaketh_1.jpg",
+      "images/tattoosbypaketh_2.jpg",
+      "images/tattoosbypaketh_3.jpg"
+    ]
+  },
+  {
+    "name": "Raimundo Ramírez",
+    "slug": "raimundo-ramirez",
+    "instagram": "raimundo_ramirez",
+    "location": "Blanes, Spain",
+    "country": "Spain",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @raimundo_ramirez on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/raimundo-ramirez.jpg",
+    "gallery": [
+      "images/raimundo-ramirez_1.jpg",
+      "images/raimundo-ramirez_2.jpg",
+      "images/raimundo-ramirez_3.jpg"
+    ]
+  },
+  {
+    "name": "Francesco Capro",
+    "slug": "francesco-capro",
+    "instagram": "francesco.capro",
+    "location": "London, United Kingdom",
+    "country": "United Kingdom",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @francesco.capro on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/francesco-capro.jpg",
+    "gallery": [
+      "images/francesco-capro_1.jpg",
+      "images/francesco-capro_2.jpg",
+      "images/francesco-capro_3.jpg"
+    ]
+  },
+  {
+    "name": "Stefan Halbwachs",
+    "slug": "stefan-halbwachs",
+    "instagram": "stefan.halbwachs",
+    "location": "Vienna, Austria",
+    "country": "Austria",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @stefan.halbwachs on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/stefan-halbwachs.jpg",
+    "gallery": [
+      "images/stefan-halbwachs_1.jpg",
+      "images/stefan-halbwachs_2.jpg",
+      "images/stefan-halbwachs_3.jpg"
+    ]
+  },
+  {
+    "name": "ALEX SANTUCCI",
+    "slug": "alex-santucci-tattooer",
+    "instagram": "alex_santucci_tattooer",
+    "location": "Ancona, Italy",
+    "country": "Italy",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @alex_santucci_tattooer on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/alex-santucci-tattooer.jpg",
+    "gallery": [
+      "images/alex-santucci-tattooer_1.jpg",
+      "images/alex-santucci-tattooer_2.jpg",
+      "images/alex-santucci-tattooer_3.jpg"
+    ]
+  },
+  {
+    "name": "Tom Birch",
+    "slug": "tommbirchtattoo",
+    "instagram": "tommbirchtattoo",
+    "location": "Manchester, United Kingdom",
+    "country": "United Kingdom",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @tommbirchtattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/tommbirchtattoo.jpg",
+    "gallery": [
+      "images/tommbirchtattoo_1.jpg",
+      "images/tommbirchtattoo_2.jpg",
+      "images/tommbirchtattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "🕉DEVOTION TATTOO FAMILY🕉",
+    "slug": "patrick-bressan-tattoo",
+    "instagram": "patrick.bressan.tattoo",
+    "location": "Italy",
+    "country": "Italy",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @patrick.bressan.tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/patrick-bressan-tattoo.jpg",
+    "gallery": [
+      "images/patrick-bressan-tattoo_1.jpg",
+      "images/patrick-bressan-tattoo_2.jpg",
+      "images/patrick-bressan-tattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "FH",
+    "slug": "f-henx",
+    "instagram": "f.henx",
+    "location": "Chile",
+    "country": "Chile",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @f.henx on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/f-henx.jpg",
+    "gallery": [
+      "images/f-henx_1.jpg",
+      "images/f-henx_2.jpg",
+      "images/f-henx_3.jpg"
+    ]
+  },
+  {
+    "name": "Seth Arcane • Dotwork Tattoo Artist",
+    "slug": "setharcane",
+    "instagram": "setharcane",
+    "location": "London, United Kingdom",
+    "country": "United Kingdom",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @setharcane on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/setharcane.jpg",
+    "gallery": [
+      "images/setharcane_1.jpg",
+      "images/setharcane_2.jpg",
+      "images/setharcane_3.jpg"
+    ]
+  },
+  {
+    "name": "MARCO GALDO",
+    "slug": "marcogaldotattoo",
+    "instagram": "marcogaldotattoo",
+    "location": "Italy",
+    "country": "Italy",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @marcogaldotattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/marcogaldotattoo.jpg",
+    "gallery": [
+      "images/marcogaldotattoo_1.jpg",
+      "images/marcogaldotattoo_2.jpg",
+      "images/marcogaldotattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "Laura",
+    "slug": "laurahochmondtattoo",
+    "instagram": "laurahochmondtattoo",
+    "location": "Vienna, Austria",
+    "country": "Austria",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @laurahochmondtattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/laurahochmondtattoo.jpg",
+    "gallery": [
+      "images/laurahochmondtattoo_1.jpg",
+      "images/laurahochmondtattoo_2.jpg",
+      "images/laurahochmondtattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "GEOMETRIC DOTWORK AND BLACKWORK TATTOOER - MANCHESTER UK",
+    "slug": "jordthetattooer",
+    "instagram": "jordthetattooer",
+    "location": "United Kingdom",
+    "country": "United Kingdom",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @jordthetattooer on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/jordthetattooer.jpg",
+    "gallery": [
+      "images/jordthetattooer_1.jpg",
+      "images/jordthetattooer_2.jpg",
+      "images/jordthetattooer_3.jpg"
+    ]
+  },
+  {
+    "name": "Bartolomeo Fasano",
+    "slug": "n-e-e-n-o",
+    "instagram": "n.e.e.n.o",
+    "location": "Buffalo, New York, United States",
+    "country": "United States",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @n.e.e.n.o on Instagram for more work.",
+    "styles": [
+      "geometric",
+      "blackwork"
+    ],
+    "featured": true,
+    "image": "images/n-e-e-n-o.jpg",
+    "gallery": [
+      "images/n-e-e-n-o_1.jpg",
+      "images/n-e-e-n-o_2.jpg",
+      "images/n-e-e-n-o_3.jpg"
+    ]
+  },
+  {
+    "name": "Zottl",
+    "slug": "zottl-tattoo",
+    "instagram": "zottl_tattoo",
+    "location": "Berlin, Germany",
+    "country": "Germany",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @zottl_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric",
+      "dotwork",
+      "blackwork"
+    ],
+    "featured": true,
+    "image": "images/zottl-tattoo.jpg",
+    "gallery": [
+      "images/zottl-tattoo_1.jpg",
+      "images/zottl-tattoo_2.jpg",
+      "images/zottl-tattoo_3.jpg"
+    ]
+  },
+  {
+    "name": "Alisa Sahar",
+    "slug": "junkjane",
+    "instagram": "junkjane",
+    "location": "Nürnberg, Germany",
+    "country": "Germany",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @junkjane on Instagram for more work.",
+    "styles": [
+      "ornamental",
+      "geometric",
+      "blackwork"
+    ],
+    "featured": true,
+    "image": "images/junkjane.jpg",
+    "gallery": [
+      "images/junkjane_1.jpg",
+      "images/junkjane_2.jpg",
+      "images/junkjane_3.jpg"
+    ]
+  },
+  {
+    "name": "Dana Sha",
+    "slug": "danasha-tattoo",
+    "instagram": "danasha.tattoo",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @danasha.tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/danasha-tattoo.jpg",
+    "gallery": [
+      "images/danasha-tattoo_1.jpg",
+      "images/danasha-tattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "Javi Navarro",
+    "slug": "koala-art3",
+    "instagram": "koala.art3",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @koala.art3 on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/koala-art3.jpg",
+    "gallery": [
+      "images/koala-art3_1.jpg",
+      "images/koala-art3_2.jpg"
+    ]
+  },
+  {
+    "name": "Ben vr",
+    "slug": "benvr-tattoo",
+    "instagram": "benvr_tattoo",
+    "location": "Zürich, Switzerland",
+    "country": "Switzerland",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @benvr_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/benvr-tattoo.jpg",
+    "gallery": [
+      "images/benvr-tattoo_1.jpg",
+      "images/benvr-tattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "ibrahim_barboza",
+    "slug": "ibrahim-barboza",
+    "instagram": "ibrahim_barboza",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @ibrahim_barboza on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/ibrahim-barboza.jpg",
+    "gallery": [
+      "images/ibrahim-barboza_1.jpg",
+      "images/ibrahim-barboza_2.jpg"
+    ]
+  },
+  {
+    "name": "peypogram",
+    "slug": "peypogram",
+    "instagram": "peypogram",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @peypogram on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/peypogram.jpg",
+    "gallery": [
+      "images/peypogram_1.jpg",
+      "images/peypogram_2.jpg"
+    ]
+  },
+  {
+    "name": "ʙᴀʀ ɴᴇꜱʜᴇʀ| ᴛᴀᴛᴛᴏᴏꜱ |ᴏʀɴᴀᴍᴇɴᴛʟ|ᴛᴛᴛ",
+    "slug": "barnesher-tattoo",
+    "instagram": "barnesher_tattoo",
+    "location": "Tel Aviv, Israel",
+    "country": "Israel",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @barnesher_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/barnesher-tattoo.jpg",
+    "gallery": [
+      "images/barnesher-tattoo_1.jpg",
+      "images/barnesher-tattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "Felix De Kapitein",
+    "slug": "felixdekapitein",
+    "instagram": "felixdekapitein",
+    "location": "Berlin, Germany",
+    "country": "Germany",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @felixdekapitein on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/felixdekapitein.jpg",
+    "gallery": [
+      "images/felixdekapitein_1.jpg",
+      "images/felixdekapitein_2.jpg"
+    ]
+  },
+  {
+    "name": "Manuel Rogaschewski",
+    "slug": "manuel-rogaschewski-tattooer",
+    "instagram": "manuel.rogaschewski.tattooer",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @manuel.rogaschewski.tattooer on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/manuel-rogaschewski-tattooer.jpg",
+    "gallery": [
+      "images/manuel-rogaschewski-tattooer_1.jpg",
+      "images/manuel-rogaschewski-tattooer_2.jpg"
+    ]
+  },
+  {
+    "name": "Mitch Koch",
+    "slug": "mitchin-tattoos",
+    "instagram": "mitchin.tattoos",
+    "location": "sleepyreaperwi",
+    "country": "sleepyreaperwi",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @mitchin.tattoos on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/mitchin-tattoos.jpg",
+    "gallery": [
+      "images/mitchin-tattoos_1.jpg",
+      "images/mitchin-tattoos_2.jpg"
+    ]
+  },
+  {
+    "name": "Jason koifman",
+    "slug": "chellotattoo",
+    "instagram": "chellotattoo",
+    "location": "חדרה",
+    "country": "חדרה",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @chellotattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/chellotattoo.jpg",
+    "gallery": [
+      "images/chellotattoo_1.jpg",
+      "images/chellotattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "teotribe",
+    "slug": "teotribe",
+    "instagram": "teotribe",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @teotribe on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/teotribe.jpg",
+    "gallery": [
+      "images/teotribe_1.jpg",
+      "images/teotribe_2.jpg"
+    ]
+  },
+  {
+    "name": "Marty Creak",
+    "slug": "tattoosbymarty",
+    "instagram": "tattoosbymarty",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @tattoosbymarty on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/tattoosbymarty.jpg",
+    "gallery": [
+      "images/tattoosbymarty_1.jpg",
+      "images/tattoosbymarty_2.jpg"
+    ]
+  }
+]
