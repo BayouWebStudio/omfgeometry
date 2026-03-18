@@ -512,6 +512,33 @@ fbq('track', 'PageView');
           <div class="feature-card-caption">Latest feature loading...</div>
         </div>
       </div>
+      <div class="feature-card reveal" data-src="slot-7">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-1" data-src="slot-8">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
+      <div class="feature-card reveal reveal-delay-2" data-src="slot-9">
+        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
+          <span>Coming Soon</span>
+        </div>
+        <div class="feature-card-body">
+          <div class="feature-card-handle">@artist</div>
+          <div class="feature-card-caption">Latest feature loading...</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -618,22 +645,33 @@ document.querySelectorAll(".reveal").forEach(function(el) {
       var grid = document.getElementById("latest-features-grid");
       if (!grid) return;
       var cards = grid.querySelectorAll(".feature-card");
-      features.slice(0, 6).forEach(function(f, i) {
+      features.slice(0, 9).forEach(function(f, i) {
         if (!cards[i]) return;
         var card = cards[i];
-        var imgEl = card.querySelector(".feature-card-image");
-        if (imgEl && f.image) {
+        // Support both old field names and new ones from Meta API
+        var imgSrc = f.image_local || f.image || "";
+        var handle = f.artist || f.handle || "";
+        var caption = f.caption_snippet || f.caption || "";
+        var postUrl = f.post_url || f.url || "#";
+
+        var imgEl = card.querySelector(".feature-card-image, .feature-card-placeholder");
+        if (imgEl && imgSrc) {
           var img = document.createElement("img");
-          img.src = f.image;
-          img.alt = f.handle || "";
+          img.src = imgSrc;
+          img.alt = "@" + handle;
           img.className = "feature-card-image";
           img.loading = "lazy";
           imgEl.replaceWith(img);
         }
         var handleEl = card.querySelector(".feature-card-handle");
-        if (handleEl && f.handle) handleEl.textContent = f.handle;
+        if (handleEl && handle) handleEl.textContent = "@" + handle;
         var capEl = card.querySelector(".feature-card-caption");
-        if (capEl && f.caption) capEl.textContent = f.caption;
+        if (capEl && caption) capEl.textContent = caption;
+        // Make card clickable
+        if (postUrl && postUrl !== "#") {
+          card.style.cursor = "pointer";
+          card.onclick = function() { window.open(postUrl, "_blank"); };
+        }
       });
     })
     .catch(function() { /* silent — placeholders stay */ });
