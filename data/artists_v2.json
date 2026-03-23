@@ -820,5 +820,209 @@
       "images/tattoosbymarty_1.jpg",
       "images/tattoosbymarty_2.jpg"
     ]
+  },
+  {
+    "name": "Nick Fierro | Geometric Tattoo Artist",
+    "slug": "tattoosbynickfierro",
+    "instagram": "tattoosbynickfierro",
+    "location": "Algorithm Tattoo & Fine Arts",
+    "country": "Algorithm Tattoo & Fine Arts",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @tattoosbynickfierro on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/tattoosbynickfierro.jpg",
+    "gallery": [
+      "images/tattoosbynickfierro_1.jpg",
+      "images/tattoosbynickfierro_2.jpg"
+    ]
+  },
+  {
+    "name": "Paula Sgarbi",
+    "slug": "paulasgarbi",
+    "instagram": "paulasgarbi",
+    "location": "Brasil",
+    "country": "Brasil",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @paulasgarbi on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/paulasgarbi.jpg",
+    "gallery": [
+      "images/paulasgarbi_1.jpg",
+      "images/paulasgarbi_2.jpg"
+    ]
+  },
+  {
+    "name": "Michelle Miller",
+    "slug": "michellelynntattoo",
+    "instagram": "michellelynntattoo",
+    "location": "Pittsburgh, Pennsylvania",
+    "country": "Pennsylvania",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @michellelynntattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/michellelynntattoo.jpg",
+    "gallery": [
+      "images/michellelynntattoo_1.jpg",
+      "images/michellelynntattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "Gabriel Lima • Tatuagens Geométricas",
+    "slug": "gabriel-lima-tattoo",
+    "instagram": "gabriel_lima_tattoo",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @gabriel_lima_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/gabriel-lima-tattoo.jpg",
+    "gallery": [
+      "images/gabriel-lima-tattoo_1.jpg",
+      "images/gabriel-lima-tattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "𝕬𝖓𝖉𝖗𝖊𝖆 𝕸𝖆𝖗𝖈𝖍𝖎𝖘𝖎𝖔",
+    "slug": "andreamarchisio-tattoo",
+    "instagram": "andreamarchisio.tattoo",
+    "location": "Milan, Italy",
+    "country": "Italy",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @andreamarchisio.tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/andreamarchisio-tattoo.jpg",
+    "gallery": [
+      "images/andreamarchisio-tattoo_1.jpg",
+      "images/andreamarchisio-tattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "bintt",
+    "slug": "bintt",
+    "instagram": "bintt",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @bintt on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/bintt.jpg",
+    "gallery": [
+      "images/bintt_1.jpg",
+      "images/bintt_2.jpg"
+    ]
+  },
+  {
+    "name": "FLOPI / TATTOO",
+    "slug": "flopi-nard",
+    "instagram": "flopi_nard",
+    "location": "Reunion Island",
+    "country": "Reunion Island",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @flopi_nard on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/flopi-nard.jpg",
+    "gallery": [
+      "images/flopi-nard_1.jpg",
+      "images/flopi-nard_2.jpg"
+    ]
+  },
+  {
+    "name": "Tattoos | Daniele Caputo | Geometric Ornamental Blackwork",
+    "slug": "snertattoos",
+    "instagram": "snertattoos",
+    "location": "Florence, Italy",
+    "country": "Italy",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @snertattoos on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/snertattoos.jpg",
+    "gallery": [
+      "images/snertattoos_1.jpg",
+      "images/snertattoos_2.jpg"
+    ]
+  },
+  {
+    "name": "GEOMETRIC & DOTWORK TATTOO UK",
+    "slug": "daniellekellytattoo",
+    "instagram": "daniellekellytattoo",
+    "location": "London, United Kingdom",
+    "country": "United Kingdom",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @daniellekellytattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/daniellekellytattoo.jpg",
+    "gallery": [
+      "images/daniellekellytattoo_1.jpg",
+      "images/daniellekellytattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "Milinda Silva",
+    "slug": "mil-inked",
+    "instagram": "mil_inked",
+    "location": "Calgary, Alberta",
+    "country": "Alberta",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @mil_inked on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/mil-inked.jpg",
+    "gallery": [
+      "images/mil-inked_1.jpg",
+      "images/mil-inked_2.jpg"
+    ]
+  },
+  {
+    "name": "linseifk",
+    "slug": "linseifk",
+    "instagram": "linseifk",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @linseifk on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/linseifk.jpg",
+    "gallery": [
+      "images/linseifk_1.jpg",
+      "images/linseifk_2.jpg"
+    ]
+  },
+  {
+    "name": "✖️ 𝐄𝐌𝐀𝐍 𝐒𝐂𝐎𝐑𝐅𝐍𝐀 ✖️ 𝐓𝐀𝐓𝐓𝐎𝐎",
+    "slug": "emanscorfna",
+    "instagram": "emanscorfna",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @emanscorfna on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/emanscorfna.jpg",
+    "gallery": [
+      "images/emanscorfna_1.jpg",
+      "images/emanscorfna_2.jpg"
+    ]
   }
 ]
