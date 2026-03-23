@@ -922,5 +922,73 @@
       "images/araneo-tattoo_1.jpg",
       "images/araneo-tattoo_2.jpg"
     ]
+  },
+  {
+    "name": "Nick Fierro | Geometric Tattoo Artist",
+    "slug": "tattoosbynickfierro",
+    "instagram": "tattoosbynickfierro",
+    "location": "Algorithm Tattoo & Fine Arts",
+    "country": "Algorithm Tattoo & Fine Arts",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @tattoosbynickfierro on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/tattoosbynickfierro.jpg",
+    "gallery": [
+      "images/tattoosbynickfierro_1.jpg",
+      "images/tattoosbynickfierro_2.jpg"
+    ]
+  },
+  {
+    "name": "Workhorse Irons Tattoo Supply",
+    "slug": "paulasgarbi",
+    "instagram": "paulasgarbi",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @paulasgarbi on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/paulasgarbi.jpg",
+    "gallery": [
+      "images/paulasgarbi_1.jpg",
+      "images/paulasgarbi_2.jpg"
+    ]
+  },
+  {
+    "name": "𝕬𝖓𝖉𝖗𝖊𝖆 𝕸𝖆𝖗𝖈𝖍𝖎𝖘𝖎𝖔",
+    "slug": "andreamarchisio-tattoo",
+    "instagram": "andreamarchisio.tattoo",
+    "location": "Milan, Italy",
+    "country": "Italy",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @andreamarchisio.tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/andreamarchisio-tattoo.jpg",
+    "gallery": [
+      "images/andreamarchisio-tattoo_1.jpg",
+      "images/andreamarchisio-tattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "linseifk",
+    "slug": "linseifk",
+    "instagram": "linseifk",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @linseifk on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/linseifk.jpg",
+    "gallery": [
+      "images/linseifk_1.jpg",
+      "images/linseifk_2.jpg"
+    ]
   }
 ]
