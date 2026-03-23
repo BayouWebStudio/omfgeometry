@@ -990,5 +990,39 @@
       "images/linseifk_1.jpg",
       "images/linseifk_2.jpg"
     ]
+  },
+  {
+    "name": "Michelle Miller",
+    "slug": "michellelynntattoo",
+    "instagram": "michellelynntattoo",
+    "location": "Pittsburgh, Pennsylvania",
+    "country": "Pennsylvania",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @michellelynntattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/michellelynntattoo.jpg",
+    "gallery": [
+      "images/michellelynntattoo_1.jpg",
+      "images/michellelynntattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "Gabriel Lima • Tatuagens Geométricas",
+    "slug": "gabriel-lima-tattoo",
+    "instagram": "gabriel_lima_tattoo",
+    "location": "Brazil",
+    "country": "Brazil",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @gabriel_lima_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/gabriel-lima-tattoo.jpg",
+    "gallery": [
+      "images/gabriel-lima-tattoo_1.jpg",
+      "images/gabriel-lima-tattoo_2.jpg"
+    ]
   }
 ]
