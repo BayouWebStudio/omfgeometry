@@ -68,6 +68,7 @@ fbq('track', 'PageView');
       <li><a href="/" class="active">Home</a></li>
       <li><a href="directory.html">Directory</a></li>
       <li><a href="blog/">Blog</a></li>
+      <li><a href="submit.html">Submit Artist</a></li>
     </ul>
   </div>
 </nav>
@@ -107,7 +108,7 @@ fbq('track', 'PageView');
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item reveal">
-      <div class="stat-number">52</div>
+      <div class="stat-number">46</div>
       <div class="stat-label">Featured Artists</div>
     </div>
     <div class="stat-item reveal reveal-delay-2">
@@ -433,14 +434,6 @@ fbq('track', 'PageView');
           <div class="artist-card-location">Nürnberg, Germany</div>
         </div>
       </a>
-      <a href="blog/how-omfgeometry-finds-artists.html" class="blog-card reveal">
-        <img src="images/rayetattoo_1.jpg" alt="Geometric tattoo by @rayetattoo" class="blog-card-image" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">March 9, 2026</div>
-          <div class="blog-card-title">How OMF Geometry Finds Artists</div>
-          <div class="blog-card-excerpt">Every artist on OMF Geometry was found the same way — by following the work. Here's how we curate the world's best geometric tattoo artists.</div>
-        </div>
-      </a>
     </div>
     <div style="text-align:center; margin-top:48px;" class="reveal">
       <a href="directory.html" class="btn btn-outline">View All 31 Artists</a>
@@ -519,33 +512,6 @@ fbq('track', 'PageView');
           <div class="feature-card-caption">Latest feature loading...</div>
         </div>
       </div>
-      <div class="feature-card reveal" data-src="slot-7">
-        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
-          <span>Coming Soon</span>
-        </div>
-        <div class="feature-card-body">
-          <div class="feature-card-handle">@artist</div>
-          <div class="feature-card-caption">Latest feature loading...</div>
-        </div>
-      </div>
-      <div class="feature-card reveal reveal-delay-1" data-src="slot-8">
-        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
-          <span>Coming Soon</span>
-        </div>
-        <div class="feature-card-body">
-          <div class="feature-card-handle">@artist</div>
-          <div class="feature-card-caption">Latest feature loading...</div>
-        </div>
-      </div>
-      <div class="feature-card reveal reveal-delay-2" data-src="slot-9">
-        <div class="feature-card-image feature-card-placeholder" style="aspect-ratio:1;">
-          <span>Coming Soon</span>
-        </div>
-        <div class="feature-card-body">
-          <div class="feature-card-handle">@artist</div>
-          <div class="feature-card-caption">Latest feature loading...</div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -568,7 +534,7 @@ fbq('track', 'PageView');
     </div>
     <div class="blog-grid">
       <a href="blog/why-geometric-tattoos-are-different.html" class="blog-card reveal">
-        <img src="images/danasha-tattoo_1.jpg" alt="Geometric tattoo by @danasha" class="blog-card-image" loading="lazy">
+        <img src="images/weschetattoo.jpg" alt="Large-scale geometric tattoo" class="blog-card-image" loading="lazy">
         <div class="blog-card-body">
           <div class="blog-card-date">March 9, 2026</div>
           <div class="blog-card-title">Why Geometric Tattoos Are Different</div>
@@ -595,10 +561,7 @@ fbq('track', 'PageView');
     <div class="newsletter reveal">
       <h3>Stay in the Loop</h3>
       <p>New artist features, blog posts, and geometric inspiration — delivered to your inbox.</p>
-      <form class="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="b51bffb8-a561-4874-ade0-05be56419a1d">
-        <input type="hidden" name="subject" value="New OMF Geometry Subscriber">
-        <input type="hidden" name="redirect" value="false">
+      <form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/omfgeometry" method="post" target="_blank">
         <input type="email" name="email" placeholder="your@email.com" required>
         <button type="submit" class="btn btn-primary">Subscribe</button>
       </form>
@@ -614,6 +577,7 @@ fbq('track', 'PageView');
       <li><a href="/">Home</a></li>
       <li><a href="directory.html">Directory</a></li>
       <li><a href="blog/">Blog</a></li>
+      <li><a href="submit.html">Submit</a></li>
     </ul>
     <a href="https://instagram.com/omfgeometry" target="_blank" class="footer-ig">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
@@ -654,33 +618,22 @@ document.querySelectorAll(".reveal").forEach(function(el) {
       var grid = document.getElementById("latest-features-grid");
       if (!grid) return;
       var cards = grid.querySelectorAll(".feature-card");
-      features.slice(0, 9).forEach(function(f, i) {
+      features.slice(0, 6).forEach(function(f, i) {
         if (!cards[i]) return;
         var card = cards[i];
-        // Support both old field names and new ones from Meta API
-        var imgSrc = f.image_local || f.image || "";
-        var handle = f.artist || f.handle || "";
-        var caption = f.caption_snippet || f.caption || "";
-        var postUrl = f.post_url || f.url || "#";
-
-        var imgEl = card.querySelector(".feature-card-image, .feature-card-placeholder");
-        if (imgEl && imgSrc) {
+        var imgEl = card.querySelector(".feature-card-image");
+        if (imgEl && f.image) {
           var img = document.createElement("img");
-          img.src = imgSrc;
-          img.alt = "@" + handle;
+          img.src = f.image;
+          img.alt = f.handle || "";
           img.className = "feature-card-image";
           img.loading = "lazy";
           imgEl.replaceWith(img);
         }
         var handleEl = card.querySelector(".feature-card-handle");
-        if (handleEl && handle) handleEl.textContent = "@" + handle;
+        if (handleEl && f.handle) handleEl.textContent = f.handle;
         var capEl = card.querySelector(".feature-card-caption");
-        if (capEl && caption) capEl.textContent = caption;
-        // Make card clickable
-        if (postUrl && postUrl !== "#") {
-          card.style.cursor = "pointer";
-          card.onclick = function() { window.open(postUrl, "_blank"); };
-        }
+        if (capEl && f.caption) capEl.textContent = f.caption;
       });
     })
     .catch(function() { /* silent — placeholders stay */ });
