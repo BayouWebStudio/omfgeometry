@@ -1024,5 +1024,56 @@
       "images/emanscorfna_1.jpg",
       "images/emanscorfna_2.jpg"
     ]
+  },
+  {
+    "name": "Ingo Araneo",
+    "slug": "araneo-tattoo",
+    "instagram": "araneo_tattoo",
+    "location": "Hamburg, Germany",
+    "country": "Germany",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @araneo_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/araneo-tattoo.jpg",
+    "gallery": [
+      "images/araneo-tattoo_1.jpg",
+      "images/araneo-tattoo_2.jpg"
+    ]
+  },
+  {
+    "name": "Loïc Ysmal",
+    "slug": "swatidot-ttt",
+    "instagram": "swatidot.ttt",
+    "location": "Domfront 61700",
+    "country": "Domfront 61700",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @swatidot.ttt on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/swatidot-ttt.jpg",
+    "gallery": [
+      "images/swatidot-ttt_1.jpg",
+      "images/swatidot-ttt_2.jpg"
+    ]
+  },
+  {
+    "name": "blvck_maz",
+    "slug": "blvck-maz",
+    "instagram": "blvck_maz",
+    "location": "",
+    "country": "",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @blvck_maz on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/blvck-maz.jpg",
+    "gallery": [
+      "images/blvck-maz_1.jpg",
+      "images/blvck-maz_2.jpg"
+    ]
   }
 ]
