@@ -1204,6 +1204,7 @@ img { max-width: 100%; height: auto; display: block; }
     display: flex;
     flex-direction: column;
     position: absolute;
+    z-index: 1001;
     top: 76px;
     left: 0;
     right: 0;
@@ -1306,6 +1307,7 @@ img { max-width: 100%; height: auto; display: block; }
   width: 220px;
   height: 220px;
   object-fit: contain;
+  mix-blend-mode: screen;
   filter: drop-shadow(0 0 40px rgba(0, 191, 255, 0.6));
   animation: logo-pulse 3s ease-in-out infinite;
 }
