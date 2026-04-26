@@ -16,7 +16,7 @@
     fbq('init','1446410187106776');fbq('track','PageView');
   </script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title id="page-title">Artist — OMF Geometry</title>
+<title id="page-title">Artist | OMF Geometry</title>
 <meta id="og-image" property="og:image" content="">
 <meta id="og-title" property="og:title" content="">
 <meta id="og-desc" property="og:description" content="">
@@ -65,10 +65,10 @@ OMF.init('directory');
   const styles = (a.styles || []).join(', ') || 'geometric';
   const img = a.image || '';
 
-  document.title = `${name} — Geometric Tattoo Artist | OMF Geometry`;
+  document.title = `${name} | Geometric Tattoo Artist | OMF Geometry`;
   document.getElementById('page-title').textContent = document.title;
   document.getElementById('og-title').content = document.title;
-  document.getElementById('og-desc').content = `${name} — geometric tattoo artist from ${location}. Featured in OMF Geometry.`;
+  document.getElementById('og-desc').content = `${name} | geometric tattoo artist from ${location}. Featured in OMF Geometry.`;
   document.getElementById('og-image').content = `https://omfgeometry.com/${img}`;
   document.getElementById('og-url').content = `https://omfgeometry.com/artist.html?slug=${slug}`;
   document.getElementById('twitter-image').content = `https://omfgeometry.com/${img}`;
@@ -92,7 +92,7 @@ OMF.init('directory');
   const gallery = (a.gallery || []).slice(0, 6);
   const galleryHTML = gallery.map((g, i) => `
     <figure class="spread__gallery-item">
-      <img src="${g}" alt="${name} — work ${i+1}" loading="lazy">
+      <img src="${g}" alt="${name} | work ${i+1}" loading="lazy">
     </figure>
   `).join('');
 
@@ -141,7 +141,7 @@ OMF.init('directory');
         </div>
         <div>
           <p class="spread__lede-text">Featured in our standing record of geometric tattoo. A small selection of recent work, photographed where it was made.</p>
-          ${a.bio ? `<p class="spread__lede-meta">${a.bio}</p>` : `<p class="spread__lede-meta">Geometric tattoo artist featured on @omfgeometry. Follow @${ig || '...'} on Instagram for more work. A selection of pieces follows below — chosen for their composition, line discipline, and the way each one rests on the body it was made for.</p>`}
+          ${a.bio ? `<p class="spread__lede-meta">${a.bio}</p>` : `<p class="spread__lede-meta">Geometric tattoo artist featured on @omfgeometry. Follow @${ig || '...'} on Instagram for more work. A selection of pieces follows below | chosen for their composition, line discipline, and the way each one rests on the body it was made for.</p>`}
         </div>
       </div>
 

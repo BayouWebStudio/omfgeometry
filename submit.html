@@ -16,7 +16,7 @@
     fbq('init','1446410187106776');fbq('track','PageView');
   </script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Submit — OMF Geometry</title>
+<title>Submit | OMF Geometry</title>
 <link rel="stylesheet" href="css/monolith.css">
 <style>
   .submit-hero {
@@ -61,17 +61,21 @@
     <span class="eyebrow" style="margin-top:32px">Checklist</span>
     <ul class="checklist">
       <li><b>01</b><span>An Instagram handle with at least 18 months of work.</span></li>
-      <li><b>02</b><span>A short note on practice — what you keep returning to.</span></li>
+      <li><b>02</b><span>A short note on practice | what you keep returning to.</span></li>
       <li><b>03</b><span>City and country (we use this for the atlas).</span></li>
     </ul>
   </aside>
 
-  <form class="form-grid" onsubmit="event.preventDefault(); document.getElementById('submit-thanks').style.display='block'; this.style.display='none';">
-    <label>Artist name<input type="text" placeholder="Your name, or theirs" required></label>
-    <label>Instagram handle<input type="text" placeholder="@handle" required></label>
-    <label>City, Country<input type="text" placeholder="Paris, France" required></label>
-    <label>A note on the work<textarea placeholder="What does this artist keep returning to? What sets the work apart? Two or three sentences is plenty." required></textarea></label>
-    <label>Submitter email<input type="email" placeholder="for our reply" required></label>
+  <form class="form-grid" action="https://formsubmit.co/editorial@omfgeometry.com" method="POST">
+    <input type="hidden" name="_subject" value="OMF Geometry: New Artist Submission">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://omfgeometry.com/submit.html?sent=1">
+    <label>Artist name<input type="text" name="artist_name" placeholder="Your name, or theirs" required></label>
+    <label>Instagram handle<input type="text" name="instagram" placeholder="@handle" required></label>
+    <label>City, Country<input type="text" name="location" placeholder="Paris, France" required></label>
+    <label>A note on the work<textarea name="note" placeholder="What does this artist keep returning to? What sets the work apart? Two or three sentences is plenty." required></textarea></label>
+    <label>Submitter email<input type="email" name="email" placeholder="for our reply" required></label>
     <button type="submit" class="btn btn--solid" style="justify-self:start;margin-top:8px">Send Submission</button>
   </form>
 
@@ -86,5 +90,11 @@
 
 <script src="js/omf.js"></script>
 <script>OMF.init('submit');</script>
+<script>
+  if (new URLSearchParams(window.location.search).get('sent') === '1') {
+    document.querySelector('.form-grid').style.display = 'none';
+    document.getElementById('submit-thanks').style.display = 'block';
+  }
+</script>
 </body>
 </html>

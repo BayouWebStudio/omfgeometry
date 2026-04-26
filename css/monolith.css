@@ -344,6 +344,12 @@ a:hover { color: var(--paper); }
   color: var(--gilt);
 }
 
+@media (max-width: 600px) {
+  .feed { grid-template-columns: repeat(2, 1fr); }
+  .feed__name { font-size: 15px; }
+  .feed__num, .feed__loc { font-size: 8px; }
+}
+
 /* ========================================================
    SPARSE DIRECTORY CARDS
    ======================================================== */

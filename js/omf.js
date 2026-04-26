@@ -1,4 +1,4 @@
-/* OMF Monolith — shared partials & helpers
+/* OMF Monolith | shared partials & helpers
    Renders the masthead and footer into [data-masthead] / [data-colophon].
    Loads artist data and exposes window.OMF.{artists, byCountry, byCity, helpers}.
 */
@@ -33,7 +33,7 @@
           <a href="${ROOT}directory.html" data-nav="directory">Directory</a>
           <a href="${ROOT}map.html" data-nav="map">Atlas</a>
           <a href="${ROOT}blog/index.html" data-nav="blog">Journal</a>
-          <a href="${ROOT}about.html" data-nav="about">Colophon</a>
+          <a href="${ROOT}about.html" data-nav="about">About</a>
           <a href="${ROOT}submit.html" data-nav="submit">Submit</a>
         </nav>
       </header>`;
@@ -48,7 +48,7 @@
         <div class="colophon__inner">
           <div>
             <div class="colophon__brand">OMF <em>Geometry</em></div>
-            <p class="colophon__tag">An ongoing record of geometric tattoo work — sacred geometry, dotwork, mandala, blackwork — curated by hand from the world's studios.</p>
+            <p class="colophon__tag">An ongoing record of geometric tattoo work | sacred geometry, dotwork, mandala, blackwork | curated by hand from the world's studios.</p>
           </div>
           <div>
             <h4>Sections</h4>
@@ -70,8 +70,8 @@
           <div>
             <h4>Issue</h4>
             <ul>
-              <li><span style="color:var(--gilt)">№ 01 — Berdah</span></li>
-              <li><span style="color:var(--text-mute)">№ 02 — Forthcoming</span></li>
+              <li><span style="color:var(--gilt)">№ 01 | Berdah</span></li>
+              <li><span style="color:var(--text-mute)">№ 02 | Forthcoming</span></li>
             </ul>
           </div>
         </div>
