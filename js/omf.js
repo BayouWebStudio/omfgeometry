@@ -25,7 +25,7 @@
           </a>
           <div class="masthead__meta masthead__meta--right">
             <a href="https://instagram.com/omfgeometry" target="_blank">Instagram</a>
-            <a href="${ROOT}submit.html">Submit</a>
+            <a href="https://instagram.com/omfgeometry" target="_blank">Tag Us</a>
           </div>
         </div>
         <nav class="masthead__nav">
@@ -34,7 +34,6 @@
           <a href="${ROOT}map.html" data-nav="map">Atlas</a>
           <a href="${ROOT}blog/index.html" data-nav="blog">Journal</a>
           <a href="${ROOT}about.html" data-nav="about">About</a>
-          <a href="${ROOT}submit.html" data-nav="submit">Submit</a>
         </nav>
       </header>`;
     const node = el(html);
@@ -62,7 +61,7 @@
           <div>
             <h4>Take Part</h4>
             <ul>
-              <li><a href="submit.html">Submit an Artist</a></li>
+              <li><a href="https://instagram.com/omfgeometry" target="_blank">Tag Us on Instagram</a></li>
               <li><a href="about.html">About OMF</a></li>
               <li><a href="https://instagram.com/omfgeometry" target="_blank">Instagram</a></li>
             </ul>

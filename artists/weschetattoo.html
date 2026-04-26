@@ -40,6 +40,53 @@
   .related-card__cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px; background: linear-gradient(180deg, transparent, rgba(10,9,8,0.9)); color: var(--text-bright); }
   .related-card__cap .nm { font: italic 400 18px/1 var(--serif); }
   .related-card__cap .lc { font: 400 10px/1 var(--mono); letter-spacing: 0.18em; text-transform: uppercase; color: var(--gilt); margin-top: 4px; }
+
+    .profile-photo {
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .profile-photo img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #1a1a1a;
+    }
+    .gallery {
+        margin: 2rem 0;
+    }
+    .gallery h3 {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #888;
+        margin-bottom: 1rem;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+    .gallery-grid img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 4px;
+        transition: transform 0.2s;
+    }
+    .gallery-grid img:hover {
+        transform: scale(1.02);
+    }
+    @media (max-width: 600px) {
+        .profile-photo img {
+            width: 120px;
+            height: 120px;
+        }
+        .gallery-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
 </style>
 </head>
 <body>
@@ -59,6 +106,10 @@
             <div>
               <div class="eyebrow" style="margin-bottom:14px">Featured Artist</div>
               <h1 class="spread__title">Raul <em>Wesche</em></h1>
+
+    <div class="profile-photo">
+        <img src="/images/weschetattoo.jpg" alt="Raul Wesche" loading="lazy">
+    </div>
               <div class="spread__byline">
                 <span><b>Instagram</b>@weschetattoo</span>
                 <span><b>Based</b>Houston, TX, United States</span>
