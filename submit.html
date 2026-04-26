@@ -1,103 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<meta charset="UTF-8">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-2SPB4F1HX7');
   </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Submit a Geometric Tattoo Artist - OMF Geometry</title>
-  <meta name="description" content="Submit a geometric tattoo artist to OMF Geometry. We review every sacred geometry tattoo artist submission. Join the world's largest curated tattoo directory.">
-    <link rel="icon" href="/images/omf-og.png" type="image/png">
-  <link rel="canonical" href="https://omfgeometry.com/submit.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Submit a Geometric Tattoo Artist - OMF Geometry">
-  <meta property="og:description" content="Know a geometric tattoo artist who deserves recognition? Submit them to the OMF Geometry directory.">
-  <meta property="og:url" content="https://omfgeometry.com/submit.html">
-  <meta property="og:image" content="https://omfgeometry.com/images/omf-og.png">
-  <meta property="og:site_name" content="OMF Geometry">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@omfgeometry">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Submit — OMF Geometry</title>
+<link rel="stylesheet" href="css/monolith.css">
+<style>
+  .submit-hero {
+    padding: clamp(60px,8vw,120px) var(--gutter) clamp(40px,5vw,80px);
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .submit-hero h1 { font: italic 400 clamp(56px,9vw,144px)/0.92 var(--serif); color: var(--text-bright); letter-spacing: -0.03em; }
+  .submit-hero h1 b { font-style:normal; font-weight:400; }
+  .submit-hero p { margin-top: 28px; font: italic 400 clamp(20px,2.2vw,28px)/1.4 var(--serif); color: var(--text-bright); max-width: 56ch; }
+
+  .submit-body { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(40px,6vw,100px); padding: clamp(60px,7vw,120px) var(--gutter); }
+  .submit-body aside { padding-right: 32px; }
+  .submit-body aside h3 { font: italic 400 clamp(24px,2.4vw,32px)/1.1 var(--serif); color: var(--text-bright); margin-bottom: 18px; }
+  .submit-body aside p { font: 400 14.5px/1.7 var(--sans); color: var(--text-soft); margin-bottom: 18px; }
+  .submit-body aside .eyebrow { display: block; margin-bottom: 10px; }
+  .checklist { display: grid; gap: 14px; margin-top: 32px; }
+  .checklist li { display: grid; grid-template-columns: 28px 1fr; gap: 12px; font: 400 13.5px/1.55 var(--sans); color: var(--text-soft); list-style: none; }
+  .checklist li b { color: var(--gilt); font: 700 11px/1.4 var(--mono); letter-spacing: 0.18em; }
+
+  @media (max-width: 800px) { .submit-body { grid-template-columns: 1fr; } }
+</style>
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo">OMF<span>GEOMETRY</span></a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="blog/">Blog</a></li>
-      <li><a href="submit.html" class="active">Submit Artist</a></li>
-    </ul>
-  </div>
-</nav>
+<div data-masthead></div>
 
-<section class="section" style="padding-top: 140px;">
-  <div class="container">
-    <div class="section-header">
-      <h1>Submit a Geometric Tattoo Artist</h1>
-      <p>Know a geometric tattoo artist who deserves to be featured? Let us know.</p>
-      <div class="section-divider"></div>
-    </div>
-
-    <form class="submit-form" action="https://formspree.io/f/xgegebgb" method="POST">
-      <div class="form-group">
-        <label for="artist-name">Artist Name</label>
-        <input type="text" id="artist-name" name="artist_name" placeholder="e.g. Jane Doe" required>
-      </div>
-      <div class="form-group">
-        <label for="instagram">Instagram Handle</label>
-        <input type="text" id="instagram" name="instagram" placeholder="@handle" required>
-      </div>
-      <div class="form-group">
-        <label for="location">Location</label>
-        <input type="text" id="location" name="location" placeholder="City, Country" required>
-      </div>
-      <div class="form-group">
-        <label for="styles">Style Tags</label>
-        <input type="text" id="styles" name="styles" placeholder="e.g. sacred geometry, dotwork, mandala">
-      </div>
-      <div class="form-group">
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="your@email.com" required>
-      </div>
-      <div class="form-group">
-        <label for="notes">Additional Notes</label>
-        <textarea id="notes" name="notes" placeholder="Anything else we should know about this artist?"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Submit Artist</button>
-    </form>
+<section class="submit-hero">
+  <div class="shell">
+    <div class="eyebrow" style="margin-bottom:24px">Submissions · Open year-round</div>
+    <h1><em>Submit</em> an Artist</h1>
+    <p>Suggest yourself, your work, or another artist whose practice belongs in this record. Every submission is read by a human; we respond to every one we add.</p>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-logo">OMF GEOMETRY</div>
-    <ul class="footer-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="blog/">Blog</a></li>
-      <li><a href="submit.html">Submit</a></li>
-    </ul>
-    <a href="https://instagram.com/omfgeometry" target="_blank" class="footer-ig">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-      @omfgeometry
-    </a>
-    <div class="footer-copy">© 2026 OMF Geometry. Built with 🌿 by <a href="https://getminted.ai">Eterno Web Studio</a>.</div>
-  </div>
-<div style="text-align:center;padding:12px 0 0;margin-top:16px;border-top:1px solid rgba(255,255,255,0.06);"><a href="https://eternowebstudio.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.2);font-size:0.55rem;letter-spacing:0.12em;text-decoration:none;font-family:sans-serif;text-transform:uppercase;">Built by Eterno Web Studio</a></div>
-  </footer>
+<section class="submit-body shell">
+  <aside>
+    <span class="eyebrow">How we read</span>
+    <h3>What we look for</h3>
+    <p>Discipline of line, intentional composition, sustained body of work. We don't weight follower count. We don't weight country. We look at twenty pieces and decide.</p>
+    <p>Submissions stay open. We add new artists at the end of each issue cycle.</p>
 
-<script src="js/main.js"></script>
+    <span class="eyebrow" style="margin-top:32px">Checklist</span>
+    <ul class="checklist">
+      <li><b>01</b><span>An Instagram handle with at least 18 months of work.</span></li>
+      <li><b>02</b><span>A short note on practice — what you keep returning to.</span></li>
+      <li><b>03</b><span>City and country (we use this for the atlas).</span></li>
+    </ul>
+  </aside>
+
+  <form class="form-grid" onsubmit="event.preventDefault(); document.getElementById('submit-thanks').style.display='block'; this.style.display='none';">
+    <label>Artist name<input type="text" placeholder="Your name, or theirs" required></label>
+    <label>Instagram handle<input type="text" placeholder="@handle" required></label>
+    <label>City, Country<input type="text" placeholder="Paris, France" required></label>
+    <label>A note on the work<textarea placeholder="What does this artist keep returning to? What sets the work apart? Two or three sentences is plenty." required></textarea></label>
+    <label>Submitter email<input type="email" placeholder="for our reply" required></label>
+    <button type="submit" class="btn btn--solid" style="justify-self:start;margin-top:8px">Send Submission</button>
+  </form>
+
+  <div id="submit-thanks" style="display:none;grid-column:1/-1;padding:48px;border:1px solid var(--gilt);text-align:center">
+    <div class="eyebrow" style="margin-bottom:16px">Received</div>
+    <h2 style="font:italic 400 clamp(28px,3vw,40px)/1 var(--serif);color:var(--text-bright)">Thank you. We'll read it.</h2>
+    <p style="margin-top:16px;font:400 14.5px/1.7 var(--sans);color:var(--text-soft);max-width:50ch;margin-left:auto;margin-right:auto">Every submission is reviewed by hand. If we feature the artist, we'll be in touch within four weeks.</p>
+  </div>
+</section>
+
+<div data-colophon></div>
+
+<script src="js/omf.js"></script>
+<script>OMF.init('submit');</script>
 </body>
 </html>

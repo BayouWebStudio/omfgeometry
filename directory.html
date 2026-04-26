@@ -1,220 +1,177 @@
-<!-- v=20260309144700 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<meta charset="UTF-8">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-2SPB4F1HX7');
   </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geometric Tattoo Artist Directory - OMF Geometry</title>
-  <meta name="description" content="Browse 34 of the world's best geometric tattoo artists. Filter by country and style - sacred geometry, dotwork, mandala, blackwork. Curated by @omfgeometry.">
-    <link rel="icon" href="/images/omf-og.png" type="image/png">
-  <link rel="canonical" href="https://omfgeometry.com/directory.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Geometric Tattoo Artist Directory - OMF Geometry">
-  <meta property="og:description" content="Browse 34 of the world's best geometric tattoo artists. Filter by country and style.">
-  <meta property="og:url" content="https://omfgeometry.com/directory.html">
-  <meta property="og:image" content="https://omfgeometry.com/images/omf-og.png">
-  <meta property="og:site_name" content="OMF Geometry">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@omfgeometry">
-  <meta name="twitter:title" content="Geometric Tattoo Artist Directory - OMF Geometry">
-  <meta name="twitter:image" content="https://omfgeometry.com/images/omf-og.png">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Directory — OMF Geometry</title>
+<link rel="stylesheet" href="css/monolith.css">
+<style>
+  .dir-hero {
+    padding: clamp(56px, 8vw, 120px) var(--gutter) clamp(40px, 5vw, 64px);
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .dir-hero__row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 32px;
+  }
+  .dir-hero__title {
+    font: italic 400 clamp(56px, 9vw, 144px)/0.92 var(--serif);
+    color: var(--text-bright);
+    letter-spacing: -0.03em;
+  }
+  .dir-hero__title b { font-style: normal; font-weight: 400; }
+  .dir-hero__count {
+    text-align: right;
+    font: 400 11px/1.6 var(--mono);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+  .dir-hero__count b { color: var(--gilt); display: block; font: italic 400 56px/1 var(--serif); margin-bottom: 8px; }
+  .dir-hero__lede {
+    margin-top: 28px;
+    font: italic 400 clamp(20px, 2.2vw, 28px)/1.4 var(--serif);
+    color: var(--text-bright);
+    max-width: 56ch;
+  }
+  @media (max-width: 700px) {
+    .dir-hero__row { grid-template-columns: 1fr; }
+    .dir-hero__count { text-align: left; }
+  }
+  .dir-search {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--rule-strong);
+    padding: 14px 0;
+    font: italic 400 22px/1 var(--serif);
+    color: var(--text-bright);
+    outline: none;
+    margin-bottom: 24px;
+  }
+  .dir-search:focus { border-bottom-color: var(--gilt); }
+  .dir-search::placeholder { color: var(--text-mute); }
+  .dir-empty {
+    padding: 80px 0;
+    text-align: center;
+    font: italic 400 24px var(--serif);
+    color: var(--text-mute);
+  }
+</style>
 </head>
 <body>
-<canvas id="constellation-bg"></canvas>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo">OMF<span style="color:#00BFFF">GEOMETRY</span></a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="directory.html" class="active">Directory</a></li>
-      <li><a href="blog/">Blog</a></li>
-      <li><a href="submit.html">Submit Artist</a></li>
-    </ul>
-  </div>
-</nav>
+<div data-masthead></div>
 
-<section class="section" style="padding-top: 150px;">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-eyebrow">The Directory</span>
-      <h1>Geometric Tattoo Artist Directory</h1>
-      <p>Explore geometric tattoo artists from around the world</p>
-      <div class="directory-count" id="artist-count-badge">31 Artists</div>
-      <div class="section-divider"></div>
+<section class="dir-hero">
+  <div class="shell">
+    <div class="dir-hero__row">
+      <div>
+        <div class="eyebrow" style="margin-bottom:24px">The Directory · Volume One</div>
+        <h1 class="dir-hero__title">The <em>Directory</em></h1>
+      </div>
+      <div class="dir-hero__count">
+        <b id="count">62</b>
+        <div>Artists</div>
+        <div style="margin-top:18px"><b style="font-size:32px" id="countries">24</b></div>
+        <div>Countries</div>
+      </div>
     </div>
-
-    <div class="directory-intro" style="max-width: 800px; margin: 0 auto 2rem; text-align: center;">
-      <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem;">
-        Welcome to OMF Geometry - the world's largest curated directory of geometric tattoo artists. 
-        Every artist in this collection was hand-picked for exceptional precision, creativity, and mastery 
-        of sacred geometry, dotwork, mandala, and blackwork styles. Whether you're searching for a geometric 
-        tattoo artist near you or exploring the best sacred geometry tattoo artists worldwide, our directory 
-        connects you with verified talent across every continent. Browse by country, explore artist portfolios, 
-        and find your next tattoo artist - no algorithms, no ads, just exceptional geometric tattoo work 
-        curated by artists, for everyone.
-      </p>
-    </div>
-
-    <div class="filter-bar" id="filter-bar">
-      <label>Filter by Country:</label>
-      <button class="filter-pill active" data-country="">All</button>
-    </div>
-
-    <div class="artists-grid" id="artists-container"></div>
+    <p class="dir-hero__lede">A standing index of the geometric tattooists we follow most closely. Sorted, filterable, hand-curated. <em>No fees. No rankings. No paid placement.</em></p>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-logo">OMF Geometry</div>
-    <ul class="footer-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="blog/">Blog</a></li>
-      <li><a href="submit.html">Submit</a></li>
-    </ul>
-    <a href="https://instagram.com/omfgeometry" target="_blank" class="footer-ig">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-      @omfgeometry
-    </a>
-    <div class="footer-copy">© 2026 OMF Geometry</div>
+<section class="shell" style="padding-top: clamp(32px,4vw,56px)">
+  <input id="search" class="dir-search" placeholder="Search by name, city, country, or @handle…" />
+  <div class="filterbar">
+    <span class="filterbar__label">By Country</span>
+    <div id="filters" style="display:flex;flex-wrap:wrap"></div>
   </div>
-<div style="text-align:center;padding:12px 0 0;margin-top:16px;border-top:1px solid rgba(255,255,255,0.06);"><a href="https://eternowebstudio.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.2);font-size:0.55rem;letter-spacing:0.12em;text-decoration:none;font-family:sans-serif;text-transform:uppercase;">Built by Eterno Web Studio</a></div>
-  </footer>
+  <div class="directory-grid" id="grid"></div>
+  <div id="empty" class="dir-empty" style="display:none">No artists match.</div>
+</section>
 
+<div data-colophon></div>
+
+<script src="js/omf.js"></script>
 <script>
-// All 31 artists embedded inline
-window.ARTISTS = [{"name":"Clément Berdah 🐢⭐️","slug":"monsieur-berdah","instagram":"monsieur_berdah","location":"France","country":"France","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @monsieur_berdah on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/monsieur-berdah.jpg","gallery":["images/monsieur-berdah_1.jpg","images/monsieur-berdah_2.jpg","images/monsieur-berdah_3.jpg"]},{"name":"Raye Tattoo","slug":"rayetattoo","instagram":"rayetattoo","location":"Barcelona, Spain","country":"Spain","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @rayetattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/rayetattoo.jpg","gallery":["images/rayetattoo_1.jpg","images/rayetattoo_2.jpg","images/rayetattoo_3.jpg"]},{"name":"Raul Wesche","slug":"weschetattoo","instagram":"weschetattoo","location":"Houston, TX, United States","country":"United States","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @weschetattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/weschetattoo.jpg","gallery":["images/weschetattoo_1.jpg","images/weschetattoo_2.jpg","images/weschetattoo_3.jpg"]},{"name":"Lena Burlai","slug":"lenaburlai-ink","instagram":"lenaburlai.ink","location":"Dortmund, Germany","country":"Germany","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @lenaburlai.ink on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/lenaburlai-ink.jpg","gallery":["images/lenaburlai-ink_1.jpg","images/lenaburlai-ink_2.jpg","images/lenaburlai-ink_3.jpg"]},{"name":"• P O O N O S. I N K •","slug":"poonos-ink","instagram":"poonos.ink","location":"Bristol, United Kingdom","country":"United Kingdom","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @poonos.ink on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/poonos-ink.jpg","gallery":["images/poonos-ink.jpg"]},{"name":"Tom Rousseau","slug":"tom-ten","instagram":"tom__ten","location":"Lyon, France","country":"France","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @tom__ten on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/tom-ten.jpg","gallery":["images/tom-ten_1.jpg","images/tom-ten_2.jpg","images/tom-ten_3.jpg"]},{"name":"Suezo","slug":"suezosubnoize","instagram":"suezosubnoize","location":"Presidente Prudente, Brazil","country":"Brazil","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @suezosubnoize on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/suezosubnoize.jpg","gallery":["images/suezosubnoize_1.jpg","images/suezosubnoize_2.jpg","images/suezosubnoize_3.jpg"]},{"name":"Cerenys fabien","slug":"fabbio-tattoo","instagram":"fabbio.tattoo","location":"France","country":"France","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @fabbio.tattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/fabbio-tattoo.jpg","gallery":["images/fabbio-tattoo.jpg"]},{"name":"•MāNđâląMäKēR•","slug":"pastorelli-tattoo","instagram":"pastorelli_tattoo","location":"South Florida, United States","country":"United States","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @pastorelli_tattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/pastorelli-tattoo.jpg","gallery":["images/pastorelli-tattoo_1.jpg","images/pastorelli-tattoo_2.jpg","images/pastorelli-tattoo_3.jpg"]},{"name":"Ina","slug":"ina3tats","instagram":"ina3tats","location":"Barcelona, Spain","country":"Spain","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @ina3tats on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/ina3tats.jpg","gallery":["images/ina3tats.jpg"]},{"name":"Eddie Rise","slug":"eddie-rise","instagram":"eddie.rise","location":"New Mexico, United States","country":"United States","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @eddie.rise on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/eddie-rise.jpg","gallery":["images/eddie-rise_1.jpg","images/eddie-rise_2.jpg","images/eddie-rise_3.jpg"]},{"name":"Jakabtattoo","slug":"jakabtattoo","instagram":"jakabtattoo","location":"Pilisvörösvár, Hungary","country":"Hungary","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @jakabtattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/jakabtattoo.jpg","gallery":["images/jakabtattoo_1.jpg","images/jakabtattoo_2.jpg","images/jakabtattoo_3.jpg"]},{"name":"BLACKOUT/NEW TRIBAL & SOLID TRADITIONAL","slug":"pietro-buccinna-tattoo","instagram":"pietro.buccinna.tattoo","location":"Milan, Italy","country":"Italy","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @pietro.buccinna.tattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/pietro-buccinna-tattoo.jpg","gallery":["images/pietro-buccinna-tattoo_1.jpg","images/pietro-buccinna-tattoo_2.jpg","images/pietro-buccinna-tattoo_3.jpg"]},{"name":"Flo 4 Ink","slug":"flo4ink","instagram":"flo4ink","location":"Germany","country":"Germany","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @flo4ink on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/flo4ink.jpg","gallery":["images/flo4ink_1.jpg","images/flo4ink_2.jpg","images/flo4ink_3.jpg"]},{"name":"xo.Jani.xo","slug":"xojanix","instagram":"_xojanix","location":"Unknown","country":"Unknown","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @_xojanix on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/xojanix.jpg","gallery":["images/xojanix.jpg"]},{"name":"Marco Marini","slug":"lesacrelinee","instagram":"lesacrelinee","location":"Milan, Italy","country":"Italy","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @lesacrelinee on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/lesacrelinee.jpg","gallery":["images/lesacrelinee_1.jpg","images/lesacrelinee_2.jpg","images/lesacrelinee_3.jpg"]},{"name":"ૐ Da Ne ૐ","slug":"psydala","instagram":"psydala","location":"Germany","country":"Germany","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @psydala on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/psydala.jpg","gallery":["images/psydala_1.jpg","images/psydala_2.jpg","images/psydala_3.jpg"]},{"name":"Mat Aequilibrium","slug":"mat-aequilibrium","instagram":"mat_aequilibrium","location":"Switzerland","country":"Switzerland","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @mat_aequilibrium on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/mat-aequilibrium.jpg","gallery":["images/mat-aequilibrium_1.jpg","images/mat-aequilibrium_2.jpg","images/mat-aequilibrium_3.jpg"]},{"name":"Nadoz - Geometric, Ornamental","slug":"nadoz-tattoo","instagram":"nadoz_tattoo","location":"France","country":"France","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @nadoz_tattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/nadoz-tattoo.jpg","gallery":["images/nadoz-tattoo_1.jpg","images/nadoz-tattoo_2.jpg","images/nadoz-tattoo_3.jpg"]},{"name":"Israel Paketh","slug":"tattoosbypaketh","instagram":"tattoosbypaketh","location":"Argentina","country":"Argentina","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @tattoosbypaketh on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/tattoosbypaketh.jpg","gallery":["images/tattoosbypaketh_1.jpg","images/tattoosbypaketh_2.jpg","images/tattoosbypaketh_3.jpg"]},{"name":"Raimundo Ramírez","slug":"raimundo-ramirez","instagram":"raimundo_ramirez","location":"Blanes, Spain","country":"Spain","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @raimundo_ramirez on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/raimundo-ramirez.jpg","gallery":["images/raimundo-ramirez_1.jpg","images/raimundo-ramirez_2.jpg","images/raimundo-ramirez_3.jpg"]},{"name":"Francesco Capro","slug":"francesco-capro","instagram":"francesco.capro","location":"London, United Kingdom","country":"United Kingdom","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @francesco.capro on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/francesco-capro.jpg","gallery":["images/francesco-capro_1.jpg","images/francesco-capro_2.jpg","images/francesco-capro_3.jpg"]},{"name":"Stefan Halbwachs","slug":"stefan-halbwachs","instagram":"stefan.halbwachs","location":"Vienna, Austria","country":"Austria","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @stefan.halbwachs on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/stefan-halbwachs.jpg","gallery":["images/stefan-halbwachs_1.jpg","images/stefan-halbwachs_2.jpg","images/stefan-halbwachs_3.jpg"]},{"name":"ALEX SANTUCCI","slug":"alex-santucci-tattooer","instagram":"alex_santucci_tattooer","location":"Ancona, Italy","country":"Italy","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @alex_santucci_tattooer on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/alex-santucci-tattooer.jpg","gallery":["images/alex-santucci-tattooer_1.jpg","images/alex-santucci-tattooer_2.jpg","images/alex-santucci-tattooer_3.jpg"]},{"name":"Tom Birch","slug":"tommbirchtattoo","instagram":"tommbirchtattoo","location":"Manchester, United Kingdom","country":"United Kingdom","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @tommbirchtattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/tommbirchtattoo.jpg","gallery":["images/tommbirchtattoo_1.jpg","images/tommbirchtattoo_2.jpg","images/tommbirchtattoo_3.jpg"]},{"name":"🕉DEVOTION TATTOO FAMILY🕉","slug":"patrick-bressan-tattoo","instagram":"patrick.bressan.tattoo","location":"Italy","country":"Italy","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @patrick.bressan.tattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/patrick-bressan-tattoo.jpg","gallery":["images/patrick-bressan-tattoo_1.jpg","images/patrick-bressan-tattoo_2.jpg","images/patrick-bressan-tattoo_3.jpg"]},{"name":"FH","slug":"f-henx","instagram":"f.henx","location":"Chile","country":"Chile","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @f.henx on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/f-henx.jpg","gallery":["images/f-henx_1.jpg","images/f-henx_2.jpg","images/f-henx_3.jpg"]},{"name":"Seth Arcane • Dotwork Tattoo Artist","slug":"setharcane","instagram":"setharcane","location":"London, United Kingdom","country":"United Kingdom","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @setharcane on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/setharcane.jpg","gallery":["images/setharcane_1.jpg","images/setharcane_2.jpg","images/setharcane_3.jpg"]},{"name":"MARCO GALDO","slug":"marcogaldotattoo","instagram":"marcogaldotattoo","location":"Italy","country":"Italy","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @marcogaldotattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/marcogaldotattoo.jpg","gallery":["images/marcogaldotattoo_1.jpg","images/marcogaldotattoo_2.jpg","images/marcogaldotattoo_3.jpg"]},{"name":"Laura","slug":"laurahochmondtattoo","instagram":"laurahochmondtattoo","location":"Vienna, Austria","country":"Austria","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @laurahochmondtattoo on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/laurahochmondtattoo.jpg","gallery":["images/laurahochmondtattoo.jpg"]},{"name":"GEOMETRIC DOTWORK AND BLACKWORK TATTOOER - MANCHESTER UK","slug":"jordthetattooer","instagram":"jordthetattooer","location":"United Kingdom","country":"United Kingdom","bio":"Geometric tattoo artist featured on @omfgeometry. Follow @jordthetattooer on Instagram for more work.","styles":["geometric"],"featured":true,"image":"images/jordthetattooer.jpg","gallery":["images/jordthetattooer_1.jpg","images/jordthetattooer_2.jpg","images/jordthetattooer_3.jpg"]}];
+  OMF.init('directory');
+  (async () => {
+    const artists = await OMF.loadArtists();
+    const grid = document.getElementById('grid');
+    const filters = document.getElementById('filters');
+    const search = document.getElementById('search');
+    const empty = document.getElementById('empty');
 
-document.addEventListener("DOMContentLoaded", function() {
-  var allArtists = window.ARTISTS;
-  var filterBar = document.getElementById("filter-bar");
-  var container = document.getElementById("artists-container");
-  var countBadge = document.getElementById("artist-count-badge");
-  var activeCountry = "";
+    document.getElementById('count').textContent = artists.length;
+    document.getElementById('countries').textContent = new Set(artists.map(a => a.country)).size;
 
-  // Build country pill buttons
-  var countries = [...new Set(allArtists.map(function(a){ return a.country }))].sort();
-  countries.forEach(function(c) {
-    var btn = document.createElement("button");
-    btn.className = "filter-pill";
-    btn.setAttribute("data-country", c);
-    btn.textContent = c;
-    filterBar.appendChild(btn);
-  });
+    // Build filters from country counts
+    const countries = {};
+    artists.forEach(a => { countries[a.country] = (countries[a.country]||0) + 1; });
+    const sortedCountries = Object.entries(countries).sort((a,b)=> b[1]-a[1]);
 
-  function render(artists) {
-    container.innerHTML = artists.map(function(a) {
-      return '<a href="artists/' + a.slug + '.html" class="artist-card">' +
-        '<img src="' + a.image + '" alt="' + a.name + '" class="artist-card-image" loading="lazy">' +
-        '<div class="artist-card-overlay"></div>' +
-        '<div class="artist-card-info">' +
-          '<div class="artist-card-name">' + a.name + '</div>' +
-          '<div class="artist-card-handle">@' + a.instagram + '</div>' +
-          '<div class="artist-card-location">' + a.location + '</div>' +
-        '</div>' +
-      '</a>';
-    }).join("");
+    let activeCountry = '';
+    let q = '';
 
-    countBadge.textContent = artists.length + " Artist" + (artists.length !== 1 ? "s" : "");
+    function pill(label, value, count){
+      const b = document.createElement('button');
+      b.className = 'pill' + (value === activeCountry ? ' active' : '');
+      b.textContent = count != null ? `${label} · ${count}` : label;
+      b.onclick = () => { activeCountry = value; render(); renderFilters(); };
+      return b;
+    }
+    function renderFilters(){
+      filters.innerHTML = '';
+      filters.appendChild(pill('All', '', artists.length));
+      sortedCountries.forEach(([c,n]) => filters.appendChild(pill(c, c, n)));
+    }
+    renderFilters();
 
-    // Staggered reveal
-    container.querySelectorAll(".artist-card").forEach(function(el, i) {
-      el.style.opacity = "0";
-      el.style.transform = "translateY(20px)";
-      el.style.transition = "opacity .5s ease " + (i * 0.04) + "s, transform .5s ease " + (i * 0.04) + "s";
-      requestAnimationFrame(function() {
-        requestAnimationFrame(function() {
-          el.style.opacity = "1";
-          el.style.transform = "translateY(0)";
-        });
+    function render(){
+      const filtered = artists.filter(a => {
+        if(activeCountry && a.country !== activeCountry) return false;
+        if(q){
+          const s = q.toLowerCase();
+          return [a.name, a.city, a.country, a.instagram].some(v => (v||'').toLowerCase().includes(s));
+        }
+        return true;
       });
-    });
-  }
-
-  // Filter pill clicks
-  filterBar.addEventListener("click", function(e) {
-    var pill = e.target.closest(".filter-pill");
-    if (!pill) return;
-    activeCountry = pill.getAttribute("data-country");
-
-    filterBar.querySelectorAll(".filter-pill").forEach(function(p) {
-      p.classList.remove("active");
-    });
-    pill.classList.add("active");
-
-    var filtered = activeCountry
-      ? allArtists.filter(function(a) { return a.country === activeCountry; })
-      : allArtists;
-    render(filtered);
-  });
-
-  render(allArtists);
-
-  // Mobile nav
-  var toggle = document.querySelector(".nav-toggle");
-  var links = document.querySelector(".nav-links");
-  if (toggle && links) {
-    toggle.addEventListener("click", function() {
-      links.classList.toggle("open");
-      toggle.textContent = links.classList.contains("open") ? "✕" : "☰";
-    });
-  }
-
-  // Scroll reveal
-  var revealObserver = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("revealed");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
-  document.querySelectorAll(".reveal").forEach(function(el) {
-    revealObserver.observe(el);
-  });
-});
-</script>
-<script>
-(function(){
-  const canvas = document.getElementById('constellation-bg');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let W, H, stars = [];
-  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
-  function initStars() {
-    stars = [];
-    for (let i = 0; i < 120; i++) {
-      stars.push({ x: Math.random()*W, y: Math.random()*H, r: Math.random()*1.5+0.3, vx: (Math.random()-0.5)*0.15, vy: (Math.random()-0.5)*0.15, alpha: Math.random()*0.6+0.2 });
+      empty.style.display = filtered.length ? 'none' : 'block';
+      grid.innerHTML = filtered.map((a, i) => `
+        <a class="dir-card" href="artist.html?slug=${a.slug}">
+          <div class="dir-card__media">
+            <img src="${a.image}" alt="${a.name}" loading="lazy">
+            <div class="dir-card__num">№ ${String(i+1).padStart(3,'0')}</div>
+            <div class="dir-card__country">${a.country}</div>
+          </div>
+          <div class="dir-card__name">${a.name}</div>
+          <div class="dir-card__meta">
+            <span>@${a.instagram}</span>
+            <span>${a.city || '—'}</span>
+          </div>
+        </a>
+      `).join('');
     }
-  }
-  function draw() {
-    ctx.clearRect(0,0,W,H);
-    for (let i=0;i<stars.length;i++) {
-      for (let j=i+1;j<stars.length;j++) {
-        const dx=stars[i].x-stars[j].x, dy=stars[i].y-stars[j].y, dist=Math.sqrt(dx*dx+dy*dy);
-        if (dist<150) { ctx.beginPath(); ctx.strokeStyle=`rgba(0,191,255,${0.15*(1-dist/150)})`; ctx.lineWidth=0.5; ctx.moveTo(stars[i].x,stars[i].y); ctx.lineTo(stars[j].x,stars[j].y); ctx.stroke(); }
-      }
-    }
-    stars.forEach(s => { ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fillStyle=`rgba(0,191,255,${s.alpha})`; ctx.fill(); s.x+=s.vx; s.y+=s.vy; if(s.x<0||s.x>W)s.vx*=-1; if(s.y<0||s.y>H)s.vy*=-1; });
-    requestAnimationFrame(draw);
-  }
-  resize(); initStars(); draw();
-  window.addEventListener('resize',()=>{resize();initStars();});
-})();
+
+    search.addEventListener('input', e => { q = e.target.value; render(); });
+    render();
+  })();
 </script>
 </body>
 </html>

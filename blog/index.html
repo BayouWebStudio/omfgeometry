@@ -1,135 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<meta charset="UTF-8">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-2SPB4F1HX7');
   </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geometric Tattoo Blog - OMF Geometry</title>
-  <meta name="description" content="Explore the geometric tattoo blog by OMF Geometry. Artist interviews, spotlights, sacred geometry guides, and stories from the world's largest geometric tattoo directory.">
-    <link rel="icon" href="/images/omf-og.png" type="image/png">
-  <link rel="canonical" href="https://omfgeometry.com/blog/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Geometric Tattoo Blog - OMF Geometry">
-  <meta property="og:description" content="Interviews, guides, and artist spotlights from the geometric tattoo world.">
-  <meta property="og:url" content="https://omfgeometry.com/blog/">
-  <meta property="og:image" content="https://omfgeometry.com/images/omf-og.png">
-  <meta property="og:site_name" content="OMF Geometry">
-
-  <link rel="stylesheet" href="../css/style.css">
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1446410187106776');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1446410187106776&ev=PageView&noscript=1"/></noscript>
-<!-- End Meta Pixel Code -->
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Journal — OMF Geometry</title>
+<link rel="stylesheet" href="../css/monolith.css">
+<style>
+  .journal-hero {
+    padding: clamp(56px, 8vw, 120px) var(--gutter) clamp(40px, 5vw, 64px);
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .journal-hero h1 { font: italic 400 clamp(56px, 9vw, 144px)/0.92 var(--serif); color: var(--text-bright); letter-spacing: -0.03em; }
+  .journal-hero h1 b { font-style:normal; font-weight:400; }
+  .journal-hero p { margin-top: 24px; font: italic 400 clamp(20px, 2.2vw, 28px)/1.4 var(--serif); color: var(--text-bright); max-width: 56ch; }
+  .blog-card__media-wrap { aspect-ratio: 5/3; background: var(--ink-2); overflow:hidden; margin: 16px -1.5rem 24px; }
+  .blog-card.featured .blog-card__media-wrap { margin: 0 0 32px; aspect-ratio: 21/9; }
+  .blog-card__media-wrap img { width:100%;height:100%;object-fit:cover; filter:grayscale(0.1) contrast(1.05); transition: transform .8s; }
+  .blog-card:hover .blog-card__media-wrap img { transform: scale(1.03); }
+</style>
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo">OMF<span>GEOMETRY</span></a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/directory.html">Directory</a></li>
-      <li><a href="/blog/" class="active">Blog</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/submit.html">Submit Artist</a></li>
-    </ul>
-  </div>
-</nav>
+<div data-masthead></div>
 
-<section class="section" style="padding-top: 140px;">
-  <div class="container">
-    <div class="section-header">
-      <h1>Geometric Tattoo Blog</h1>
-      <p>Exploring the art, history, and culture of geometric tattooing</p>
-      <div class="section-divider"></div>
-    </div>
-    <div class="blog-grid">
-      <a href="interview-clement-berdah.html" class="blog-card">
-        <img src="../images/clement_post_0_2862likes.jpg" alt="Geometric tattoo by Clément Berdah" class="blog-card-image" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">April 22, 2026</div>
-          <div class="blog-card-title">Artist Interview: Clément Berdah</div>
-          <div class="blog-card-excerpt">From architecture to ink. The Rennes-based artist on sacred geometry, freehand flow, and building a style through a patient accumulation of small things gathered over time.</div>
-        </div>
-      </a>
-      <a href="artist-spotlight-alex-santucci.html" class="blog-card">
-        <img src="../images/alex-santucci-tattooer.jpg" alt="Geometric tattoo by Alex Santucci" class="blog-card-image" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">March 30, 2026</div>
-          <div class="blog-card-title">Artist Spotlight: Alex Santucci</div>
-          <div class="blog-card-excerpt">Architectural precision meets sacred geometry. A deep dive into the work of one of Italy's most distinctive geometric tattoo artists.</div>
-        </div>
-      </a>
-      <a href="the-geometrip-convention.html" class="blog-card">
-        <img src="../images/weschetattoo.jpg" alt="The Geometrip Convention in Ancona, Italy" class="blog-card-image" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">March 23, 2026</div>
-          <div class="blog-card-title">The Geometrip Convention: The Heart of the Global Geometric Tattoo Scene</div>
-          <div class="blog-card-excerpt">Every November in Ancona, Italy, the world's best geometric tattoo artists gather in one place. Here's why it matters - and why @omfgeometry will be there.</div>
-        </div>
-      </a>
-      <a href="how-omfgeometry-finds-artists.html" class="blog-card">
-        <img src="../images/weschetattoo.jpg" alt="How @omfgeometry finds geometric tattoo artists" class="blog-card-image" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">March 16, 2026</div>
-          <div class="blog-card-title">How @omfgeometry Finds Artists</div>
-          <div class="blog-card-excerpt">What does it take to get featured? The curation process, what we look for, and the standards the page holds itself to.</div>
-        </div>
-      </a>
-      <a href="why-geometric-tattoos-are-different.html" class="blog-card">
-        <img src="../images/weschetattoo.jpg" alt="Large-scale geometric tattoo" class="blog-card-image" loading="lazy">
-        <div class="blog-card-body">
-          <div class="blog-card-date">March 9, 2026</div>
-          <div class="blog-card-title">Why Geometric Tattoos Are Different</div>
-          <div class="blog-card-excerpt">Geometric tattooing demands a different kind of artist. No hiding. No faking. Just lines that either work or they don't.</div>
-        </div>
-      </a>
-    </div>
+<section class="journal-hero">
+  <div class="shell">
+    <div class="eyebrow" style="margin-bottom:24px">The Journal · Long-form & Interviews</div>
+    <h1>The <em>Journal</em></h1>
+    <p>Studio visits, interviews, and slow essays on the discipline of geometric tattoo. Published when the work warrants it.</p>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-logo">OMF GEOMETRY</div>
-    <ul class="footer-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/directory.html">Directory</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/submit.html">Submit</a></li>
-    </ul>
-    <a href="https://instagram.com/omfgeometry" target="_blank" class="footer-ig">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-      @omfgeometry
+<section class="shell" style="padding-top: clamp(40px,5vw,64px)">
+  <div class="blog-index">
+    <a href="interview-clement-berdah.html" class="blog-card featured">
+      <div class="blog-card__media-wrap">
+        <img src="../images/monsieur-berdah.jpg" alt="Clément Berdah">
+      </div>
+      <div>
+        <div class="eyebrow">Issue 01 · Cover Story · Interview</div>
+        <h2 class="blog-card__title">A long conversation with <em>Clément Berdah</em>, in twelve questions</h2>
+        <p class="blog-card__dek">The Paris-based artist on origin, line discipline, the Flower of Life, and the tension that holds a piece together. Twelve questions, one long answer about looking.</p>
+      </div>
+      <div class="blog-card__meta">12 min read · April 2026</div>
     </a>
-    <div class="footer-copy">&copy; 2026 OMF Geometry. Built with 🌿 by <a href="https://getminted.ai">Eterno Web Studio</a>.</div>
-  </div>
-<div style="text-align:center;padding:12px 0 0;margin-top:16px;border-top:1px solid rgba(255,255,255,0.06);"><a href="https://eternowebstudio.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.2);font-size:0.55rem;letter-spacing:0.12em;text-decoration:none;font-family:sans-serif;text-transform:uppercase;">Built by Eterno Web Studio</a></div>
-  </footer>
 
-<script src="../js/main.js"></script>
+    <article class="blog-card">
+      <div class="blog-card__media-wrap" style="background:#1c1815;display:grid;place-items:center">
+        <div style="font:italic 400 80px var(--serif);color:var(--gilt-dim);">⌬</div>
+      </div>
+      <div>
+        <div class="eyebrow">Forthcoming · Essay</div>
+        <h2 class="blog-card__title">Notes on <em>dotwork</em>, in three movements</h2>
+        <p class="blog-card__dek">Density, restraint, and the long shadow of stippling — read in March.</p>
+      </div>
+      <div class="blog-card__meta">Spring 2026 · Issue 02</div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-card__media-wrap" style="background:#1c1815;display:grid;place-items:center">
+        <div style="font:italic 400 80px var(--serif);color:var(--gilt-dim);">✺</div>
+      </div>
+      <div>
+        <div class="eyebrow">Forthcoming · Studio Visit</div>
+        <h2 class="blog-card__title">A morning with <em>Raye</em>, Granada</h2>
+        <p class="blog-card__dek">A studio visit with the artist behind the year's most reblogged ornamentals.</p>
+      </div>
+      <div class="blog-card__meta">Spring 2026 · Issue 02</div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-card__media-wrap" style="background:#1c1815;display:grid;place-items:center">
+        <div style="font:italic 400 80px var(--serif);color:var(--gilt-dim);">❀</div>
+      </div>
+      <div>
+        <div class="eyebrow">Forthcoming · Essay</div>
+        <h2 class="blog-card__title">On the <em>Flower of Life</em></h2>
+        <p class="blog-card__dek">A short essay on the shape that won't go away — and the artists who keep finding new angles on it.</p>
+      </div>
+      <div class="blog-card__meta">Summer 2026 · Issue 03</div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-card__media-wrap" style="background:#1c1815;display:grid;place-items:center">
+        <div style="font:italic 400 80px var(--serif);color:var(--gilt-dim);">▲</div>
+      </div>
+      <div>
+        <div class="eyebrow">Forthcoming · Field Notes</div>
+        <h2 class="blog-card__title">Five years of <em>blackwork</em>, observed</h2>
+        <p class="blog-card__dek">A loose taxonomy of the styles emerging at the edges of the field.</p>
+      </div>
+      <div class="blog-card__meta">Summer 2026 · Issue 03</div>
+    </article>
+  </div>
+</section>
+
+<div data-colophon></div>
+
+<script src="../js/omf.js"></script>
+<script>OMF.init('blog');</script>
 </body>
 </html>

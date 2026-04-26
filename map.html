@@ -1,461 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<meta charset="UTF-8">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-2SPB4F1HX7');
   </script>
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World Map - OMF Geometry</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    body { background: #04080f; margin: 0; padding: 0; font-family: 'Helvetica Neue', sans-serif; color: #fff; }
-
-    .map-hero { text-align: center; padding: 80px 20px 16px; }
-    .map-hero h1 { font-size: 2.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 8px; }
-    .map-hero p { color: rgba(255,255,255,0.45); font-size: 0.9rem; margin: 0; }
-
-    #map-wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 1200px;
-      margin: 20px auto 0;
-      padding: 0 20px;
-      box-sizing: border-box;
-    }
-
-    #map-svg {
-      width: 100%;
-      height: 560px;
-      display: block;
-      border: 1px solid rgba(0,191,255,0.12);
-      border-radius: 8px;
-      overflow: hidden;
-      background: #060d1a;
-      cursor: grab;
-    }
-    #map-svg:active { cursor: grabbing; }
-
-    /* Map controls */
-    .map-controls {
-      position: absolute;
-      top: 12px;
-      right: 32px;
-      display: flex;
-      gap: 6px;
-    }
-    .map-btn {
-      background: rgba(4,8,15,0.85);
-      border: 1px solid rgba(0,191,255,0.3);
-      color: #0bf;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      padding: 5px 12px;
-      border-radius: 3px;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: background 0.2s, border-color 0.2s;
-    }
-    .map-btn:hover { background: rgba(0,191,255,0.1); border-color: #0bf; }
-    .map-btn.active { background: rgba(0,191,255,0.15); border-color: #0bf; }
-
-    .map-hint {
-      text-align: center;
-      color: rgba(255,255,255,0.25);
-      font-size: 0.75rem;
-      margin: 8px 0 0;
-      letter-spacing: 0.05em;
-    }
-
-    /* Countries */
-    .country {
-      fill: #080f1e;
-      stroke: rgba(0,191,255,0.25);
-      stroke-width: 0.4;
-    }
-    .country.has-artist { fill: #0a1a2e; cursor: pointer; }
-
-    /* Artist dots */
-    .artist-dot { cursor: pointer; }
-    .artist-dot .dot-glow { fill: #0bf; opacity: 0.15; }
-    .artist-dot .dot-core {
-      fill: #0bf;
-      stroke: rgba(255,255,255,0.8);
-      stroke-width: 0.8;
-      transition: fill 0.2s;
-    }
-    .artist-dot:hover .dot-core { fill: #fff; }
-    .artist-dot.multi .dot-core { fill: #fff; stroke: #0bf; stroke-width: 1.2; }
-
-    @keyframes dotpulse {
-      0%   { r: 6; opacity: 0.5; }
-      100% { r: 18; opacity: 0; }
-    }
-    .artist-dot .dot-pulse {
-      fill: none;
-      stroke: #0bf;
-      stroke-width: 0.8;
-      animation: dotpulse 2.4s ease-out infinite;
-    }
-
-    /* Panel */
-    #artist-panel {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px 20px 60px;
-      min-height: 120px;
-    }
-    .panel-header {
-      display: flex;
-      align-items: baseline;
-      gap: 10px;
-      margin-bottom: 16px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(0,191,255,0.18);
-    }
-    .panel-title { font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: #0bf; }
-    .panel-count { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
-    .panel-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-      gap: 14px;
-    }
-    .panel-card {
-      background: #0a1628;
-      border: 1px solid rgba(0,191,255,0.12);
-      border-radius: 6px;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      transition: border-color 0.2s, transform 0.15s;
-    }
-    .panel-card:hover { border-color: rgba(0,191,255,0.45); transform: translateY(-2px); }
-    .panel-card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
-    .panel-card-info { padding: 9px 11px; }
-    .panel-card-name { font-size: 0.82rem; font-weight: 600; margin-bottom: 2px; }
-    .panel-card-handle { font-size: 0.73rem; color: #0bf; margin-bottom: 2px; }
-    .panel-card-loc { font-size: 0.68rem; color: rgba(255,255,255,0.35); }
-    .panel-empty { color: rgba(255,255,255,0.25); font-size: 0.85rem; padding: 36px 0; text-align: center; }
-
-    /* Tooltip */
-    #tt {
-      position: fixed;
-      background: rgba(4,8,15,0.92);
-      border: 1px solid rgba(0,191,255,0.35);
-      border-radius: 4px;
-      padding: 7px 13px;
-      font-size: 0.78rem;
-      pointer-events: none;
-      display: none;
-      z-index: 9999;
-      white-space: nowrap;
-      line-height: 1.7;
-    }
-    #tt .tt-loc { font-weight: 600; color: #fff; margin-bottom: 2px; }
-    #tt .tt-handle { color: #0bf; }
-
-    /* Stats bar */
-    .map-stats {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      padding: 12px 0 0;
-    }
-    .map-stat { text-align: center; }
-    .map-stat-num { font-size: 1.4rem; font-weight: 700; color: #0bf; }
-    .map-stat-label { font-size: 0.7rem; color: rgba(255,255,255,0.35); letter-spacing: 0.08em; text-transform: uppercase; }
-  </style>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Atlas — OMF Geometry</title>
+<link rel="stylesheet" href="css/monolith.css">
+<style>
+  .atlas-hero {
+    padding: clamp(56px, 8vw, 120px) var(--gutter) clamp(28px, 4vw, 56px);
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .atlas-hero h1 {
+    font: italic 400 clamp(56px, 9vw, 144px)/0.92 var(--serif);
+    color: var(--text-bright);
+    letter-spacing: -0.03em;
+  }
+  .atlas-hero h1 b { font-style: normal; font-weight: 400; }
+  .atlas-hero p {
+    margin-top: 24px;
+    font: italic 400 clamp(18px, 2vw, 24px)/1.4 var(--serif);
+    color: var(--text-bright);
+    max-width: 56ch;
+  }
+  .atlas-section { padding: clamp(32px, 4vw, 56px) var(--gutter) clamp(60px,7vw,120px); }
+  .atlas-cap {
+    margin-top: 12px;
+    font: 400 11px/1.5 var(--mono);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-mute);
+    text-align: center;
+  }
+  .stage-list { display: none; }
+  .selected-panel { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--rule-strong); }
+  .selected-panel h3 { font: italic 400 clamp(28px,3vw,40px)/1 var(--serif); color: var(--text-bright); }
+  .selected-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: 24px;
+  }
+  .selected-card {
+    background: var(--ink);
+    aspect-ratio: 4/5;
+    position: relative;
+    overflow: hidden;
+    color: inherit;
+  }
+  .selected-card img { width:100%;height:100%;object-fit:cover;filter:grayscale(0.15);transition: transform .5s; }
+  .selected-card:hover img { transform: scale(1.04); filter: grayscale(0); }
+  .selected-card__cap {
+    position:absolute;left:0;right:0;bottom:0;padding:12px;
+    background:linear-gradient(180deg,transparent,rgba(10,9,8,0.92));
+    color:var(--text-bright);
+  }
+  .selected-card__cap .nm{ font: italic 400 16px/1 var(--serif); }
+  .selected-card__cap .hd{ font:400 9.5px/1 var(--mono);letter-spacing:0.16em;color:var(--gilt);margin-top:4px;}
+</style>
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo">OMF<span>GEOMETRY</span></a>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/directory.html">Directory</a></li>
-      <li><a href="/map.html">World Map</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/submit.html">Submit Artist</a></li>
-    </ul>
+<div data-masthead></div>
+
+<section class="atlas-hero">
+  <div class="shell">
+    <div class="eyebrow" style="margin-bottom:24px">An Atlas of Geometric Tattoo</div>
+    <h1>The <em>Atlas</em></h1>
+    <p>Sixty-two artists, plotted on a printed map of the world. Drag to pan, scroll to zoom, click a city to read its artists.</p>
   </div>
-</nav>
+</section>
 
-<div class="map-hero">
-  <h1>Artists Around the World</h1>
-  <p>Scroll to zoom · drag to pan · click a dot to explore</p>
-</div>
+<section class="atlas-section">
+  <div class="shell">
+    <div class="atlas-grid">
+      <div>
+        <div class="atlas-controls" id="atlas-ctl">
+          <button data-z="europe" class="active">Europe</button>
+          <button data-z="americas">Americas</button>
+          <button data-z="world">World</button>
+        </div>
+        <svg id="atlas-svg" class="atlas-svg"></svg>
+        <div class="atlas-cap">Drag to pan · scroll to zoom · click a dot</div>
+      </div>
+      <aside class="atlas-index" id="atlas-index">
+        <h3>By Country</h3>
+        <div class="sub" id="index-sub">62 artists · 24 countries</div>
+        <div id="index-body"></div>
+      </aside>
+    </div>
 
-<div id="map-wrapper">
-  <svg id="map-svg"></svg>
-  <div class="map-controls">
-    <button class="map-btn active" id="btn-europe" onclick="zoomEurope()">Europe</button>
-    <button class="map-btn" id="btn-world" onclick="zoomWorld()">World</button>
-    <button class="map-btn" id="btn-americas" onclick="zoomAmericas()">Americas</button>
+    <div class="selected-panel" id="selected-panel" style="display:none">
+      <div class="eyebrow">Selected location</div>
+      <h3 id="sel-title" class="u-mt-md">—</h3>
+      <div class="numeral u-mt-md" id="sel-sub">—</div>
+      <div class="selected-grid" id="sel-grid"></div>
+    </div>
   </div>
-</div>
-<div class="map-hint">Scroll to zoom &nbsp;·&nbsp; Drag to pan &nbsp;·&nbsp; Click a dot to see artists</div>
+</section>
 
-<div class="map-stats" id="map-stats"></div>
+<div id="atlas-tt"></div>
 
-<div id="artist-panel">
-  <div class="panel-empty">Click a glowing dot to explore artists by location</div>
-</div>
-
-<div id="tt"></div>
+<div data-colophon></div>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+<script src="js/omf.js"></script>
 <script>
-const COORDS = {
-  "monsieur_berdah":         { lat:48.8566,  lng:2.3522,   label:"Paris, France" },
-  "rayetattoo":              { lat:37.1773,  lng:-3.5986,  label:"Granada, Spain" },
-  "weschetattoo":            { lat:29.7604,  lng:-95.3698, label:"Houston, TX" },
-  "lenaburlai.ink":          { lat:47.3769,  lng:8.5417,   label:"Switzerland" },
-  "poonos.ink":              { lat:51.4545,  lng:-2.5879,  label:"Bristol, UK" },
-  "tom__ten":                { lat:53.4808,  lng:-2.2426,  label:"Manchester, UK" },
-  "suezosubnoize":           { lat:51.5200,  lng:-0.0900,  label:"London, UK" },
-  "fabbio.tattoo":           { lat:43.6158,  lng:13.5189,  label:"Ancona, Italy" },
-  "pastorelli_tattoo":       { lat:45.4654,  lng:9.1866,   label:"Milan, Italy" },
-  "ina3tats":                { lat:41.3851,  lng:2.1734,   label:"Barcelona, Spain" },
-  "eddie.rise":              { lat:51.5139,  lng:7.4653,   label:"Dortmund, Germany" },
-  "jakabtattoo":             { lat:47.7026,  lng:18.9039,  label:"Pilisvörösvár, Hungary" },
-  "pietro.buccinna.tattoo":  { lat:41.9028,  lng:12.4964,  label:"Rome, Italy" },
-  "flo4ink":                 { lat:46.2044,  lng:6.1432,   label:"Geneva, Switzerland" },
-  "_xojanix":                { lat:19.4326,  lng:-99.1332, label:"Mexico City, Mexico" },
-  "lesacrelinee":            { lat:45.7640,  lng:4.8357,   label:"Lyon, France" },
-  "psydala":                 { lat:51.5074,  lng:-0.1278,  label:"London, UK" },
-  "mat_aequilibrium":        { lat:48.2082,  lng:16.3738,  label:"Vienna, Austria" },
-  "nadoz_tattoo":            { lat:51.5139,  lng:7.4653,   label:"Dortmund, Germany" },
-  "tattoosbypaketh":         { lat:-34.6037, lng:-58.3816, label:"Argentina" },
-  "orekkatattoo":            { lat:51.5074,  lng:-0.1278,  label:"London, UK" },
-  "laurahochmondtattoo":     { lat:48.0759,  lng:7.8360,   label:"Freiburg, Germany" },
-  "setharcane":              { lat:51.5074,  lng:-0.1278,  label:"London, UK" },
-  "benvr_tattoo":            { lat:51.5139,  lng:7.4653,   label:"Dortmund, Germany" },
-  "tommbirchtattoo":         { lat:51.4545,  lng:-2.5879,  label:"Bristol, UK" },
-  "jordthetattooer":         { lat:35.0853,  lng:-106.6056,label:"New Mexico, USA" },
-  "n.e.e.n.o":               { lat:42.8864,  lng:-78.8784, label:"Buffalo, NY" },
-  "zottl_tattoo":            { lat:52.5200,  lng:13.4050,  label:"Berlin, Germany" },
-  "junkjane":                { lat:49.4521,  lng:11.0767,  label:"Nürnberg, Germany" },
-  "fred__ttt":               { lat:-22.9068, lng:-43.1729, label:"Rio de Janeiro, Brazil" },
-  "exo.morph":               { lat:-33.4489, lng:-70.6693, label:"Santiago, Chile" },
-  "giadablk":                { lat:45.4654,  lng:9.1866,   label:"Milan, Italy" },
-  "ibrahim_barboza":         { lat:25.7617,  lng:-80.1918, label:"Miami, USA" },
-  "francisco.capro":         { lat:-22.1194, lng:-51.4053, label:"Presidente Prudente, Brazil" },
-  "araneo_tattoo":  { lat:53.5753,  lng:10.0153,   label:"Hamburg, Germany" },
+OMF.init('map');
 
-  "raimundo_ramirez":        { lat:41.6747,  lng:2.7947,   label:"Blanes, Spain" },
-  "stefan.halbwachs":        { lat:48.2082,  lng:16.3738,  label:"Vienna, Austria" },
-  "alex_santucci_tattooer":  { lat:43.6158,  lng:13.5189,  label:"Ancona, Italy" },
-  "patrick.bressan.tattoo":  { lat:45.4654,  lng:9.1866,   label:"Milan, Italy" },
-  "f.henx":                  { lat:-33.4489, lng:-70.6693, label:"Santiago, Chile" },
-  "marcogaldotattoo":        { lat:41.9028,  lng:12.4964,  label:"Rome, Italy" },
-  "barnesher_tattoo":        { lat:32.0853,  lng:34.7818,  label:"Tel Aviv, Israel" },
-  "felixdekapitein":         { lat:52.5200,  lng:13.4050,  label:"Berlin, Germany" },
-  "tattoosbynickfierro":     { lat:33.4484,  lng:-112.0740,label:"Phoenix, AZ" },
-  "paulasgarbi":             { lat:-23.5505, lng:-46.6333,  label:"São Paulo, Brazil" },
-  "michellelynntattoo":      { lat:40.4406,  lng:-79.9959,  label:"Pittsburgh, PA" },
-  "gabriel_lima_tattoo":     { lat:-23.5505, lng:-46.6333,  label:"São Paulo, Brazil" },
-  "andreamarchisio.tattoo":  { lat:45.4654,  lng:9.1866,   label:"Milan, Italy" },
-  "flopi_nard":              { lat:-21.1151, lng:55.5364,   label:"Réunion Island" },
-  "snertattoos":             { lat:43.7696,  lng:11.2558,   label:"Florence, Italy" },
-  "daniellekellytattoo":     { lat:51.5074,  lng:-0.1278,   label:"London, UK" },
-  "mil_inked":               { lat:51.0447,  lng:-114.0719, label:"Calgary, Canada" },
-  "emanscorfna":             { lat:48.8566,  lng:2.3522,    label:"Paris, France" },
-  "linseifk":                { lat:48.8566,  lng:2.3522,    label:"France" },
-  "chellotattoo":            { lat:32.4340,  lng:34.9190,   label:"Hadera, Israel" },
+// City coordinates (mirrors the legacy map.html data)
+const COORDS = {
+  "monsieur_berdah":{lat:48.8566,lng:2.3522,label:"Paris, France"},
+  "rayetattoo":{lat:37.1773,lng:-3.5986,label:"Granada, Spain"},
+  "weschetattoo":{lat:29.7604,lng:-95.3698,label:"Houston, TX"},
+  "lenaburlai.ink":{lat:47.3769,lng:8.5417,label:"Switzerland"},
+  "poonos.ink":{lat:51.4545,lng:-2.5879,label:"Bristol, UK"},
+  "tom__ten":{lat:53.4808,lng:-2.2426,label:"Manchester, UK"},
+  "suezosubnoize":{lat:51.5200,lng:-0.0900,label:"London, UK"},
+  "fabbio.tattoo":{lat:43.6158,lng:13.5189,label:"Ancona, Italy"},
+  "pastorelli_tattoo":{lat:45.4654,lng:9.1866,label:"Milan, Italy"},
+  "ina3tats":{lat:41.3851,lng:2.1734,label:"Barcelona, Spain"},
+  "eddie.rise":{lat:51.5139,lng:7.4653,label:"Dortmund, Germany"},
+  "jakabtattoo":{lat:47.7026,lng:18.9039,label:"Pilisvörösvár, Hungary"},
+  "pietro.buccinna.tattoo":{lat:41.9028,lng:12.4964,label:"Rome, Italy"},
+  "flo4ink":{lat:46.2044,lng:6.1432,label:"Geneva, Switzerland"},
+  "_xojanix":{lat:19.4326,lng:-99.1332,label:"Mexico City, Mexico"},
+  "lesacrelinee":{lat:45.7640,lng:4.8357,label:"Lyon, France"},
+  "psydala":{lat:51.5074,lng:-0.1278,label:"London, UK"},
+  "mat_aequilibrium":{lat:48.2082,lng:16.3738,label:"Vienna, Austria"},
+  "nadoz_tattoo":{lat:51.5139,lng:7.4653,label:"Dortmund, Germany"},
+  "tattoosbypaketh":{lat:-34.6037,lng:-58.3816,label:"Argentina"},
+  "orekkatattoo":{lat:51.5074,lng:-0.1278,label:"London, UK"},
+  "laurahochmondtattoo":{lat:48.0759,lng:7.8360,label:"Freiburg, Germany"},
+  "setharcane":{lat:51.5074,lng:-0.1278,label:"London, UK"},
+  "benvr_tattoo":{lat:51.5139,lng:7.4653,label:"Dortmund, Germany"},
+  "tommbirchtattoo":{lat:51.4545,lng:-2.5879,label:"Bristol, UK"},
+  "jordthetattooer":{lat:35.0853,lng:-106.6056,label:"New Mexico, USA"},
+  "n.e.e.n.o":{lat:42.8864,lng:-78.8784,label:"Buffalo, NY"},
+  "zottl_tattoo":{lat:52.5200,lng:13.4050,label:"Berlin, Germany"},
+  "junkjane":{lat:49.4521,lng:11.0767,label:"Nürnberg, Germany"},
+  "fred__ttt":{lat:-22.9068,lng:-43.1729,label:"Rio de Janeiro, Brazil"},
+  "exo.morph":{lat:-33.4489,lng:-70.6693,label:"Santiago, Chile"},
+  "giadablk":{lat:45.4654,lng:9.1866,label:"Milan, Italy"},
+  "ibrahim_barboza":{lat:25.7617,lng:-80.1918,label:"Miami, USA"},
+  "francisco.capro":{lat:-22.1194,lng:-51.4053,label:"Presidente Prudente, Brazil"},
+  "araneo_tattoo":{lat:53.5753,lng:10.0153,label:"Hamburg, Germany"},
+  "raimundo_ramirez":{lat:41.6747,lng:2.7947,label:"Blanes, Spain"},
+  "stefan.halbwachs":{lat:48.2082,lng:16.3738,label:"Vienna, Austria"},
+  "alex_santucci_tattooer":{lat:43.6158,lng:13.5189,label:"Ancona, Italy"},
+  "patrick.bressan.tattoo":{lat:45.4654,lng:9.1866,label:"Milan, Italy"},
+  "f.henx":{lat:-33.4489,lng:-70.6693,label:"Santiago, Chile"},
+  "marcogaldotattoo":{lat:41.9028,lng:12.4964,label:"Rome, Italy"},
+  "barnesher_tattoo":{lat:32.0853,lng:34.7818,label:"Tel Aviv, Israel"},
+  "felixdekapitein":{lat:52.5200,lng:13.4050,label:"Berlin, Germany"},
+  "tattoosbynickfierro":{lat:33.4484,lng:-112.0740,label:"Phoenix, AZ"},
+  "paulasgarbi":{lat:-23.5505,lng:-46.6333,label:"São Paulo, Brazil"},
+  "michellelynntattoo":{lat:40.4406,lng:-79.9959,label:"Pittsburgh, PA"},
+  "gabriel_lima_tattoo":{lat:-23.5505,lng:-46.6333,label:"São Paulo, Brazil"},
+  "andreamarchisio.tattoo":{lat:45.4654,lng:9.1866,label:"Milan, Italy"},
+  "flopi_nard":{lat:-21.1151,lng:55.5364,label:"Réunion Island"},
+  "snertattoos":{lat:43.7696,lng:11.2558,label:"Florence, Italy"},
+  "daniellekellytattoo":{lat:51.5074,lng:-0.1278,label:"London, UK"},
+  "mil_inked":{lat:51.0447,lng:-114.0719,label:"Calgary, Canada"},
+  "emanscorfna":{lat:48.8566,lng:2.3522,label:"Paris, France"},
+  "linseifk":{lat:48.8566,lng:2.3522,label:"France"},
+  "chellotattoo":{lat:32.4340,lng:34.9190,label:"Hadera, Israel"},
 };
 
-const W = 960, H = 560;
-let projection, pathFn, zoomBehavior, svgEl, gMap, gDots;
-let currentZoom = d3.zoomIdentity;
+const W = 960, H = 660;
+const svg = d3.select('#atlas-svg').attr('viewBox', `0 0 ${W} ${H}`).attr('preserveAspectRatio','xMidYMid meet');
+const projection = d3.geoNaturalEarth1().scale(170).translate([W/2, H/2]);
+const pathFn = d3.geoPath().projection(projection);
+const tt = document.getElementById('atlas-tt');
 
-const svg = d3.select('#map-svg')
-  .attr('viewBox', `0 0 ${W} ${H}`)
-  .attr('preserveAspectRatio', 'xMidYMid meet');
+const gMap = svg.append('g');
+const gDots = svg.append('g');
 
-projection = d3.geoNaturalEarth1().scale(153).translate([W/2, H/2]);
-pathFn = d3.geoPath().projection(projection);
+// graticule
+gMap.append('path').datum(d3.geoGraticule()()).attr('class','atlas-graticule').attr('d', pathFn);
 
-zoomBehavior = d3.zoom()
-  .scaleExtent([0.8, 12])
-  .on('zoom', (event) => {
-    currentZoom = event.transform;
-    gMap.attr('transform', event.transform);
-    gDots.attr('transform', event.transform);
-    // Scale dots inversely so they stay readable
-    const k = event.transform.k;
-    gDots.selectAll('.dot-core').attr('r', 5 / Math.sqrt(k));
-    gDots.selectAll('.dot-glow').attr('r', 14 / Math.sqrt(k));
-    gDots.selectAll('.dot-pulse').each(function() {
-      this.style.animation = 'none';
-      this.getBoundingClientRect();
-      this.style.animation = '';
-    });
-  });
-
+const zoomBehavior = d3.zoom().scaleExtent([0.8, 14]).on('zoom', e => {
+  gMap.attr('transform', e.transform);
+  gDots.attr('transform', e.transform);
+  const k = e.transform.k;
+  gDots.selectAll('.core').attr('r', 4.5 / Math.sqrt(k));
+  gDots.selectAll('.glow').attr('r', 13 / Math.sqrt(k));
+});
 svg.call(zoomBehavior);
 
-gMap = svg.append('g');
-gDots = svg.append('g');
+(async () => {
+  const artists = await OMF.loadArtists();
 
-// Graticule
-const graticule = d3.geoGraticule()();
-gMap.append('path')
-  .datum(graticule)
-  .attr('fill', 'none')
-  .attr('stroke', 'rgba(0,191,255,0.05)')
-  .attr('stroke-width', 0.4)
-  .attr('d', pathFn);
-
-const tt = document.getElementById('tt');
-
-fetch('data/artists_v2.json')
-  .then(r => r.json())
-  .then(artists => {
-    // Build location groups
-    const groups = {};
-    artists.forEach(a => {
-      const c = COORDS[a.instagram];
-      if (!c) return;
-      const key = `${Math.round(c.lat * 2)},${Math.round(c.lng * 2)}`;
-      if (!groups[key]) groups[key] = { coords: c, label: c.label, artists: [] };
-      groups[key].artists.push(a);
-    });
-
-    const mapped = Object.values(groups).reduce((s,g) => s + g.artists.length, 0);
-    const countries = [...new Set(Object.values(groups).map(g => g.label.split(',').pop().trim()))].length;
-
-    document.getElementById('map-stats').innerHTML = `
-      <div class="map-stat"><div class="map-stat-num">${artists.length}</div><div class="map-stat-label">Artists</div></div>
-      <div class="map-stat"><div class="map-stat-num">${Object.values(groups).length}</div><div class="map-stat-label">Cities</div></div>
-      <div class="map-stat"><div class="map-stat-num">${countries}</div><div class="map-stat-label">Countries</div></div>
-    `;
-
-    // Load world topojson
-    fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
-      .then(r => r.json())
-      .then(world => {
-        gMap.append('g')
-          .selectAll('path')
-          .data(topojson.feature(world, world.objects.countries).features)
-          .join('path')
-          .attr('class', 'country')
-          .attr('d', pathFn);
-
-        // Draw dots
-        Object.values(groups).forEach(group => {
-          const [x, y] = projection([group.coords.lng, group.coords.lat]);
-          if (!x || !y) return;
-
-          const g = gDots.append('g')
-            .attr('class', `artist-dot${group.artists.length > 1 ? ' multi' : ''}`)
-            .attr('transform', `translate(${x},${y})`);
-
-          g.append('circle').attr('class', 'dot-pulse').attr('r', 6)
-            .style('animation-delay', `${Math.random()*2}s`);
-          g.append('circle').attr('class', 'dot-glow').attr('r', 14);
-          g.append('circle').attr('class', 'dot-core').attr('r', 5);
-
-          if (group.artists.length > 1) {
-            g.append('text')
-              .attr('text-anchor', 'middle').attr('dy', '0.35em')
-              .attr('font-size', '6px').attr('fill', '#04080f')
-              .attr('font-weight', 'bold').attr('pointer-events', 'none')
-              .text(group.artists.length);
-          }
-
-          g.on('mouseenter', (e) => {
-            tt.style.display = 'block';
-            tt.innerHTML = `<div class="tt-loc">${group.label}</div>` +
-              group.artists.map(a => `<div class="tt-handle">@${a.instagram}</div>`).join('');
-          })
-          .on('mousemove', (e) => {
-            tt.style.left = (e.clientX + 14) + 'px';
-            tt.style.top  = (e.clientY - 10) + 'px';
-          })
-          .on('mouseleave', () => { tt.style.display = 'none'; })
-          .on('click', (e) => { e.stopPropagation(); tt.style.display = 'none'; showPanel(group); });
-        });
-
-        // Default: zoom to Europe
-        setTimeout(() => zoomEurope(false), 300);
-      });
+  // group by location key
+  const groups = {};
+  artists.forEach(a => {
+    const c = COORDS[a.instagram];
+    if(!c) return;
+    const key = `${Math.round(c.lat*2)},${Math.round(c.lng*2)}`;
+    if(!groups[key]) groups[key] = { coords: c, label: c.label, artists: [] };
+    groups[key].artists.push(a);
   });
 
-function smoothZoom(transform) {
-  svg.transition().duration(700).ease(d3.easeCubicInOut)
-    .call(zoomBehavior.transform, transform);
-}
+  const world = await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(r => r.json());
+  gMap.append('g').selectAll('path')
+    .data(topojson.feature(world, world.objects.countries).features)
+    .join('path').attr('class','atlas-country').attr('d', pathFn);
 
-function zoomEurope(animate = true) {
-  setActive('btn-europe');
-  // Europe: center ~15°E, 52°N, scale ~3.5
-  const [cx, cy] = projection([15, 52]);
-  const k = 3.8;
-  const t = d3.zoomIdentity.translate(W/2 - k*cx, H/2 - k*cy).scale(k);
-  animate ? smoothZoom(t) : svg.call(zoomBehavior.transform, t);
-}
+  Object.values(groups).forEach(g => {
+    const [x,y] = projection([g.coords.lng, g.coords.lat]);
+    if(!x || !y) return;
+    const node = gDots.append('g').attr('class', `atlas-dot${g.artists.length>1?' multi':''}`).attr('transform', `translate(${x},${y})`);
+    node.append('circle').attr('class','pulse').attr('r',5).style('animation-delay', `${Math.random()*2.5}s`);
+    node.append('circle').attr('class','glow').attr('r',13);
+    node.append('circle').attr('class','core').attr('r',4.5);
+    if(g.artists.length>1){
+      node.append('text').attr('text-anchor','middle').attr('dy','0.35em').attr('font-size','5.5px').attr('fill','#0a0908').attr('font-weight','bold').attr('pointer-events','none').text(g.artists.length);
+    }
+    node.on('mouseenter', () => {
+      tt.style.display='block';
+      tt.innerHTML = `<b>${g.label}</b>${g.artists.map(a=>`@${a.instagram}`).join('<br>')}`;
+    }).on('mousemove', e => {
+      tt.style.left=(e.clientX+14)+'px'; tt.style.top=(e.clientY-10)+'px';
+    }).on('mouseleave', () => tt.style.display='none')
+      .on('click', () => { tt.style.display='none'; showSelected(g); });
+  });
 
-function zoomWorld() {
-  setActive('btn-world');
-  smoothZoom(d3.zoomIdentity.translate(0,0).scale(1));
-}
-
-function zoomAmericas() {
-  setActive('btn-americas');
-  const [cx, cy] = projection([-80, 10]);
-  const k = 2.8;
-  const t = d3.zoomIdentity.translate(W/2 - k*cx, H/2 - k*cy).scale(k);
-  smoothZoom(t);
-}
-
-function setActive(id) {
-  document.querySelectorAll('.map-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById(id)?.classList.add('active');
-}
-
-function showPanel(group) {
-  const panel = document.getElementById('artist-panel');
-  panel.innerHTML = `
-    <div class="panel-header">
-      <div class="panel-title">${group.label}</div>
-      <div class="panel-count">${group.artists.length} artist${group.artists.length > 1 ? 's' : ''}</div>
-    </div>
-    <div class="panel-grid">
-      ${group.artists.map(a => `
-        <a href="artists/${a.slug}.html" class="panel-card">
-          <img src="${a.image}" alt="@${a.instagram}" loading="lazy">
-          <div class="panel-card-info">
-            <div class="panel-card-name">${(a.name||'').replace(/[\u{1F300}-\u{1FFFF}]/gu,'').trim()||a.instagram}</div>
-            <div class="panel-card-handle">@${a.instagram}</div>
-            <div class="panel-card-loc">${a.location||''}</div>
+  // Atlas index by country
+  const byCountry = {};
+  artists.forEach(a => { (byCountry[a.country] ||= []).push(a); });
+  const sorted = Object.entries(byCountry).sort((a,b)=>b[1].length-a[1].length);
+  document.getElementById('index-sub').textContent = `${artists.length} artists · ${sorted.length} countries`;
+  document.getElementById('index-body').innerHTML = sorted.map(([country, list]) => `
+    <div class="atlas-country-block">
+      <div class="atlas-country-name">${country}<span>${list.length}</span></div>
+      ${list.map(a => `
+        <a class="atlas-artist-row" href="artist.html?slug=${a.slug}">
+          <img src="${a.image}" alt="${a.name}">
+          <div>
+            <div class="nm">${a.name}</div>
+            <div class="hd">@${a.instagram}</div>
           </div>
-        </a>
-      `).join('')}
-    </div>`;
-  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          <div class="lc">${a.city || ''}</div>
+        </a>`).join('')}
+    </div>
+  `).join('');
+
+  // default zoom: Europe
+  zoomTo('europe', false);
+})();
+
+function showSelected(g){
+  const p = document.getElementById('selected-panel');
+  p.style.display = 'block';
+  document.getElementById('sel-title').textContent = g.label;
+  document.getElementById('sel-sub').textContent = `${g.artists.length} artist${g.artists.length>1?'s':''}`;
+  document.getElementById('sel-grid').innerHTML = g.artists.map(a => `
+    <a class="selected-card" href="artist.html?slug=${a.slug}">
+      <img src="${a.image}" alt="${a.name}">
+      <div class="selected-card__cap">
+        <div class="nm">${a.name}</div>
+        <div class="hd">@${a.instagram}</div>
+      </div>
+    </a>
+  `).join('');
+  p.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+function zoomTo(region, animate=true){
+  document.querySelectorAll('#atlas-ctl button').forEach(b=>b.classList.toggle('active', b.dataset.z===region));
+  let cx, cy, k;
+  if(region==='europe'){ [cx,cy]=projection([15,52]); k=4.0; }
+  else if(region==='americas'){ [cx,cy]=projection([-80,5]); k=2.6; }
+  else { cx=W/2; cy=H/2; k=1; }
+  const t = (region==='world')
+    ? d3.zoomIdentity
+    : d3.zoomIdentity.translate(W/2 - k*cx, H/2 - k*cy).scale(k);
+  if(animate) svg.transition().duration(700).ease(d3.easeCubicInOut).call(zoomBehavior.transform, t);
+  else svg.call(zoomBehavior.transform, t);
+}
+document.getElementById('atlas-ctl').addEventListener('click', e => {
+  const z = e.target.dataset.z; if(z) zoomTo(z);
+});
 </script>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-logo">OMF GEOMETRY</div>
-    <div class="footer-copy" style="margin-top:10px;color:rgba(255,255,255,0.25);font-size:0.75rem;">© OMF Geometry</div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
 </body>
 </html>
