@@ -249,7 +249,7 @@ svg.call(zoomBehavior);
     <div class="atlas-country-block">
       <div class="atlas-country-name">${country}<span>${list.length}</span></div>
       ${list.map(a => `
-        <a class="atlas-artist-row" href="artist.html?slug=${a.slug}">
+        <a class="atlas-artist-row" href="artists/${a.slug}.html">
           <img src="${a.image}" alt="${a.name}">
           <div>
             <div class="nm">${a.name}</div>
@@ -270,7 +270,7 @@ function showSelected(g){
   document.getElementById('sel-title').textContent = g.label;
   document.getElementById('sel-sub').textContent = `${g.artists.length} artist${g.artists.length>1?'s':''}`;
   document.getElementById('sel-grid').innerHTML = g.artists.map(a => `
-    <a class="selected-card" href="artist.html?slug=${a.slug}">
+    <a class="selected-card" href="artists/${a.slug}.html">
       <img src="${a.image}" alt="${a.name}">
       <div class="selected-card__cap">
         <div class="nm">${a.name}</div>

@@ -154,7 +154,7 @@
       });
       empty.style.display = filtered.length ? 'none' : 'block';
       grid.innerHTML = filtered.map((a, i) => `
-        <a class="dir-card" href="artist.html?slug=${a.slug}">
+        <a class="dir-card" href="artists/${a.slug}.html">
           <div class="dir-card__media">
             <img src="${a.image}" alt="${a.name}" loading="lazy">
             <div class="dir-card__num">№ ${String(i+1).padStart(3,'0')}</div>

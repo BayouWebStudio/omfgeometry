@@ -99,7 +99,7 @@ OMF.init('directory');
   // Find related artists (same country, max 6)
   const related = artists.filter(x => x.slug !== slug && x.country === country).slice(0, 6);
   const relatedHTML = related.map(r => `
-    <a class="related-card" href="artist.html?slug=${r.slug}">
+    <a class="related-card" href="artists/${r.slug}.html">
       <img src="${r.image}" alt="${r.name}" loading="lazy">
       <div class="related-card__cap">
         <div class="nm">${r.name}</div>
