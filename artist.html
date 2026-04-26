@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2SPB4F1HX7');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title id="page-title">Artist — OMF Geometry</title>
+<meta id="og-image" property="og:image" content="">
+<meta id="og-title" property="og:title" content="">
+<meta id="og-desc" property="og:description" content="">
+<meta id="og-url" property="og:url" content="https://omfgeometry.com/artist.html">
+<meta id="twitter-image" name="twitter:image" content="">
+<link rel="icon" href="/images/omf-og.png" type="image/png">
+<link rel="stylesheet" href="css/monolith.css">
+<style>
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .related-card { background: var(--ink); aspect-ratio: 4/5; position: relative; overflow: hidden; color: inherit; }
+  .related-card img { width:100%; height:100%; object-fit:cover; filter:grayscale(0.15); transition: transform .6s; }
+  .related-card:hover img { transform:scale(1.04); filter:grayscale(0); }
+  .related-card__cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px; background: linear-gradient(180deg, transparent, rgba(10,9,8,0.9)); color: var(--text-bright); }
+  .related-card__cap .nm { font: italic 400 18px/1 var(--serif); }
+  .related-card__cap .lc { font: 400 10px/1 var(--mono); letter-spacing: 0.18em; text-transform: uppercase; color: var(--gilt); margin-top: 4px; }
+</style>
+</head>
+<body>
+<div data-masthead></div>
+<main id="article"></main>
+<div data-colophon></div>
+<script src="js/omf.js"></script>
+<script>
+OMF.init('directory');
+(async () => {
+  const params = new URLSearchParams(location.search);
+  const slug = params.get('slug');
+  if (!slug) {
+    document.getElementById('article').innerHTML = '<div class="shell" style="padding:96px var(--gutter)"><p class="eyebrow">No artist selected</p><p style="margin-top:16px;color:var(--text-soft)">Go to the <a href="directory.html">Directory</a> to browse artists.</p></div>';
+    return;
+  }
+
+  const artists = await OMF.loadArtists();
+  const a = artists.find(x => x.slug === slug);
+  if (!a) {
+    document.getElementById('article').innerHTML = '<div class="shell" style="padding:96px var(--gutter)"><p class="eyebrow">Artist not found</p><p style="margin-top:16px;color:var(--text-soft)">This artist is not in our index. <a href="directory.html">Browse all artists →</a></p></div>';
+    return;
+  }
+
+  // Update page meta
+  const name = a.name;
+  const country = a.country || 'Unknown';
+  const city = a.city || '';
+  const location = a.location || `${city}, ${country}`;
+  const ig = a.instagram || '';
+  const styles = (a.styles || []).join(', ') || 'geometric';
+  const img = a.image || '';
+
+  document.title = `${name} — Geometric Tattoo Artist | OMF Geometry`;
+  document.getElementById('page-title').textContent = document.title;
+  document.getElementById('og-title').content = document.title;
+  document.getElementById('og-desc').content = `${name} — geometric tattoo artist from ${location}. Featured in OMF Geometry.`;
+  document.getElementById('og-image').content = `https://omfgeometry.com/${img}`;
+  document.getElementById('og-url').content = `https://omfgeometry.com/artist.html?slug=${slug}`;
+  document.getElementById('twitter-image').content = `https://omfgeometry.com/${img}`;
+
+  // Add JSON-LD
+  const ld = document.createElement('script');
+  ld.type = 'application/ld+json';
+  ld.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": name,
+    "jobTitle": "Geometric Tattoo Artist",
+    "sameAs": `https://instagram.com/${ig}`,
+    "url": `https://omfgeometry.com/artist.html?slug=${slug}`,
+    "image": `https://omfgeometry.com/${img}`,
+    "address": { "@type": "PostalAddress", "addressLocality": location, "addressCountry": country }
+  });
+  document.head.appendChild(ld);
+
+  // Build gallery HTML
+  const gallery = (a.gallery || []).slice(0, 6);
+  const galleryHTML = gallery.map((g, i) => `
+    <figure class="spread__gallery-item">
+      <img src="${g}" alt="${name} — work ${i+1}" loading="lazy">
+    </figure>
+  `).join('');
+
+  // Find related artists (same country, max 6)
+  const related = artists.filter(x => x.slug !== slug && x.country === country).slice(0, 6);
+  const relatedHTML = related.map(r => `
+    <a class="related-card" href="artist.html?slug=${r.slug}">
+      <img src="${r.image}" alt="${r.name}" loading="lazy">
+      <div class="related-card__cap">
+        <div class="nm">${r.name}</div>
+        <div class="lc">${r.city || r.country}</div>
+      </div>
+    </a>
+  `).join('');
+
+  const article = document.getElementById('article');
+  article.innerHTML = `
+    <article class="spread">
+      <header class="spread__hero">
+        <img src="${img}" alt="${name}">
+        <div class="spread__hero-overlay">
+          <div class="spread__crumb">
+            <a href="directory.html">← The Directory</a>
+            <span>/</span>
+            <span>${country}</span>
+            <span>/</span>
+            <span style="color:var(--paper)">Artist Profile</span>
+          </div>
+          <div>
+            <div class="eyebrow" style="margin-bottom:14px">Featured Artist</div>
+            <h1 class="spread__title">${name.split(' ').map((w,i) => i === name.split(' ').length - 1 ? `<em>${w}</em>` : w).join(' ')}</h1>
+            <div class="spread__byline">
+              ${ig ? `<span><b>Instagram</b>@${ig}</span>` : ''}
+              <span><b>Based</b>${location}</span>
+              ${styles ? `<span><b>Style</b>${styles}</span>` : ''}
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="spread__lede-block">
+        <div class="spread__lede-eyebrow">
+          <span class="eyebrow">From the Archive</span>
+          <div class="numeral">${country}</div>
+          ${ig ? `<a href="https://instagram.com/${ig}" target="_blank" class="btn" style="margin-top:32px">Follow on Instagram</a>` : ''}
+        </div>
+        <div>
+          <p class="spread__lede-text">Featured in our standing record of geometric tattoo. A small selection of recent work, photographed where it was made.</p>
+          ${a.bio ? `<p class="spread__lede-meta">${a.bio}</p>` : `<p class="spread__lede-meta">Geometric tattoo artist featured on @omfgeometry. Follow @${ig || '...'} on Instagram for more work. A selection of pieces follows below — chosen for their composition, line discipline, and the way each one rests on the body it was made for.</p>`}
+        </div>
+      </div>
+
+      ${galleryHTML ? `
+      <section class="shell" style="padding-top:clamp(48px,6vw,96px)">
+        <div class="section-head">
+          <h2 class="section-head__title"><em>Selected Work</em></h2>
+          <span></span>
+          <span class="numeral">${gallery.length} pieces</span>
+        </div>
+        <div class="spread__gallery">
+          ${galleryHTML}
+        </div>
+      </section>
+      ` : ''}
+
+      ${relatedHTML ? `
+      <section class="shell" style="padding-top:clamp(48px,6vw,96px)">
+        <div class="section-head">
+          <h2 class="section-head__title"><em>More from ${country}</em></h2>
+          <span></span>
+          <div class="section-head__action"><a href="directory.html">Full Directory →</a></div>
+        </div>
+        <div class="related-grid">
+          ${relatedHTML}
+        </div>
+      </section>
+      ` : ''}
+    </article>
+  `;
+})();
+</script>
+</body>
+</html>
