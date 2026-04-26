@@ -15,13 +15,16 @@
       "images/monsieur-berdah_1.jpg",
       "images/monsieur-berdah_2.jpg",
       "images/monsieur-berdah_3.jpg"
-    ]
+    ],
+    "city": "France",
+    "lat": 46.6034,
+    "lng": 1.8883
   },
   {
     "name": "Raye Tattoo",
     "slug": "rayetattoo",
     "instagram": "rayetattoo",
-    "location": "Granada, Spain",
+    "location": "Barcelona, Spain",
     "country": "Spain",
     "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @rayetattoo on Instagram for more work.",
     "styles": [
@@ -33,7 +36,10 @@
       "images/rayetattoo_1.jpg",
       "images/rayetattoo_2.jpg",
       "images/rayetattoo_3.jpg"
-    ]
+    ],
+    "city": "Barcelona",
+    "lat": 41.3826,
+    "lng": 2.1771
   },
   {
     "name": "Raul Wesche",
@@ -51,7 +57,10 @@
       "images/weschetattoo_1.jpg",
       "images/weschetattoo_2.jpg",
       "images/weschetattoo_3.jpg"
-    ]
+    ],
+    "city": "Houston",
+    "lat": 29.7589,
+    "lng": -95.3677
   },
   {
     "name": "Lena Burlai",
@@ -69,7 +78,10 @@
       "images/lenaburlai-ink_1.jpg",
       "images/lenaburlai-ink_2.jpg",
       "images/lenaburlai-ink_3.jpg"
-    ]
+    ],
+    "city": "Dortmund",
+    "lat": 51.5142,
+    "lng": 7.4653
   },
   {
     "name": "• P O O N O S. I N K •",
@@ -87,7 +99,10 @@
       "images/poonos-ink_1.jpg",
       "images/poonos-ink_2.jpg",
       "images/poonos-ink_3.jpg"
-    ]
+    ],
+    "city": "Bristol",
+    "lat": 51.4538,
+    "lng": -2.5973
   },
   {
     "name": "Tom Rousseau",
@@ -105,7 +120,10 @@
       "images/tom-ten_1.jpg",
       "images/tom-ten_2.jpg",
       "images/tom-ten_3.jpg"
-    ]
+    ],
+    "city": "Lyon",
+    "lat": 45.7578,
+    "lng": 4.832
   },
   {
     "name": "Suezo",
@@ -123,7 +141,10 @@
       "images/suezosubnoize_1.jpg",
       "images/suezosubnoize_2.jpg",
       "images/suezosubnoize_3.jpg"
-    ]
+    ],
+    "city": "Presidente Prudente",
+    "lat": -22.1225,
+    "lng": -51.3883
   },
   {
     "name": "Cerenys fabien",
@@ -141,7 +162,10 @@
       "images/fabbio-tattoo_1.jpg",
       "images/fabbio-tattoo_2.jpg",
       "images/fabbio-tattoo_3.jpg"
-    ]
+    ],
+    "city": "France",
+    "lat": 46.6034,
+    "lng": 1.8883
   },
   {
     "name": "•MāNđâląMäKēR•",
@@ -159,7 +183,10 @@
       "images/pastorelli-tattoo_1.jpg",
       "images/pastorelli-tattoo_2.jpg",
       "images/pastorelli-tattoo_3.jpg"
-    ]
+    ],
+    "city": "South Florida",
+    "lat": 37.167,
+    "lng": -94.8464
   },
   {
     "name": "Ina",
@@ -177,7 +204,10 @@
       "images/ina3tats_1.jpg",
       "images/ina3tats_2.jpg",
       "images/ina3tats_3.jpg"
-    ]
+    ],
+    "city": "Barcelona",
+    "lat": 41.3826,
+    "lng": 2.1771
   },
   {
     "name": "Eddie Rise",
@@ -195,7 +225,10 @@
       "images/eddie-rise_1.jpg",
       "images/eddie-rise_2.jpg",
       "images/eddie-rise_3.jpg"
-    ]
+    ],
+    "city": "New Mexico",
+    "lat": 34.5802,
+    "lng": -105.996
   },
   {
     "name": "Jakabtattoo",
@@ -213,7 +246,10 @@
       "images/jakabtattoo_1.jpg",
       "images/jakabtattoo_2.jpg",
       "images/jakabtattoo_3.jpg"
-    ]
+    ],
+    "city": "Pilisvörösvár",
+    "lat": 47.6211,
+    "lng": 18.9116
   },
   {
     "name": "BLACKOUT/NEW TRIBAL & SOLID TRADITIONAL",
@@ -231,7 +267,10 @@
       "images/pietro-buccinna-tattoo_1.jpg",
       "images/pietro-buccinna-tattoo_2.jpg",
       "images/pietro-buccinna-tattoo_3.jpg"
-    ]
+    ],
+    "city": "Milan",
+    "lat": 45.4642,
+    "lng": 9.1896
   },
   {
     "name": "Flo 4 Ink",
@@ -249,7 +288,10 @@
       "images/flo4ink_1.jpg",
       "images/flo4ink_2.jpg",
       "images/flo4ink_3.jpg"
-    ]
+    ],
+    "city": "Germany",
+    "lat": 51.1638,
+    "lng": 10.4478
   },
   {
     "name": "xo.Jani.xo",
@@ -267,7 +309,10 @@
       "images/xojanix_1.jpg",
       "images/xojanix_2.jpg",
       "images/xojanix_3.jpg"
-    ]
+    ],
+    "city": "Unknown",
+    "lat": 5.3566,
+    "lng": 95.4706
   },
   {
     "name": "Marco Marini",
@@ -285,7 +330,10 @@
       "images/lesacrelinee_1.jpg",
       "images/lesacrelinee_2.jpg",
       "images/lesacrelinee_3.jpg"
-    ]
+    ],
+    "city": "Milan",
+    "lat": 45.4642,
+    "lng": 9.1896
   },
   {
     "name": "ૐ Da Ne ૐ",
@@ -303,7 +351,10 @@
       "images/psydala_1.jpg",
       "images/psydala_2.jpg",
       "images/psydala_3.jpg"
-    ]
+    ],
+    "city": "Germany",
+    "lat": 51.1638,
+    "lng": 10.4478
   },
   {
     "name": "Mat Aequilibrium",
@@ -321,7 +372,10 @@
       "images/mat-aequilibrium_1.jpg",
       "images/mat-aequilibrium_2.jpg",
       "images/mat-aequilibrium_3.jpg"
-    ]
+    ],
+    "city": "Switzerland",
+    "lat": 46.7986,
+    "lng": 8.232
   },
   {
     "name": "Nadoz - Geometric, Ornamental",
@@ -339,7 +393,10 @@
       "images/nadoz-tattoo_1.jpg",
       "images/nadoz-tattoo_2.jpg",
       "images/nadoz-tattoo_3.jpg"
-    ]
+    ],
+    "city": "France",
+    "lat": 46.6034,
+    "lng": 1.8883
   },
   {
     "name": "Israel Paketh",
@@ -358,7 +415,10 @@
       "images/tattoosbypaketh_1.jpg",
       "images/tattoosbypaketh_2.jpg",
       "images/tattoosbypaketh_3.jpg"
-    ]
+    ],
+    "city": "Argentina",
+    "lat": -34.9965,
+    "lng": -64.9673
   },
   {
     "name": "Raimundo Ramírez",
@@ -376,7 +436,10 @@
       "images/raimundo-ramirez_1.jpg",
       "images/raimundo-ramirez_2.jpg",
       "images/raimundo-ramirez_3.jpg"
-    ]
+    ],
+    "city": "Blanes",
+    "lat": 41.6756,
+    "lng": 2.7932
   },
   {
     "name": "Francesco Capro",
@@ -394,7 +457,10 @@
       "images/francesco-capro_1.jpg",
       "images/francesco-capro_2.jpg",
       "images/francesco-capro_3.jpg"
-    ]
+    ],
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "city": "London"
   },
   {
     "name": "Stefan Halbwachs",
@@ -412,7 +478,10 @@
       "images/stefan-halbwachs_1.jpg",
       "images/stefan-halbwachs_2.jpg",
       "images/stefan-halbwachs_3.jpg"
-    ]
+    ],
+    "city": "Vienna",
+    "lat": 48.2084,
+    "lng": 16.3725
   },
   {
     "name": "ALEX SANTUCCI",
@@ -430,7 +499,10 @@
       "images/alex-santucci-tattooer_1.jpg",
       "images/alex-santucci-tattooer_2.jpg",
       "images/alex-santucci-tattooer_3.jpg"
-    ]
+    ],
+    "city": "Ancona",
+    "lat": 43.4801,
+    "lng": 13.2187
   },
   {
     "name": "Tom Birch",
@@ -448,7 +520,10 @@
       "images/tommbirchtattoo_1.jpg",
       "images/tommbirchtattoo_2.jpg",
       "images/tommbirchtattoo_3.jpg"
-    ]
+    ],
+    "city": "Manchester",
+    "lat": 53.4425,
+    "lng": -2.2325
   },
   {
     "name": "🕉DEVOTION TATTOO FAMILY🕉",
@@ -466,7 +541,10 @@
       "images/patrick-bressan-tattoo_1.jpg",
       "images/patrick-bressan-tattoo_2.jpg",
       "images/patrick-bressan-tattoo_3.jpg"
-    ]
+    ],
+    "city": "Italy",
+    "lat": 42.6384,
+    "lng": 12.6743
   },
   {
     "name": "FH",
@@ -484,7 +562,10 @@
       "images/f-henx_1.jpg",
       "images/f-henx_2.jpg",
       "images/f-henx_3.jpg"
-    ]
+    ],
+    "city": "Chile",
+    "lat": -31.7613,
+    "lng": -71.3188
   },
   {
     "name": "Seth Arcane • Dotwork Tattoo Artist",
@@ -502,7 +583,10 @@
       "images/setharcane_1.jpg",
       "images/setharcane_2.jpg",
       "images/setharcane_3.jpg"
-    ]
+    ],
+    "city": "London",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "name": "MARCO GALDO",
@@ -520,7 +604,10 @@
       "images/marcogaldotattoo_1.jpg",
       "images/marcogaldotattoo_2.jpg",
       "images/marcogaldotattoo_3.jpg"
-    ]
+    ],
+    "city": "Italy",
+    "lat": 42.6384,
+    "lng": 12.6743
   },
   {
     "name": "Laura",
@@ -538,7 +625,10 @@
       "images/laurahochmondtattoo_1.jpg",
       "images/laurahochmondtattoo_2.jpg",
       "images/laurahochmondtattoo_3.jpg"
-    ]
+    ],
+    "city": "Vienna",
+    "lat": 48.2084,
+    "lng": 16.3725
   },
   {
     "name": "GEOMETRIC DOTWORK AND BLACKWORK TATTOOER - MANCHESTER UK",
@@ -556,7 +646,10 @@
       "images/jordthetattooer_1.jpg",
       "images/jordthetattooer_2.jpg",
       "images/jordthetattooer_3.jpg"
-    ]
+    ],
+    "city": "United Kingdom",
+    "lat": 54.7024,
+    "lng": -3.2766
   },
   {
     "name": "Bartolomeo Fasano",
@@ -575,7 +668,9 @@
       "images/n-e-e-n-o_1.jpg",
       "images/n-e-e-n-o_2.jpg",
       "images/n-e-e-n-o_3.jpg"
-    ]
+    ],
+    "lat": 42.8864,
+    "lng": -78.8781
   },
   {
     "name": "Zottl",
@@ -595,7 +690,9 @@
       "images/zottl-tattoo_1.jpg",
       "images/zottl-tattoo_2.jpg",
       "images/zottl-tattoo_3.jpg"
-    ]
+    ],
+    "lat": 52.5174,
+    "lng": 13.3951
   },
   {
     "name": "Alisa Sahar",
@@ -615,7 +712,9 @@
       "images/junkjane_1.jpg",
       "images/junkjane_2.jpg",
       "images/junkjane_3.jpg"
-    ]
+    ],
+    "lat": 49.4539,
+    "lng": 11.0773
   },
   {
     "name": "Dana Sha",
@@ -666,7 +765,9 @@
     "gallery": [
       "images/benvr-tattoo_1.jpg",
       "images/benvr-tattoo_2.jpg"
-    ]
+    ],
+    "lat": 47.3744,
+    "lng": 8.541
   },
   {
     "name": "ibrahim_barboza",
@@ -717,7 +818,9 @@
     "gallery": [
       "images/barnesher-tattoo_1.jpg",
       "images/barnesher-tattoo_2.jpg"
-    ]
+    ],
+    "lat": 32.0853,
+    "lng": 34.7818
   },
   {
     "name": "Felix De Kapitein",
@@ -734,7 +837,9 @@
     "gallery": [
       "images/felixdekapitein_1.jpg",
       "images/felixdekapitein_2.jpg"
-    ]
+    ],
+    "lat": 52.5174,
+    "lng": 13.3951
   },
   {
     "name": "Manuel Rogaschewski",
@@ -785,7 +890,9 @@
     "gallery": [
       "images/chellotattoo_1.jpg",
       "images/chellotattoo_2.jpg"
-    ]
+    ],
+    "lat": 32.4407,
+    "lng": 34.9401
   },
   {
     "name": "teotribe",
@@ -853,7 +960,9 @@
     "gallery": [
       "images/paulasgarbi_1.jpg",
       "images/paulasgarbi_2.jpg"
-    ]
+    ],
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "name": "Michelle Miller",
@@ -870,7 +979,9 @@
     "gallery": [
       "images/michellelynntattoo_1.jpg",
       "images/michellelynntattoo_2.jpg"
-    ]
+    ],
+    "lat": 40.4407,
+    "lng": -80.0026
   },
   {
     "name": "Gabriel Lima • Tatuagens Geométricas",
@@ -904,7 +1015,9 @@
     "gallery": [
       "images/andreamarchisio-tattoo_1.jpg",
       "images/andreamarchisio-tattoo_2.jpg"
-    ]
+    ],
+    "lat": 45.4642,
+    "lng": 9.1896
   },
   {
     "name": "bintt",
@@ -938,7 +1051,9 @@
     "gallery": [
       "images/flopi-nard_1.jpg",
       "images/flopi-nard_2.jpg"
-    ]
+    ],
+    "lat": -21.1307,
+    "lng": 55.5365
   },
   {
     "name": "Tattoos | Daniele Caputo | Geometric Ornamental Blackwork",
@@ -955,7 +1070,9 @@
     "gallery": [
       "images/snertattoos_1.jpg",
       "images/snertattoos_2.jpg"
-    ]
+    ],
+    "lat": 43.7698,
+    "lng": 11.2556
   },
   {
     "name": "GEOMETRIC & DOTWORK TATTOO UK",
@@ -972,7 +1089,9 @@
     "gallery": [
       "images/daniellekellytattoo_1.jpg",
       "images/daniellekellytattoo_2.jpg"
-    ]
+    ],
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "name": "Milinda Silva",
@@ -989,7 +1108,9 @@
     "gallery": [
       "images/mil-inked_1.jpg",
       "images/mil-inked_2.jpg"
-    ]
+    ],
+    "lat": 51.0456,
+    "lng": -114.0575
   },
   {
     "name": "linseifk",
@@ -1040,7 +1161,9 @@
     "gallery": [
       "images/araneo-tattoo_1.jpg",
       "images/araneo-tattoo_2.jpg"
-    ]
+    ],
+    "lat": 53.5502,
+    "lng": 10.0013
   },
   {
     "name": "Loïc Ysmal",
@@ -1057,7 +1180,10 @@
     "gallery": [
       "images/swatidot-ttt_1.jpg",
       "images/swatidot-ttt_2.jpg"
-    ]
+    ],
+    "lat": 48.5932,
+    "lng": -0.6473,
+    "city": "Domfront 61700"
   },
   {
     "name": "blvck_maz",
@@ -1083,11 +1209,11 @@
     "page": "artists/kunstwerk-chelle.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Tel Aviv, Israel",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "lat": 32.0853,
+    "lng": 34.7818
   },
   {
     "slug": "yclung",
@@ -1096,11 +1222,11 @@
     "page": "artists/yclung.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "yovarojastattoo",
@@ -1109,11 +1235,11 @@
     "page": "artists/yovarojastattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "marceloscaranari",
@@ -1122,11 +1248,11 @@
     "page": "artists/marceloscaranari.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "javiercarrillom",
@@ -1135,11 +1261,11 @@
     "page": "artists/javiercarrillom.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Madrid, Spain",
+    "city": "Madrid",
+    "country": "Spain",
+    "lat": 40.4168,
+    "lng": -3.7035
   },
   {
     "slug": "metatttron",
@@ -1148,11 +1274,11 @@
     "page": "artists/metatttron.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Mexico City, Mexico",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.3208,
+    "lng": -99.1515
   },
   {
     "slug": "salad-x-cat",
@@ -1161,11 +1287,11 @@
     "page": "artists/salad-x-cat.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "ibrahimbarbozatattoo",
@@ -1174,11 +1300,11 @@
     "page": "artists/ibrahimbarbozatattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Miami, United States",
+    "city": "Miami",
+    "country": "United States",
+    "lat": 25.7742,
+    "lng": -80.1936
   },
   {
     "slug": "jenza-tattoo",
@@ -1187,11 +1313,11 @@
     "page": "artists/jenza-tattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Sydney, Australia",
+    "city": "Sydney",
+    "country": "Australia",
+    "lat": -33.8698,
+    "lng": 151.2083
   },
   {
     "slug": "leoluna-tattoo",
@@ -1200,11 +1326,11 @@
     "page": "artists/leoluna-tattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Buenos Aires, Argentina",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6096,
+    "lng": -58.3888
   },
   {
     "slug": "ericstricker",
@@ -1213,11 +1339,11 @@
     "page": "artists/ericstricker.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Berlin, Germany",
+    "city": "Berlin",
+    "country": "Germany",
+    "lat": 52.5174,
+    "lng": 13.3951
   },
   {
     "slug": "wagnerbasei",
@@ -1226,11 +1352,11 @@
     "page": "artists/wagnerbasei.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "chazsci",
@@ -1239,11 +1365,11 @@
     "page": "artists/chazsci.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Los Angeles, United States",
+    "city": "Los Angeles",
+    "country": "United States",
+    "lat": 34.0537,
+    "lng": -118.2428
   },
   {
     "slug": "fred-ttt",
@@ -1252,11 +1378,11 @@
     "page": "artists/fred-ttt.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Rio de Janeiro, Brazil",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "lat": -22.911,
+    "lng": -43.2094
   },
   {
     "slug": "buzman-idea",
@@ -1265,11 +1391,11 @@
     "page": "artists/buzman-idea.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "oliver-kenton",
@@ -1278,11 +1404,11 @@
     "page": "artists/oliver-kenton.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "the-codex-lab",
@@ -1291,11 +1417,11 @@
     "page": "artists/the-codex-lab.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Milan, Italy",
+    "city": "Milan",
+    "country": "Italy",
+    "lat": 45.4642,
+    "lng": 9.1896
   },
   {
     "slug": "feddy-tattoo",
@@ -1304,11 +1430,11 @@
     "page": "artists/feddy-tattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "rebecca-zombie-tattoo",
@@ -1317,11 +1443,11 @@
     "page": "artists/rebecca-zombie-tattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "romero-tattoo",
@@ -1330,11 +1456,11 @@
     "page": "artists/romero-tattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Buenos Aires, Argentina",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6096,
+    "lng": -58.3888
   },
   {
     "slug": "smithers-tattoos",
@@ -1343,11 +1469,11 @@
     "page": "artists/smithers-tattoos.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "felipelozano-ink",
@@ -1356,11 +1482,11 @@
     "page": "artists/felipelozano-ink.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Santiago, Chile",
+    "city": "Santiago",
+    "country": "Chile",
+    "lat": -33.4377,
+    "lng": -70.6511
   },
   {
     "slug": "mericduskuntattoo",
@@ -1369,11 +1495,11 @@
     "page": "artists/mericduskuntattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Istanbul, Turkey",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "lat": 41.0064,
+    "lng": 28.9759
   },
   {
     "slug": "woxtattoo",
@@ -1382,11 +1508,11 @@
     "page": "artists/woxtattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "derektattooart",
@@ -1395,11 +1521,11 @@
     "page": "artists/derektattooart.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Los Angeles, United States",
+    "city": "Los Angeles",
+    "country": "United States",
+    "lat": 34.0537,
+    "lng": -118.2428
   },
   {
     "slug": "aurorarighettotattoo",
@@ -1408,11 +1534,11 @@
     "page": "artists/aurorarighettotattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Buenos Aires, Argentina",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6096,
+    "lng": -58.3888
   },
   {
     "slug": "dino-vallely",
@@ -1421,11 +1547,11 @@
     "page": "artists/dino-vallely.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Buenos Aires, Argentina",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6096,
+    "lng": -58.3888
   },
   {
     "slug": "chemical-sweat",
@@ -1434,11 +1560,11 @@
     "page": "artists/chemical-sweat.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "matias-peon",
@@ -1447,11 +1573,11 @@
     "page": "artists/matias-peon.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Buenos Aires, Argentina",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6096,
+    "lng": -58.3888
   },
   {
     "slug": "wawong0201",
@@ -1460,11 +1586,11 @@
     "page": "artists/wawong0201.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "jessimanchester",
@@ -1473,11 +1599,11 @@
     "page": "artists/jessimanchester.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Manchester, United Kingdom",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4425,
+    "lng": -2.2325
   },
   {
     "slug": "diamante-murru",
@@ -1486,11 +1612,11 @@
     "page": "artists/diamante-murru.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Buenos Aires, Argentina",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6096,
+    "lng": -58.3888
   },
   {
     "slug": "melowperez",
@@ -1499,11 +1625,11 @@
     "page": "artists/melowperez.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Buenos Aires, Argentina",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6096,
+    "lng": -58.3888
   },
   {
     "slug": "kalodimas",
@@ -1512,11 +1638,11 @@
     "page": "artists/kalodimas.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Athens, Greece",
+    "city": "Athens",
+    "country": "Greece",
+    "lat": 37.9756,
+    "lng": 23.7348
   },
   {
     "slug": "ilyacascad",
@@ -1525,11 +1651,11 @@
     "page": "artists/ilyacascad.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Tel Aviv, Israel",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "lat": 32.0853,
+    "lng": 34.7818
   },
   {
     "slug": "ishta-tattoo",
@@ -1538,11 +1664,11 @@
     "page": "artists/ishta-tattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "tattoobyboyko",
@@ -1551,11 +1677,11 @@
     "page": "artists/tattoobyboyko.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Kyiv, Ukraine",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "lat": 50.45,
+    "lng": 30.5241
   },
   {
     "slug": "piotrszot",
@@ -1564,11 +1690,11 @@
     "page": "artists/piotrszot.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Warsaw, Poland",
+    "city": "Warsaw",
+    "country": "Poland",
+    "lat": 52.2334,
+    "lng": 21.0711
   },
   {
     "slug": "rootist-tattoo",
@@ -1577,11 +1703,11 @@
     "page": "artists/rootist-tattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "felipeblackink",
@@ -1590,11 +1716,11 @@
     "page": "artists/felipeblackink.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "arthureubank",
@@ -1603,11 +1729,11 @@
     "page": "artists/arthureubank.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "metatron-works",
@@ -1616,11 +1742,11 @@
     "page": "artists/metatron-works.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Mexico City, Mexico",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.3208,
+    "lng": -99.1515
   },
   {
     "slug": "ariesrhysing",
@@ -1629,11 +1755,11 @@
     "page": "artists/ariesrhysing.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "vir-paiz",
@@ -1642,11 +1768,11 @@
     "page": "artists/vir-paiz.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Mexico City, Mexico",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.3208,
+    "lng": -99.1515
   },
   {
     "slug": "kr-uk",
@@ -1655,11 +1781,11 @@
     "page": "artists/kr-uk.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "effedots",
@@ -1668,11 +1794,11 @@
     "page": "artists/effedots.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "andrezinhotattooart",
@@ -1681,11 +1807,11 @@
     "page": "artists/andrezinhotattooart.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "gabrieldlimasousatattoo",
@@ -1694,11 +1820,11 @@
     "page": "artists/gabrieldlimasousatattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "paul-schnellmynuts",
@@ -1707,11 +1833,11 @@
     "page": "artists/paul-schnellmynuts.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "froy-art",
@@ -1720,11 +1846,11 @@
     "page": "artists/froy-art.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "wruce-bayne",
@@ -1733,11 +1859,11 @@
     "page": "artists/wruce-bayne.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "jonwesttattoo",
@@ -1746,11 +1872,11 @@
     "page": "artists/jonwesttattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Los Angeles, United States",
+    "city": "Los Angeles",
+    "country": "United States",
+    "lat": 34.0537,
+    "lng": -118.2428
   },
   {
     "slug": "bradreis-tattoo",
@@ -1759,11 +1885,11 @@
     "page": "artists/bradreis-tattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Los Angeles, United States",
+    "city": "Los Angeles",
+    "country": "United States",
+    "lat": 34.0537,
+    "lng": -118.2428
   },
   {
     "slug": "tabs",
@@ -1772,11 +1898,11 @@
     "page": "artists/tabs.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "joekintztattooing",
@@ -1785,11 +1911,11 @@
     "page": "artists/joekintztattooing.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "chalanadots",
@@ -1798,11 +1924,11 @@
     "page": "artists/chalanadots.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "juandala",
@@ -1811,11 +1937,11 @@
     "page": "artists/juandala.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "eliasjeis",
@@ -1824,11 +1950,11 @@
     "page": "artists/eliasjeis.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "chases-tattoos",
@@ -1837,11 +1963,11 @@
     "page": "artists/chases-tattoos.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Los Angeles, United States",
+    "city": "Los Angeles",
+    "country": "United States",
+    "lat": 34.0537,
+    "lng": -118.2428
   },
   {
     "slug": "caiocerejatattoo",
@@ -1850,11 +1976,11 @@
     "page": "artists/caiocerejatattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "blum-ttt",
@@ -1863,11 +1989,11 @@
     "page": "artists/blum-ttt.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "kenji-alucky",
@@ -1876,11 +2002,11 @@
     "page": "artists/kenji-alucky.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "gabrieladots",
@@ -1889,11 +2015,11 @@
     "page": "artists/gabrieladots.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "jonie-jones-tattoo",
@@ -1902,11 +2028,11 @@
     "page": "artists/jonie-jones-tattoo.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Los Angeles, United States",
+    "city": "Los Angeles",
+    "country": "United States",
+    "lat": 34.0537,
+    "lng": -118.2428
   },
   {
     "slug": "astonreynolds",
@@ -1915,11 +2041,11 @@
     "page": "artists/astonreynolds.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "London, United Kingdom",
+    "city": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278
   },
   {
     "slug": "logwin-tattooer",
@@ -1928,11 +2054,11 @@
     "page": "artists/logwin-tattooer.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "São Paulo, Brazil",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5507,
+    "lng": -46.6334
   },
   {
     "slug": "otheser",
@@ -1941,11 +2067,11 @@
     "page": "artists/otheser.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "raphafons",
@@ -1954,11 +2080,11 @@
     "page": "artists/raphafons.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   },
   {
     "slug": "lucasgneis",
@@ -1967,10 +2093,10 @@
     "page": "artists/lucasgneis.html",
     "image": "",
     "gallery": [],
-    "location": "TBD",
-    "city": "TBD",
-    "country": "TBD",
-    "lat": null,
-    "lng": null
+    "location": "Brazil",
+    "city": "Brazil",
+    "country": "Brazil",
+    "lat": -10.3333,
+    "lng": -53.2
   }
 ]

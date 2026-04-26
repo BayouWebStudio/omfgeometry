@@ -17,7 +17,7 @@
           <div class="masthead__meta">
             <span>Issue № ${issueNo}</span>
             <span>${today}</span>
-            <span class="u-hide-mobile">130 Artists · 22 Countries</span>
+            <span class="u-hide-mobile">130 Artists · 28 Countries</span>
           </div>
           <a href="${ROOT}index.html" class="masthead__brand">
             <div class="masthead__title"><b>OMF</b> <i>Geometry</i></div>
