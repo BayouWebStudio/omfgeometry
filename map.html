@@ -147,9 +147,12 @@ svg.call(zoomBehavior);
 (async () => {
   const artists = await OMF.loadArtists();
 
+  // Only show artists with instagram handle and image
+  const validArtists = artists.filter(a => a.instagram && a.image);
+
   // Group artists by rounded lat/lng so nearby artists share one dot
   const groups = {};
-  artists.forEach(a => {
+  validArtists.forEach(a => {
     if (!a.lat || !a.lng) return;
     const key = `${Math.round(a.lat * 2)},${Math.round(a.lng * 2)}`;
     if (!groups[key]) groups[key] = {
@@ -191,7 +194,7 @@ svg.call(zoomBehavior);
 
   // Atlas index by country
   const byCountry = {};
-  artists.forEach(a => { (byCountry[a.country] ||= []).push(a); });
+  validArtists.forEach(a => { (byCountry[a.country] ||= []).push(a); });
   // Remove artists with no country
   delete byCountry[''];
   delete byCountry['Unknown'];
