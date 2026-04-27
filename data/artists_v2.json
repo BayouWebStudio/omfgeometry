@@ -1207,533 +1207,574 @@
     "name": "Kunstwerk Chelle",
     "handle": "kunstwerk.chelle",
     "page": "artists/kunstwerk-chelle.html",
-    "image": "",
+    "image": "images/kunstwerk-chelle.jpg",
     "gallery": [],
     "location": "Tel Aviv, Israel",
     "city": "Tel Aviv",
     "country": "Israel",
     "lat": 32.0853,
-    "lng": 34.7818
+    "lng": 34.7818,
+    "instagram": "kunstwerk.chelle"
   },
   {
     "slug": "yclung",
     "name": "Yclung",
     "handle": "yclung",
     "page": "artists/yclung.html",
-    "image": "",
+    "image": "images/yclung.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "yclung"
   },
   {
     "slug": "yovarojastattoo",
     "name": "Yovarojastattoo",
     "handle": "yovarojastattoo",
     "page": "artists/yovarojastattoo.html",
-    "image": "",
+    "image": "images/yovarojastattoo.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "yovarojastattoo"
   },
   {
     "slug": "marceloscaranari",
     "name": "Marceloscaranari",
     "handle": "marceloscaranari",
     "page": "artists/marceloscaranari.html",
-    "image": "",
+    "image": "images/marceloscaranari.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "marceloscaranari"
   },
   {
     "slug": "javiercarrillom",
     "name": "Javiercarrillom",
     "handle": "javiercarrillom",
     "page": "artists/javiercarrillom.html",
-    "image": "",
+    "image": "images/javiercarrillom.jpg",
     "gallery": [],
     "location": "Madrid, Spain",
     "city": "Madrid",
     "country": "Spain",
     "lat": 40.4168,
-    "lng": -3.7035
+    "lng": -3.7035,
+    "instagram": "javiercarrillom"
   },
   {
     "slug": "metatttron",
     "name": "Metatttron",
     "handle": "metatttron",
     "page": "artists/metatttron.html",
-    "image": "",
+    "image": "images/metatttron.jpg",
     "gallery": [],
     "location": "Mexico City, Mexico",
     "city": "Mexico City",
     "country": "Mexico",
     "lat": 19.3208,
-    "lng": -99.1515
+    "lng": -99.1515,
+    "instagram": "metatttron"
   },
   {
     "slug": "salad-x-cat",
     "name": "Salad X Cat",
     "handle": "salad.x.cat",
     "page": "artists/salad-x-cat.html",
-    "image": "",
+    "image": "images/salad-x-cat.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "salad.x.cat"
   },
   {
     "slug": "ibrahimbarbozatattoo",
     "name": "Ibrahimbarbozatattoo",
     "handle": "ibrahimbarbozatattoo",
     "page": "artists/ibrahimbarbozatattoo.html",
-    "image": "",
+    "image": "images/ibrahimbarbozatattoo.jpg",
     "gallery": [],
     "location": "Miami, United States",
     "city": "Miami",
     "country": "United States",
     "lat": 25.7742,
-    "lng": -80.1936
+    "lng": -80.1936,
+    "instagram": "ibrahimbarbozatattoo"
   },
   {
     "slug": "jenza-tattoo",
     "name": "Jenza Tattoo",
     "handle": "jenza_tattoo",
     "page": "artists/jenza-tattoo.html",
-    "image": "",
+    "image": "images/jenza-tattoo.jpg",
     "gallery": [],
     "location": "Sydney, Australia",
     "city": "Sydney",
     "country": "Australia",
     "lat": -33.8698,
-    "lng": 151.2083
+    "lng": 151.2083,
+    "instagram": "jenza_tattoo"
   },
   {
     "slug": "leoluna-tattoo",
     "name": "Leoluna Tattoo",
     "handle": "leoluna.tattoo",
     "page": "artists/leoluna-tattoo.html",
-    "image": "",
+    "image": "images/leoluna-tattoo.jpg",
     "gallery": [],
     "location": "Buenos Aires, Argentina",
     "city": "Buenos Aires",
     "country": "Argentina",
     "lat": -34.6096,
-    "lng": -58.3888
+    "lng": -58.3888,
+    "instagram": "leoluna.tattoo"
   },
   {
     "slug": "ericstricker",
     "name": "Ericstricker",
     "handle": "ericstricker",
     "page": "artists/ericstricker.html",
-    "image": "",
+    "image": "images/ericstricker.jpg",
     "gallery": [],
     "location": "Berlin, Germany",
     "city": "Berlin",
     "country": "Germany",
     "lat": 52.5174,
-    "lng": 13.3951
+    "lng": 13.3951,
+    "instagram": "ericstricker"
   },
   {
     "slug": "wagnerbasei",
     "name": "Wagnerbasei",
     "handle": "wagnerbasei",
     "page": "artists/wagnerbasei.html",
-    "image": "",
+    "image": "images/wagnerbasei.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "wagnerbasei"
   },
   {
     "slug": "chazsci",
     "name": "Chazsci",
     "handle": "chazsci",
     "page": "artists/chazsci.html",
-    "image": "",
+    "image": "images/chazsci.jpg",
     "gallery": [],
     "location": "Los Angeles, United States",
     "city": "Los Angeles",
     "country": "United States",
     "lat": 34.0537,
-    "lng": -118.2428
+    "lng": -118.2428,
+    "instagram": "chazsci"
   },
   {
     "slug": "fred-ttt",
     "name": "Fred  Ttt",
     "handle": "fred__ttt",
     "page": "artists/fred-ttt.html",
-    "image": "",
+    "image": "images/fred-ttt.jpg",
     "gallery": [],
     "location": "Rio de Janeiro, Brazil",
     "city": "Rio de Janeiro",
     "country": "Brazil",
     "lat": -22.911,
-    "lng": -43.2094
+    "lng": -43.2094,
+    "instagram": "fred__ttt"
   },
   {
     "slug": "buzman-idea",
     "name": "Buzman Idea",
     "handle": "buzman.idea",
     "page": "artists/buzman-idea.html",
-    "image": "",
+    "image": "images/buzman-idea.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "buzman.idea"
   },
   {
     "slug": "oliver-kenton",
     "name": "Oliver Kenton",
     "handle": "oliver_kenton",
     "page": "artists/oliver-kenton.html",
-    "image": "",
+    "image": "images/oliver-kenton.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "oliver_kenton"
   },
   {
     "slug": "the-codex-lab",
     "name": "The Codex Lab",
     "handle": "the.codex.lab",
     "page": "artists/the-codex-lab.html",
-    "image": "",
+    "image": "images/the-codex-lab.jpg",
     "gallery": [],
     "location": "Milan, Italy",
     "city": "Milan",
     "country": "Italy",
     "lat": 45.4642,
-    "lng": 9.1896
+    "lng": 9.1896,
+    "instagram": "the.codex.lab"
   },
   {
     "slug": "feddy-tattoo",
     "name": "Feddy Tattoo",
     "handle": "feddy_tattoo",
     "page": "artists/feddy-tattoo.html",
-    "image": "",
+    "image": "images/feddy-tattoo.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "feddy_tattoo"
   },
   {
     "slug": "rebecca-zombie-tattoo",
     "name": "Rebecca Zombie Tattoo",
     "handle": "rebecca_zombie_tattoo",
     "page": "artists/rebecca-zombie-tattoo.html",
-    "image": "",
+    "image": "images/rebecca-zombie-tattoo.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "rebecca_zombie_tattoo"
   },
   {
     "slug": "romero-tattoo",
     "name": "Romero Tattoo",
     "handle": "romero.tattoo",
     "page": "artists/romero-tattoo.html",
-    "image": "",
+    "image": "images/romero-tattoo.jpg",
     "gallery": [],
     "location": "Buenos Aires, Argentina",
     "city": "Buenos Aires",
     "country": "Argentina",
     "lat": -34.6096,
-    "lng": -58.3888
+    "lng": -58.3888,
+    "instagram": "romero.tattoo"
   },
   {
     "slug": "smithers-tattoos",
     "name": "Smithers Tattoos",
     "handle": "smithers.tattoos",
     "page": "artists/smithers-tattoos.html",
-    "image": "",
+    "image": "images/smithers-tattoos.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "smithers.tattoos"
   },
   {
     "slug": "felipelozano-ink",
     "name": "Felipelozano Ink",
     "handle": "felipelozano.ink",
     "page": "artists/felipelozano-ink.html",
-    "image": "",
+    "image": "images/felipelozano-ink.jpg",
     "gallery": [],
     "location": "Santiago, Chile",
     "city": "Santiago",
     "country": "Chile",
     "lat": -33.4377,
-    "lng": -70.6511
+    "lng": -70.6511,
+    "instagram": "felipelozano.ink"
   },
   {
     "slug": "mericduskuntattoo",
     "name": "Mericduskuntattoo",
     "handle": "mericduskuntattoo",
     "page": "artists/mericduskuntattoo.html",
-    "image": "",
+    "image": "images/mericduskuntattoo.jpg",
     "gallery": [],
     "location": "Istanbul, Turkey",
     "city": "Istanbul",
     "country": "Turkey",
     "lat": 41.0064,
-    "lng": 28.9759
+    "lng": 28.9759,
+    "instagram": "mericduskuntattoo"
   },
   {
     "slug": "woxtattoo",
     "name": "Woxtattoo",
     "handle": "woxtattoo",
     "page": "artists/woxtattoo.html",
-    "image": "",
+    "image": "images/woxtattoo.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "woxtattoo"
   },
   {
     "slug": "derektattooart",
     "name": "Derektattooart",
     "handle": "derektattooart",
     "page": "artists/derektattooart.html",
-    "image": "",
+    "image": "images/derektattooart.jpg",
     "gallery": [],
     "location": "Los Angeles, United States",
     "city": "Los Angeles",
     "country": "United States",
     "lat": 34.0537,
-    "lng": -118.2428
+    "lng": -118.2428,
+    "instagram": "derektattooart"
   },
   {
     "slug": "aurorarighettotattoo",
     "name": "Aurorarighettotattoo",
     "handle": "aurorarighettotattoo",
     "page": "artists/aurorarighettotattoo.html",
-    "image": "",
+    "image": "images/aurorarighettotattoo.jpg",
     "gallery": [],
     "location": "Buenos Aires, Argentina",
     "city": "Buenos Aires",
     "country": "Argentina",
     "lat": -34.6096,
-    "lng": -58.3888
+    "lng": -58.3888,
+    "instagram": "aurorarighettotattoo"
   },
   {
     "slug": "dino-vallely",
     "name": "Dino Vallely",
     "handle": "dino_vallely",
     "page": "artists/dino-vallely.html",
-    "image": "",
+    "image": "images/dino-vallely.jpg",
     "gallery": [],
     "location": "Buenos Aires, Argentina",
     "city": "Buenos Aires",
     "country": "Argentina",
     "lat": -34.6096,
-    "lng": -58.3888
+    "lng": -58.3888,
+    "instagram": "dino_vallely"
   },
   {
     "slug": "chemical-sweat",
     "name": "Chemical Sweat",
     "handle": "chemical_sweat",
     "page": "artists/chemical-sweat.html",
-    "image": "",
+    "image": "images/chemical-sweat.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "chemical_sweat"
   },
   {
     "slug": "matias-peon",
     "name": "Matias Peon",
     "handle": "matias.peon",
     "page": "artists/matias-peon.html",
-    "image": "",
+    "image": "images/matias-peon.jpg",
     "gallery": [],
     "location": "Buenos Aires, Argentina",
     "city": "Buenos Aires",
     "country": "Argentina",
     "lat": -34.6096,
-    "lng": -58.3888
+    "lng": -58.3888,
+    "instagram": "matias.peon"
   },
   {
     "slug": "wawong0201",
     "name": "Wawong0201",
     "handle": "wawong0201",
     "page": "artists/wawong0201.html",
-    "image": "",
+    "image": "images/wawong0201.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "wawong0201"
   },
   {
     "slug": "jessimanchester",
     "name": "Jessimanchester",
     "handle": "jessimanchester",
     "page": "artists/jessimanchester.html",
-    "image": "",
+    "image": "images/jessimanchester.jpg",
     "gallery": [],
     "location": "Manchester, United Kingdom",
     "city": "Manchester",
     "country": "United Kingdom",
     "lat": 53.4425,
-    "lng": -2.2325
+    "lng": -2.2325,
+    "instagram": "jessimanchester"
   },
   {
     "slug": "diamante-murru",
     "name": "Diamante Murru",
     "handle": "diamante_murru",
     "page": "artists/diamante-murru.html",
-    "image": "",
+    "image": "images/diamante-murru.jpg",
     "gallery": [],
     "location": "Buenos Aires, Argentina",
     "city": "Buenos Aires",
     "country": "Argentina",
     "lat": -34.6096,
-    "lng": -58.3888
+    "lng": -58.3888,
+    "instagram": "diamante_murru"
   },
   {
     "slug": "melowperez",
     "name": "Melowperez",
     "handle": "melowperez",
     "page": "artists/melowperez.html",
-    "image": "",
+    "image": "images/melowperez.jpg",
     "gallery": [],
     "location": "Buenos Aires, Argentina",
     "city": "Buenos Aires",
     "country": "Argentina",
     "lat": -34.6096,
-    "lng": -58.3888
+    "lng": -58.3888,
+    "instagram": "melowperez"
   },
   {
     "slug": "kalodimas",
     "name": "Kalodimas",
     "handle": "kalodimas",
     "page": "artists/kalodimas.html",
-    "image": "",
+    "image": "images/kalodimas.jpg",
     "gallery": [],
     "location": "Athens, Greece",
     "city": "Athens",
     "country": "Greece",
     "lat": 37.9756,
-    "lng": 23.7348
+    "lng": 23.7348,
+    "instagram": "kalodimas"
   },
   {
     "slug": "ilyacascad",
     "name": "Ilyacascad",
     "handle": "ilyacascad",
     "page": "artists/ilyacascad.html",
-    "image": "",
+    "image": "images/ilyacascad.jpg",
     "gallery": [],
     "location": "Tel Aviv, Israel",
     "city": "Tel Aviv",
     "country": "Israel",
     "lat": 32.0853,
-    "lng": 34.7818
+    "lng": 34.7818,
+    "instagram": "ilyacascad"
   },
   {
     "slug": "ishta-tattoo",
     "name": "Ishta Tattoo",
     "handle": "ishta_tattoo",
     "page": "artists/ishta-tattoo.html",
-    "image": "",
+    "image": "images/ishta-tattoo.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "ishta_tattoo"
   },
   {
     "slug": "tattoobyboyko",
     "name": "Tattoobyboyko",
     "handle": "tattoobyboyko",
     "page": "artists/tattoobyboyko.html",
-    "image": "",
+    "image": "images/tattoobyboyko.jpg",
     "gallery": [],
     "location": "Kyiv, Ukraine",
     "city": "Kyiv",
     "country": "Ukraine",
     "lat": 50.45,
-    "lng": 30.5241
+    "lng": 30.5241,
+    "instagram": "tattoobyboyko"
   },
   {
     "slug": "piotrszot",
     "name": "Piotrszot",
     "handle": "piotrszot",
     "page": "artists/piotrszot.html",
-    "image": "",
+    "image": "images/piotrszot.jpg",
     "gallery": [],
     "location": "Warsaw, Poland",
     "city": "Warsaw",
     "country": "Poland",
     "lat": 52.2334,
-    "lng": 21.0711
+    "lng": 21.0711,
+    "instagram": "piotrszot"
   },
   {
     "slug": "rootist-tattoo",
     "name": "Rootist Tattoo",
     "handle": "rootist_tattoo",
     "page": "artists/rootist-tattoo.html",
-    "image": "",
+    "image": "images/rootist-tattoo.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "rootist_tattoo"
   },
   {
     "slug": "felipeblackink",
     "name": "Felipeblackink",
     "handle": "felipeblackink",
     "page": "artists/felipeblackink.html",
-    "image": "",
+    "image": "images/felipeblackink.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "felipeblackink"
   },
   {
     "slug": "arthureubank",
     "name": "Arthureubank",
     "handle": "arthureubank",
     "page": "artists/arthureubank.html",
-    "image": "",
+    "image": "images/arthureubank.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "arthureubank"
   },
   {
     "slug": "metatron-works",
@@ -1746,59 +1787,64 @@
     "city": "Mexico City",
     "country": "Mexico",
     "lat": 19.3208,
-    "lng": -99.1515
+    "lng": -99.1515,
+    "instagram": "metatron.works"
   },
   {
     "slug": "ariesrhysing",
     "name": "Ariesrhysing",
     "handle": "ariesrhysing",
     "page": "artists/ariesrhysing.html",
-    "image": "",
+    "image": "images/ariesrhysing.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "ariesrhysing"
   },
   {
     "slug": "vir-paiz",
     "name": "Vir Paiz",
     "handle": "vir.paiz",
     "page": "artists/vir-paiz.html",
-    "image": "",
+    "image": "images/vir-paiz.jpg",
     "gallery": [],
     "location": "Mexico City, Mexico",
     "city": "Mexico City",
     "country": "Mexico",
     "lat": 19.3208,
-    "lng": -99.1515
+    "lng": -99.1515,
+    "instagram": "vir.paiz"
   },
   {
     "slug": "kr-uk",
     "name": "Kr Uk",
     "handle": "kr.uk",
     "page": "artists/kr-uk.html",
-    "image": "",
+    "image": "images/kr-uk.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "kr.uk"
   },
   {
     "slug": "effedots",
     "name": "Effedots",
     "handle": "effedots",
     "page": "artists/effedots.html",
-    "image": "",
+    "image": "images/effedots.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "effedots"
   },
   {
     "slug": "andrezinhotattooart",
@@ -1811,7 +1857,8 @@
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "andrezinhotattooart"
   },
   {
     "slug": "gabrieldlimasousatattoo",
@@ -1824,176 +1871,190 @@
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "gabrieldlimasousatattoo"
   },
   {
     "slug": "paul-schnellmynuts",
     "name": "Paul Schnellmynuts",
     "handle": "paul_schnellmynuts",
     "page": "artists/paul-schnellmynuts.html",
-    "image": "",
+    "image": "images/paul-schnellmynuts.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "paul_schnellmynuts"
   },
   {
     "slug": "froy-art",
     "name": "Froy Art",
     "handle": "froy.art",
     "page": "artists/froy-art.html",
-    "image": "",
+    "image": "images/froy-art.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "froy.art"
   },
   {
     "slug": "wruce-bayne",
     "name": "Wruce Bayne ",
     "handle": "wruce_bayne_",
     "page": "artists/wruce-bayne.html",
-    "image": "",
+    "image": "images/wruce-bayne.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "wruce_bayne_"
   },
   {
     "slug": "jonwesttattoo",
     "name": "Jonwesttattoo",
     "handle": "jonwesttattoo",
     "page": "artists/jonwesttattoo.html",
-    "image": "",
+    "image": "images/jonwesttattoo.jpg",
     "gallery": [],
     "location": "Los Angeles, United States",
     "city": "Los Angeles",
     "country": "United States",
     "lat": 34.0537,
-    "lng": -118.2428
+    "lng": -118.2428,
+    "instagram": "jonwesttattoo"
   },
   {
     "slug": "bradreis-tattoo",
     "name": "Bradreis Tattoo",
     "handle": "bradreis_tattoo",
     "page": "artists/bradreis-tattoo.html",
-    "image": "",
+    "image": "images/bradreis-tattoo.jpg",
     "gallery": [],
     "location": "Los Angeles, United States",
     "city": "Los Angeles",
     "country": "United States",
     "lat": 34.0537,
-    "lng": -118.2428
+    "lng": -118.2428,
+    "instagram": "bradreis_tattoo"
   },
   {
     "slug": "tabs",
     "name": "Tabs   ",
     "handle": "tabs___",
     "page": "artists/tabs.html",
-    "image": "",
+    "image": "images/tabs.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "tabs___"
   },
   {
     "slug": "joekintztattooing",
     "name": "Joekintztattooing",
     "handle": "joekintztattooing",
     "page": "artists/joekintztattooing.html",
-    "image": "",
+    "image": "images/joekintztattooing.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "joekintztattooing"
   },
   {
     "slug": "chalanadots",
     "name": "Chalanadots",
     "handle": "chalanadots",
     "page": "artists/chalanadots.html",
-    "image": "",
+    "image": "images/chalanadots.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "chalanadots"
   },
   {
     "slug": "juandala",
     "name": " Juandala",
     "handle": "_juandala",
     "page": "artists/juandala.html",
-    "image": "",
+    "image": "images/juandala.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "_juandala"
   },
   {
     "slug": "eliasjeis",
     "name": "Eliasjeis",
     "handle": "eliasjeis",
     "page": "artists/eliasjeis.html",
-    "image": "",
+    "image": "images/eliasjeis.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "eliasjeis"
   },
   {
     "slug": "chases-tattoos",
     "name": "Chases Tattoos",
     "handle": "chases_tattoos",
     "page": "artists/chases-tattoos.html",
-    "image": "",
+    "image": "images/chases-tattoos.jpg",
     "gallery": [],
     "location": "Los Angeles, United States",
     "city": "Los Angeles",
     "country": "United States",
     "lat": 34.0537,
-    "lng": -118.2428
+    "lng": -118.2428,
+    "instagram": "chases_tattoos"
   },
   {
     "slug": "caiocerejatattoo",
     "name": "Caiocerejatattoo",
     "handle": "caiocerejatattoo",
     "page": "artists/caiocerejatattoo.html",
-    "image": "",
+    "image": "images/caiocerejatattoo.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "caiocerejatattoo"
   },
   {
     "slug": "blum-ttt",
     "name": "Blum Ttt",
     "handle": "blum.ttt",
     "page": "artists/blum-ttt.html",
-    "image": "",
+    "image": "images/blum-ttt.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "blum.ttt"
   },
   {
     "slug": "kenji-alucky",
@@ -2006,7 +2067,8 @@
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "kenji_alucky"
   },
   {
     "slug": "gabrieladots",
@@ -2019,84 +2081,91 @@
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "gabrieladots"
   },
   {
     "slug": "jonie-jones-tattoo",
     "name": "Jonie Jones Tattoo",
     "handle": "jonie_jones_tattoo",
     "page": "artists/jonie-jones-tattoo.html",
-    "image": "",
+    "image": "images/jonie-jones-tattoo.jpg",
     "gallery": [],
     "location": "Los Angeles, United States",
     "city": "Los Angeles",
     "country": "United States",
     "lat": 34.0537,
-    "lng": -118.2428
+    "lng": -118.2428,
+    "instagram": "jonie_jones_tattoo"
   },
   {
     "slug": "astonreynolds",
     "name": "Astonreynolds",
     "handle": "astonreynolds",
     "page": "artists/astonreynolds.html",
-    "image": "",
+    "image": "images/astonreynolds.jpg",
     "gallery": [],
     "location": "London, United Kingdom",
     "city": "London",
     "country": "United Kingdom",
     "lat": 51.5074,
-    "lng": -0.1278
+    "lng": -0.1278,
+    "instagram": "astonreynolds"
   },
   {
     "slug": "logwin-tattooer",
     "name": "Logwin Tattooer",
     "handle": "logwin_tattooer",
     "page": "artists/logwin-tattooer.html",
-    "image": "",
+    "image": "images/logwin-tattooer.jpg",
     "gallery": [],
     "location": "São Paulo, Brazil",
     "city": "São Paulo",
     "country": "Brazil",
     "lat": -23.5507,
-    "lng": -46.6334
+    "lng": -46.6334,
+    "instagram": "logwin_tattooer"
   },
   {
     "slug": "otheser",
     "name": "Otheser",
     "handle": "otheser",
     "page": "artists/otheser.html",
-    "image": "",
+    "image": "images/otheser.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "otheser"
   },
   {
     "slug": "raphafons",
     "name": "Raphafons",
     "handle": "raphafons",
     "page": "artists/raphafons.html",
-    "image": "",
+    "image": "images/raphafons.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "raphafons"
   },
   {
     "slug": "lucasgneis",
     "name": "Lucasgneis",
     "handle": "lucasgneis",
     "page": "artists/lucasgneis.html",
-    "image": "",
+    "image": "images/lucasgneis.jpg",
     "gallery": [],
     "location": "Brazil",
     "city": "Brazil",
     "country": "Brazil",
     "lat": -10.3333,
-    "lng": -53.2
+    "lng": -53.2,
+    "instagram": "lucasgneis"
   }
 ]
