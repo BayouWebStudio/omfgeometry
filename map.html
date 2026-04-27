@@ -81,7 +81,7 @@
   <div class="shell">
     <div class="eyebrow" style="margin-bottom:24px">An Atlas of Geometric Tattoo</div>
     <h1>The <em>Atlas</em></h1>
-    <p>Sixty-two artists, plotted on a printed map of the world. Drag to pan, scroll to zoom, click a city to read its artists.</p>
+    <p>120+ artists, plotted on a printed map of the world. Drag to pan, scroll to zoom, click a city to read its artists.</p>
   </div>
 </section>
 
@@ -123,13 +123,6 @@
 <script>
 OMF.init('map');
 
-// City coordinates (mirrors the legacy map.html data)
-const COORDS = {
-  "francesco.capro":{lat:51.5074,lng:-0.1278,label:"London, United Kingdom"},
-  "swatidot.ttt":{lat:48.5932,lng:-0.6473,label:"Domfront 61700, Domfront 61700"}
-};
-
-
 const W = 960, H = 660;
 const svg = d3.select('#atlas-svg').attr('viewBox', `0 0 ${W} ${H}`).attr('preserveAspectRatio','xMidYMid meet');
 const projection = d3.geoNaturalEarth1().scale(170).translate([W/2, H/2]);
@@ -154,13 +147,16 @@ svg.call(zoomBehavior);
 (async () => {
   const artists = await OMF.loadArtists();
 
-  // group by location key
+  // Group artists by rounded lat/lng so nearby artists share one dot
   const groups = {};
   artists.forEach(a => {
-    const c = COORDS[a.instagram];
-    if(!c) return;
-    const key = `${Math.round(c.lat*2)},${Math.round(c.lng*2)}`;
-    if(!groups[key]) groups[key] = { coords: c, label: c.label, artists: [] };
+    if (!a.lat || !a.lng) return;
+    const key = `${Math.round(a.lat * 2)},${Math.round(a.lng * 2)}`;
+    if (!groups[key]) groups[key] = {
+      lat: a.lat, lng: a.lng,
+      label: a.city ? `${a.city}, ${a.country}` : a.country,
+      artists: []
+    };
     groups[key].artists.push(a);
   });
 
@@ -170,28 +166,36 @@ svg.call(zoomBehavior);
     .join('path').attr('class','atlas-country').attr('d', pathFn);
 
   Object.values(groups).forEach(g => {
-    const [x,y] = projection([g.coords.lng, g.coords.lat]);
-    if(!x || !y) return;
-    const node = gDots.append('g').attr('class', `atlas-dot${g.artists.length>1?' multi':''}`).attr('transform', `translate(${x},${y})`);
+    const [x, y] = projection([g.lng, g.lat]);
+    if (!x || !y) return;
+    const node = gDots.append('g')
+      .attr('class', `atlas-dot${g.artists.length > 1 ? ' multi' : ''}`)
+      .attr('transform', `translate(${x},${y})`);
     node.append('circle').attr('class','pulse').attr('r',5).style('animation-delay', `${Math.random()*2.5}s`);
     node.append('circle').attr('class','glow').attr('r',13);
     node.append('circle').attr('class','core').attr('r',4.5);
-    if(g.artists.length>1){
-      node.append('text').attr('text-anchor','middle').attr('dy','0.35em').attr('font-size','5.5px').attr('fill','#0a0908').attr('font-weight','bold').attr('pointer-events','none').text(g.artists.length);
+    if (g.artists.length > 1) {
+      node.append('text').attr('text-anchor','middle').attr('dy','0.35em')
+        .attr('font-size','5.5px').attr('fill','#0a0908').attr('font-weight','bold')
+        .attr('pointer-events','none').text(g.artists.length);
     }
     node.on('mouseenter', () => {
-      tt.style.display='block';
-      tt.innerHTML = `<b>${g.label}</b>${g.artists.map(a=>`@${a.instagram}`).join('<br>')}`;
+      tt.style.display = 'block';
+      tt.innerHTML = `<b>${g.label}</b>${g.artists.map(a => `@${a.instagram}`).join('<br>')}`;
     }).on('mousemove', e => {
-      tt.style.left=(e.clientX+14)+'px'; tt.style.top=(e.clientY-10)+'px';
-    }).on('mouseleave', () => tt.style.display='none')
-      .on('click', () => { tt.style.display='none'; showSelected(g); });
+      tt.style.left = (e.clientX + 14) + 'px';
+      tt.style.top = (e.clientY - 10) + 'px';
+    }).on('mouseleave', () => tt.style.display = 'none')
+      .on('click', () => { tt.style.display = 'none'; showSelected(g); });
   });
 
   // Atlas index by country
   const byCountry = {};
   artists.forEach(a => { (byCountry[a.country] ||= []).push(a); });
-  const sorted = Object.entries(byCountry).sort((a,b)=>b[1].length-a[1].length);
+  // Remove artists with no country
+  delete byCountry[''];
+  delete byCountry['Unknown'];
+  const sorted = Object.entries(byCountry).sort((a, b) => b[1].length - a[1].length);
   document.getElementById('index-sub').textContent = `${artists.length} artists · ${sorted.length} countries`;
   document.getElementById('index-body').innerHTML = sorted.map(([country, list]) => `
     <div class="atlas-country-block">
