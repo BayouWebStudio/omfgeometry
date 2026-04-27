@@ -9,15 +9,15 @@
   function el(html){ const t = document.createElement('template'); t.innerHTML = html.trim(); return t.content.firstChild; }
 
   function renderMasthead(active){
-    const issueNo = String(Math.max(1, Math.floor((Date.now() - new Date('2025-01-01').getTime())/(1000*60*60*24*30)) + 1)).padStart(2,'0');
-    const today = new Date().toLocaleDateString('en-GB', { day:'2-digit', month:'long', year:'numeric' }).toUpperCase();
+    const issueNo = '01';
+    const today = 'FALL 2026';
     const html = `
       <header class="masthead">
         <div class="masthead__top">
           <div class="masthead__meta">
             <span>Issue № ${issueNo}</span>
             <span>${today}</span>
-            <span class="u-hide-mobile">130 Artists · 28 Countries</span>
+            <span class="u-hide-mobile">120+ Artists · 27 Countries</span>
           </div>
           <a href="${ROOT}index.html" class="masthead__brand">
             <div class="masthead__title"><b>OMF</b> <i>Geometry</i></div>
