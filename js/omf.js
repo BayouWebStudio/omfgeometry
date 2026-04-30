@@ -20,8 +20,13 @@
             <span class="u-hide-mobile">120+ Artists · 27 Countries</span>
           </div>
           <a href="${ROOT}index.html" class="masthead__brand">
-            <div class="masthead__title"><b>OMF</b> <i>Geometry</i></div>
-            <div class="masthead__sub">A Journal of Geometric Tattoo</div>
+            <div class="masthead__brand-mark">
+              <img class="masthead__logo" src="${ROOT}images/omf-logo.png" alt="OMF Geometry logo">
+              <div>
+                <div class="masthead__title"><b>OMF</b> <i>Geometry</i></div>
+                <div class="masthead__sub">A Journal of Geometric Tattoo</div>
+              </div>
+            </div>
           </a>
           <div class="masthead__meta masthead__meta--right">
             <a href="https://instagram.com/omfgeometry" target="_blank">Instagram</a>

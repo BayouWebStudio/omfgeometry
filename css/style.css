@@ -107,12 +107,22 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--gold);
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.nav-logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(0, 191, 255, 0.24));
 }
 
 .nav-logo span {
