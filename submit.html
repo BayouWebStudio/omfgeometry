@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2SPB4F1HX7');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Submit — OMF Geometry</title>
+<link rel="stylesheet" href="css/monolith.css">
+<style>
+  .submit-hero {
+    padding: clamp(60px,8vw,120px) var(--gutter) clamp(40px,5vw,80px);
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .submit-hero h1 { font: italic 400 clamp(56px,9vw,144px)/0.92 var(--serif); color: var(--text-bright); letter-spacing: -0.03em; }
+  .submit-hero h1 b { font-style:normal; font-weight:400; }
+  .submit-hero p { margin-top: 28px; font: italic 400 clamp(20px,2.2vw,28px)/1.4 var(--serif); color: var(--text-bright); max-width: 56ch; }
+
+  .submit-body { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(40px,6vw,100px); padding: clamp(60px,7vw,120px) var(--gutter); }
+  .submit-body aside { padding-right: 32px; }
+  .submit-body aside h3 { font: italic 400 clamp(24px,2.4vw,32px)/1.1 var(--serif); color: var(--text-bright); margin-bottom: 18px; }
+  .submit-body aside p { font: 400 14.5px/1.7 var(--sans); color: var(--text-soft); margin-bottom: 18px; }
+  .submit-body aside .eyebrow { display: block; margin-bottom: 10px; }
+  .checklist { display: grid; gap: 14px; margin-top: 32px; }
+  .checklist li { display: grid; grid-template-columns: 28px 1fr; gap: 12px; font: 400 13.5px/1.55 var(--sans); color: var(--text-soft); list-style: none; }
+  .checklist li b { color: var(--gilt); font: 700 11px/1.4 var(--mono); letter-spacing: 0.18em; }
+
+  @media (max-width: 800px) { .submit-body { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div data-masthead></div>
+
+<section class="submit-hero">
+  <div class="shell">
+    <div class="eyebrow" style="margin-bottom:24px">Submissions · Open year-round</div>
+    <h1><em>Submit</em> an Artist</h1>
+    <p>Suggest yourself, your work, or another artist whose practice belongs in this record. Every submission is read by a human; we respond to every one we add.</p>
+  </div>
+</section>
+
+<section class="submit-body shell">
+  <aside>
+    <span class="eyebrow">How we read</span>
+    <h3>What we look for</h3>
+    <p>Discipline of line, intentional composition, sustained body of work. We don't weight follower count. We don't weight country. We look at twenty pieces and decide.</p>
+    <p>Submissions stay open. We add new artists at the end of each annual issue cycle.</p>
+
+    <span class="eyebrow" style="margin-top:32px">Checklist</span>
+    <ul class="checklist">
+      <li><b>01</b><span>An Instagram handle with at least 18 months of work.</span></li>
+      <li><b>02</b><span>A short note on practice — what you keep returning to.</span></li>
+      <li><b>03</b><span>City and country (we use this for the atlas).</span></li>
+    </ul>
+  </aside>
+
+  <form class="form-grid" onsubmit="event.preventDefault(); document.getElementById('submit-thanks').style.display='block'; this.style.display='none';">
+    <label>Artist name<input type="text" placeholder="Your name, or theirs" required></label>
+    <label>Instagram handle<input type="text" placeholder="@handle" required></label>
+    <label>City, Country<input type="text" placeholder="Paris, France" required></label>
+    <label>A note on the work<textarea placeholder="What does this artist keep returning to? What sets the work apart? Two or three sentences is plenty." required></textarea></label>
+    <label>Submitter email<input type="email" placeholder="for our reply" required></label>
+    <button type="submit" class="btn btn--solid" style="justify-self:start;margin-top:8px">Send Submission</button>
+  </form>
+
+  <div id="submit-thanks" style="display:none;grid-column:1/-1;padding:48px;border:1px solid var(--gilt);text-align:center">
+    <div class="eyebrow" style="margin-bottom:16px">Received</div>
+    <h2 style="font:italic 400 clamp(28px,3vw,40px)/1 var(--serif);color:var(--text-bright)">Thank you. We'll read it.</h2>
+    <p style="margin-top:16px;font:400 14.5px/1.7 var(--sans);color:var(--text-soft);max-width:50ch;margin-left:auto;margin-right:auto">Every submission is reviewed by hand. If we feature the artist, we'll be in touch within four weeks.</p>
+  </div>
+</section>
+
+<div data-colophon></div>
+
+<script src="js/omf.js"></script>
+<script>OMF.init('submit');</script>
+</body>
+</html>
