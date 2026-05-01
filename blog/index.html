@@ -16,18 +16,7 @@
     fbq('init','1446410187106776');fbq('track','PageView');
   </script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Journal | OMF Geometry</title>
-<meta name="description" content="The OMF Geometry journal, long-form artist features, interviews, and issue notes from the geometric tattoo archive.">
-<link rel="canonical" href="https://omfgeometry.com/blog/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Journal | OMF Geometry">
-<meta property="og:description" content="Long-form artist features, interviews, and issue notes from the geometric tattoo archive.">
-<meta property="og:image" content="https://omfgeometry.com/assets/berdah-01.png">
-<meta property="og:url" content="https://omfgeometry.com/blog/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Journal | OMF Geometry">
-<meta name="twitter:description" content="Long-form artist features, interviews, and issue notes from the geometric tattoo archive.">
-<meta name="twitter:image" content="https://omfgeometry.com/assets/berdah-01.png">
+<title>Journal — OMF Geometry</title>
 <link rel="stylesheet" href="../css/monolith.css">
 <style>
   .journal-hero {
@@ -37,39 +26,10 @@
   .journal-hero h1 { font: italic 400 clamp(56px, 9vw, 144px)/0.92 var(--serif); color: var(--text-bright); letter-spacing: -0.03em; }
   .journal-hero h1 b { font-style:normal; font-weight:400; }
   .journal-hero p { margin-top: 24px; font: italic 400 clamp(20px, 2.2vw, 28px)/1.4 var(--serif); color: var(--text-bright); max-width: 56ch; }
-  .journal-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 1px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-  }
-  .journal-feature,
-  .journal-card {
-    background: var(--ink);
-    color: inherit;
-    text-decoration: none;
-    display: block;
-  }
-  .journal-feature__media,
-  .journal-card__media { overflow: hidden; background: var(--ink-2); }
-  .journal-feature__media { aspect-ratio: 16/10; }
-  .journal-card__media { aspect-ratio: 4/3; }
-  .journal-feature__media img,
-  .journal-card__media img { width: 100%; height: 100%; object-fit: cover; display:block; transition: transform .8s; }
-  .journal-feature:hover img,
-  .journal-card:hover img { transform: scale(1.03); }
-  .journal-feature__body { padding: clamp(28px, 3vw, 40px); display:grid; gap:16px; }
-  .journal-feature__title { font: italic 400 clamp(36px, 4vw, 64px)/0.96 var(--serif); color: var(--text-bright); letter-spacing: -0.02em; }
-  .journal-feature__dek,
-  .journal-card__dek { font: 400 15px/1.75 var(--sans); color: var(--text-soft); }
-  .journal-card-list { display: grid; gap: 1px; background: var(--rule); }
-  .journal-card__body { padding: 26px; display:grid; gap:14px; }
-  .journal-card__title { font: italic 400 clamp(24px, 2.5vw, 34px)/1.02 var(--serif); color: var(--text-bright); letter-spacing: -0.02em; }
-  .journal-meta { font: 400 11px/1 var(--mono); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft); }
-  @media (max-width: 900px) {
-    .journal-grid { grid-template-columns: 1fr; }
-  }
+  .blog-card__media-wrap { aspect-ratio: 5/3; background: var(--ink-2); overflow:hidden; margin: 16px -1.5rem 24px; }
+  .blog-card.featured .blog-card__media-wrap { margin: 0 0 32px; aspect-ratio: 21/9; }
+  .blog-card__media-wrap img { width:100%;height:100%;object-fit:cover; filter:grayscale(0.1) contrast(1.05); transition: transform .8s; }
+  .blog-card:hover .blog-card__media-wrap img { transform: scale(1.03); }
 </style>
 </head>
 <body>
@@ -80,55 +40,71 @@
   <div class="shell">
     <div class="eyebrow" style="margin-bottom:24px">The Journal · Long-form & Interviews</div>
     <h1>The <em>Journal</em></h1>
-    <p>Studio visits, interviews, and close reads on the discipline of geometric tattoo. Published when the work warrants it, built one artist at a time.</p>
+    <p>Studio visits, interviews, and slow essays on the discipline of geometric tattoo. Published when the work warrants it.</p>
   </div>
 </section>
 
 <section class="shell" style="padding-top: clamp(40px,5vw,64px)">
-  <div class="journal-grid">
-    <a href="interview-clement-berdah.html" class="journal-feature">
-      <div class="journal-feature__media">
-        <img src="../assets/berdah-01.png" alt="Clément Berdah feature">
+  <div class="blog-index">
+    <a href="interview-clement-berdah.html" class="blog-card featured">
+      <div class="blog-card__media-wrap">
+        <img src="../images/monsieur-berdah.jpg" alt="Clément Berdah">
       </div>
-      <div class="journal-feature__body">
-        <div class="eyebrow">Issue 01 · Feature · Updated</div>
-        <h2 class="journal-feature__title">Clément <em>Berdah</em> on style, origin, flow, and the tension that keeps a piece alive.</h2>
-        <p class="journal-feature__dek">A tighter editorial cut drawn from the new Berdah issue assets, architecture, dotwork meditation, sacred geometry, and the patience behind a recognisable visual language.</p>
-        <div class="journal-meta">6 sections · Updated April 2026</div>
+      <div>
+        <div class="eyebrow">Issue 01 · Cover Story · Interview</div>
+        <h2 class="blog-card__title">A long conversation with <em>Clément Berdah</em>, in twelve questions</h2>
+        <p class="blog-card__dek">The Paris-based artist on origin, line discipline, the Flower of Life, and the tension that holds a piece together. Twelve questions, one long answer about looking.</p>
       </div>
+      <div class="blog-card__meta">12 min read · April 2026</div>
     </a>
 
-    <div class="journal-card-list">
-      <a href="felippe-suezo.html" class="journal-card">
-        <div class="journal-card__media">
-          <img src="../assets/suezo-slide-01.jpg" alt="Felippe Suezo feature">
-        </div>
-        <div class="journal-card__body">
-          <div class="eyebrow">Issue 02 · Feature</div>
-          <h2 class="journal-card__title">Felippe <em>Suezo</em>, dots one at a time.</h2>
-          <p class="journal-card__dek">On origin, anatomy, and process, a five-slide editorial feature built from Suezo's own words and studio language.</p>
-          <div class="journal-meta">5 slides · April 2026</div>
-        </div>
-      </a>
+    <article class="blog-card">
+      <div class="blog-card__media-wrap" style="background:#1c1815;display:grid;place-items:center">
+        <div style="font:italic 400 80px var(--serif);color:var(--gilt-dim);">⌬</div>
+      </div>
+      <div>
+        <div class="eyebrow">Forthcoming · Essay</div>
+        <h2 class="blog-card__title">Notes on <em>dotwork</em>, in three movements</h2>
+        <p class="blog-card__dek">Density, restraint, and the long shadow of stippling — read in March.</p>
+      </div>
+      <div class="blog-card__meta">Spring 2026 · Issue 02</div>
+    </article>
 
-      <a href="how-omfgeometry-finds-artists.html" class="journal-card">
-        <div class="journal-card__body">
-          <div class="eyebrow">Notebook</div>
-          <h2 class="journal-card__title">How OMF Geometry finds artists.</h2>
-          <p class="journal-card__dek">A plain-language look at the curation logic behind the directory.</p>
-          <div class="journal-meta">Essay</div>
-        </div>
-      </a>
+    <article class="blog-card">
+      <div class="blog-card__media-wrap" style="background:#1c1815;display:grid;place-items:center">
+        <div style="font:italic 400 80px var(--serif);color:var(--gilt-dim);">✺</div>
+      </div>
+      <div>
+        <div class="eyebrow">Forthcoming · Studio Visit</div>
+        <h2 class="blog-card__title">A morning with <em>Raye</em>, Granada</h2>
+        <p class="blog-card__dek">A studio visit with the artist behind the year's most reblogged ornamentals.</p>
+      </div>
+      <div class="blog-card__meta">Spring 2026 · Issue 02</div>
+    </article>
 
-      <a href="why-geometric-tattoos-are-different.html" class="journal-card">
-        <div class="journal-card__body">
-          <div class="eyebrow">Notebook</div>
-          <h2 class="journal-card__title">Why geometric tattoos ask for a different kind of attention.</h2>
-          <p class="journal-card__dek">A short essay on restraint, repetition, and the visual pressure geometric work carries.</p>
-          <div class="journal-meta">Essay</div>
-        </div>
-      </a>
-    </div>
+    <article class="blog-card">
+      <div class="blog-card__media-wrap" style="background:#1c1815;display:grid;place-items:center">
+        <div style="font:italic 400 80px var(--serif);color:var(--gilt-dim);">❀</div>
+      </div>
+      <div>
+        <div class="eyebrow">Forthcoming · Essay</div>
+        <h2 class="blog-card__title">On the <em>Flower of Life</em></h2>
+        <p class="blog-card__dek">A short essay on the shape that won't go away — and the artists who keep finding new angles on it.</p>
+      </div>
+      <div class="blog-card__meta">Summer 2026 · Issue 03</div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-card__media-wrap" style="background:#1c1815;display:grid;place-items:center">
+        <div style="font:italic 400 80px var(--serif);color:var(--gilt-dim);">▲</div>
+      </div>
+      <div>
+        <div class="eyebrow">Forthcoming · Field Notes</div>
+        <h2 class="blog-card__title">Five years of <em>blackwork</em>, observed</h2>
+        <p class="blog-card__dek">A loose taxonomy of the styles emerging at the edges of the field.</p>
+      </div>
+      <div class="blog-card__meta">Summer 2026 · Issue 03</div>
+    </article>
   </div>
 </section>
 
