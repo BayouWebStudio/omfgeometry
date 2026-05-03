@@ -2,443 +2,49 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2SPB4F1HX7');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>A long conversation with Clément Berdah — OMF Geometry</title>
 <link rel="stylesheet" href="../css/monolith.css">
 <style>
-  /* ============================================================
-     INTERVIEW TEMPLATE — magazine layout
-     Copy this file to start a new interview. Replace:
-       - .iv-cover img / h1 / dek / metadata
-       - .iv-pullspread quote + image
-       - .iv-trio images & captions
-       - .iv-bigplate image & caption
-       - The Q&A blocks (.qa)
-     Layout uses CSS grid; nothing is positioned absolutely beyond
-     the cover. Drop new <section> blocks anywhere in <article>.
-     ============================================================ */
-
-  :root {
-    --col-narrow: 680px;
-    --col-wide: 1120px;
-    --col-spread: 1440px;
-    --paper-grain: rgba(26,23,21,0.04);
-  }
-
-  /* ── COVER ────────────────────────────────────────────────── */
-  .iv-cover {
-    position: relative;
-    height: clamp(640px, 92vh, 920px);
-    overflow: hidden;
+  .article-hero {
+    padding: clamp(60px, 8vw, 140px) var(--gutter) clamp(40px, 5vw, 80px);
     border-bottom: 1px solid var(--rule-strong);
-  }
-  .iv-cover .bg {
-    position: absolute; inset: 0;
-    background-size: cover; background-position: center;
-    filter: grayscale(0.15) brightness(0.78);
-  }
-  .iv-cover .bg::after {
-    content: "";
-    position: absolute; inset: 0;
-    background:
-      linear-gradient(180deg,
-        rgba(10,9,8,0.55) 0%,
-        rgba(10,9,8,0.05) 35%,
-        rgba(10,9,8,0.05) 60%,
-        rgba(10,9,8,0.92) 100%);
-  }
-  .iv-cover .bar {
-    position: relative; z-index: 2;
-    display: grid; grid-template-columns: auto 1fr auto;
-    align-items: center; gap: 32px;
-    padding: 28px var(--gutter);
-    border-bottom: 1px solid rgba(245,241,232,0.18);
-    backdrop-filter: blur(2px);
-    color: var(--text-bright);
-  }
-  .iv-cover .bar .left,
-  .iv-cover .bar .right {
-    font: 700 11px/1 var(--mono);
-    letter-spacing: 0.32em; text-transform: uppercase;
-    color: var(--gilt);
-  }
-  .iv-cover .bar .center {
-    font: italic 400 22px/1 var(--serif);
-    color: var(--text-bright);
     text-align: center;
   }
-  .iv-cover .titleblock {
-    position: absolute; left: 0; right: 0; bottom: 56px;
-    z-index: 2;
-    padding: 0 var(--gutter);
-  }
-  .iv-cover .titleblock .inner { max-width: var(--col-wide); margin: 0 auto; }
-  .iv-cover .eyebrow { color: var(--gilt); margin-bottom: 22px; font-size: 12px; }
-  .iv-cover h1 {
-    font: italic 400 clamp(56px, 8.5vw, 144px)/0.92 var(--serif);
-    letter-spacing: -0.025em;
+  .article-hero h1 { font: italic 400 clamp(40px, 6vw, 96px)/0.95 var(--serif); color: var(--text-bright); letter-spacing: -0.02em; max-width: 22ch; margin: 24px auto 0; }
+  .article-hero p.dek { margin: 28px auto 0; font: italic 400 clamp(20px, 2vw, 24px)/1.4 var(--serif); color: var(--text); max-width: 50ch; }
+  .article-hero .meta { margin-top: 36px; display: flex; justify-content: center; gap: 32px; font: 400 11px/1 var(--mono); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft); flex-wrap: wrap; }
+  .article-hero .meta b { color: var(--gilt); margin-right: 8px; font-weight: 700; }
+  .article-portrait { margin: clamp(40px,5vw,80px) auto 0; max-width: 1100px; aspect-ratio: 16/9; overflow:hidden; }
+  .article-portrait img { width:100%;height:100%;object-fit:cover; filter:grayscale(0.1); }
+
+  .article-body { max-width: 720px; margin: 0 auto; padding: clamp(60px,7vw,120px) var(--gutter); }
+  .article-body p { font: 400 17px/1.85 var(--sans); color: var(--text); margin-bottom: 28px; }
+  .article-body p:first-of-type::first-letter { font: italic 400 80px/0.85 var(--serif); float: left; color: var(--gilt); padding: 6px 14px 0 0; }
+  .qa-q { font: italic 400 clamp(22px,2.2vw,28px)/1.3 var(--serif); color: var(--text-bright); margin: 56px 0 18px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); }
+  .qa-q .num { font: 700 12px/1 var(--mono); letter-spacing: 0.22em; color: var(--gilt); margin-right: 14px; }
+  .article-body .pull-inline {
+    margin: 56px 0;
+    font: italic 400 clamp(26px,3vw,36px)/1.3 var(--serif);
     color: var(--text-bright);
-    max-width: 16ch;
-    margin-bottom: 20px;
+    border-left: 1px solid var(--gilt);
+    padding-left: 28px;
   }
-  .iv-cover h1 em { color: var(--gilt); font-style: italic; }
-  .iv-cover .dek {
-    font: italic 400 clamp(20px, 2.2vw, 26px)/1.4 var(--serif);
-    color: rgba(245,241,232,0.85);
-    max-width: 56ch;
-    margin-bottom: 36px;
-  }
-  .iv-cover .meta {
-    display: flex; flex-wrap: wrap; gap: 36px;
-    font: 400 11px/1.6 var(--mono);
-    letter-spacing: 0.18em; text-transform: uppercase;
-    color: rgba(245,241,232,0.7);
-    padding-top: 24px;
-    border-top: 1px solid rgba(245,241,232,0.18);
-    max-width: var(--col-wide);
-  }
-  .iv-cover .meta dt {
-    display: block;
-    color: var(--gilt);
-    font-weight: 700;
-    margin-bottom: 6px;
-    font-size: 9.5px;
-    letter-spacing: 0.32em;
-  }
-  .iv-cover .meta dd { color: var(--text-bright); font-style: normal; font-size: 13px; letter-spacing: 0.06em; }
-  .iv-cover .meta dd.italic { font: italic 400 18px/1.2 var(--serif); letter-spacing: 0; text-transform: none; }
-
-  /* ── DECK / OPENING ───────────────────────────────────────── */
-  .iv-deck {
-    padding: clamp(80px, 9vw, 140px) var(--gutter) clamp(40px, 5vw, 80px);
-    text-align: center;
-    border-bottom: 1px solid var(--rule);
-  }
-  .iv-deck .lead {
-    font: italic 400 clamp(26px, 3vw, 40px)/1.4 var(--serif);
-    color: var(--text-bright);
-    max-width: 30ch;
-    margin: 0 auto;
-    text-wrap: balance;
-  }
-  .iv-deck .lead em { color: var(--gilt); }
-  .iv-deck .byline {
-    margin-top: 36px;
-    font: 400 11px/1.6 var(--mono);
-    letter-spacing: 0.32em; text-transform: uppercase;
-    color: var(--text-soft);
-  }
-  .iv-deck .byline span { color: var(--gilt); }
-
-  /* ── BODY COLUMN ──────────────────────────────────────────── */
-  .iv-body {
-    max-width: var(--col-narrow);
-    margin: 0 auto;
-    padding: clamp(60px, 7vw, 100px) var(--gutter);
-  }
-  .iv-body p {
-    font: 400 18px/1.85 var(--sans);
-    color: var(--text);
-    margin-bottom: 28px;
-  }
-  .iv-body p.intro {
-    font: italic 400 22px/1.6 var(--serif);
-    color: var(--text-bright);
-    margin-bottom: 40px;
-  }
-  .iv-body p.intro::first-letter {
-    font: italic 400 110px/0.85 var(--serif);
-    float: left;
-    color: var(--gilt);
-    padding: 8px 18px 0 0;
-    margin-top: 4px;
-  }
-
-  /* Q&A block */
-  .qa { margin: 64px 0 0; }
-  .qa + .qa { margin-top: 56px; }
-  .qa-q {
-    display: grid;
-    grid-template-columns: 64px 1fr;
-    gap: 18px;
-    align-items: baseline;
-    margin-bottom: 18px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid var(--rule);
-  }
-  .qa-q .num {
-    font: 700 11px/1 var(--mono);
-    letter-spacing: 0.22em;
-    color: var(--gilt);
-  }
-  .qa-q .text {
-    font: italic 400 clamp(24px, 2.4vw, 32px)/1.25 var(--serif);
-    color: var(--text-bright);
-    text-wrap: balance;
-  }
-  .qa-a { padding-left: 82px; }
-  .qa-a p { font: 400 17px/1.85 var(--sans); color: var(--text); margin-bottom: 22px; }
-  .qa-a p:last-child { margin-bottom: 0; }
-  .qa-a em { color: var(--text-bright); font-style: italic; }
-
-  /* Margin note — paired with a Q&A */
-  .qa.has-note { display: grid; grid-template-columns: 1fr; gap: 0; }
-  @media (min-width: 1080px) {
-    .qa.has-note {
-      grid-template-columns: 200px 1fr;
-      gap: 48px;
-      max-width: calc(var(--col-narrow) + 248px);
-      margin-left: -124px;
-    }
-    .qa.has-note .note {
-      grid-column: 1;
-      grid-row: 1 / span 2;
-      padding-top: 4px;
-      border-right: 1px solid var(--gilt-glow);
-      padding-right: 32px;
-      text-align: right;
-    }
-    .qa.has-note .qa-q { grid-column: 2; }
-    .qa.has-note .qa-a { grid-column: 2; padding-left: 82px; }
-  }
-  .qa .note .label {
-    font: 700 9.5px/1 var(--mono);
-    letter-spacing: 0.32em; text-transform: uppercase;
-    color: var(--gilt); margin-bottom: 10px;
-  }
-  .qa .note .text {
-    font: italic 400 18px/1.4 var(--serif);
-    color: var(--text-soft);
-    text-wrap: pretty;
-  }
-
-  /* ── PULL SPREAD (quote + image) ──────────────────────────── */
-  .iv-pullspread {
-    background: var(--ink-2);
-    padding: clamp(80px, 9vw, 140px) var(--gutter);
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-  }
-  .iv-pullspread .grid {
-    max-width: var(--col-spread);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(40px, 5vw, 80px);
-    align-items: center;
-  }
-  @media (max-width: 880px) { .iv-pullspread .grid { grid-template-columns: 1fr; } }
-  .iv-pullspread .img {
-    aspect-ratio: 4/5;
-    overflow: hidden;
-    background: var(--ink-3);
-  }
-  .iv-pullspread .img img { width: 100%; height: 100%; object-fit: cover; }
-  .iv-pullspread .quote {
-    font: italic 400 clamp(32px, 4vw, 56px)/1.15 var(--serif);
-    color: var(--text-bright);
-    letter-spacing: -0.01em;
-    text-wrap: balance;
-  }
-  .iv-pullspread .quote::before {
-    content: "“";
-    display: block;
-    font: italic 400 120px/0.6 var(--serif);
-    color: var(--gilt);
-    margin-bottom: 16px;
-  }
-  .iv-pullspread .attrib {
-    margin-top: 32px;
-    font: 700 11px/1.6 var(--mono);
-    letter-spacing: 0.32em; text-transform: uppercase;
-    color: var(--gilt);
-  }
-  .iv-pullspread .attrib span { color: var(--text-soft); }
-
-  /* ── IMAGE TRIO ───────────────────────────────────────────── */
-  .iv-trio {
-    padding: clamp(80px, 9vw, 140px) var(--gutter);
-    border-bottom: 1px solid var(--rule);
-  }
-  .iv-trio .head {
-    max-width: var(--col-spread);
-    margin: 0 auto clamp(40px, 5vw, 60px);
-    display: flex; align-items: baseline; gap: 32px;
-    flex-wrap: wrap;
-  }
-  .iv-trio .head .label {
-    font: 700 11px/1 var(--mono);
-    letter-spacing: 0.32em; text-transform: uppercase;
-    color: var(--gilt);
-  }
-  .iv-trio .head h2 {
-    font: italic 400 clamp(32px, 4vw, 56px)/1 var(--serif);
-    color: var(--text-bright);
-    letter-spacing: -0.02em;
-  }
-  .iv-trio .head h2 em { color: var(--gilt); font-style: italic; }
-  .iv-trio .head .rule {
-    flex: 1;
-    min-width: 60px;
-    height: 1px;
-    background: var(--gilt-dim);
-    align-self: center;
-    opacity: 0.5;
-  }
-  .iv-trio .grid {
-    max-width: var(--col-spread);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    gap: clamp(16px, 2vw, 28px);
-  }
-  @media (max-width: 880px) { .iv-trio .grid { grid-template-columns: 1fr; } }
-  .iv-trio figure { margin: 0; }
-  .iv-trio figure .frame {
-    aspect-ratio: 4/5;
-    overflow: hidden;
-    background: var(--ink-3);
-    position: relative;
-  }
-  .iv-trio figure:nth-child(1) .frame { aspect-ratio: 4/5; }
-  .iv-trio figure .frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
-  .iv-trio figure:hover .frame img { transform: scale(1.02); }
-  .iv-trio figcaption {
-    margin-top: 16px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 14px;
-    align-items: baseline;
-  }
-  .iv-trio figcaption .num {
-    font: 700 10px/1 var(--mono);
-    letter-spacing: 0.28em; text-transform: uppercase;
-    color: var(--gilt);
-  }
-  .iv-trio figcaption .cap {
-    font: italic 400 15px/1.45 var(--serif);
-    color: var(--text);
-  }
-
-  /* ── BIG PLATE ────────────────────────────────────────────── */
-  .iv-bigplate {
-    padding: 0;
-    border-bottom: 1px solid var(--rule);
-  }
-  .iv-bigplate .frame {
-    width: 100%;
-    aspect-ratio: 21/9;
-    overflow: hidden;
-    background: var(--ink-3);
-  }
-  .iv-bigplate .frame img { width: 100%; height: 100%; object-fit: cover; }
-  .iv-bigplate .caption {
-    max-width: var(--col-wide);
-    margin: 0 auto;
-    padding: 28px var(--gutter);
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 32px;
-    align-items: baseline;
-  }
-  .iv-bigplate .caption .num {
-    font: 700 11px/1 var(--mono);
-    letter-spacing: 0.28em; text-transform: uppercase;
-    color: var(--gilt);
-  }
-  .iv-bigplate .caption .cap {
-    font: italic 400 18px/1.4 var(--serif);
-    color: var(--text);
-  }
-  .iv-bigplate .caption .credit {
-    font: 400 11px/1.4 var(--mono);
-    letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--text-soft);
-    text-align: right;
-  }
-
-  /* ── PORTRAIT + QUOTE half-spread ─────────────────────────── */
-  .iv-portrait-quote {
-    padding: clamp(80px, 9vw, 140px) var(--gutter);
-    border-bottom: 1px solid var(--rule);
-  }
-  .iv-portrait-quote .grid {
-    max-width: var(--col-spread);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: clamp(40px, 5vw, 80px);
-    align-items: center;
-  }
-  @media (max-width: 880px) { .iv-portrait-quote .grid { grid-template-columns: 1fr; } }
-  .iv-portrait-quote .stack {
-    display: flex; flex-direction: column; gap: 32px;
-  }
-  .iv-portrait-quote .label {
-    font: 700 11px/1 var(--mono);
-    letter-spacing: 0.32em; text-transform: uppercase;
-    color: var(--gilt);
-  }
-  .iv-portrait-quote h3 {
-    font: italic 400 clamp(36px, 4.5vw, 64px)/1.05 var(--serif);
-    color: var(--text-bright);
-    letter-spacing: -0.02em;
-    text-wrap: balance;
-  }
-  .iv-portrait-quote h3 em { color: var(--gilt); }
-  .iv-portrait-quote p {
-    font: 400 17px/1.85 var(--sans);
-    color: var(--text);
-  }
-  .iv-portrait-quote .img {
-    aspect-ratio: 3/4;
-    overflow: hidden;
-    background: var(--ink-3);
-  }
-  .iv-portrait-quote .img img { width: 100%; height: 100%; object-fit: cover; }
-
-  /* ── ENDMARK + COLOPHON ───────────────────────────────────── */
-  .iv-end {
-    max-width: var(--col-narrow);
-    margin: 0 auto;
-    padding: clamp(40px, 5vw, 80px) var(--gutter);
-    text-align: center;
-  }
-  .iv-end .mark {
-    font: italic 400 56px/1 var(--serif);
-    color: var(--gilt);
-    margin-bottom: 28px;
-  }
-  .iv-end .colophon {
-    font: 400 11px/1.8 var(--mono);
-    letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--text-soft);
-  }
-  .iv-end .colophon span { color: var(--gilt); }
-
-  /* ── SPECIMEN STRIP — bottom artist credit before CTA ─────── */
-  .iv-strip {
-    background: var(--ink-2);
-    padding: 32px var(--gutter);
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-  }
-  .iv-strip .row {
-    max-width: var(--col-spread);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 8px;
-  }
-  @media (max-width: 880px) { .iv-strip .row { grid-template-columns: repeat(3, 1fr); } }
-  .iv-strip .row .img {
-    aspect-ratio: 1;
-    overflow: hidden;
-    opacity: 0.7;
-    transition: opacity .2s;
-  }
-  .iv-strip .row .img:hover { opacity: 1; }
-  .iv-strip .row .img img { width: 100%; height: 100%; object-fit: cover; }
+  .article-end { margin-top: 80px; padding-top: 32px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  .article-end span { font: 400 11px/1 var(--mono); letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-soft); }
 </style>
 </head>
 <body>
@@ -446,282 +52,74 @@
 <div data-masthead></div>
 
 <article>
-
-  <!-- ═══ COVER ═════════════════════════════════════════════ -->
-  <header class="iv-cover">
-    <div class="bg" style="background-image: url('../assets/berdah-01.png');"></div>
-
-    <div class="bar">
-      <div class="left">OMF Geometry · Issue № 01</div>
-      <div class="center">A <em>Journal</em> of Geometric Tattoo</div>
-      <div class="right">Spring 2026</div>
+  <header class="article-hero">
+    <div class="eyebrow">Issue 01 · Cover Story · Interview</div>
+    <h1>A long conversation with <em>Clément Berdah</em>, in twelve questions</h1>
+    <p class="dek">On origin, the French scene, the Flower of Life, composition, and the tension that holds a piece together.</p>
+    <div class="meta">
+      <span><b>Subject</b>@monsieur_berdah</span>
+      <span><b>City</b>Paris, France</span>
+      <span><b>Issue</b>№ 01 · Spring 2026</span>
+      <span><b>Read</b>12 minutes</span>
     </div>
-
-    <div class="titleblock">
-      <div class="inner">
-        <div class="eyebrow">Cover Story · Interview · 12 Questions</div>
-        <h1>A long conversation with <em>Clément Berdah</em></h1>
-        <p class="dek">On origin, the French scene, the Flower of Life, composition, and the tension that holds a piece together.</p>
-
-        <dl class="meta">
-          <div>
-            <dt>Subject</dt>
-            <dd class="italic">@monsieur_berdah</dd>
-          </div>
-          <div>
-            <dt>City</dt>
-            <dd>Paris, France</dd>
-          </div>
-          <div>
-            <dt>Photographs</dt>
-            <dd>From the studio</dd>
-          </div>
-          <div>
-            <dt>Read</dt>
-            <dd>12 minutes</dd>
-          </div>
-          <div>
-            <dt>Issue</dt>
-            <dd>№ 01 · Spring 2026</dd>
-          </div>
-        </dl>
-      </div>
+    <div class="article-portrait">
+      <img src="../images/monsieur-berdah.jpg" alt="Clément Berdah">
     </div>
   </header>
 
-  <!-- ═══ DECK ══════════════════════════════════════════════ -->
-  <section class="iv-deck">
-    <p class="lead">"Geometry isn't a style for me. It's a way of <em>looking</em> — at the body, at light, at the line itself."</p>
-    <div class="byline"><span>—</span> &nbsp; Recorded over a quiet morning in Paris &nbsp; <span>—</span></div>
-  </section>
+  <div class="article-body">
 
-  <!-- ═══ INTRO ═════════════════════════════════════════════ -->
-  <section class="iv-body">
-    <p class="intro">Clément Berdah works from a small studio outside Paris. Over eleven years, he has built a vocabulary that returns again and again to the same shapes — the Flower of Life, the hexagonal grid, the ornamental band — and finds new things in them every time. We met him on a quiet morning, an hour before his first client, to talk about geometry as a way of looking.</p>
+    <h2 class="qa-q"><span class="num">Q.01</span>How did you start?</h2>
+    <p>I drew first. I drew before I tattooed. The line was the line on paper for a long time before it was the line on skin, and that order matters — the discipline came before the medium, not after.</p>
 
-    <!-- ── Q.01 ── -->
-    <div class="qa has-note">
-      <div class="note">
-        <div class="label">— On origin</div>
-        <div class="text">"The discipline came before the medium, not after."</div>
-      </div>
-      <h2 class="qa-q"><span class="num">Q.01</span><span class="text">How did you start?</span></h2>
-      <div class="qa-a">
-        <p>I drew first. I drew before I tattooed. The line was the line on paper for a long time before it was the line on skin, and that order matters — the discipline came before the medium, not after.</p>
-      </div>
+    <h2 class="qa-q"><span class="num">Q.02</span>The French scene — what's it like?</h2>
+    <p>Small, generous, suspicious of trends. A few studios in Paris and Lyon are doing serious work. We talk to each other. We share references. There's a French politeness in how the artists treat each other's lines that I haven't seen elsewhere.</p>
+
+    <h2 class="qa-q"><span class="num">Q.03</span>How do you describe your style?</h2>
+    <p>I don't try. <em>Geometric</em> is the word that lets me work. But geometry isn't a style for me. It's a way of looking — at the body, at light, at the line itself.</p>
+
+    <blockquote class="pull-inline">"Geometry isn't a style for me. It's a way of looking — at the body, at light, at the line itself."</blockquote>
+
+    <h2 class="qa-q"><span class="num">Q.04</span>You return to the Flower of Life often.</h2>
+    <p>Because it isn't finished. Every time I draw it, the next ring tells me where the piece wants to go. It's a generative shape, not a decorative one.</p>
+
+    <h2 class="qa-q"><span class="num">Q.05</span>How do you compose on the body?</h2>
+    <p>Freehand, always. I draw on the body for an hour before the needle starts. The body proposes the composition; I respond to it. A piece designed flat on a tablet and then transferred — you can feel it. It sits on the body like a sticker.</p>
+
+    <h2 class="qa-q"><span class="num">Q.06</span>What do you avoid?</h2>
+    <p>Symmetry as a default. Repetition as a default. The most common mistake in geometric tattoo is treating the form as decoration rather than as a structure.</p>
+
+    <h2 class="qa-q"><span class="num">Q.07</span>The line itself — what's the thing you care about most?</h2>
+    <p>That it holds. A line on skin will move with the body for forty years. If it's right, it gets better with that movement. If it's wrong, it falls apart. I think about that on every stroke.</p>
+
+    <h2 class="qa-q"><span class="num">Q.08</span>What do clients ask for?</h2>
+    <p>Often a shape they've seen. I try to listen for what's behind the request. The shape is rarely what they actually want; what they want is a feeling the shape gave them. We work from there.</p>
+
+    <h2 class="qa-q"><span class="num">Q.09</span>How long does a piece take?</h2>
+    <p>Three to eight hours of needle, but a week of looking. The looking is the longer part of the work.</p>
+
+    <h2 class="qa-q"><span class="num">Q.10</span>The tension that holds a piece together — how do you describe it?</h2>
+    <p>An imbalance that wants to balance. A pull between two centres. If both centres are equally weighted, the piece is dead. The eye needs somewhere to fall first, and somewhere to fall back to.</p>
+
+    <h2 class="qa-q"><span class="num">Q.11</span>Who are you watching?</h2>
+    <p>Younger artists. The ones who haven't named their style yet. They make the strangest things, and the strangest things age best.</p>
+
+    <h2 class="qa-q"><span class="num">Q.12</span>What's next?</h2>
+    <p>A long break, in autumn. Then more of the same — the same shapes, more carefully looked at. That's the whole project, really.</p>
+
+    <div class="article-end">
+      <span>— Interview · OMF Geometry</span>
+      <span>Issue № 01 · Spring 2026</span>
     </div>
-
-    <!-- ── Q.02 ── -->
-    <div class="qa">
-      <h2 class="qa-q"><span class="num">Q.02</span><span class="text">The French scene — what's it like?</span></h2>
-      <div class="qa-a">
-        <p>Small, generous, suspicious of trends. A few studios in Paris and Lyon are doing serious work. We talk to each other. We share references. There's a French politeness in how the artists treat each other's lines that I haven't seen elsewhere.</p>
-      </div>
-    </div>
-
-    <!-- ── Q.03 ── -->
-    <div class="qa has-note">
-      <div class="note">
-        <div class="label">— On the word</div>
-        <div class="text">Geometric is the word that lets him work, not the one he chose.</div>
-      </div>
-      <h2 class="qa-q"><span class="num">Q.03</span><span class="text">How do you describe your style?</span></h2>
-      <div class="qa-a">
-        <p>I don't try. <em>Geometric</em> is the word that lets me work. But geometry isn't a style for me. It's a way of looking — at the body, at light, at the line itself.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ PULL SPREAD: image + quote ════════════════════════ -->
-  <section class="iv-pullspread">
-    <div class="grid">
-      <div class="img"><img src="../assets/berdah-02.jpg" alt="Berdah work"></div>
-      <div>
-        <blockquote class="quote">It's a generative shape, not a decorative one. Every time I draw it, the next ring tells me where the piece wants to go.</blockquote>
-        <div class="attrib">Berdah · <span>On the Flower of Life</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ MORE Q&A ══════════════════════════════════════════ -->
-  <section class="iv-body">
-    <!-- ── Q.04 ── -->
-    <div class="qa">
-      <h2 class="qa-q"><span class="num">Q.04</span><span class="text">You return to the Flower of Life often.</span></h2>
-      <div class="qa-a">
-        <p>Because it isn't finished. Every time I draw it, the next ring tells me where the piece wants to go. It's a generative shape, not a decorative one.</p>
-      </div>
-    </div>
-
-    <!-- ── Q.05 ── -->
-    <div class="qa has-note">
-      <div class="note">
-        <div class="label">— In the studio</div>
-        <div class="text">An hour drawing on the body before the needle starts.</div>
-      </div>
-      <h2 class="qa-q"><span class="num">Q.05</span><span class="text">How do you compose on the body?</span></h2>
-      <div class="qa-a">
-        <p>Freehand, always. I draw on the body for an hour before the needle starts. The body proposes the composition; I respond to it. A piece designed flat on a tablet and then transferred — you can feel it. It sits on the body like a sticker.</p>
-      </div>
-    </div>
-
-    <!-- ── Q.06 ── -->
-    <div class="qa">
-      <h2 class="qa-q"><span class="num">Q.06</span><span class="text">What do you avoid?</span></h2>
-      <div class="qa-a">
-        <p>Symmetry as a default. Repetition as a default. The most common mistake in geometric tattoo is treating the form as decoration rather than as a structure.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ TRIO ══════════════════════════════════════════════ -->
-  <section class="iv-trio">
-    <div class="head">
-      <div class="label">Plates · Three Pieces</div>
-      <h2>From the <em>archive</em></h2>
-      <div class="rule"></div>
-    </div>
-    <div class="grid">
-      <figure>
-        <div class="frame"><img src="../assets/berdah-03.jpg" alt=""></div>
-        <figcaption>
-          <span class="num">PL.01</span>
-          <span class="cap"><i>Hexagonal study</i> — sleeve, photographed in afternoon light. The grid was drawn freehand on the morning of the session.</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <div class="frame"><img src="../assets/berdah-04.jpg" alt=""></div>
-        <figcaption>
-          <span class="num">PL.02</span>
-          <span class="cap"><i>Lotus, in negative.</i> Where the form meets the body's curvature.</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <div class="frame"><img src="../assets/berdah-05.jpg" alt=""></div>
-        <figcaption>
-          <span class="num">PL.03</span>
-          <span class="cap"><i>Detail.</i> Six rings, one centre, an unresolved seventh.</span>
-        </figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- ═══ MORE Q&A ══════════════════════════════════════════ -->
-  <section class="iv-body">
-    <!-- ── Q.07 ── -->
-    <div class="qa has-note">
-      <div class="note">
-        <div class="label">— On the line</div>
-        <div class="text">"It will move with the body for forty years."</div>
-      </div>
-      <h2 class="qa-q"><span class="num">Q.07</span><span class="text">The line itself — what's the thing you care about most?</span></h2>
-      <div class="qa-a">
-        <p>That it holds. A line on skin will move with the body for forty years. If it's right, it gets better with that movement. If it's wrong, it falls apart. I think about that on every stroke.</p>
-      </div>
-    </div>
-
-    <!-- ── Q.08 ── -->
-    <div class="qa">
-      <h2 class="qa-q"><span class="num">Q.08</span><span class="text">What do clients ask for?</span></h2>
-      <div class="qa-a">
-        <p>Often a shape they've seen. I try to listen for what's behind the request. The shape is rarely what they actually want; what they want is a feeling the shape gave them. We work from there.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ BIG PLATE ═════════════════════════════════════════ -->
-  <section class="iv-bigplate">
-    <div class="frame"><img src="../assets/berdah-06.jpg" alt="Berdah large work"></div>
-    <div class="caption">
-      <span class="num">PL.04</span>
-      <span class="cap"><i>Full-body study, 2025.</i> "Three to eight hours of needle, but a week of looking. The looking is the longer part of the work."</span>
-      <span class="credit">Photo · OMF Geometry</span>
-    </div>
-  </section>
-
-  <!-- ═══ PORTRAIT + QUOTE ══════════════════════════════════ -->
-  <section class="iv-portrait-quote">
-    <div class="grid">
-      <div class="img"><img src="../assets/berdah-07.jpg" alt=""></div>
-      <div class="stack">
-        <div class="label">— On tension</div>
-        <h3>An imbalance that <em>wants</em> to balance.</h3>
-        <p>A pull between two centres. If both centres are equally weighted, the piece is dead. The eye needs somewhere to fall first, and somewhere to fall back to.</p>
-        <p>Berdah pauses, holds his hands a foot apart over the table, then closes the gap halfway. The point, he says, is the gap that doesn't quite close.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ FINAL Q&A ═════════════════════════════════════════ -->
-  <section class="iv-body">
-    <!-- ── Q.09 ── -->
-    <div class="qa">
-      <h2 class="qa-q"><span class="num">Q.09</span><span class="text">How long does a piece take?</span></h2>
-      <div class="qa-a">
-        <p>Three to eight hours of needle, but a week of looking. The looking is the longer part of the work.</p>
-      </div>
-    </div>
-
-    <!-- ── Q.10 ── -->
-    <div class="qa">
-      <h2 class="qa-q"><span class="num">Q.10</span><span class="text">The tension that holds a piece together — how do you describe it?</span></h2>
-      <div class="qa-a">
-        <p>An imbalance that wants to balance. A pull between two centres. If both centres are equally weighted, the piece is dead. The eye needs somewhere to fall first, and somewhere to fall back to.</p>
-      </div>
-    </div>
-
-    <!-- ── Q.11 ── -->
-    <div class="qa has-note">
-      <div class="note">
-        <div class="label">— On lineage</div>
-        <div class="text">"The strangest things age best."</div>
-      </div>
-      <h2 class="qa-q"><span class="num">Q.11</span><span class="text">Who are you watching?</span></h2>
-      <div class="qa-a">
-        <p>Younger artists. The ones who haven't named their style yet. They make the strangest things, and the strangest things age best.</p>
-      </div>
-    </div>
-
-    <!-- ── Q.12 ── -->
-    <div class="qa">
-      <h2 class="qa-q"><span class="num">Q.12</span><span class="text">What's next?</span></h2>
-      <div class="qa-a">
-        <p>A long break, in autumn. Then more of the same — the same shapes, more carefully looked at. That's the whole project, really.</p>
-      </div>
-    </div>
-
-    <!-- ═══ END MARK ════════════════════════════════════════ -->
-    <div class="iv-end">
-      <div class="mark">⌬</div>
-      <div class="colophon">
-        Interview · OMF Geometry · Issue № 01<br>
-        <span>Recorded Spring 2026 · Paris</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ SPECIMEN STRIP ════════════════════════════════════ -->
-  <section class="iv-strip">
-    <div class="row">
-      <a class="img" href="../assets/berdah-01.png"><img src="../assets/berdah-01.png" alt=""></a>
-      <a class="img" href="../assets/berdah-02.jpg"><img src="../assets/berdah-02.jpg" alt=""></a>
-      <a class="img" href="../assets/berdah-03.jpg"><img src="../assets/berdah-03.jpg" alt=""></a>
-      <a class="img" href="../assets/berdah-04.jpg"><img src="../assets/berdah-04.jpg" alt=""></a>
-      <a class="img" href="../assets/berdah-05.jpg"><img src="../assets/berdah-05.jpg" alt=""></a>
-      <a class="img" href="../assets/berdah-06.jpg"><img src="../assets/berdah-06.jpg" alt=""></a>
-      <a class="img" href="../assets/berdah-07.jpg"><img src="../assets/berdah-07.jpg" alt=""></a>
-    </div>
-  </section>
-
+  </div>
 </article>
 
-<!-- ═══ CTA ═══════════════════════════════════════════════ -->
 <section class="paper">
   <div style="max-width:1100px;margin:0 auto;text-align:center">
     <div class="eyebrow">See the work</div>
     <h2 style="font:italic 400 clamp(36px,5vw,72px)/0.95 var(--serif);color:var(--paper-ink);margin-top:18px;letter-spacing:-0.02em;">Open <em>Berdah's archive</em>.</h2>
-    <p style="font: 400 16px/1.7 var(--sans);color:var(--paper-ink);max-width:60ch;margin:20px auto 0;opacity:0.85">A selection of pieces, photographed for OMF.</p>
-    <a href="../artists/monsieur-berdah.html" class="btn btn--paper" style="margin-top:36px">Open the Profile →</a>
+    <p style="font: 400 16px/1.7 var(--sans);color:var(--paper-ink);max-width:60ch;margin:20px auto 0;opacity:0.85">Three pieces, photographed for OMF.</p>
+    <a href="../artist.html?slug=monsieur-berdah" class="btn btn--paper" style="margin-top:36px">Open the Profile →</a>
   </div>
 </section>
 
