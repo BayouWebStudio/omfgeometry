@@ -1873,5 +1873,61 @@
     "featured": true,
     "image": "images/lucasgneis.jpg",
     "gallery": []
+  },
+  {
+    "name": "Domjoeltattoo",
+    "slug": "domjoeltattoo",
+    "instagram": "domjoeltattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @domjoeltattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/domjoeltattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Niki   Niki   Niki",
+    "slug": "niki-niki-niki",
+    "instagram": "niki___niki___niki",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @niki___niki___niki on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/niki-niki-niki.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Kyleshritattoo",
+    "slug": "kyleshritattoo",
+    "instagram": "kyleshritattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @kyleshritattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/kyleshritattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Shoulders",
+    "slug": "shoulders",
+    "instagram": "shoulders",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @shoulders on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/shoulders.jpg",
+    "gallery": []
   }
 ]
