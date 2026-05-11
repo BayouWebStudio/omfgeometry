@@ -1929,5 +1929,47 @@
     "featured": true,
     "image": "images/shoulders.jpg",
     "gallery": []
+  },
+  {
+    "name": "Noomitattoo",
+    "slug": "noomitattoo",
+    "instagram": "noomitattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @noomitattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/noomitattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Artist",
+    "slug": "artist",
+    "instagram": "artist",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @artist on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/artist.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Junkjane",
+    "slug": "junkjane",
+    "instagram": "junkjane",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @junkjane on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/junkjane.jpg",
+    "gallery": []
   }
 ]
