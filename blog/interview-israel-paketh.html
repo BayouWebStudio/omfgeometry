@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2SPB4F1HX7');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>A long conversation with Israel Paketh — OMF Geometry</title>
+<meta name="description" content="An interview with Israel Paketh, the Buenos Aires-based geometric tattoo artist, on architecture, dotwork, negative space, ritual, and the body as an asymmetric canvas.">
+<link rel="stylesheet" href="../css/monolith.css">
+<style>
+  /* ============================================================
+     INTERVIEW TEMPLATE — magazine layout
+     ============================================================ */
+
+  :root {
+    --col-narrow: 680px;
+    --col-wide: 1120px;
+    --col-spread: 1440px;
+  }
+
+  /* ── COVER ────────────────────────────────────────────────── */
+  .iv-cover { position: relative; height: clamp(640px, 92vh, 920px); overflow: hidden; border-bottom: 1px solid var(--rule-strong); }
+  .iv-cover .bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: grayscale(0.15) brightness(0.78); }
+  .iv-cover .bg::after { content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(10,9,8,0.55) 0%, rgba(10,9,8,0.05) 35%, rgba(10,9,8,0.05) 60%, rgba(10,9,8,0.92) 100%); }
+  .iv-cover .bar { position: relative; z-index: 2; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 32px; padding: 28px var(--gutter); border-bottom: 1px solid rgba(245,241,232,0.18); backdrop-filter: blur(2px); color: var(--text-bright); }
+  .iv-cover .bar .left, .iv-cover .bar .right { font: 700 11px/1 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); }
+  .iv-cover .bar .center { font: italic 400 22px/1 var(--serif); color: var(--text-bright); text-align: center; }
+  .iv-cover .titleblock { position: absolute; left: 0; right: 0; bottom: 56px; z-index: 2; padding: 0 var(--gutter); }
+  .iv-cover .titleblock .inner { max-width: var(--col-wide); margin: 0 auto; }
+  .iv-cover .eyebrow { color: var(--gilt); margin-bottom: 22px; font-size: 12px; }
+  .iv-cover h1 { font: italic 400 clamp(56px, 8.5vw, 144px)/0.92 var(--serif); letter-spacing: -0.025em; color: var(--text-bright); max-width: 16ch; margin-bottom: 20px; }
+  .iv-cover h1 em { color: var(--gilt); font-style: italic; }
+  .iv-cover .dek { font: italic 400 clamp(20px, 2.2vw, 26px)/1.4 var(--serif); color: rgba(245,241,232,0.85); max-width: 56ch; margin-bottom: 36px; }
+  .iv-cover .meta { display: flex; flex-wrap: wrap; gap: 36px; font: 400 11px/1.6 var(--mono); letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,241,232,0.7); padding-top: 24px; border-top: 1px solid rgba(245,241,232,0.18); max-width: var(--col-wide); }
+  .iv-cover .meta dt { display: block; color: var(--gilt); font-weight: 700; margin-bottom: 6px; font-size: 9.5px; letter-spacing: 0.32em; }
+  .iv-cover .meta dd { color: var(--text-bright); font-style: normal; font-size: 13px; letter-spacing: 0.06em; }
+  .iv-cover .meta dd.italic { font: italic 400 18px/1.2 var(--serif); letter-spacing: 0; text-transform: none; }
+
+  /* ── DECK ─────────────────────────────────────────────────── */
+  .iv-deck { padding: clamp(80px, 9vw, 140px) var(--gutter) clamp(40px, 5vw, 80px); text-align: center; border-bottom: 1px solid var(--rule); }
+  .iv-deck .lead { font: italic 400 clamp(26px, 3vw, 40px)/1.4 var(--serif); color: var(--text-bright); max-width: 30ch; margin: 0 auto; text-wrap: balance; }
+  .iv-deck .lead em { color: var(--gilt); }
+  .iv-deck .byline { margin-top: 36px; font: 400 11px/1.6 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--text-soft); }
+  .iv-deck .byline span { color: var(--gilt); }
+
+  /* ── BODY ─────────────────────────────────────────────────── */
+  .iv-body { max-width: var(--col-narrow); margin: 0 auto; padding: clamp(60px, 7vw, 100px) var(--gutter); }
+  .iv-body p { font: 400 18px/1.85 var(--sans); color: var(--text); margin-bottom: 28px; }
+  .iv-body p.intro { font: italic 400 22px/1.6 var(--serif); color: var(--text-bright); margin-bottom: 40px; }
+  .iv-body p.intro::first-letter { font: italic 400 110px/0.85 var(--serif); float: left; color: var(--gilt); padding: 8px 18px 0 0; margin-top: 4px; }
+
+  .qa { margin: 64px 0 0; }
+  .qa + .qa { margin-top: 56px; }
+  .qa-q { display: grid; grid-template-columns: 64px 1fr; gap: 18px; align-items: baseline; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
+  .qa-q .num { font: 700 11px/1 var(--mono); letter-spacing: 0.22em; color: var(--gilt); }
+  .qa-q .text { font: italic 400 clamp(24px, 2.4vw, 32px)/1.25 var(--serif); color: var(--text-bright); text-wrap: balance; }
+  .qa-a { padding-left: 82px; }
+  .qa-a p { font: 400 17px/1.85 var(--sans); color: var(--text); margin-bottom: 22px; }
+  .qa-a p:last-child { margin-bottom: 0; }
+  .qa-a em { color: var(--text-bright); font-style: italic; }
+
+  .qa.has-note { display: grid; grid-template-columns: 1fr; gap: 0; }
+  @media (min-width: 1080px) {
+    .qa.has-note { grid-template-columns: 200px 1fr; gap: 48px; max-width: calc(var(--col-narrow) + 248px); margin-left: -124px; }
+    .qa.has-note .note { grid-column: 1; grid-row: 1 / span 2; padding-top: 4px; border-right: 1px solid var(--gilt-glow); padding-right: 32px; text-align: right; }
+    .qa.has-note .qa-q { grid-column: 2; }
+    .qa.has-note .qa-a { grid-column: 2; padding-left: 82px; }
+  }
+  .qa .note .label { font: 700 9.5px/1 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); margin-bottom: 10px; }
+  .qa .note .text { font: italic 400 18px/1.4 var(--serif); color: var(--text-soft); text-wrap: pretty; }
+
+  /* ── PULL SPREAD ──────────────────────────────────────────── */
+  .iv-pullspread { background: var(--ink-2); padding: clamp(80px, 9vw, 140px) var(--gutter); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .iv-pullspread .grid { max-width: var(--col-spread); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 5vw, 80px); align-items: center; }
+  @media (max-width: 880px) { .iv-pullspread .grid { grid-template-columns: 1fr; } }
+  .iv-pullspread .img { aspect-ratio: 4/5; overflow: hidden; background: var(--ink-3); }
+  .iv-pullspread .img img { width: 100%; height: 100%; object-fit: cover; }
+  .iv-pullspread .quote { font: italic 400 clamp(32px, 4vw, 56px)/1.15 var(--serif); color: var(--text-bright); letter-spacing: -0.01em; text-wrap: balance; }
+  .iv-pullspread .quote::before { content: "\201C"; display: block; font: italic 400 120px/0.6 var(--serif); color: var(--gilt); margin-bottom: 16px; }
+  .iv-pullspread .attrib { margin-top: 32px; font: 700 11px/1.6 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); }
+  .iv-pullspread .attrib span { color: var(--text-soft); }
+
+  /* ── TRIO ─────────────────────────────────────────────────── */
+  .iv-trio { padding: clamp(80px, 9vw, 140px) var(--gutter); border-bottom: 1px solid var(--rule); }
+  .iv-trio .head { max-width: var(--col-spread); margin: 0 auto clamp(40px, 5vw, 60px); display: flex; align-items: baseline; gap: 32px; flex-wrap: wrap; }
+  .iv-trio .head .label { font: 700 11px/1 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); }
+  .iv-trio .head h2 { font: italic 400 clamp(32px, 4vw, 56px)/1 var(--serif); color: var(--text-bright); letter-spacing: -0.02em; }
+  .iv-trio .head h2 em { color: var(--gilt); font-style: italic; }
+  .iv-trio .head .rule { flex: 1; min-width: 60px; height: 1px; background: var(--gilt-dim); align-self: center; opacity: 0.5; }
+  .iv-trio .grid { max-width: var(--col-spread); margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: clamp(16px, 2vw, 28px); }
+  @media (max-width: 880px) { .iv-trio .grid { grid-template-columns: 1fr; } }
+  .iv-trio figure { margin: 0; }
+  .iv-trio figure .frame { aspect-ratio: 4/5; overflow: hidden; background: var(--ink-3); position: relative; }
+  .iv-trio figure .frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+  .iv-trio figure:hover .frame img { transform: scale(1.02); }
+  .iv-trio figcaption { margin-top: 16px; display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: baseline; }
+  .iv-trio figcaption .num { font: 700 10px/1 var(--mono); letter-spacing: 0.28em; text-transform: uppercase; color: var(--gilt); }
+  .iv-trio figcaption .cap { font: italic 400 15px/1.45 var(--serif); color: var(--text); }
+
+  /* ── BIG PLATE ────────────────────────────────────────────── */
+  .iv-bigplate { padding: 0; border-bottom: 1px solid var(--rule); }
+  .iv-bigplate .frame { width: 100%; aspect-ratio: 21/9; overflow: hidden; background: var(--ink-3); }
+  .iv-bigplate .frame img { width: 100%; height: 100%; object-fit: cover; }
+  .iv-bigplate .caption { max-width: var(--col-wide); margin: 0 auto; padding: 28px var(--gutter); display: grid; grid-template-columns: auto 1fr auto; gap: 32px; align-items: baseline; }
+  .iv-bigplate .caption .num { font: 700 11px/1 var(--mono); letter-spacing: 0.28em; text-transform: uppercase; color: var(--gilt); }
+  .iv-bigplate .caption .cap { font: italic 400 18px/1.4 var(--serif); color: var(--text); }
+  .iv-bigplate .caption .credit { font: 400 11px/1.4 var(--mono); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft); text-align: right; }
+
+  /* ── PORTRAIT + QUOTE ─────────────────────────────────────── */
+  .iv-portrait-quote { padding: clamp(80px, 9vw, 140px) var(--gutter); border-bottom: 1px solid var(--rule); }
+  .iv-portrait-quote .grid { max-width: var(--col-spread); margin: 0 auto; display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(40px, 5vw, 80px); align-items: center; }
+  @media (max-width: 880px) { .iv-portrait-quote .grid { grid-template-columns: 1fr; } }
+  .iv-portrait-quote .stack { display: flex; flex-direction: column; gap: 32px; }
+  .iv-portrait-quote .label { font: 700 11px/1 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); }
+  .iv-portrait-quote h3 { font: italic 400 clamp(36px, 4.5vw, 64px)/1.05 var(--serif); color: var(--text-bright); letter-spacing: -0.02em; text-wrap: balance; }
+  .iv-portrait-quote h3 em { color: var(--gilt); }
+  .iv-portrait-quote p { font: 400 17px/1.85 var(--sans); color: var(--text); }
+  .iv-portrait-quote .img { aspect-ratio: 3/4; overflow: hidden; background: var(--ink-3); }
+  .iv-portrait-quote .img img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* ── END ──────────────────────────────────────────────────── */
+  .iv-end { max-width: var(--col-narrow); margin: 0 auto; padding: clamp(40px, 5vw, 80px) var(--gutter); text-align: center; }
+  .iv-end .mark { font: italic 400 56px/1 var(--serif); color: var(--gilt); margin-bottom: 28px; }
+  .iv-end .colophon { font: 400 11px/1.8 var(--mono); letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-soft); }
+  .iv-end .colophon span { color: var(--gilt); }
+
+  /* ── STRIP ────────────────────────────────────────────────── */
+  .iv-strip { background: var(--ink-2); padding: 32px var(--gutter); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .iv-strip .row { max-width: var(--col-spread); margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  @media (max-width: 880px) { .iv-strip .row { grid-template-columns: repeat(2, 1fr); } }
+  .iv-strip .row .img { aspect-ratio: 1; overflow: hidden; opacity: 0.7; transition: opacity .2s; }
+  .iv-strip .row .img:hover { opacity: 1; }
+  .iv-strip .row .img img { width: 100%; height: 100%; object-fit: cover; }
+</style>
+</head>
+<body>
+
+<div data-masthead></div>
+
+<article>
+
+  <!-- ═══ COVER ═════════════════════════════════════════════ -->
+  <header class="iv-cover">
+    <div class="bg" style="background-image: url('../assets/paketh-01.png'); background-position: center 30%;"></div>
+
+    <div class="bar">
+      <div class="left">OMF Geometry · Issue № 01</div>
+      <div class="center">A <em>Journal</em> of Geometric Tattoo</div>
+      <div class="right">Spring 2026</div>
+    </div>
+
+    <div class="titleblock">
+      <div class="inner">
+        <div class="eyebrow">Issue 01 · Feature · Interview · 9 Questions</div>
+        <h1>A long conversation with <em>Israel Paketh</em></h1>
+        <p class="dek">On architecture as tattoo language, dotwork and repetition, negative space as active design, the asymmetric body, ritual, and what comes next.</p>
+
+        <dl class="meta">
+          <div>
+            <dt>Subject</dt>
+            <dd class="italic">@tattoosbypaketh</dd>
+          </div>
+          <div>
+            <dt>City</dt>
+            <dd>Buenos Aires, Argentina</dd>
+          </div>
+          <div>
+            <dt>Photographs</dt>
+            <dd>From the studio</dd>
+          </div>
+          <div>
+            <dt>Read</dt>
+            <dd>10 minutes</dd>
+          </div>
+          <div>
+            <dt>Issue</dt>
+            <dd>№ 01 · Spring 2026</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ DECK ══════════════════════════════════════════════ -->
+  <section class="iv-deck">
+    <p class="lead">"El tatuaje no debe ser simétrico, debe verse simétrico. Esa frase cambio mi percepción de como afrontar este desafío."</p>
+    <div class="byline"><span>—</span> &nbsp; Israel Paketh, Buenos Aires &nbsp; <span>—</span></div>
+  </section>
+
+  <!-- ═══ Q&A PART 1 ════════════════════════════════════════ -->
+  <section class="iv-body">
+
+    <!-- ── Q.01 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On architecture</div>
+        <div class="text">"No veo el cuerpo como un edificio. Para mi el cuerpo es algo vivo y con movimiento."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.01</span><span class="text">Sobre la arquitectura como lenguaje del tatuaje — ¿Estás pensando en el cuerpo como un edificio?</span></h2>
+      <div class="qa-a">
+        <p>Tengo estudios y experiencia en Arquitectura y mis trabajos estan super influenciados por Ornamentos y decoraciones arquitectonicas, pero no veo el cuerpo como un edificio. Para mi el cuerpo es algo vivo y con movimiento, donde el desafio es hacer lucir un diseno simetrico o estructurado, en un cuerpo asimetrico y que cambia con cada persona. Cuando trabajo en mis disenos me veo influenciado por la arquitectura y sus diferentes niveles, formas y tamanos. Siempre buscando usar la anatomia humana como guia y referencia.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.02 ── -->
+    <div class="qa">
+      <h2 class="qa-q"><span class="num">Q.02</span><span class="text">Sobre Dotwork y la Disciplina de la Repeticion — ¿Esa repeticion se convierte en un estado de trance?</span></h2>
+      <div class="qa-a">
+        <p>Mi tecnica de dotwork no es siempre tan individual, es mas una textura que un puntillismo individual, ademas cada vez mas me tiro al impacto del alto contraste entre negro solido y piel.</p>
+        <p>Para mi en particular el momento del stencil es el momento donde mi mente entra en un estado mas de disociacion del entorno o "trance" y en algunos momentos del tatuaje tambien siento cierto estado "meditativo" pero no todo el tiempo, estoy tambien atento al cliente y a como esta llevando el dolor y la experiencia, para mi es una experiencia compartida y trato siempre de compartirla con la persona que estoy tatuando.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.03 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On negative space</div>
+        <div class="text">"La linea fina de negativo tiene un tamano de 1/4 de la linea gruesa. Esto le da una intencion oculta a mi trabajo."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.03</span><span class="text">En el espacio negativo como diseno activo — como decides donde va la tinta?</span></h2>
+      <div class="qa-a">
+        <p>Gran pregunta! Creo que hay algo muy fundamental en entrenar el gusto personal y el "ojo" donde uno entiende las proporciones y el balance entre la cantidad de piel y la cantidad de negro con solo ver el diseno. Para mi trabajo y gusto personal, creo que los espacios negativos funcionan extremadamente bien cuando hay un equilibrio y un balance deliberado en las proporciones generales de la composicion entre piel y tinta, usando trazos o lineas de piel que sean proporcionales entre si, un ejemplo es que los tamanos de lineas sea proporcional entre si: La linea fina de negativo tiene un tamano de 1/4 de la linea gruesa, por ejemplo. Eso le da una intencion "oculta" a mi trabajo y una consistencia entre todos mis trabajos independientemente de los proyectos.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══ PULL SPREAD ═══════════════════════════════════════ -->
+  <section class="iv-pullspread">
+    <div class="grid">
+      <div class="img"><img src="../assets/paketh-02.png" alt="Israel Paketh work"></div>
+      <div>
+        <blockquote class="quote">Para mi el tatuaje es un proceso de transformacion, de transmutacion. Y no es solo para la persona que se lleva el tatuaje, lo es para mi tambien como tatuador.</blockquote>
+        <div class="attrib">Israel Paketh · <span>On the ritual of the session</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Q&A PART 2 ════════════════════════════════════════ -->
+  <section class="iv-body">
+
+    <!-- ── Q.04 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On the asymmetric body</div>
+        <div class="text">"Busco adaptar mis disenos a la persona, para que el cuerpo me guie hacia donde llevar el diseno."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.04</span><span class="text">En el cuerpo como un lienzo asimetrico — como concilias la precision geometrica con la topografia irregular?</span></h2>
+      <div class="qa-a">
+        <p>"El tatuaje no debe ser simetrico, debe verse simetrico" esta frase me la dijeron en mis primeros pasos en el tatuaje y cambio mi percepcion de como afrontar este desafio.</p>
+        <p>Busco adaptar mis disenos a la persona, inclusive viendo el cuerpo primero para que el mismo cuerpo me guie hacia donde llevar el diseno y si realmente seria estetico hacer un diseno simetrico o uno asimetrico para esa persona. Para mi esa es la magia del tatuaje a gran escala, un "baile" entre cada cliente, su cuerpo intenciones y referencias, y por el otro lado, mi vision artistica del tatuaje que se puede lograr.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.05 ── -->
+    <div class="qa">
+      <h2 class="qa-q"><span class="num">Q.05</span><span class="text">Sobre el ritual de la sesion — Que hace ese ritual? Como te transforma?</span></h2>
+      <div class="qa-a">
+        <p>Para mi el tatuaje es un proceso de transformacion, de transmutacion. Y no es solo para la persona que se lleva el tatuaje, lo es para mi tambien como tatuador. El tatuaje como tal es un arte, un ritual de miles de anos y nosotros tenemos el privilegio de hacerlo en este tiempo "moderno". Creo que no hay que olvidarse del lado mas intimo del tatuaje y entender de alguna manera cuales son las intenciones de la persona que viene a buscarme como su tatuador. Esa informacion que va mas alla de los "gustos" o "preferencias" en cuanto al diseno, son a veces mas valiosas por que te guian desde un lado mas sutil y asi grandes ideas o nuevas propuestas vienen a la mente cuando podes entender la intencion emocional o mental que la persona quiere volcar en el tatuaje que se esta haciendo. Para mi es un privilegio ser parte de ese proceso y yo me veo transformado en cada tatuaje que hago, es parte fundamental de mi propio camino interior en mi vida.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══ TRIO ══════════════════════════════════════════════ -->
+  <section class="iv-trio">
+    <div class="head">
+      <div class="label">Plates · Three Pieces</div>
+      <h2>From the <em>archive</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid">
+      <figure>
+        <div class="frame"><img src="../assets/paketh-03.png" alt=""></div>
+        <figcaption>
+          <span class="num">PL.01</span>
+          <span class="cap"><i>Chest and shoulder composition.</i> The architectural ornament language translated to the body -- layered forms and negative space working together.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/paketh-04.png" alt=""></div>
+        <figcaption>
+          <span class="num">PL.02</span>
+          <span class="cap"><i>Large-scale bodywork.</i> High contrast between solid black and skin, a direction Paketh has been moving toward in recent work.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/paketh-05.png" alt=""></div>
+        <figcaption>
+          <span class="num">PL.03</span>
+          <span class="cap"><i>Detail study.</i> The proportional relationship between thick and thin lines -- a hidden consistency across all his projects.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ Q&A PART 3 ════════════════════════════════════════ -->
+  <section class="iv-body">
+
+    <!-- ── Q.06 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On long relationships</div>
+        <div class="text">"Conectar y escuchar, compartir y entender a mis clientes permite que el proyecto sea algo para la vida."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.06</span><span class="text">En relaciones de larga duracion con los clientes — que hace que un cliente se quede tanto tiempo?</span></h2>
+      <div class="qa-a">
+        <p>Mis clientes me eligen por la conexion personal, humana y que como consecuencia en algunos casos, llevan a una amistad, la cual trasciende lo artistico para hacer que lo artistico se vea muy potenciado.</p>
+        <p>Conectar y escuchar, compartir y entender a mis clientes permite que el proyecto sea algo para la vida y no solo para el cuerpo o para la estetica.</p>
+        <p>Soy muy agradecido de mis clientes y amigos, como Aaron, DY, Omar y tantos otros que viajan miles de kilometros para seguir conectando, confiando y compartiendo conmigo esta fantastica experiencia que es el tatuaje, son increibles!!</p>
+      </div>
+    </div>
+
+    <!-- ── Q.07 ── -->
+    <div class="qa">
+      <h2 class="qa-q"><span class="num">Q.07</span><span class="text">En Buenos Aires y el escenario global — como se diferencia la cultura del tatuaje en Argentina?</span></h2>
+      <div class="qa-a">
+        <p>Buenos Aires es un lugar muy especial para mi, hice base en Tailandia por algunos anos y fue increible, pero no hay lugar como el hogar.</p>
+        <p>En cuanto a la escena del tatuaje aqui en Argentina, la gente se tatua mucho y proyectos muy grandes y jugados, como caras cabezas y cuerpos enteros. Hoy en dia hay mucho nivel en todos lados del mundo, cada artista con una impronta diferente por q vienen de lugares distintos, pero con un nivel muy alto de expresion artistica. Yo disfruto mucho de los artistas que proponen cosas distintas, que rompen con lo que ya esta afianzado y lo llevan a un nuevo nivel. Mas alla de Argentina, en el mundo del tatuaje hoy en dia hay mucha repeticion de lo que ya funciona. Viajando tanto logre conectar con grandes artistas, conocidos o desconocidos, que tratan de hacer algo diferente e ir mas lejos de sus propios limites en lo que hacen, y eso tambien pasa en Argentina donde hay artistas de nivel internacional.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══ BIG PLATE ═════════════════════════════════════════ -->
+  <section class="iv-bigplate">
+    <div class="frame"><img src="../images/tattoosbypaketh_3.jpg" alt="Israel Paketh large work"></div>
+    <div class="caption">
+      <span class="num">PL.04</span>
+      <span class="cap"><i>Large-scale composition.</i> "El desafio es hacer lucir un diseno simetrico o estructurado, en un cuerpo asimetrico y que cambia con cada persona."</span>
+      <span class="credit">Photo · OMF Geometry</span>
+    </div>
+  </section>
+
+  <!-- ═══ FINAL Q&A ═════════════════════════════════════════ -->
+  <section class="iv-body">
+
+    <!-- ── Q.08 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On jewellery</div>
+        <div class="text">"La joyeria surgio como una necesidad de hacer algo en otro medio, usando otras pasiones como el estudio del esoterismo y el hermetismo."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.08</span><span class="text">Sobre la joyeria como una extension del trabajo — que te atrio al metal?</span></h2>
+      <div class="qa-a">
+        <p>La joyeria surgio como una necesidad de hacer algo en otro medio que no sea el tatuaje o la pintura, desde otro lugar y usando otras "pasiones" que tengo como el estudio de cuestiones ancestrales o de ocultismo e iniciacion como Egipto, Sumer, Esoterismo, Hermetismo, chamanismo y mas.</p>
+        <p>El proyecto humildemente trata de imbuir las joyas con una forma Piramidal que esta presente en casi todos los sitios ancestrales al rededor del mundo y que esconden un conocimiento simbolico diluido por el paso del tiempo, pero presente y muy necesario en estos tiempos que corren.</p>
+        <p>Trabajar en otro medio y abordandolo desde otra perspectiva fue muy nutritivo en toda mi vida, tanto artisticamente como interiormente.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.09 ── -->
+    <div class="qa">
+      <h2 class="qa-q"><span class="num">Q.09</span><span class="text">Sobre lo que viene despues — que tatue aun no hayas hecho te gustaria disenar?</span></h2>
+      <div class="qa-a">
+        <p>Aunque tengo bodysuits en proceso, todavia no termina ningun cuerpo entero y eso seria algo increible y mas aun si el diseno fuese sobre alguna cultura ancestral iniciatica con los simbolismos y ornamentos de dicha cultura, hacer varios body's asi, seria mi meta a cumplir en los proximos anos.</p>
+      </div>
+    </div>
+
+    <!-- ═══ END MARK ════════════════════════════════════════ -->
+    <div class="iv-end">
+      <div class="mark">⌬</div>
+      <div class="colophon">
+        Interview · OMF Geometry · Issue № 01<br>
+        <span>Recorded Spring 2026 · Buenos Aires</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SPECIMEN STRIP ════════════════════════════════════ -->
+  <section class="iv-strip">
+    <div class="row">
+      <a class="img" href="../assets/paketh-01.png"><img src="../assets/paketh-01.png" alt=""></a>
+      <a class="img" href="../assets/paketh-02.png"><img src="../assets/paketh-02.png" alt=""></a>
+      <a class="img" href="../assets/paketh-03.png"><img src="../assets/paketh-03.png" alt=""></a>
+      <a class="img" href="../assets/paketh-04.png"><img src="../assets/paketh-04.png" alt=""></a>
+    </div>
+  </section>
+
+</article>
+
+<!-- ═══ CTA ═══════════════════════════════════════════════ -->
+<section class="paper">
+  <div style="max-width:1100px;margin:0 auto;text-align:center">
+    <div class="eyebrow">See the work</div>
+    <h2 style="font:italic 400 clamp(36px,5vw,72px)/0.95 var(--serif);color:var(--paper-ink);margin-top:18px;letter-spacing:-0.02em;">Open <em>Paketh's archive</em>.</h2>
+    <p style="font: 400 16px/1.7 var(--sans);color:var(--paper-ink);max-width:60ch;margin:20px auto 0;opacity:0.85">Nine pieces, photographed for OMF.</p>
+    <a href="../artists/tattoosbypaketh.html" class="btn btn--paper" style="margin-top:36px">Open the Profile →</a>
+  </div>
+</section>
+
+<div data-colophon></div>
+
+<script src="../js/omf.js"></script>
+<script>OMF.init('blog');</script>
+</body>
+</html>
