@@ -1971,5 +1971,47 @@
     "featured": true,
     "image": "images/junkjane.jpg",
     "gallery": []
+  },
+  {
+    "name": "Cacobilltattoo",
+    "slug": "cacobilltattoo",
+    "instagram": "cacobilltattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @cacobilltattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/cacobilltattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Crysalexart",
+    "slug": "crysalexart",
+    "instagram": "crysalexart",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @crysalexart on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/crysalexart.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Vada Come Vada ",
+    "slug": "vada-come-vada",
+    "instagram": "vada.come.vada_",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @vada.come.vada_ on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/vada-come-vada.jpg",
+    "gallery": []
   }
 ]
