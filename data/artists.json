@@ -2013,5 +2013,33 @@
     "featured": true,
     "image": "images/vada-come-vada.jpg",
     "gallery": []
+  },
+  {
+    "name": "Kuba Mandala",
+    "slug": "kuba-mandala",
+    "instagram": "kuba.mandala",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @kuba.mandala on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/kuba-mandala.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Ankle",
+    "slug": "ankle",
+    "instagram": "ankle",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @ankle on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/ankle.jpg",
+    "gallery": []
   }
 ]
