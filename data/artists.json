@@ -2041,5 +2041,47 @@
     "featured": true,
     "image": "images/ankle.jpg",
     "gallery": []
+  },
+  {
+    "name": "Fleur Tattoos",
+    "slug": "fleur-tattoos",
+    "instagram": "fleur.tattoos",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @fleur.tattoos on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/fleur-tattoos.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Emanscorfna",
+    "slug": "emanscorfna",
+    "instagram": "emanscorfna",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @emanscorfna on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/emanscorfna.jpg",
+    "gallery": []
+  },
+  {
+    "name": "6Rilink",
+    "slug": "6rilink",
+    "instagram": "6rilink",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @6rilink on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/6rilink.jpg",
+    "gallery": []
   }
 ]
