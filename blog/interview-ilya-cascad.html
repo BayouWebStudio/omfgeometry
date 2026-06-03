@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2SPB4F1HX7');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>A long conversation with Ilya Cascad — OMF Geometry</title>
+<meta name="description" content="On building a life across continents, launching Ornamentalika, symmetrical blackwork on asymmetrical bodies, and the underground scene that became a global movement. An interview with Ilya Cascad — @ilyacascad.">
+<link rel="canonical" href="https://omfgeometry.com/blog/interview-ilya-cascad.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A long conversation with Ilya Cascad — OMF Geometry">
+<meta property="og:description" content="On building a life across continents, launching Ornamentalika, and the underground scene that became a global movement.">
+<meta property="og:image" content="https://omfgeometry.com/assets/ilya-05.jpg">
+<meta property="og:url" content="https://omfgeometry.com/blog/interview-ilya-cascad.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A long conversation with Ilya Cascad — OMF Geometry">
+<meta name="twitter:image" content="https://omfgeometry.com/assets/ilya-05.jpg">
+<link rel="icon" href="/images/omf-og.png" type="image/png">
+<link rel="stylesheet" href="../css/monolith.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"A long conversation with Ilya Cascad","author":{"@type":"Organization","name":"OMF Geometry"},"datePublished":"2026-06-03","description":"On building a life across continents, launching Ornamentalika, and the underground scene that became a global movement."}
+</script>
+<style>
+  /* ============================================================
+     INTERVIEW TEMPLATE — magazine layout
+     Same structure as interview-clement-berdah.html / mitch-koch.html
+     ============================================================ */
+
+  :root {
+    --col-narrow: 680px;
+    --col-wide: 1120px;
+    --col-spread: 1440px;
+  }
+
+  /* ── COVER ────────────────────────────────────────────────── */
+  .iv-cover { position: relative; height: clamp(640px, 92vh, 920px); overflow: hidden; border-bottom: 1px solid var(--rule-strong); }
+  .iv-cover .bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: grayscale(0.15) brightness(0.78); }
+  .iv-cover .bg::after { content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(10,9,8,0.55) 0%, rgba(10,9,8,0.05) 35%, rgba(10,9,8,0.05) 60%, rgba(10,9,8,0.92) 100%); }
+  .iv-cover .bar { position: relative; z-index: 2; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 32px; padding: 28px var(--gutter); border-bottom: 1px solid rgba(245,241,232,0.18); backdrop-filter: blur(2px); color: var(--text-bright); }
+  .iv-cover .bar .left, .iv-cover .bar .right { font: 700 11px/1 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); }
+  .iv-cover .bar .center { font: italic 400 22px/1 var(--serif); color: var(--text-bright); text-align: center; }
+  .iv-cover .titleblock { position: absolute; left: 0; right: 0; bottom: 56px; z-index: 2; padding: 0 var(--gutter); }
+  .iv-cover .titleblock .inner { max-width: var(--col-wide); margin: 0 auto; }
+  .iv-cover .eyebrow { color: var(--gilt); margin-bottom: 22px; font-size: 12px; }
+  .iv-cover h1 { font: italic 400 clamp(56px, 8.5vw, 144px)/0.92 var(--serif); letter-spacing: -0.025em; color: var(--text-bright); max-width: 16ch; margin-bottom: 20px; }
+  .iv-cover h1 em { color: var(--gilt); font-style: italic; }
+  .iv-cover .dek { font: italic 400 clamp(20px, 2.2vw, 26px)/1.4 var(--serif); color: rgba(245,241,232,0.85); max-width: 56ch; margin-bottom: 36px; }
+  .iv-cover .meta { display: flex; flex-wrap: wrap; gap: 36px; font: 400 11px/1.6 var(--mono); letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,241,232,0.7); padding-top: 24px; border-top: 1px solid rgba(245,241,232,0.18); max-width: var(--col-wide); }
+  .iv-cover .meta dt { display: block; color: var(--gilt); font-weight: 700; margin-bottom: 6px; font-size: 9.5px; letter-spacing: 0.32em; }
+  .iv-cover .meta dd { color: var(--text-bright); font-style: normal; font-size: 13px; letter-spacing: 0.06em; }
+  .iv-cover .meta dd.italic { font: italic 400 18px/1.2 var(--serif); letter-spacing: 0; text-transform: none; }
+
+  /* ── DECK ─────────────────────────────────────────────────── */
+  .iv-deck { padding: clamp(80px, 9vw, 140px) var(--gutter) clamp(40px, 5vw, 80px); text-align: center; border-bottom: 1px solid var(--rule); }
+  .iv-deck .lead { font: italic 400 clamp(26px, 3vw, 40px)/1.4 var(--serif); color: var(--text-bright); max-width: 30ch; margin: 0 auto; text-wrap: balance; }
+  .iv-deck .lead em { color: var(--gilt); }
+  .iv-deck .byline { margin-top: 36px; font: 400 11px/1.6 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--text-soft); }
+  .iv-deck .byline span { color: var(--gilt); }
+
+  /* ── BODY ─────────────────────────────────────────────────── */
+  .iv-body { max-width: var(--col-narrow); margin: 0 auto; padding: clamp(60px, 7vw, 100px) var(--gutter); }
+  .iv-body p { font: 400 18px/1.85 var(--sans); color: var(--text); margin-bottom: 28px; }
+
+  .qa { margin: 64px 0 0; }
+  .qa + .qa { margin-top: 56px; }
+  .qa-q { display: grid; grid-template-columns: 64px 1fr; gap: 18px; align-items: baseline; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
+  .qa-q .num { font: 700 11px/1 var(--mono); letter-spacing: 0.22em; color: var(--gilt); }
+  .qa-q .text { font: italic 400 clamp(24px, 2.4vw, 32px)/1.25 var(--serif); color: var(--text-bright); text-wrap: balance; }
+  .qa-a { padding-left: 82px; }
+  .qa-a p { font: 400 17px/1.85 var(--sans); color: var(--text); margin-bottom: 22px; }
+  .qa-a p:last-child { margin-bottom: 0; }
+  .qa-a em { color: var(--text-bright); font-style: italic; }
+
+  .qa.has-note { display: grid; grid-template-columns: 1fr; gap: 0; }
+  @media (min-width: 1080px) {
+    .qa.has-note { grid-template-columns: 200px 1fr; gap: 48px; max-width: calc(var(--col-narrow) + 248px); margin-left: -124px; }
+    .qa.has-note .note { grid-column: 1; grid-row: 1 / span 2; padding-top: 4px; border-right: 1px solid var(--gilt-glow); padding-right: 32px; text-align: right; }
+    .qa.has-note .qa-q { grid-column: 2; }
+    .qa.has-note .qa-a { grid-column: 2; padding-left: 82px; }
+  }
+  .qa .note .label { font: 700 9.5px/1 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); margin-bottom: 10px; }
+  .qa .note .text { font: italic 400 18px/1.4 var(--serif); color: var(--text-soft); text-wrap: pretty; }
+
+  /* ── PULL SPREAD ──────────────────────────────────────────── */
+  .iv-pullspread { background: var(--ink-2); padding: clamp(80px, 9vw, 140px) var(--gutter); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .iv-pullspread .grid { max-width: var(--col-spread); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 5vw, 80px); align-items: center; }
+  @media (max-width: 880px) { .iv-pullspread .grid { grid-template-columns: 1fr; } }
+  .iv-pullspread .img { aspect-ratio: 4/5; overflow: hidden; background: var(--ink-3); }
+  .iv-pullspread .img img { width: 100%; height: 100%; object-fit: cover; }
+  .iv-pullspread .quote { font: italic 400 clamp(32px, 4vw, 56px)/1.15 var(--serif); color: var(--text-bright); letter-spacing: -0.01em; text-wrap: balance; }
+  .iv-pullspread .quote::before { content: "\201C"; display: block; font: italic 400 120px/0.6 var(--serif); color: var(--gilt); margin-bottom: 16px; }
+  .iv-pullspread .attrib { margin-top: 32px; font: 700 11px/1.6 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); }
+  .iv-pullspread .attrib span { color: var(--text-soft); }
+
+  /* ── TRIO ─────────────────────────────────────────────────── */
+  .iv-trio { padding: clamp(80px, 9vw, 140px) var(--gutter); border-bottom: 1px solid var(--rule); }
+  .iv-trio .head { max-width: var(--col-spread); margin: 0 auto clamp(40px, 5vw, 60px); display: flex; align-items: baseline; gap: 32px; flex-wrap: wrap; }
+  .iv-trio .head .label { font: 700 11px/1 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); }
+  .iv-trio .head h2 { font: italic 400 clamp(32px, 4vw, 56px)/1 var(--serif); color: var(--text-bright); letter-spacing: -0.02em; }
+  .iv-trio .head h2 em { color: var(--gilt); font-style: italic; }
+  .iv-trio .head .rule { flex: 1; min-width: 60px; height: 1px; background: var(--gilt-dim); align-self: center; opacity: 0.5; }
+  .iv-trio .grid { max-width: var(--col-spread); margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: clamp(16px, 2vw, 28px); }
+  @media (max-width: 880px) { .iv-trio .grid { grid-template-columns: 1fr; } }
+  .iv-trio figure { margin: 0; }
+  .iv-trio figure .frame { aspect-ratio: 4/5; overflow: hidden; background: var(--ink-3); position: relative; }
+  .iv-trio figure .frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+  .iv-trio figure:hover .frame img { transform: scale(1.02); }
+  .iv-trio figcaption { margin-top: 16px; display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: baseline; }
+  .iv-trio figcaption .num { font: 700 10px/1 var(--mono); letter-spacing: 0.28em; text-transform: uppercase; color: var(--gilt); }
+  .iv-trio figcaption .cap { font: italic 400 15px/1.45 var(--serif); color: var(--text); }
+
+  /* ── BIG PLATE ────────────────────────────────────────────── */
+  .iv-bigplate { padding: 0; border-bottom: 1px solid var(--rule); }
+  .iv-bigplate .frame { width: 100%; aspect-ratio: 21/9; overflow: hidden; background: var(--ink-3); }
+  .iv-bigplate .frame img { width: 100%; height: 100%; object-fit: cover; }
+  .iv-bigplate .caption { max-width: var(--col-wide); margin: 0 auto; padding: 28px var(--gutter); display: grid; grid-template-columns: auto 1fr auto; gap: 32px; align-items: baseline; }
+  .iv-bigplate .caption .num { font: 700 11px/1 var(--mono); letter-spacing: 0.28em; text-transform: uppercase; color: var(--gilt); }
+  .iv-bigplate .caption .cap { font: italic 400 18px/1.4 var(--serif); color: var(--text); }
+  .iv-bigplate .caption .credit { font: 400 11px/1.4 var(--mono); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft); text-align: right; }
+
+  /* ── PORTRAIT + QUOTE ─────────────────────────────────────── */
+  .iv-portrait-quote { padding: clamp(80px, 9vw, 140px) var(--gutter); border-bottom: 1px solid var(--rule); }
+  .iv-portrait-quote .grid { max-width: var(--col-spread); margin: 0 auto; display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(40px, 5vw, 80px); align-items: center; }
+  @media (max-width: 880px) { .iv-portrait-quote .grid { grid-template-columns: 1fr; } }
+  .iv-portrait-quote .stack { display: flex; flex-direction: column; gap: 32px; }
+  .iv-portrait-quote .label { font: 700 11px/1 var(--mono); letter-spacing: 0.32em; text-transform: uppercase; color: var(--gilt); }
+  .iv-portrait-quote h3 { font: italic 400 clamp(36px, 4.5vw, 64px)/1.05 var(--serif); color: var(--text-bright); letter-spacing: -0.02em; text-wrap: balance; }
+  .iv-portrait-quote h3 em { color: var(--gilt); }
+  .iv-portrait-quote p { font: 400 17px/1.85 var(--sans); color: var(--text); }
+  .iv-portrait-quote .img { aspect-ratio: 3/4; overflow: hidden; background: var(--ink-3); }
+  .iv-portrait-quote .img img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* ── END ──────────────────────────────────────────────────── */
+  .iv-end { max-width: var(--col-narrow); margin: 0 auto; padding: clamp(40px, 5vw, 80px) var(--gutter); text-align: center; }
+  .iv-end .mark { font: italic 400 56px/1 var(--serif); color: var(--gilt); margin-bottom: 28px; }
+  .iv-end .colophon { font: 400 11px/1.8 var(--mono); letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-soft); }
+  .iv-end .colophon span { color: var(--gilt); }
+
+  /* ── STRIP ────────────────────────────────────────────────── */
+  .iv-strip { background: var(--ink-2); padding: 32px var(--gutter); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .iv-strip .row { max-width: var(--col-spread); margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  @media (max-width: 880px) { .iv-strip .row { grid-template-columns: repeat(2, 1fr); } }
+  .iv-strip .row .img { aspect-ratio: 1; overflow: hidden; opacity: 0.7; transition: opacity .2s; }
+  .iv-strip .row .img:hover { opacity: 1; }
+  .iv-strip .row .img img { width: 100%; height: 100%; object-fit: cover; }
+</style>
+</head>
+<body>
+
+<div data-masthead></div>
+
+<article>
+
+  <!-- ═══ COVER ═════════════════════════════════════════════ -->
+  <header class="iv-cover">
+    <div class="bg" style="background-image: url('../assets/ilya-05.jpg'); background-position: center 30%;"></div>
+
+    <div class="bar">
+      <div class="left">OMF Geometry · Issue № 01</div>
+      <div class="center">A <em>Journal</em> of Geometric Tattoo</div>
+      <div class="right">Summer 2026</div>
+    </div>
+
+    <div class="titleblock">
+      <div class="inner">
+        <div class="eyebrow">Issue 01 · Feature · Interview · 11 Questions</div>
+        <h1>A long conversation with <em>Ilya Cascad</em></h1>
+        <p class="dek">On building a life across continents, launching Ornamentalika, symmetrical blackwork on asymmetrical bodies, and the underground scene that became a global movement.</p>
+
+        <dl class="meta">
+          <div>
+            <dt>Subject</dt>
+            <dd class="italic">@ilyacascad</dd>
+          </div>
+          <div>
+            <dt>City</dt>
+            <dd>Las Vegas, Nevada</dd>
+          </div>
+          <div>
+            <dt>Studio</dt>
+            <dd>Ornamentalika</dd>
+          </div>
+          <div>
+            <dt>Read</dt>
+            <dd>12 minutes</dd>
+          </div>
+          <div>
+            <dt>Issue</dt>
+            <dd>№ 01 · Summer 2026</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ DECK ══════════════════════════════════════════════ -->
+  <section class="iv-deck">
+    <p class="lead">"The style was unfamiliar to most people and visually very different. Ornamental tattooing was the first thing that genuinely <em>felt like mine</em>."</p>
+    <div class="byline"><span>—</span> &nbsp; Ilya Cascad, Las Vegas &nbsp; <span>—</span></div>
+  </section>
+
+  <!-- ═══ Q&A · PART 1 ═══════════════════════════════════════ -->
+  <section class="iv-body">
+    <!-- ── Q.01 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On crossing continents</div>
+        <div class="text">"That experience changed me a lot, both as a person and in the way I approach my work."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.01</span><span class="text">You started in Russia and ended up building a life in Las Vegas — completely different worlds. How did that journey happen?</span></h2>
+      <div class="qa-a">
+        <p>I started tattooing professionally in Russia, and that is also where I found my direction as an artist and began working in ornamental tattooing. At that time, the style was still in its early stages. People called it different things — ornamental, geometry, blackwork — everything was mixed together. The scene itself was still very small and quite underground.</p>
+        <p>That was exactly what attracted me to it. I liked that the style was unfamiliar to most people and visually very different from everything else around it. Like most tattoo artists in the beginning, I experimented with many different styles, but ornamental tattooing was the first thing that genuinely felt like mine.</p>
+        <p>In Russia, I received my first awards, my first sponsorship from an ink company, and my first invitations to international tattoo conventions. That is also how I first came to America to present my work. After that, I started traveling constantly between countries, working conventions, traveling across Europe and the US. But over time, America felt closer to me than anywhere else in terms of energy and opportunities.</p>
+        <p>At the beginning of 2020, my family and I came to the US for a convention in Los Angeles, and after that we decided to spend a little time visiting Las Vegas. Right at that moment, COVID and the lockdowns began, and instead of a planned one month trip, we ended up stuck in Vegas for about four months. During that time, my family really fell in love with the city, the weather, and the overall rhythm of life here. At some point I realized that we genuinely wanted to try building our life in this place.</p>
+        <p>The move itself was definitely not easy. Different country, different language, completely different mentality. When you do not have your old friends, familiar environment, and other family members around you anymore, it creates a lot of internal pressure. There were moments of serious stress and emotional burnout. But at the same time, <em>that experience changed me a lot</em>, both as a person and in the way I approach my work and my life overall.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.02 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On partnership</div>
+        <div class="text">"We are not only working together, we are a family."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.02</span><span class="text">What does a typical day look like for you between tattooing, running Ornamentalika, family life, and everything you juggle in Vegas?</span></h2>
+      <div class="qa-a">
+        <p>I feel very lucky because my wife is not only my manager and assistant, but also one of the biggest sources of inspiration in my work. We have really built everything together. She is also a tattoo artist herself, and over time she became not just part of the studio, but genuinely my colleague as well.</p>
+        <p>She helps me not only with the business and organizational side of things, but also takes part in the creative process itself. When I am creating new designs, especially large or complex projects, I always listen to her opinion and advice.</p>
+        <p>At the same time, she carries a huge amount of responsibility in everyday life — managing the studio, handling organizational tasks, taking care of our home, family, and child. Because of that, I actually have the time and mental space to fully focus on creating designs, developing ideas, and concentrating on the artistic side of my work.</p>
+        <p>At some point, all of this stopped feeling like a simple division of responsibilities and started feeling more like a <em>real shared work and life as a team</em>. And honestly, it would be much harder for me to do all of this alone.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.03 ── -->
+    <div class="qa">
+      <h2 class="qa-q"><span class="num">Q.03</span><span class="text">Ornamentalika seems like it has built into something bigger — the IG page, the shop, the presence at conventions. What was the original idea behind it?</span></h2>
+      <div class="qa-a">
+        <p>Originally, Ornamentalika was simply an Instagram page dedicated to tattoo artists working in ornamental styles, as well as people who were interested in that kind of tattooing.</p>
+        <p>Over time, it started growing far beyond just a social media page. After we opened our studio and began actively participating in conventions, the idea came up to bring ornamental artists together physically in one shared space. That is how the collaborative convention booths slowly started happening, along with communication, exchange of experience, and the feeling that together we were helping push this style forward.</p>
+        <p>At this point, it has become much more than just an Instagram page. It is a <em>real international community</em>. We meet every year at conventions, work together, reconnect with artists we already know, and meet new people as well.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PULL SPREAD ═══════════════════════════════════════ -->
+  <section class="iv-pullspread">
+    <div class="grid">
+      <div class="img"><img src="../assets/ilya-01.jpg" alt="Ilya Cascad — forearm blackwork"></div>
+      <div>
+        <blockquote class="quote">Asymmetry is a very delicate balance. It can either beautifully enhance the anatomy, or completely work against it.</blockquote>
+        <div class="attrib">Ilya Cascad · <span>On geometry and the body</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Q&A · PART 2 ═══════════════════════════════════════ -->
+  <section class="iv-body">
+    <!-- ── Q.04 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On the booth</div>
+        <div class="text">"Preparation starts almost immediately after the previous convention ends."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.04</span><span class="text">You run the Ornamentalika booth at Golden State Tattoo Convention every year. What goes into organizing that, and how do you balance your own tattooing with the logistics?</span></h2>
+      <div class="qa-a">
+        <p>At the beginning, everything was much smaller. We started with only three artists, so organizing the booth was not that difficult yet.</p>
+        <p>A lot of the artists travel from different cities and countries, often bringing only the essentials with them, like machines and inks. I wanted to remove the stress of having to search around the convention for equipment or setup needs.</p>
+        <p>Over time, everything started growing. Every year more artists want to join, and naturally the organization becomes much more complex. Usually, preparation for the next convention starts almost immediately after the previous one ends. If everything is spread out over the course of the year, it becomes much easier to manage while still continuing my own tattoo work at the same time.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.05 ── -->
+    <div class="qa">
+      <h2 class="qa-q"><span class="num">Q.05</span><span class="text">When you're tattooing — especially on chest pieces or big sleeves — do you work freehand on the body? How much happens beforehand versus on the skin itself?</span></h2>
+      <div class="qa-a">
+        <p>Every project requires its own approach, so I do not really have one fixed system for working. If a project requires a freehand approach, then I draw directly on the body. If stencil placement works better, then I use stencil transfer. I try to use whatever tools or methods will help achieve the best result for that specific person and anatomy.</p>
+        <p>Very often, while tattooing, I end up discovering more interesting visual or compositional solutions in real time. When that happens, I adapt the design directly on the skin so that it feels as natural and organic to the body as possible.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.06 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On visual layers</div>
+        <div class="text">"The internal feeling of balance is very important."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.06</span><span class="text">Your work carries that balance of heavy black saturation alongside intricate geometric breakdowns. How do you keep transitions clean between those different visual layers?</span></h2>
+      <div class="qa-a">
+        <p>When creating my designs, I usually start from my own visual instincts and personal perception first. For me, the internal feeling of balance is very important.</p>
+        <p>At the same time, I am constantly inspired by artists and tattooers working in similar directions. I pay a lot of attention to interesting technical solutions, approaches to composition, density, rhythm, and transitions between different visual layers. In the end, everything depends on the specific project, the idea behind it, and the feeling I want the piece to create.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TRIO ══════════════════════════════════════════════ -->
+  <section class="iv-trio">
+    <div class="head">
+      <div class="label">Plates · Three Pieces</div>
+      <h2>From the <em>archive</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid">
+      <figure>
+        <div class="frame"><img src="../assets/ilya-02.jpg" alt=""></div>
+        <figcaption>
+          <span class="num">PL.01</span>
+          <span class="cap"><i>Gothic architectural sleeve.</i> Quatrefoils, rose windows, and pointed arches — cathedral geometry rendered in blackwork.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/ilya-03.jpg" alt=""></div>
+        <figcaption>
+          <span class="num">PL.02</span>
+          <span class="cap"><i>Full leg sleeves.</i> Mandalas, spirals, and flowing symmetry — ornamental geometry at body scale.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="../assets/ilya-04.jpg" alt=""></div>
+        <figcaption>
+          <span class="num">PL.03</span>
+          <span class="cap"><i>Concentric circles and color.</i> Teal accents layered over blackwork — optical depth and movement on a full sleeve.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ═══ Q&A · PART 3 ═══════════════════════════════════════ -->
+  <section class="iv-body">
+    <!-- ── Q.07 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On symmetry</div>
+        <div class="text">"Asymmetrical designs are actually even harder to create."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.07</span><span class="text">Geometric tattoo artists always talk about symmetry, but bodies are not symmetrical. How do you map a precise geometric design onto an asymmetrical surface?</span></h2>
+      <div class="qa-a">
+        <p>Yes, symmetry on the human body is one of the most difficult parts of geometric tattooing, because the body itself is naturally asymmetrical.</p>
+        <p>But honestly, lately I have been thinking more and more that <em>asymmetrical designs are actually even harder to create</em>. Symmetry is naturally pleasing to the eye and automatically creates a sense of order and balance. Asymmetry, on the other hand, is a very delicate balance. A design like that can either beautifully enhance the anatomy and movement of the body, or completely work against it visually.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.08 ── -->
+    <div class="qa">
+      <h2 class="qa-q"><span class="num">Q.08</span><span class="text">Vegas is such a specific scene for tattooing. Do you stay rooted there, or do you guest internationally?</span></h2>
+      <div class="qa-a">
+        <p>When I first spent time in Las Vegas, I completely fell in love with the place. There was something about the energy of the city and the pace of life there that immediately connected with me.</p>
+        <p>Later, I had the opportunity to open my own studio, and from that moment a big part of my focus shifted toward developing the studio and the projects around it. These days I travel for guest spots much less often because I have a lot of responsibilities and projects here. Overall, America is now my main base, and I am more interested in growing here and helping ornamental tattooing become more visible within the American tattoo scene.</p>
+        <p>As for the Las Vegas tattoo community itself, it is extremely large and diverse. There are many incredibly strong artists here, and the tattoo culture itself is very varied.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BIG PLATE ═════════════════════════════════════════ -->
+  <section class="iv-bigplate">
+    <div class="frame"><img src="../assets/ilya-01.jpg" alt="Ilya Cascad — blackwork forearm detail"></div>
+    <div class="caption">
+      <span class="num">PL.04</span>
+      <span class="cap"><i>Forearm blackwork detail.</i> "I adapt the design directly on the skin so that it feels as natural and organic to the body as possible."</span>
+      <span class="credit">Photo · OMF Geometry</span>
+    </div>
+  </section>
+
+  <!-- ═══ PORTRAIT + QUOTE ══════════════════════════════════ -->
+  <section class="iv-portrait-quote">
+    <div class="grid">
+      <div class="img"><img src="../assets/ilya-05.jpg" alt="Ilya Cascad"></div>
+      <div class="stack">
+        <div class="label">— On community</div>
+        <h3>Inspire each other, but don't <em>copy</em> each other.</h3>
+        <p>Cascad arrived in Las Vegas in early 2020 and decided to stay — pulled in by the city's energy and the opportunity to build something from scratch. Since then he's opened his own studio, grown Ornamentalika from an Instagram page into an international community of ornamental tattoo artists, and become a fixture at Golden State Tattoo Convention alongside collaborator Raul Wesche.</p>
+        <p>His work sits at the intersection of heavy black saturation and intricate geometric breakdown — spirals, mandalas, cathedral tracery, and sacred geometry rendered at body scale. The chest piece visible here is a case study in how ornamental blackwork transforms anatomy into architecture.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FINAL Q&A ═════════════════════════════════════════ -->
+  <section class="iv-body">
+    <!-- ── Q.09 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On balance</div>
+        <div class="text">"We genuinely love what we do."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.09</span><span class="text">Being married and raising a family while running a tattoo career and a brand — how do you protect your focus and avoid burning out?</span></h2>
+      <div class="qa-a">
+        <p>As I mentioned before, my biggest source of support in everything is my wife. She takes on a huge amount of responsibility and gives me the ability to focus on creativity, personal growth, and my work as a tattoo artist.</p>
+        <p>But the most important thing is that we are not only working together, we are a family. I think that is what really helps us handle the constant workload, fast pace, and amount of responsibility that comes with this lifestyle. Of course, like anyone else, we have moments of exhaustion and burnout. But <em>we genuinely love what we do</em>.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.10 ── -->
+    <div class="qa">
+      <h2 class="qa-q"><span class="num">Q.10</span><span class="text">What is a project or a type of work you have not done yet but really want to? Where are you and Ornamentalika heading next?</span></h2>
+      <div class="qa-a">
+        <p>Lately, I have become more interested in larger, more complex, and more experimental projects, especially ones connected to how tattooing interacts with anatomy and the movement of the body.</p>
+        <p>As for Ornamentalika, I want to continue developing it as an international community and a space for people who connect with this aesthetic. I feel like ornamental tattooing, geometry tattoo, blackwork, dark lettering — it is continuing to gain momentum and evolve more and more, especially within the American tattoo scene.</p>
+        <p>I have a lot of ideas and future plans, but I usually prefer talking about them once they become reality.</p>
+      </div>
+    </div>
+
+    <!-- ── Q.11 ── -->
+    <div class="qa has-note">
+      <div class="note">
+        <div class="label">— On the scene</div>
+        <div class="text">"Keep inspiring each other, but not copying each other."</div>
+      </div>
+      <h2 class="qa-q"><span class="num">Q.11</span><span class="text">Anything else you want to add or say to the OMF Geometry community?</span></h2>
+      <div class="qa-a">
+        <p>I would simply like to thank everyone who supports the ornamental and geometry tattoo scene and continues to take interest in these directions.</p>
+        <p>I clearly remember the time when this whole scene was just beginning and there was nowhere near the amount of information, equipment, or opportunities that exist today. Dark lettering, neotribal, freehand-based styles, Suminagashi-inspired work, and many other directions are all continuing to evolve and expand the boundaries of blackwork and ornamental tattoo culture.</p>
+        <p>Probably the main thing I would want to say to artists is to <em>keep inspiring each other, but not copying each other</em>.</p>
+      </div>
+    </div>
+
+    <!-- ═══ END MARK ════════════════════════════════════════ -->
+    <div class="iv-end">
+      <div class="mark">⌬</div>
+      <div class="colophon">
+        Interview · OMF Geometry · Issue № 01<br>
+        <span>Recorded Summer 2026 · Las Vegas, Nevada</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SPECIMEN STRIP ════════════════════════════════════ -->
+  <section class="iv-strip">
+    <div class="row">
+      <a class="img" href="../assets/ilya-05.jpg"><img src="../assets/ilya-05.jpg" alt=""></a>
+      <a class="img" href="../assets/ilya-01.jpg"><img src="../assets/ilya-01.jpg" alt=""></a>
+      <a class="img" href="../assets/ilya-02.jpg"><img src="../assets/ilya-02.jpg" alt=""></a>
+      <a class="img" href="../assets/ilya-03.jpg"><img src="../assets/ilya-03.jpg" alt=""></a>
+    </div>
+  </section>
+
+</article>
+
+<!-- ═══ CTA ═══════════════════════════════════════════════ -->
+<section class="paper">
+  <div style="max-width:1100px;margin:0 auto;text-align:center;">
+    <div class="eyebrow">See the work</div>
+    <h2 style="font:italic 400 clamp(36px,5vw,72px)/0.95 var(--serif);color:var(--paper-ink);margin-top:18px;letter-spacing:-0.02em;">Open <em>Ilya's archive</em>.</h2>
+    <p style="font: 400 16px/1.7 var(--sans);color:var(--paper-ink);max-width:60ch;margin:20px auto 0;opacity:0.85">Selected pieces, photographed for OMF.</p>
+    <a href="../artists/ilya-cascad.html" class="btn btn--paper" style="margin-top:36px">Open the Profile →</a>
+  </div>
+</section>
+
+<div data-colophon></div>
+
+<script src="../js/omf.js"></script>
+<script>OMF.init('blog');</script>
+</body>
+</html>
