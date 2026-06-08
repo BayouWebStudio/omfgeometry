@@ -2083,5 +2083,47 @@
     "featured": true,
     "image": "images/6rilink.jpg",
     "gallery": []
+  },
+  {
+    "name": "Gigiuptattoo",
+    "slug": "gigiuptattoo",
+    "instagram": "gigiuptattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @gigiuptattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/gigiuptattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Qkila",
+    "slug": "qkila",
+    "instagram": "qkila",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @qkila on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/qkila.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Russia",
+    "slug": "russia",
+    "instagram": "russia",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @russia on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/russia.jpg",
+    "gallery": []
   }
 ]
