@@ -2125,5 +2125,33 @@
     "featured": true,
     "image": "images/russia.jpg",
     "gallery": []
+  },
+  {
+    "name": "Ladeh Tattoo",
+    "slug": "ladeh-tattoo",
+    "instagram": "ladeh_tattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @ladeh_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/ladeh-tattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Coupstattoo",
+    "slug": "coupstattoo",
+    "instagram": "coupstattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @coupstattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/coupstattoo.jpg",
+    "gallery": []
   }
 ]
