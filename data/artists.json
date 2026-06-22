@@ -2153,5 +2153,61 @@
     "featured": true,
     "image": "images/coupstattoo.jpg",
     "gallery": []
+  },
+  {
+    "name": "Kostik Dry",
+    "slug": "kostik-dry",
+    "instagram": "kostik_dry",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @kostik_dry on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/kostik-dry.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Jesustuner Tattoo",
+    "slug": "jesustuner-tattoo",
+    "instagram": "jesustuner_tattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @jesustuner_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/jesustuner-tattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Montreal",
+    "slug": "montreal",
+    "instagram": "montreal",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @montreal on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/montreal.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Koala Art3",
+    "slug": "koala-art3",
+    "instagram": "koala.art3",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @koala.art3 on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/koala-art3.jpg",
+    "gallery": []
   }
 ]
