@@ -2209,5 +2209,33 @@
     "featured": true,
     "image": "images/koala-art3.jpg",
     "gallery": []
+  },
+  {
+    "name": "Piri Green Tattoos",
+    "slug": "piri-green-tattoos",
+    "instagram": "piri.green.tattoos",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @piri.green.tattoos on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/piri-green-tattoos.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Abian Lamatta",
+    "slug": "abian-lamatta",
+    "instagram": "abian_lamatta",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @abian_lamatta on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/abian-lamatta.jpg",
+    "gallery": []
   }
 ]
