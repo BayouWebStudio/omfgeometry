@@ -2237,5 +2237,47 @@
     "featured": true,
     "image": "images/abian-lamatta.jpg",
     "gallery": []
+  },
+  {
+    "name": "Black Blood Charly",
+    "slug": "black-blood-charly",
+    "instagram": "black_blood_charly",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @black_blood_charly on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/black-blood-charly.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Gattoo 32",
+    "slug": "gattoo-32",
+    "instagram": "gattoo_32",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @gattoo_32 on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/gattoo-32.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Lukeaashley",
+    "slug": "lukeaashley",
+    "instagram": "lukeaashley",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @lukeaashley on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/lukeaashley.jpg",
+    "gallery": []
   }
 ]
