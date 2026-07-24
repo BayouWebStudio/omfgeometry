@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SPB4F1HX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2SPB4F1HX7');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1446410187106776');fbq('track','PageView');
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>OMF Geometry Magazine — Issue 001</title>
+<meta name="description" content="OMF Geometry Magazine Issue 001. 64 pages. Limited run of 100 copies. Featuring interviews with Berdah, Sner, Paketh, Mitch Koch, Suezo, and Ilya Cascad.">
+<link rel="stylesheet" href="css/monolith.css">
+<style>
+  .mag-hero {
+    padding: clamp(60px,8vw,140px) var(--gutter) clamp(48px,6vw,96px);
+    border-bottom: 1px solid var(--rule-strong);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px,5vw,80px);
+    align-items: center;
+  }
+  @media (max-width: 800px) {
+    .mag-hero { grid-template-columns: 1fr; text-align: center; }
+  }
+  .mag-cover {
+    position: relative;
+    aspect-ratio: 8.5/11;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 4px 16px rgba(0,0,0,0.3);
+    overflow: hidden;
+  }
+  .mag-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .mag-cover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10,9,8,0.1) 0%, rgba(10,9,8,0.3) 100%);
+    pointer-events: none;
+  }
+  .mag-info h1 {
+    font: italic 400 clamp(48px,7vw,96px)/0.95 var(--serif);
+    color: var(--text-bright);
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+  .mag-info .eyebrow {
+    font: 400 11px/1 var(--mono);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gilt);
+    margin-bottom: 20px;
+  }
+  .mag-info .lede {
+    font: italic 400 clamp(18px,2vw,24px)/1.45 var(--serif);
+    color: var(--text-bright);
+    margin-bottom: 32px;
+    max-width: 50ch;
+  }
+  .mag-specs {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 36px;
+    padding: 24px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-specs__row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    font: 400 13px/1.4 var(--mono);
+    color: var(--text-soft);
+  }
+  .mag-specs__row b {
+    color: var(--gilt);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .mag-price {
+    font: italic 400 clamp(40px,5vw,64px)/1 var(--serif);
+    color: var(--gilt);
+    margin-bottom: 8px;
+  }
+  .mag-price small {
+    font: 400 14px/1 var(--mono);
+    color: var(--text-soft);
+    letter-spacing: 0.1em;
+    display: block;
+    margin-top: 4px;
+  }
+  .mag-cta {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 18px 48px;
+    font: 700 14px/1 var(--mono);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: var(--gilt);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+    text-decoration: none;
+  }
+  .mag-cta:hover {
+    background: var(--text-bright);
+    transform: translateY(-2px);
+  }
+  .mag-cta:active { transform: translateY(0); }
+  .mag-stock {
+    margin-top: 16px;
+    font: 400 12px/1.4 var(--mono);
+    color: var(--text-mute);
+    letter-spacing: 0.05em;
+  }
+  .mag-stock b { color: var(--text-soft); }
+
+  .mag-features {
+    padding: clamp(48px,6vw,96px) var(--gutter);
+    border-bottom: 1px solid var(--rule);
+  }
+  .mag-features h2 {
+    font: italic 400 clamp(36px,5vw,64px)/0.95 var(--serif);
+    color: var(--text-bright);
+    letter-spacing: -0.02em;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  .mag-artists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .mag-artist {
+    padding: 32px 28px;
+    background: var(--ink);
+    transition: background 0.2s ease;
+  }
+  .mag-artist:hover { background: var(--ink-2); }
+  .mag-artist__num {
+    font: 700 11px/1 var(--mono);
+    letter-spacing: 0.2em;
+    color: var(--gilt-dim);
+    margin-bottom: 12px;
+  }
+  .mag-artist__name {
+    font: italic 400 clamp(22px,2.5vw,32px)/1.1 var(--serif);
+    color: var(--text-bright);
+    margin-bottom: 6px;
+  }
+  .mag-artist__loc {
+    font: 400 11px/1 var(--mono);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+
+  .mag-bottom {
+    padding: clamp(48px,6vw,80px) var(--gutter);
+    text-align: center;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .mag-bottom .mag-cta { margin-top: 0; }
+</style>
+</head>
+<body>
+<nav style="padding:20px var(--gutter);border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center">
+  <a href="index.html" style="font:italic 400 24px/1 var(--serif);color:var(--text-bright);text-decoration:none">OMF Geometry</a>
+  <a href="index.html" style="font:400 11px/1 var(--mono);letter-spacing:0.2em;text-transform:uppercase;color:var(--text-soft);text-decoration:none">← Back to Wall</a>
+</nav>
+
+<section class="mag-hero">
+  <div class="mag-cover">
+    <img src="https://cdn.shopify.com/s/files/1/0245/1066/0660/files/aee60e5465cd4eff4f699382e4ad1262.png?v=1784899807" alt="OMF Geometry Magazine Issue 001 Cover" loading="lazy">
+  </div>
+  <div class="mag-info">
+    <div class="eyebrow">Issue 001 · Limited Print Run</div>
+    <h1>OMF Geometry<br>Magazine</h1>
+    <p class="lede">A brutalist publication on sacred geometry, tattoo art, and the intersection of the two. Six interviews with artists shaping the conversation. 64 pages. 100 copies. No reprint.</p>
+    <div class="mag-specs">
+      <div class="mag-specs__row"><b>Pages</b><span>64</span></div>
+      <div class="mag-specs__row"><b>Format</b><span>US Letter 8.5″ × 11″</span></div>
+      <div class="mag-specs__row"><b>Print</b><span>Mixam — Saddle stitched, gloss cover</span></div>
+      <div class="mag-specs__row"><b>Edition</b><span>100 copies — numbered, limited</span></div>
+      <div class="mag-specs__row"><b>Design</b><span>Brutalist · dark blue · sacred geometry</span></div>
+    </div>
+    <div class="mag-price">$22<small>USD · Free shipping in the US</small></div>
+    <a href="https://all-sacred.myshopify.com/cart/52859987394741:1" class="mag-cta">Buy Issue 001 →</a>
+    <div class="mag-stock"><b>100 copies</b> — once they're gone, they're gone.</div>
+  </div>
+</section>
+
+<section class="mag-features">
+  <h2>Featured Interviews</h2>
+  <div class="mag-artists">
+    <div class="mag-artist">
+      <div class="mag-artist__num">001</div>
+      <div class="mag-artist__name">Berdah</div>
+      <div class="mag-artist__loc">10 Questions</div>
+    </div>
+    <div class="mag-artist">
+      <div class="mag-artist__num">002</div>
+      <div class="mag-artist__name">Suezo</div>
+      <div class="mag-artist__loc">11 Questions</div>
+    </div>
+    <div class="mag-artist">
+      <div class="mag-artist__num">003</div>
+      <div class="mag-artist__name">Sner</div>
+      <div class="mag-artist__loc">11 Questions</div>
+    </div>
+    <div class="mag-artist">
+      <div class="mag-artist__num">004</div>
+      <div class="mag-artist__name">Paketh</div>
+      <div class="mag-artist__loc">9 Questions</div>
+    </div>
+    <div class="mag-artist">
+      <div class="mag-artist__num">005</div>
+      <div class="mag-artist__name">Mitch Koch</div>
+      <div class="mag-artist__loc">10 Questions</div>
+    </div>
+    <div class="mag-artist">
+      <div class="mag-artist__num">006</div>
+      <div class="mag-artist__name">Ilya Cascad</div>
+      <div class="mag-artist__loc">11 Questions</div>
+    </div>
+  </div>
+</section>
+
+<section class="mag-bottom">
+  <p class="lede" style="font:italic 400 clamp(20px,2.4vw,30px)/1.4 var(--serif);color:var(--text-bright);max-width:60ch;margin:0 auto 32px">
+    A one-time print. A physical artifact. Something you hold.
+  </p>
+  <a href="https://all-sacred.myshopify.com/cart/52859987394741:1" class="mag-cta">Buy Issue 001 — $22 →</a>
+</section>
+
+<footer style="padding:32px var(--gutter);text-align:center">
+  <a href="index.html" style="font:400 11px/1 var(--mono);letter-spacing:0.2em;text-transform:uppercase;color:var(--text-mute);text-decoration:none">OMF Geometry · omfgeometry.com</a>
+</footer>
+</body>
+</html>
