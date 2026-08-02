@@ -53,3 +53,9 @@ Every artist has a dedicated page at https://omfgeometry.com/artists/{slug}.html
 - Curator: @omfgeometry on Instagram
 - All artists are hand-reviewed before being listed
 - Print magazine: Issue 001, $22, limited to 100 copies
+
+## Related Sites (same studio)
+
+- [wesche.com](https://wesche.com/): Raúl Wesche — geometric tattoo artist, Houston TX (curator of OMF Geometry)
+- [Vesica Studio](https://vesica.studio/): Sacred geometry drawing app for iPhone/iPad
+- [Eterno Web Studio](https://eternowebstudio.com/): Website builder for tattoo artists

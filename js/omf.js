@@ -17,7 +17,7 @@
           <div class="masthead__meta">
             <span>Issue № ${issueNo}</span>
             <span>${today}</span>
-            <span class="u-hide-mobile">120+ Artists · 27 Countries</span>
+            <span class="u-hide-mobile">130 Artists · 28 Countries</span>
           </div>
           <a href="${ROOT}index.html" class="masthead__brand">
             <div class="masthead__brand-mark">
@@ -60,6 +60,7 @@
               <li><a href="index.html">Front Page</a></li>
               <li><a href="directory.html">Directory</a></li>
               <li><a href="map.html">Atlas</a></li>
+              <li><a href="magazine.html">Magazine</a></li>
               <li><a href="blog/index.html">Journal</a></li>
             </ul>
           </div>
@@ -81,6 +82,7 @@
         </div>
         <div class="colophon__legal">
           <span>© ${new Date().getFullYear()} OMF Geometry</span>
+          <span>Family: <a href="https://wesche.com" style="color:inherit">wesche.com</a> · <a href="https://vesica.studio" style="color:inherit">Vesica Studio</a> · <a href="https://eternowebstudio.com" style="color:inherit">Eterno Web Studio</a></span>
           <span>Set in Cormorant · Inter Tight · Space Mono</span>
         </div>
       </footer>`);
