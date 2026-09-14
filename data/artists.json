@@ -2279,5 +2279,89 @@
     "featured": true,
     "image": "images/lukeaashley.jpg",
     "gallery": []
+  },
+  {
+    "name": "Blxcktattoos",
+    "slug": "blxcktattoos",
+    "instagram": "blxcktattoos",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @blxcktattoos on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/blxcktattoos.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Abian Lamotta",
+    "slug": "abian-lamotta",
+    "instagram": "abian_lamotta",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @abian_lamotta on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/abian-lamotta.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Wludarzdotworktattoo",
+    "slug": "wludarzdotworktattoo",
+    "instagram": "wludarzdotworktattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @wludarzdotworktattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/wludarzdotworktattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Flo Blk ",
+    "slug": "flo-blk",
+    "instagram": "flo_blk_",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @flo_blk_ on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/flo-blk.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Blvck Maz",
+    "slug": "blvck-maz",
+    "instagram": "blvck_maz",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @blvck_maz on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/blvck-maz.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Remybtattoo",
+    "slug": "remybtattoo",
+    "instagram": "remybtattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @remybtattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/remybtattoo.jpg",
+    "gallery": []
   }
 ]
