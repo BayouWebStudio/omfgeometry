@@ -2363,5 +2363,33 @@
     "featured": true,
     "image": "images/remybtattoo.jpg",
     "gallery": []
+  },
+  {
+    "name": "Nael Poke",
+    "slug": "nael-poke",
+    "instagram": "nael.poke",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @nael.poke on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/nael-poke.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Federica Rika",
+    "slug": "federica-rika",
+    "instagram": "federica_rika",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @federica_rika on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/federica-rika.jpg",
+    "gallery": []
   }
 ]
