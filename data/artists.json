@@ -2419,5 +2419,33 @@
     "featured": true,
     "image": "images/kevinjohnson-143.jpg",
     "gallery": []
+  },
+  {
+    "name": "R0Bs ",
+    "slug": "r0bs",
+    "instagram": "r0bs_",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @r0bs_ on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/r0bs.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Jasoncalltattooer",
+    "slug": "jasoncalltattooer",
+    "instagram": "jasoncalltattooer",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @jasoncalltattooer on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/jasoncalltattooer.jpg",
+    "gallery": []
   }
 ]
