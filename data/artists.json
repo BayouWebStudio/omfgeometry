@@ -2447,5 +2447,33 @@
     "featured": true,
     "image": "images/jasoncalltattooer.jpg",
     "gallery": []
+  },
+  {
+    "name": "Fmtattooer",
+    "slug": "fmtattooer",
+    "instagram": "fmtattooer",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @fmtattooer on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/fmtattooer.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Cleitonpz",
+    "slug": "cleitonpz",
+    "instagram": "cleitonpz",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @cleitonpz on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/cleitonpz.jpg",
+    "gallery": []
   }
 ]
