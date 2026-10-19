@@ -2475,5 +2475,47 @@
     "featured": true,
     "image": "images/cleitonpz.jpg",
     "gallery": []
+  },
+  {
+    "name": "Marine Ishigo Tattoo",
+    "slug": "marine-ishigo-tattoo",
+    "instagram": "marine_ishigo_tattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @marine_ishigo_tattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/marine-ishigo-tattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Sailorjune Ttt",
+    "slug": "sailorjune-ttt",
+    "instagram": "sailorjune.ttt",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @sailorjune.ttt on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/sailorjune-ttt.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Laurentpnce",
+    "slug": "laurentpnce",
+    "instagram": "laurentpnce",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @laurentpnce on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/laurentpnce.jpg",
+    "gallery": []
   }
 ]
