@@ -2517,5 +2517,19 @@
     "featured": true,
     "image": "images/laurentpnce.jpg",
     "gallery": []
+  },
+  {
+    "name": "Ricogeometry",
+    "slug": "ricogeometry",
+    "instagram": "ricogeometry",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @ricogeometry on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/ricogeometry.jpg",
+    "gallery": []
   }
 ]
