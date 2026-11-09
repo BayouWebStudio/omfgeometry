@@ -2531,5 +2531,47 @@
     "featured": true,
     "image": "images/ricogeometry.jpg",
     "gallery": []
+  },
+  {
+    "name": "Max Inkindustry 2 0",
+    "slug": "max-inkindustry-2-0",
+    "instagram": "max_inkindustry_2.0",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @max_inkindustry_2.0 on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/max-inkindustry-2-0.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Nater Tattoos",
+    "slug": "nater-tattoos",
+    "instagram": "nater_tattoos",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @nater_tattoos on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/nater-tattoos.jpg",
+    "gallery": []
+  },
+  {
+    "name": "T Inking",
+    "slug": "t-inking",
+    "instagram": "t.inking",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @t.inking on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/t-inking.jpg",
+    "gallery": []
   }
 ]
