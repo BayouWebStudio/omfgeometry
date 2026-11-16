@@ -2573,5 +2573,47 @@
     "featured": true,
     "image": "images/t-inking.jpg",
     "gallery": []
+  },
+  {
+    "name": "Adina Mandala",
+    "slug": "adina-mandala",
+    "instagram": "adina.mandala",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @adina.mandala on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/adina-mandala.jpg",
+    "gallery": []
+  },
+  {
+    "name": "Simonhtattoo",
+    "slug": "simonhtattoo",
+    "instagram": "simonhtattoo",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @simonhtattoo on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/simonhtattoo.jpg",
+    "gallery": []
+  },
+  {
+    "name": "J P Tattooart",
+    "slug": "j-p-tattooart",
+    "instagram": "j.p.tattooart",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @j.p.tattooart on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/j-p-tattooart.jpg",
+    "gallery": []
   }
 ]
