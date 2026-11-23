@@ -2615,5 +2615,19 @@
     "featured": true,
     "image": "images/j-p-tattooart.jpg",
     "gallery": []
+  },
+  {
+    "name": "Irene Reale",
+    "slug": "irene-reale",
+    "instagram": "irene.reale",
+    "location": "TBD",
+    "country": "TBD",
+    "bio": "Geometric tattoo artist featured on @omfgeometry. Follow @irene.reale on Instagram for more work.",
+    "styles": [
+      "geometric"
+    ],
+    "featured": true,
+    "image": "images/irene-reale.jpg",
+    "gallery": []
   }
 ]
